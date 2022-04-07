@@ -1,30 +1,34 @@
-## Welcome to Hao Xu's Personal Pages
+# Welcome to My Personal Pages
 
 
 
-### Education
+## Education
 
+
+### 
+```markdown
+Online M. S. in Computer Science 
+expected graduation in Sep. 2022
+Georgia Institute of Technology, Atlanta, GA, U.S.   
+```
+```markdown
+Ph. D. in Computational Chemsitry 
+expected graduation in Dec. 2022
+Boston College
+```
+```markdown
+M.S. in Computational Chemsitry
+2015-2017
+Southern Methodist University, Dallas, TX, U.S.
+```
 
 ```markdown
+B. S. in Chemistry and B. E. in Finance 
+2011-2015 
+China Agricultural University, Beijing, China
 
-# Online 
-## Header 2
-### Header 3
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
+
 
 For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
