@@ -348,9 +348,9 @@
 	.callout-box  .span8 { width: 66.6666666667%; }
 	.callout-box  .span7 { width: 58.3333333333%; }
 	.callout-box  .span6 { width: 50%; }
-	.callout-box  .span5 { width: 41.6666666667%; }
+	.callout-box  .span5 { width: inherit; }
 	.callout-box  .span4 { width: 33.3333333333%; }
-	.callout-box  .span3 { width: 25%; height: inherit;}
+	.callout-box  .span3 { width: 50%; height: inherit;}
 	.callout-box  .span2 { width: 16.66666666666667%; }
 	.callout-box  .span1 { width: 8.333333333333333%; }
   
