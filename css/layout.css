@@ -948,7 +948,7 @@ input.validation-error, textarea.validation-error, select.validation-error {
 /* #Large Display
   ========================================================================== */
 
-@media (min-width: 1400px) {
+@media (min-width: 3400px) {
     .sf-menu>li>a {
         padding: 15px 25px;
         position: fixed;
@@ -966,7 +966,7 @@ input.validation-error, textarea.validation-error, select.validation-error {
 /* #Smaller then 1024px width
   ========================================================================== */
 
-@media (max-width: 100px) {
+@media (max-width: 3000px) {
     #wrap {}
     #header {}
     #content {}
