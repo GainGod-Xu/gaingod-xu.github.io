@@ -442,7 +442,9 @@
 	.divider.double-dotted { 
 		height: 4px;
 		background: url(../images/bg-double-dotted.gif) repeat-x top left; 
-	}	
+	}
+	
+	
 
 /* ==========================================================================
    #Google Maps
@@ -501,7 +503,17 @@
 		background-color: #fff; 
 	}
 	
-	
+	.div-container span{
+  		display: block;
+  		height: 50%;
+	}
+	.div-container{
+  		height: 500px;
+	}
+	.div-container span.top{
+ 		display: flex;
+  		align-items: flex-end;
+	}
 
 /* ==========================================================================
    #Icon Boxes
