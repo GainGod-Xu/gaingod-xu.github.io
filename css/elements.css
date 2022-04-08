@@ -275,7 +275,7 @@
 	.callout-box {
 		padding: 30px 20px;
 		margin-bottom: 30px;
-		background-color: #333;
+		background-color: #fff;
 		color: #fff;
 	}
 	
@@ -350,7 +350,7 @@
 	.callout-box  .span6 { width: 50%; }
 	.callout-box  .span5 { width: 41.6666666667%; }
 	.callout-box  .span4 { width: 33.3333333333%; }
-	.callout-box  .span3 { width: 25%; }
+	.callout-box  .span3 { width: 25%; height: inherit;}
 	.callout-box  .span2 { width: 16.66666666666667%; }
 	.callout-box  .span1 { width: 8.333333333333333%; }
   
@@ -479,7 +479,7 @@
 		padding: 10px 15px;	
 		margin-bottom: 0;
 		text-transform: uppercase;
-		line-height: 53px;
+		line-height: 53 px;
 	}
 	
 	.headline h2 {
