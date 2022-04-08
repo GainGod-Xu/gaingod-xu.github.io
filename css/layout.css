@@ -288,18 +288,17 @@
 }
 
 #mobile-menu {
-    display: none;
+    display: block;
 }
 
 /* Mobile menu trigger  */
 
 #nav-mobile {
-    display: none;
+    display: block;
 }
 
 #mobile-menu-trigger {
     float: left;
-    display: none;
     color: #252525;
     font-size: 32px;
 }
@@ -372,7 +371,7 @@
 
 .cv-section-title h1 {
     position: relative;
-    padding-bottom: 10px;
+    padding-bottom: 14px;
 }
 
 .cv-section-title h1:after {
@@ -392,7 +391,7 @@
     position: absolute;
     top: -10px;
     left: 0;
-    font: 10px 'PT Sans', sans-serif;
+    font: 12px 'PT Sans', sans-serif;
 }
 
 .cv-section-title h3 {
@@ -406,7 +405,7 @@
 .cv-item {
     padding: 15px 0 5px 30px;
     border-left: 1px solid #e1e1e1;
-    margin-top: -5px;
+    margin-top: -10px;
 }
 
 /* #Footer
@@ -447,71 +446,16 @@
   ========================================================================== */
 
 #nav {
-    -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    top: 0;
+    position:  relative;
+}.content{
+     
+         height: 1400px;
+         background: orange;
+         margin-top: 100px; 
 }
 
-/* lang-tabs */
 
-.lang-tabs {
-    color: #9A9A9A;
-    line-height: 85px;
-    float: right;
-    margin-right: 20px;
-    cursor: default;
-}
-
-.lang-tabs a {
-    color: #9A9A9A;
-}
-
-.lang-tabs a:hover {
-    color: #f79453;
-}
-
-.lang-tabs .lang-tab-current {
-    cursor: default;
-    pointer-events: none;
-    color: #252525;
-}
-
-.lang-tabs .lang-tab-current:hover {
-    color: #252525;
-}
-
-/*
-   .sticky-wrapper-scroll {
-       position: fixed;
-       z-index: 25;
-       top: 0;
-       right: 0;
-       left: 0;
-       background-color: #fff;
-   }
-   */
-
-@media (min-width: 1024px) {
-    .stuck {
-        position: fixed !important;
-        top: 0;
-        width: 100% !important;
-        z-index: 1000;
-    }
-    #nav.stuck {
-        background: #fff;
-    }
-    #nav.stuck .sf-menu>li>a {
-        padding: 9px 15px;
-        line-height: 45px;
-    }
-    #nav.stuck #logo {
-        height: 65px;
-        padding: 16px 24px;
-    }
-    #nav.stuck .lang-tabs {
-        line-height: 65px;
-    }
-}
 
 /* #Personal Profile
   ========================================================================== */
@@ -709,7 +653,7 @@
   ========================================================================== */
 
 #project-wrap {
-    max-width: 980px;
+    max-width: 100px;
     padding: 100px 0;
     margin: 100px auto;
     background-color: #fff;
@@ -1007,9 +951,11 @@ input.validation-error, textarea.validation-error, select.validation-error {
 @media (min-width: 1400px) {
     .sf-menu>li>a {
         padding: 15px 25px;
+        position: fixed;
     }
     #nav.stuck .sf-menu>li>a {
         padding: 9px 25px;
+        position: fixed;
     }
     /* Portfolio */
     /* #project-wrap {
@@ -1020,169 +966,9 @@ input.validation-error, textarea.validation-error, select.validation-error {
 /* #Smaller then 1024px width
   ========================================================================== */
 
-@media (max-width: 1024px) {
+@media (max-width: 100px) {
     #wrap {}
     #header {}
     #content {}
     #footer {}
-}
-
-/* #Tablet (Portrait)
-  ========================================================================== */
-
-@media (min-width: 768px) and (max-width: 1115px) {
-    #nav-pc {
-        display: none;
-    }
-    #nav-mobile {
-        display: block;
-    }
-    #mobile-menu-trigger {
-        display: block;
-        margin-top: 28px;
-    }
-    .cv-section-title h1 {
-        font-size: 32px;
-    }
-    /* Portfolio */
-    #project-wrap {
-        max-width: 100%;
-    }
-    .portfolio-items li {
-        width: 50%;
-    }
-    /* Skills */
-    .interests-list li {
-        margin: 15px 30px 15px 0;
-    }
-    /* References */
-    #references .headline:before, #references .headline:after {
-        width: 15px;
-    }
-}
-
-/* #Mobile (Portrait and Landscape )
-  ========================================================================== */
-
-@media (max-width: 767px) {
-    body {
-        background: none;
-        background-color: #fff;
-    }
-    .lang-tabs {
-        line-height: 65px;
-    }
-    #nav-pc {
-        display: none;
-    }
-    #nav-mobile {
-        display: block;
-    }
-    #mobile-menu-trigger {
-        position: absolute;
-        top: 8px;
-        left: 10px;
-        display: block;
-        padding: 10px;
-    }
-    #mobile-menu li a {
-        padding: 15px 40px;
-    }
-    .cv-item {
-        padding-left: 0;
-        border-left: none;
-    }
-    .cv-section-title {
-        text-align: left;
-    }
-    .cv-section-title h1:after {
-        left: 0;
-    }
-    .row {
-        padding: 0 40px;
-    }
-    .row .row {
-        width: auto;
-        padding: 0 20px;
-        margin: 0;
-    }
-    p.last, h1.last, h2.last, h3.last, h4.last, h5.last, address.last, ul.last, ol.last {
-        margin-bottom: 20px;
-    }
-    .text-right {
-        text-align: left;
-    }
-    /* Portfolio */
-    #project-wrap {
-        max-width: 100%;
-    }
-    .portfolio-items li {
-        float: none;
-        width: 100%;
-        padding: 15px 0;
-    }
-    .portfolio-filter ul li {
-        display: block;
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-    .portfolio-filter ul li:last-child {
-        margin-bottom: 0;
-    }
-    .portfolio-item-description p {
-        display: none;
-    }
-    /* References */
-    #references .headline {
-        margin-bottom: 50px;
-    }
-    /* Skills */
-    .interests-list li {
-        float: none;
-        margin-right: 0;
-        margin-bottom: 50px;
-        text-align: center;
-    }
-    .interests-list li:last-child {
-        margin-bottom: 0;
-    }
-    .interests-list li>p {
-        display: none;
-    }
-    .interest-details {
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 100%;
-        border: 1px solid #252525;
-        margin: 15px 0;
-        background-color: transparent;
-        color: #252525;
-        opacity: 1;
-    }
-    /* Contact */
-    .social-media {
-        margin-bottom: 60px;
-    }
-    #contact-form {
-        margin-top: 0;
-    }
-}
-
-/* #Mobile ( Landscape )
- ========================================================================== */
-
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-    .row {
-        padding: 0 40px;
-    }
-    #mobile-menu-trigger {
-        left: 30px;
-    }
-    /* Portfolio Items */
-    .portfolio-items li {
-        float: left;
-        width: 50%;
-        padding: 5px;
-    }
 }

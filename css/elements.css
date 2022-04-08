@@ -275,7 +275,7 @@
 	.callout-box {
 		padding: 30px 20px;
 		margin-bottom: 30px;
-		background-color: #fff;
+		background-color: #333;
 		color: #fff;
 	}
 	
@@ -344,17 +344,16 @@
 	.callout-box .span12 { width: 100%; }
 	.callout-box .span11 { width: 91.6666666667%; }
 	.callout-box .span10 { width: 83.3333333333%; }
-	.callout-box  .span9 { width: 75%; }
 	.callout-box  .span8 { width: 66.6666666667%; }
 	.callout-box  .span7 { width: 58.3333333333%; }
 	.callout-box  .span6 { width: 50%; }
-	.callout-box  .span5 { width: inherit; }
+	.callout-box  .span5 { width: 41.6666666667%; }
 	.callout-box  .span4 { width: 33.3333333333%; }
-	.callout-box  .span3 { width: 50%; height: inherit;}
+	.callout-box  .span3 { width: 25%; }
 	.callout-box  .span2 { width: 16.66666666666667%; }
 	.callout-box  .span1 { width: 8.333333333333333%; }
   
-	@media (max-width: 767px) {
+	@media (max-width: 3000px) {
 	
 		.callout-box .span1,
 		.callout-box .span2,
@@ -364,7 +363,6 @@
 		.callout-box .span6,
 		.callout-box .span7,
 		.callout-box .span8,
-		.callout-box .span9,
 		.callout-box .span10,
 		.callout-box .span11,
 		.callout-box .span12 { width: 100%; }
@@ -442,9 +440,7 @@
 	.divider.double-dotted { 
 		height: 4px;
 		background: url(../images/bg-double-dotted.gif) repeat-x top left; 
-	}
-	
-	
+	}	
 
 /* ==========================================================================
    #Google Maps
@@ -479,7 +475,7 @@
 		padding: 10px 15px;	
 		margin-bottom: 0;
 		text-transform: uppercase;
-		line-height: 53 px;
+		line-height: 53px;
 	}
 	
 	.headline h2 {
@@ -503,17 +499,7 @@
 		background-color: #fff; 
 	}
 	
-	.div-container span{
-  		display: block;
-  		height: 50%;
-	}
-	.div-container{
-  		height: 500px;
-	}
-	.div-container span.top{
- 		display: flex;
-  		align-items: flex-end;
-	}
+	
 
 /* ==========================================================================
    #Icon Boxes
@@ -1375,7 +1361,7 @@
 	
 	.vertical-tabs-container .tabs-menu { 
 		float: left;
-		width: 179px;
+		width: relative;
 		border-right: 1px solid #252525;
 		margin-bottom: 0;
 		list-style: none;
