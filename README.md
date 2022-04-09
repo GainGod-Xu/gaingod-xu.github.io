@@ -11,6 +11,7 @@ Replace my information with yours inside index.html.
 ## Notes:
 * It is easy to upload and edit files if you clone your repository locally.
 * It is easy to preview with local file via index.html.
+* old_index.html has everything in a single page, which is not convenient to switch the contents and not easy to organize/code. 
 ## Resources:
 * Logos and quetos were generate on the following free web: https://cooltext.com/.
-* Inspired by fifteen718.
+* old_index.html was Inspired by fifteen718.
