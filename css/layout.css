@@ -288,13 +288,13 @@
 }
 
 #mobile-menu {
-    display: block;
+    display: none;
 }
 
 /* Mobile menu trigger  */
 
 #nav-mobile {
-    display: block;
+    display: none;
 }
 
 #mobile-menu-trigger {
