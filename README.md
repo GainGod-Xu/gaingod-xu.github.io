@@ -12,5 +12,5 @@ Replace my information with yours inside index.html.
 * It is easy to upload and edit files if you clone your repository locally.
 * It is easy to preview with local file via index.html.
 ## Resources:
-Logos and quetos were generate on the following free web: https://cooltext.com/.
-Inspired by fifteen718.
+* Logos and quetos were generate on the following free web: https://cooltext.com/.
+* Inspired by fifteen718.
