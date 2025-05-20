@@ -107,7 +107,7 @@
        overflow: hidden;
        background-color: #fff;
        color: #5f5f5f;
-       font: 16px Arial;
+       font: 17px Arial;
        line-height: 30px;	
    }
    
@@ -140,7 +140,7 @@
    h2 { 
        margin-bottom: 30px;	
        font-size: 24px; 
-       /* line-height: 40px;   */
+       line-height: 40px;  
    }
    
    h3 { 
