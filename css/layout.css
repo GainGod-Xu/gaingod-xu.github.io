@@ -80,7 +80,7 @@
     padding: 28px 25px 0 25px;
     background-color: #252525;
     color: #fff;
-    font: 17px/18px 'Oswald',serif;
+    font: 17px/18px Arial, Helvetica, sans-serif;
     text-decoration: none;
     text-transform: uppercase;
     -webkit-transition: padding 0.3s;
@@ -140,7 +140,7 @@
 .sf-menu a {
     padding: 10px 15px;
     border-bottom: 1px dotted rgba(0, 0, 0, 0.15);
-    font-family: 'Oswald',serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     color: #252525;
     text-transform: uppercase;
@@ -359,7 +359,7 @@
 
 .cv-section-title {
     padding: 15px 0;
-    font-family: 'PT Sans',serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     text-align: right;
     text-transform: uppercase;
@@ -391,11 +391,11 @@
     position: absolute;
     top: -10px;
     left: 0;
-    font: 12px 'PT Sans',serif;
+    font: 12px Arial, Helvetica, sans-serif;
 }
 
 .cv-section-title h3 {
-    font-family: 'PT Sans Narrow',serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
 }
