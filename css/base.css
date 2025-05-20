@@ -147,7 +147,7 @@
        margin-bottom: 8px;
        font-family: Arial;
        font-size: 18px;
-       text-transform: capitalize; 
+       /* text-transform: capitalize;  */
        /* line-height: 1.2;    */
    }
    
