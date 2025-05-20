@@ -466,7 +466,7 @@
 		border: 1px solid #252525;
 		margin-bottom: 120px;
 		color: #252525;
-		font: 12px Arial, Helvetica;
+		font: 12px Arial;
 		line-height: 20px;
 		text-align: center; 
 	}
@@ -1037,7 +1037,7 @@
 		text-transform: uppercase;	
 	}
 	
-	.pie-chart .pie-chart-custom-text span { font: 18px Arial, Helvetica; }
+	.pie-chart .pie-chart-custom-text span { font: 18px Arial; }
 	
 	.pie-chart .pie-chart-percent {
 		font-size: 16px;
@@ -1137,7 +1137,7 @@
 		position: relative;
 		display: block;
 		margin-bottom: 15px;
-		font: 14px Arial, Helvetica;
+		font: 14px Arial;
 		line-height: 24px;
 	}
 	
