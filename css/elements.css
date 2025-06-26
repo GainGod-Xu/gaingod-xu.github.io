@@ -343,14 +343,14 @@
 	
 	.callout-box .span12 { width: 100%; }
 	.callout-box .span11 { width: 91.6666666667%; }
-	.callout-box .span10 { width: 83.3333333333%; }
+	.callout-box .span10 { width: 80%; }
 	.callout-box  .span8 { width: 66.6666666667%; }
 	.callout-box  .span7 { width: 58.3333333333%; }
 	.callout-box  .span6 { width: 50%; }
 	.callout-box  .span5 { width: 41.6666666667%; }
 	.callout-box  .span4 { width: 33.3333333333%; }
 	.callout-box  .span3 { width: 25%; }
-	.callout-box  .span2 { width: 16.66666666666667%; }
+	.callout-box  .span2 { width: 20%; }
 	.callout-box  .span1 { width: 8.333333333333333%; }
   
 	@media (max-width: 3000px) {
