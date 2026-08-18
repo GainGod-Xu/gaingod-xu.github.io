@@ -27,7 +27,6 @@ Bridging micro-scale determinants&mdash;non-covalent interactions, evolutionary 
 Parameter-efficient fine-tuning and multimodal alignment methods that preserve fine-grained gradient sensitivities, so adaptation stays reliable, interpretable, and cheap to train at scale.
 
 - Xiao, X., et al., **Xu, H.**\* "Not All Directions Matter: Toward Structured and Task-Aware Low-Rank Adaptation." *ACL*, 2026.
-- Zhang, H., et al., **Xu, H.**\* "Sensitivity-LoRA: Low-Load Sensitivity-Based Fine-Tuning for Large Language Models." *EMNLP Findings*, 2025.
 
 ### Chemistry
 
