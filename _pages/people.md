@@ -33,6 +33,8 @@ nav_order: 5
 
 **[Joseph Loscalzo](https://scholar.google.com/citations?user=ZfAwwkUAAAAJ)** &mdash; Brigham and Women's Hospital & Harvard Medical School
 
+**[Ruisheng Wang](https://scholar.google.com/citations?user=5ojAGvwAAAAJ)** &mdash; Channing Division of Network Medicine, Brigham and Women's Hospital & Harvard Medical School
+
 **[Haibin Ling](https://scholar.google.com/citations?user=v3w4IYUAAAAJ)** &mdash; Department of Computer Science, Stony Brook University
 
 **[Jiangning Song](https://scholar.google.com/citations?user=in9oae8AAAAJ)** &mdash; Monash Biomedicine Discovery Institute, Monash University
@@ -40,5 +42,3 @@ nav_order: 5
 **[Zaiqiao Meng](https://scholar.google.com/citations?user=5jJKFVcAAAAJ)** &mdash; School of Computing Science, University of Glasgow
 
 **[Pengyu Hong](https://scholar.google.com/citations?user=pvDa8pcAAAAJ)** &mdash; Department of Computer Science, Brandeis University
-
-**[Ruisheng Wang](https://scholar.google.com/citations?user=5ojAGvwAAAAJ)** &mdash; Channing Division of Network Medicine, Brigham and Women's Hospital & Harvard Medical School
