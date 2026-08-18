@@ -93,15 +93,6 @@ cv:
         summary: "For “From Data to Decision: AI-Powered Adaptive Optimization in Continuous Pharmaceutical Manufacturing.”"
 
     Patents:
-      - title: Machine Learning Framework for Prediction and Assignment of 2D NMR Spectra
-        authors:
-          - Pengyu Hong
-          - Yunrui Li
-          - Hao Xu
-        publisher: US Patent App. 63/708,341
+      - bullet: "**Machine Learning Framework for Prediction and Assignment of 2D NMR Spectra.** Pengyu Hong, Yunrui Li, Hao Xu. US Patent App. 63/708,341."
 
-      - title: Cobalt(II)-Based Catalytic System for Asymmetric Intramolecular Aziridination
-        authors:
-          - X. Peter Zhang
-          - Hao Xu
-        publisher: US Patent App. 63/589,044
+      - bullet: "**Cobalt(II)-Based Catalytic System for Asymmetric Intramolecular Aziridination.** X. Peter Zhang, Hao Xu. US Patent App. 63/589,044."
