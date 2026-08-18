@@ -5,12 +5,24 @@ layout: default
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet" />
 <style>
+  @keyframes name-glow-pulse {
+    0%, 100% {
+      text-shadow: 0 0 4px currentColor, 0 0 8px rgba(255, 215, 0, 0.4);
+      opacity: 0.85;
+    }
+    50% {
+      text-shadow: 0 0 10px currentColor, 0 0 20px rgba(255, 215, 0, 0.8), 0 0 30px rgba(255, 215, 0, 0.5);
+      opacity: 1;
+    }
+  }
   .artistic-name {
+    display: inline-block;
     font-family: "Playfair Display", "Roboto Slab", serif;
     font-style: italic;
     font-weight: 600;
     color: #333333;
     letter-spacing: 0.5px;
+    animation: name-glow-pulse 2s ease-in-out infinite;
   }
 </style>
 <div class="post">
