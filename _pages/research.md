@@ -11,9 +11,10 @@ nav_order: 2
 
 Embedding atomic-level physical and chemical mechanisms&mdash;spectral properties, atom interactions, evolutionary sequence context&mdash;directly into deep networks, so models predict molecular properties and structures through physically grounded reasoning rather than superficial correlations.
 
-- Li, Y.<sup>&dagger;</sup>, **Xu, H.**<sup>&dagger;</sup>, Kumar, A., Wang, D., Heiss, C., Azadi, P., Hong, P.\* "TransPeakNet for Solvent-Aware 2D NMR Prediction via Multi-Task Pre-Training and Unsupervised Learning." *Communications Chemistry*, 2025.
-- Wang, Y.<sup>&dagger;</sup>, Li, Y.<sup>&dagger;</sup>, Liu, L., Hong, P., **Xu, H.**\* "Advancing Drug Discovery with Enhanced Chemical Understanding via Asymmetric Contrastive Multimodal Learning." *J. Chem. Inf. Model.*, 2025.
+- Meng, Z.<sup>&dagger;</sup>, Bai, Z.<sup>&dagger;</sup>, et al., Oldham, W. M.\*, Meng, Z.\*, **Xu, H.**\*, Loscalzo, J. "ExplainBind: Explainable Physicochemical Determinants of Protein-Ligand Binding via Non-Covalent Interactions." *bioRxiv*, 2026.
+- Wang, B., Zhang, H., Cui, T., Wang, X., Song, J.\*, **Xu, H.**\* "EvoRMD: Integrating Biological Context and Evolutionary RNA Language Models for Interpretable Prediction of RNA Modifications." *Genome Biology*, 2026.
 - Wang, Y., Lu, W., Liu, L., **Xu, H.**\*, Ling, H.\* "How Well Can Off-the-Shelf LLMs Elucidate Molecular Structures from Mass Spectra Using Chain-of-Thought Reasoning?" *J. Cheminform.*, 2026.
+- Li, Y.<sup>&dagger;</sup>, **Xu, H.**<sup>&dagger;</sup>, Kumar, A., Wang, D., Heiss, C., Azadi, P., Hong, P.\* "TransPeakNet for Solvent-Aware 2D NMR Prediction via Multi-Task Pre-Training and Unsupervised Learning." *Communications Chemistry*, 2025.
 
 ### AI for Medicine
 
