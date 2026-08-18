@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /publications/
-title: publications
+title: Publications
 description: All publications, grouped by year (reverse chronological). Generated automatically from _bibliography/papers.bib by jekyll-scholar.
 nav: true
 nav_order: 3
