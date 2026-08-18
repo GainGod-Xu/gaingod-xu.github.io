@@ -28,29 +28,25 @@ cv:
     Education:
       - institution: Boston College
         location: Boston, MA
-        area: Chemistry
-        studyType: Ph.D.
+        studyType: Ph.D. in Chemistry
         start_date: 2017-08
         end_date: 2022-12
 
       - institution: Georgia Institute of Technology
         location: Atlanta, GA
-        area: Computer Science
-        studyType: M.S.
+        studyType: M.S. in Computer Science
         start_date: 2020-08
         end_date: 2022-08
 
       - institution: Southern Methodist University
         location: Dallas, TX
-        area: Computational Chemistry
-        studyType: M.S.
+        studyType: M.S. in Computational Chemistry
         start_date: 2015-08
         end_date: 2017-05
 
       - institution: China Agricultural University
         location: Beijing, China
-        area: Chemistry & Finance
-        studyType: B.S. / B.Econ.
+        studyType: B.S. in Chemistry & B.Econ. in Finance
         start_date: 2011-09
         end_date: 2015-07
 
