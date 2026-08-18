@@ -16,7 +16,25 @@ profile:
       <a href="https://scholar.google.com/citations?user=tcYaFAcAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
       <a href="https://orcid.org/0000-0002-9795-5633" target="_blank" title="ORCID"><i class="ai ai-orcid"></i></a>
     </p>
-    <p><em>Courage is the grace under pressure.</em></p>
+    <p>
+      <em class="glow-text">Courage is the grace under pressure.</em>
+    </p>
+    <style>
+      @keyframes glow-pulse {
+        0%, 100% {
+          text-shadow: 0 0 4px currentColor, 0 0 8px rgba(255, 215, 0, 0.4);
+          opacity: 0.85;
+        }
+        50% {
+          text-shadow: 0 0 10px currentColor, 0 0 20px rgba(255, 215, 0, 0.8), 0 0 30px rgba(255, 215, 0, 0.5);
+          opacity: 1;
+        }
+      }
+      .glow-text {
+        display: inline-block;
+        animation: glow-pulse 2s ease-in-out infinite;
+      }
+    </style>
 
 news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
