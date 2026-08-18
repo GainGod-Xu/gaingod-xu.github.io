@@ -2,7 +2,7 @@
 layout: page
 permalink: /people/
 title: People
-description: Mentees and collaborators.
+description: Junior and Senior Collaborators.
 nav: true
 nav_order: 4
 ---
