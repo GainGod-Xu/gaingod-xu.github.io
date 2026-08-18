@@ -42,38 +42,6 @@
       }
     }
 
-    function quadPoint(p0, p1, p2, t) {
-      var mt = 1 - t;
-      return {
-        x: mt * mt * p0.x + 2 * mt * t * p1.x + t * t * p2.x,
-        y: mt * mt * p0.y + 2 * mt * t * p1.y + t * t * p2.y,
-      };
-    }
-
-    function spawnQiRainbow(x, y) {
-      var dir = Math.random() < 0.5 ? -1 : 1;
-      var endX = x + dir * randRange(340, 520);
-      var endY = y + randRange(-140, 140);
-      var ctrlX = x + dir * randRange(140, 240);
-      var ctrlY = y - randRange(100, 180);
-      particles.push({
-        type: 'beam',
-        x: 0,
-        y: 0,
-        vx: 0,
-        vy: 0,
-        p0: { x: x, y: y },
-        p1: { x: ctrlX, y: ctrlY },
-        p2: { x: endX, y: endY },
-        t: 0,
-        growSpeed: randRange(0.05, 0.07),
-        alpha: 1,
-        decay: 0,
-        width: randRange(4, 6),
-        hueBase: randRange(185, 265),
-      });
-    }
-
     function step() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       for (var i = particles.length - 1; i >= 0; i--) {
@@ -103,32 +71,6 @@
           ctx.restore();
           p.vx *= 0.96;
           p.vy *= 0.96;
-        } else if (p.type === 'beam') {
-          if (p.t < 1) {
-            p.t = Math.min(1, p.t + p.growSpeed);
-          } else {
-            p.alpha -= 0.02;
-          }
-          var steps = 30;
-          var upTo = Math.max(1, Math.floor(steps * p.t));
-          ctx.save();
-          ctx.shadowColor = '#a6efff';
-          ctx.shadowBlur = 18;
-          ctx.lineWidth = p.width;
-          ctx.lineCap = 'round';
-          var prev = quadPoint(p.p0, p.p1, p.p2, 0);
-          for (var s = 1; s <= upTo; s++) {
-            var tt = s / steps;
-            var pt = quadPoint(p.p0, p.p1, p.p2, tt);
-            ctx.globalAlpha = Math.max(p.alpha, 0) * (0.4 + 0.6 * (s / upTo));
-            ctx.strokeStyle = 'hsl(' + (p.hueBase + tt * 70) + ', 90%, 75%)';
-            ctx.beginPath();
-            ctx.moveTo(prev.x, prev.y);
-            ctx.lineTo(pt.x, pt.y);
-            ctx.stroke();
-            prev = pt;
-          }
-          ctx.restore();
         }
 
         if (p.alpha <= 0) {
@@ -156,10 +98,6 @@
       ensureRunning();
     });
 
-    window.xfx = {
-      spawnQiRainbow: spawnQiRainbow,
-      ensureRunning: ensureRunning,
-    };
   })();
 </script> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">People</h1> <p class="post-description">Junior and Senior Collaborators.</p> </header> <article> <h3 id="junior-collaborators">Junior Collaborators</h3> <p><strong><a href="https://scholar.google.com/citations?user=Q4DnRVgAAAAJ" rel="external nofollow noopener" target="_blank">Xi Xiao</a></strong> / University of Alabama at Birmingham <br>2024–Present <br>Co-authored five collaborative papers spanning parameter-efficient adaptation and multimodal alignment, including his first-author work in <em>Not All Directions Matter</em> (ACL 2026), <em>Staying VIGILant</em> (ECCV 2026).</p> <p><strong><a href="https://scholar.google.com/citations?user=gM9yaCkAAAAJ" rel="external nofollow noopener" target="_blank">Zhaohan Meng</a></strong> / University of Glasgow <br>2024–Present <br>Co-authored 2 paper (his first-author manuscript submitted); developed a foundational model for protein–ligand binding prediction.</p> <p><strong><a href="https://www.linkedin.com/in/zzy1" rel="external nofollow noopener" target="_blank">Zhengyang Zhou, Ph.D.</a></strong> / PathAI <br>2023–2025 <br>Co-authored 3 papers, including his first-author work in <em>Communications Chemistry</em>.</p> <p><strong><a href="https://scholar.google.com/citations?user=KETyudsAAAAJ" rel="external nofollow noopener" target="_blank">Yunrui Li</a></strong> / Brandeis University <br>2023–2025 <br>Co-authored 4 papers, including her first-author work in <em>Communications Chemistry</em> and <em>Journal of Chemical Information and Modeling (JCIM)</em>.</p> <p><strong><a href="https://scholar.google.com/citations?user=il36IMQAAAAJ" rel="external nofollow noopener" target="_blank">Yifei Wang, Ph.D.</a></strong> / Biogen <br>2023–2024 <br>Co-authored 1 paper, her first-author in <em>Journal of Chemical Information and Modeling</em>.</p> <h3 id="senior-collaborators">Senior Collaborators</h3> <p><strong><a href="https://scholar.google.com/citations?user=ZfAwwkUAAAAJ" rel="external nofollow noopener" target="_blank">Joseph Loscalzo</a></strong> — Brigham and Women’s Hospital &amp; Harvard Medical School</p> <p><strong><a href="https://scholar.google.com/citations?user=5ojAGvwAAAAJ" rel="external nofollow noopener" target="_blank">Ruisheng Wang</a></strong> — Channing Division of Network Medicine, Brigham and Women’s Hospital &amp; Harvard Medical School</p> <p><strong><a href="https://scholar.google.com/citations?user=v3w4IYUAAAAJ" rel="external nofollow noopener" target="_blank">Haibin Ling</a></strong> — Department of Computer Science, Stony Brook University</p> <p><strong><a href="https://scholar.google.com/citations?user=in9oae8AAAAJ" rel="external nofollow noopener" target="_blank">Jiangning Song</a></strong> — Monash Biomedicine Discovery Institute, Monash University</p> <p><strong><a href="https://scholar.google.com/citations?user=5jJKFVcAAAAJ" rel="external nofollow noopener" target="_blank">Zaiqiao Meng</a></strong> — School of Computing Science, University of Glasgow</p> <p><strong><a href="https://scholar.google.com/citations?user=pvDa8pcAAAAJ" rel="external nofollow noopener" target="_blank">Pengyu Hong</a></strong> — Department of Computer Science, Brandeis University</p> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Hao Xu. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
   window.alFolio = {
