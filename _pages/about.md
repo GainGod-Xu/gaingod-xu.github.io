@@ -19,7 +19,7 @@ profile:
 
 news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false # includes social icons at the bottom of the page
 ---
 
 Dr. Hao Xu is currently an Investigator at Brigham and Women's Hospital and Instructor in Medicine at Harvard Medical School. His research lies at the intersection of artificial intelligence and biomedical science, focusing on building data-efficient and interpretable AI systems to advance drug discovery and healthcare.
