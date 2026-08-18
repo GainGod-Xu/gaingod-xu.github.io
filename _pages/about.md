@@ -1,6 +1,6 @@
 ---
 layout: about
-title: About
+title: PI
 permalink: /
 subtitle: Investigator, Brigham and Women's Hospital &bull; Instructor in Medicine, Harvard Medical School
 
