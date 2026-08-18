@@ -13,6 +13,8 @@ nav_order: 3
 
 {% include bib_search.liquid %}
 
+<p><sup>&dagger;</sup> denotes equal contribution; * denotes the corresponding author.</p>
+
 <div class="publications">
 
 {% bibliography %}
