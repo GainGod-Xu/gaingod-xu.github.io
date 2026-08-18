@@ -262,19 +262,19 @@ layout: default
     });
 
     window.addEventListener('load', function () {
-      var w = window.innerWidth;
-      var h = window.innerHeight;
-      var bursts = [
-        { x: w * 0.25, y: h * 0.3, delay: 200 },
-        { x: w * 0.5, y: h * 0.22, delay: 600 },
-        { x: w * 0.75, y: h * 0.32, delay: 1000 },
-      ];
-      bursts.forEach(function (b) {
-        setTimeout(function () {
-          spawnFirework(b.x, b.y);
-          ensureRunning();
-        }, b.delay);
-      });
+      var duration = 5000;
+      var interval = 450;
+      var elapsed = 0;
+      var timer = setInterval(function () {
+        var w = window.innerWidth;
+        var h = window.innerHeight;
+        spawnFirework(randRange(w * 0.15, w * 0.85), randRange(h * 0.15, h * 0.45));
+        ensureRunning();
+        elapsed += interval;
+        if (elapsed >= duration) {
+          clearInterval(timer);
+        }
+      }, interval);
     });
   })();
 </script>
