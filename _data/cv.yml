@@ -51,27 +51,26 @@ cv:
         end_date: 2015-07
 
     Experience:
-      - company: Brigham and Women's Hospital, Harvard Medical School
-        position: Investigator & Instructor in Medicine
+      - company: Department of Medicine, Brigham and Women's Hospital, Harvard Medical School
+        position: Investigator & Instructor
         location: Boston, MA
         start_date: 2026-04
         end_date: present
 
-      - company: Brigham and Women's Hospital, Harvard Medical School
-        position: Research Fellow in AI & Medicine
-        summary: Department of Medicine
+      - company: Department of Medicine, Brigham and Women's Hospital, Harvard Medical School
+        position: Research Fellow
         location: Boston, MA
         start_date: 2024-06
         end_date: 2026-04
 
-      - company: Network Science Institute, Northeastern University
-        position: Affiliated Research Fellow, Department of Physics
+      - company:  Department of Physics, Network Science Institute, Northeastern University
+        position: Affiliated Research Fellow
         location: Boston, MA
         start_date: 2024-06
         end_date: 2026-04
 
       - company: Department of Computer Science, Brandeis University
-        position: Postdoctoral Associate in ML
+        position: Postdoctoral Associate
         location: Waltham, MA
         start_date: 2023-04
         end_date: 2024-05
