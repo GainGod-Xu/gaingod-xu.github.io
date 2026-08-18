@@ -123,20 +123,22 @@
       }
     }
 
-    function spawnSnowflakes(x, y) {
-      var count = 10;
+    function spawnSwordQi(x, y) {
+      var count = 6;
+      var baseAngle = randRange(0, Math.PI * 2);
       for (var i = 0; i < count; i++) {
+        var angle = baseAngle + (Math.PI * 2 * i) / count + randRange(-0.15, 0.15);
+        var speed = randRange(14, 24);
         particles.push({
-          type: 'snow',
-          x: x + randRange(-6, 6),
-          y: y + randRange(-6, 6),
-          vx: randRange(-0.6, 0.6),
-          vy: randRange(0.6, 1.6),
+          type: 'qi',
+          x: x,
+          y: y,
+          vx: Math.cos(angle) * speed,
+          vy: Math.sin(angle) * speed,
           alpha: 1,
-          size: randRange(10, 18),
-          rotation: randRange(0, Math.PI * 2),
-          rotationSpeed: randRange(-0.03, 0.03),
-          decay: randRange(0.006, 0.012),
+          length: randRange(55, 95),
+          width: randRange(2, 3.5),
+          decay: randRange(0.05, 0.08),
         });
       }
     }
@@ -156,16 +158,27 @@
           ctx.beginPath();
           ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
           ctx.fill();
-        } else {
-          p.rotation += p.rotationSpeed;
+        } else if (p.type === 'qi') {
+          var speedMag = Math.sqrt(p.vx * p.vx + p.vy * p.vy) || 1;
+          var dx = (p.vx / speedMag) * p.length;
+          var dy = (p.vy / speedMag) * p.length;
           ctx.globalAlpha = Math.max(p.alpha, 0);
-          ctx.fillStyle = '#bfe3ff';
-          ctx.font = p.size + 'px serif';
           ctx.save();
-          ctx.translate(p.x, p.y);
-          ctx.rotate(p.rotation);
-          ctx.fillText('❄', -p.size / 2, p.size / 2);
+          ctx.shadowColor = '#8fe9ff';
+          ctx.shadowBlur = 14;
+          var grad = ctx.createLinearGradient(p.x - dx, p.y - dy, p.x, p.y);
+          grad.addColorStop(0, 'rgba(180, 245, 255, 0)');
+          grad.addColorStop(1, '#eafcff');
+          ctx.strokeStyle = grad;
+          ctx.lineWidth = p.width;
+          ctx.lineCap = 'round';
+          ctx.beginPath();
+          ctx.moveTo(p.x - dx, p.y - dy);
+          ctx.lineTo(p.x, p.y);
+          ctx.stroke();
           ctx.restore();
+          p.vx *= 0.92;
+          p.vy *= 0.92;
         }
 
         if (p.alpha <= 0) {
@@ -189,12 +202,12 @@
     }
 
     document.addEventListener('click', function (e) {
-      spawnSnowflakes(e.clientX, e.clientY);
+      spawnSwordQi(e.clientX, e.clientY);
       ensureRunning();
     });
 
     window.addEventListener('load', function () {
-      var duration = 5000;
+      var duration = 3000;
       var interval = 450;
       var elapsed = 0;
       var timer = setInterval(function () {
