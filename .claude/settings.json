@@ -3,7 +3,8 @@
     "allow": [
       "Bash(python3 -c ' *)",
       "Bash(git commit -m ' *)",
-      "Bash(echo \"exit: $?\")"
+      "Bash(echo \"exit: $?\")",
+      "Bash(curl -s \"https://rubygems.org/api/v1/gems/al_folio_cv.json\")"
     ]
   }
 }
