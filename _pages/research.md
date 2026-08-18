@@ -15,7 +15,7 @@ Embedding atomic-level physical and chemical mechanisms&mdash;spectral propertie
 - Wang, Y.<sup>&dagger;</sup>, Li, Y.<sup>&dagger;</sup>, Liu, L., Hong, P., **Xu, H.**\* "Advancing Drug Discovery with Enhanced Chemical Understanding via Asymmetric Contrastive Multimodal Learning." *J. Chem. Inf. Model.*, 2025.
 - Wang, Y., Lu, W., Liu, L., **Xu, H.**\*, Ling, H.\* "How Well Can Off-the-Shelf LLMs Elucidate Molecular Structures from Mass Spectra Using Chain-of-Thought Reasoning?" *J. Cheminform.*, 2026.
 
-### AI for Medicine/Health
+### AI for Medicine
 
 Bridging micro-scale determinants&mdash;non-covalent interactions, evolutionary context, imaging biomarkers&mdash;to macro-level clinical and biological outcomes, in service of interpretable drug discovery and diagnostic models.
 
