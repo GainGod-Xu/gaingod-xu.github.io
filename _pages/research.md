@@ -18,7 +18,7 @@ Embedding atomic-level physical and chemical mechanisms&mdash;spectral propertie
 
 ### AI4Health
 
-Bridging micro-scale determinants&mdash;non-covalent interactions, evolutionary context, imaging biomarkers&mdash;to macro-level clinical and biological outcomes, in service of interpretable drug discovery and diagnostic models.
+Building multimodal models that combine electronic health records (EHR) and medical images for clinical prediction and diagnosis.
 
 - **Deep Learning-Based MRI Model for Predicting P53-Mutated Hepatocellular Carcinoma.** Jia, L., Yang, Q., Jiang, H., Huang, G., Wang, Z., Guo, X., Li, J., *Xu, H.*\*, Lei, J.\* *BMC Medical Imaging*, 2025.
 
