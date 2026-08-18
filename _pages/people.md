@@ -14,7 +14,7 @@ nav_order: 5
 <br>Co-authored five collaborative papers spanning parameter-efficient adaptation and multimodal alignment, including *Not All Directions Matter* (ACL 2026), *HyperAdaLoRA* (ACL Findings 2026), *Staying VIGILant* (ECCV 2026), *Rethinking Layer-Wise Information Allocation* (ACM MM 2026), and *Describe Anything in Medical Images* (ICML 2025 Workshop).
 
 **[Zhaohan Meng](https://scholar.google.com/citations?user=gM9yaCkAAAAJ)** / University of Glasgow
-<br>2024&ndash;2026
+<br>2024&ndash;Present
 <br>Co-authored 1 paper (first-author manuscript submitted); developed a foundational model for protein&ndash;ligand binding prediction.
 
 **[Zhengyang Zhou, Ph.D.](https://www.linkedin.com/in/zzy1)** / PathAI
