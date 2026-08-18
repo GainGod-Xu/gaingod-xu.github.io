@@ -7,7 +7,7 @@ nav: true
 nav_order: 5
 ---
 
-### Mentees
+### Junior Collaborators
 
 **Yifei Wang, Ph.D.** / Biogen
 <br>2023&ndash;2024 &middot; Graduate Student at Brandeis University &middot; Mentoring role: Co-mentor
