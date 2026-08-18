@@ -4,7 +4,7 @@ permalink: /teaching/
 title: Teaching
 description: Teaching experience in chemistry.
 nav: true
-nav_order: 6
+nav_order: 5
 ---
 
 ### Boston College
