@@ -150,3 +150,131 @@ layout: default
     {% endif %}
   </article>
 </div>
+
+<canvas id="fx-canvas" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 9999;"></canvas>
+<script>
+  (function () {
+    var canvas = document.getElementById('fx-canvas');
+    var ctx = canvas.getContext('2d');
+    var particles = [];
+    var running = false;
+
+    function resize() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    resize();
+    window.addEventListener('resize', resize);
+
+    function randRange(a, b) {
+      return a + Math.random() * (b - a);
+    }
+
+    function spawnFirework(x, y) {
+      var count = 40;
+      var hue = Math.floor(randRange(0, 360));
+      for (var i = 0; i < count; i++) {
+        var angle = (Math.PI * 2 * i) / count + randRange(-0.05, 0.05);
+        var speed = randRange(2, 6);
+        particles.push({
+          type: 'spark',
+          x: x,
+          y: y,
+          vx: Math.cos(angle) * speed,
+          vy: Math.sin(angle) * speed,
+          alpha: 1,
+          color: 'hsl(' + (hue + randRange(-20, 20)) + ', 90%, ' + randRange(55, 70) + '%)',
+          size: randRange(1.5, 3),
+          gravity: 0.045,
+          decay: randRange(0.012, 0.02),
+        });
+      }
+    }
+
+    function spawnSnowflakes(x, y) {
+      var count = 10;
+      for (var i = 0; i < count; i++) {
+        particles.push({
+          type: 'snow',
+          x: x + randRange(-6, 6),
+          y: y + randRange(-6, 6),
+          vx: randRange(-0.6, 0.6),
+          vy: randRange(0.6, 1.6),
+          alpha: 1,
+          size: randRange(10, 18),
+          rotation: randRange(0, Math.PI * 2),
+          rotationSpeed: randRange(-0.03, 0.03),
+          decay: randRange(0.006, 0.012),
+        });
+      }
+    }
+
+    function step() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      for (var i = particles.length - 1; i >= 0; i--) {
+        var p = particles[i];
+        p.x += p.vx;
+        p.y += p.vy;
+        p.alpha -= p.decay;
+
+        if (p.type === 'spark') {
+          p.vy += p.gravity;
+          ctx.globalAlpha = Math.max(p.alpha, 0);
+          ctx.fillStyle = p.color;
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+          ctx.fill();
+        } else {
+          p.rotation += p.rotationSpeed;
+          ctx.globalAlpha = Math.max(p.alpha, 0);
+          ctx.fillStyle = '#bfe3ff';
+          ctx.font = p.size + 'px serif';
+          ctx.save();
+          ctx.translate(p.x, p.y);
+          ctx.rotate(p.rotation);
+          ctx.fillText('❄', -p.size / 2, p.size / 2);
+          ctx.restore();
+        }
+
+        if (p.alpha <= 0) {
+          particles.splice(i, 1);
+        }
+      }
+      ctx.globalAlpha = 1;
+
+      if (particles.length > 0) {
+        requestAnimationFrame(step);
+      } else {
+        running = false;
+      }
+    }
+
+    function ensureRunning() {
+      if (!running) {
+        running = true;
+        requestAnimationFrame(step);
+      }
+    }
+
+    document.addEventListener('click', function (e) {
+      spawnSnowflakes(e.clientX, e.clientY);
+      ensureRunning();
+    });
+
+    window.addEventListener('load', function () {
+      var w = window.innerWidth;
+      var h = window.innerHeight;
+      var bursts = [
+        { x: w * 0.25, y: h * 0.3, delay: 200 },
+        { x: w * 0.5, y: h * 0.22, delay: 600 },
+        { x: w * 0.75, y: h * 0.32, delay: 1000 },
+      ];
+      bursts.forEach(function (b) {
+        setTimeout(function () {
+          spawnFirework(b.x, b.y);
+          ensureRunning();
+        }, b.delay);
+      });
+    });
+  })();
+</script>
