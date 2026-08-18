@@ -1,0 +1,111 @@
+cv:
+  name: Hao Xu
+  label: Investigator, Brigham and Women's Hospital; Instructor in Medicine, Harvard Medical School
+  email: haxu@bwh.harvard.edu
+  location: Boston, MA
+  image: ""
+  summary: >
+    Research in AI for Science focuses on leveraging micro-scale physical and chemical mechanisms to build
+    interpretable AI models for molecular and biological discovery, bridging micro-scale determinants and
+    macro-level outcomes across drug discovery, medicine, and chemistry.
+
+  social_networks:
+    - network: GitHub
+      username: GainGod-Xu
+    - network: LinkedIn
+      username: hao-xu-62bb11169
+    - network: Google Scholar
+      username: tcYaFAcAAAAJ
+    - network: ORCID
+      username: 0000-0002-9795-5633
+
+  address:
+    city: Boston
+    region: MA
+    countryCode: US
+
+  sections:
+    Education:
+      - institution: Boston College
+        location: Boston, MA
+        area: Chemistry
+        studyType: Ph.D.
+        start_date: 2017-08
+        end_date: 2022-12
+
+      - institution: Georgia Institute of Technology
+        location: Atlanta, GA
+        area: Computer Science
+        studyType: M.S.
+        start_date: 2020-08
+        end_date: 2022-08
+
+      - institution: Southern Methodist University
+        location: Dallas, TX
+        area: Computational Chemistry
+        studyType: M.S.
+        start_date: 2015-08
+        end_date: 2017-05
+
+      - institution: China Agricultural University
+        location: Beijing, China
+        area: Chemistry & Finance
+        studyType: B.S. / B.Econ.
+        start_date: 2011-09
+        end_date: 2015-07
+
+    Experience:
+      - company: Brigham and Women's Hospital, Harvard Medical School
+        position: Investigator & Instructor in Medicine
+        location: Boston, MA
+        start_date: 2026-04
+        end_date: present
+
+      - company: Brigham and Women's Hospital, Harvard Medical School
+        position: Research Fellow in AI & Medicine, Department of Medicine
+        location: Boston, MA
+        start_date: 2024-06
+        end_date: 2026-04
+
+      - company: Network Science Institute, Northeastern University
+        position: Affiliated Research Fellow, Department of Physics
+        location: Boston, MA
+        start_date: 2024-06
+        end_date: 2026-04
+
+      - company: Brandeis University
+        position: Postdoctoral Associate in ML, Department of Computer Science
+        location: Waltham, MA
+        start_date: 2023-04
+        end_date: 2024-05
+
+      - company: GlycoMIP (NSF-funded Materials Innovation Platform, Virginia Tech & University of Georgia)
+        position: Affiliated Postdoctoral Associate
+        start_date: 2023-04
+        end_date: 2024-05
+
+    Awards:
+      - title: M&SOM 2025 Data-Driven Research Competition Finalist
+        authors:
+          - Wenting Li
+          - Yu Jiang
+          - Yige Wang
+          - Hao Xu
+        date: 2025
+        awarder: Manufacturing & Service Operations Management (MSOM) Society
+        url: https://assets.london.edu/hxo16fanegqh/6Gl6wbsZy6NnP7TWDcUB4F/b59bc7df615b33dc60d159d347b3fdd9/2025_Main_MSOM_Conference_Program_May30.pdf
+        summary: "For “From Data to Decision: AI-Powered Adaptive Optimization in Continuous Pharmaceutical Manufacturing.”"
+
+    Patents:
+      - title: Machine Learning Framework for Prediction and Assignment of 2D NMR Spectra
+        authors:
+          - Pengyu Hong
+          - Yunrui Li
+          - Hao Xu
+        publisher: US Patent App. 63/708,341
+
+      - title: Cobalt(II)-Based Catalytic System for Asymmetric Intramolecular Aziridination
+        authors:
+          - X. Peter Zhang
+          - Hao Xu
+        publisher: US Patent App. 63/589,044

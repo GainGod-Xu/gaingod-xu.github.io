@@ -1,17 +1,28 @@
-## Steps
-* Step 1
-Create Your a empyty repository for your GitHub Personal Website  : https://www.khanacademy.org/computing/computer-programming/html-css/web-development-tools/a/hosting-your-website-on-github
-* Step 2
-Delete everything in the created repository if applicable. 
-* Step 3
-Download my personal website repository and put it into your repository.
-* Step 4
-Replace my information with yours inside index.html.
+# gaingod-xu.github.io
 
-## Notes:
-* It is easy to upload and edit files if you clone your repository locally.
-* It is easy to preview with local file via index.html.
-* old_index.html has everything in a single page, which is not convenient to switch the contents and not easy to organize/code. 
-## Resources:
-* Logos and quetos were generate on the following free web: https://cooltext.com/.
-* old_index.html was Inspired by fifteen718.
+Hao Xu's personal academic site, built on [al-folio](https://github.com/alshedivat/al-folio) (Jekyll).
+
+## Content
+
+- `_pages/about.md` — bio and profile
+- `_pages/research.md` — research directions with representative papers
+- `_pages/publications.md` + `_bibliography/papers.bib` — full publication list, auto-grouped by year
+- `_pages/cv.md` + `_data/cv.yml` — education, experience, awards, patents
+- `_pages/people.md` — mentees and collaborators
+- `_pages/teaching.md` — teaching experience
+- `_data/socials.yml` — social/contact links
+
+## Local development
+
+Requires Ruby (see `.github/workflows/deploy.yml` for the pinned version) and Node.
+
+```bash
+bundle install
+bundle exec jekyll serve
+```
+
+## Deployment
+
+Pushes to `main` trigger `.github/workflows/deploy.yml`, which builds the site and
+publishes it to the `gh-pages` branch. GitHub Pages (Settings → Pages) should be
+set to deploy from that branch.
