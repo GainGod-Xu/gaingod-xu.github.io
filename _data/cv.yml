@@ -58,7 +58,8 @@ cv:
         end_date: present
 
       - company: Brigham and Women's Hospital, Harvard Medical School
-        position: Research Fellow in AI & Medicine, Department of Medicine
+        position: Research Fellow in AI & Medicine
+        summary: Department of Medicine
         location: Boston, MA
         start_date: 2024-06
         end_date: 2026-04
