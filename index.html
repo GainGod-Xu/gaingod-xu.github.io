@@ -138,7 +138,7 @@
           alpha: 1,
           length: randRange(55, 95),
           width: randRange(2, 3.5),
-          decay: randRange(0.05, 0.08),
+          decay: randRange(0.02, 0.032),
         });
       }
     }
@@ -177,8 +177,8 @@
           ctx.lineTo(p.x, p.y);
           ctx.stroke();
           ctx.restore();
-          p.vx *= 0.92;
-          p.vy *= 0.92;
+          p.vx *= 0.96;
+          p.vy *= 0.96;
         }
 
         if (p.alpha <= 0) {
@@ -207,7 +207,7 @@
     });
 
     window.addEventListener('load', function () {
-      var duration = 5000;
+      var duration = 3000;
       var interval = 450;
       var elapsed = 0;
       var timer = setInterval(function () {
