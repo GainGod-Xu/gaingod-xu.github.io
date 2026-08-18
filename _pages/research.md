@@ -20,8 +20,6 @@ Embedding atomic-level physical and chemical mechanisms&mdash;spectral propertie
 
 Bridging micro-scale determinants&mdash;non-covalent interactions, evolutionary context, imaging biomarkers&mdash;to macro-level clinical and biological outcomes, in service of interpretable drug discovery and diagnostic models.
 
-- Meng, Z.<sup>&dagger;</sup>, Bai, Z.<sup>&dagger;</sup>, et al., Oldham, W. M.\*, Meng, Z.\*, **Xu, H.**\*, Loscalzo, J. "ExplainBind: Explainable Physicochemical Determinants of Protein-Ligand Binding via Non-Covalent Interactions." *bioRxiv*, 2026.
-- Wang, B., Zhang, H., Cui, T., Wang, X., Song, J.\*, **Xu, H.**\* "EvoRMD: Integrating Biological Context and Evolutionary RNA Language Models for Interpretable Prediction of RNA Modifications." *Genome Biology*, 2026.
 - Jia, L., Yang, Q., Jiang, H., Huang, G., Wang, Z., Guo, X., Li, J., **Xu, H.**\*, Lei, J.\* "Deep Learning-Based MRI Model for Predicting P53-Mutated Hepatocellular Carcinoma." *BMC Medical Imaging*, 2025.
 
 ### AI Fundamentals
