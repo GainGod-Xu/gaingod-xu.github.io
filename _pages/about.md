@@ -9,13 +9,14 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>
+    <p style="font-size: 1.5rem;">
       <a href="mailto:haoxu0303@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
       <a href="https://github.com/GainGod-Xu" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
       <a href="https://www.linkedin.com/in/hao-xu-62bb11169/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
       <a href="https://scholar.google.com/citations?user=tcYaFAcAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
       <a href="https://orcid.org/0000-0002-9795-5633" target="_blank" title="ORCID"><i class="ai ai-orcid"></i></a>
     </p>
+    <p><em>Courage is the grace under pressure.</em></p>
 
 news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
