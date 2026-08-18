@@ -134,25 +134,6 @@ layout: default
       return a + Math.random() * (b - a);
     }
 
-    function spawnPetal(x) {
-      particles.push({
-        type: 'petal',
-        x: x,
-        y: -20,
-        vx: randRange(-0.3, 0.3),
-        vy: randRange(0.8, 1.6),
-        alpha: 1,
-        size: randRange(8, 14),
-        rotation: randRange(0, Math.PI * 2),
-        rotationSpeed: randRange(-0.04, 0.04),
-        sway: randRange(0.6, 1.6),
-        swaySpeed: randRange(0.015, 0.03),
-        swayPhase: randRange(0, Math.PI * 2),
-        hue: randRange(330, 350),
-        decay: randRange(0.0015, 0.003),
-      });
-    }
-
     function spawnSwordQi(x, y) {
       var count = 6;
       var baseAngle = randRange(0, Math.PI * 2);
@@ -181,28 +162,7 @@ layout: default
         p.y += p.vy;
         p.alpha -= p.decay;
 
-        if (p.type === 'petal') {
-          p.rotation += p.rotationSpeed;
-          p.swayPhase += p.swaySpeed;
-          var drawX = p.x + Math.sin(p.swayPhase) * p.sway * 20;
-          ctx.globalAlpha = Math.max(p.alpha, 0);
-          ctx.save();
-          ctx.translate(drawX, p.y);
-          ctx.rotate(p.rotation);
-          ctx.fillStyle = 'hsl(' + p.hue + ', 85%, 82%)';
-          ctx.beginPath();
-          ctx.ellipse(0, 0, p.size, p.size * 0.6, 0, 0, Math.PI * 2);
-          ctx.fill();
-          ctx.fillStyle = 'hsl(' + p.hue + ', 70%, 70%)';
-          ctx.beginPath();
-          ctx.ellipse(0, 0, p.size * 0.35, p.size * 0.2, 0, 0, Math.PI * 2);
-          ctx.fill();
-          ctx.restore();
-
-          if (p.y > canvas.height + 20) {
-            p.alpha = 0;
-          }
-        } else if (p.type === 'qi') {
+        if (p.type === 'qi') {
           var speedMag = Math.sqrt(p.vx * p.vx + p.vy * p.vy) || 1;
           var dx = (p.vx / speedMag) * p.length;
           var dy = (p.vy / speedMag) * p.length;
