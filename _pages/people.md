@@ -11,11 +11,11 @@ nav_order: 5
 
 **[Xi Xiao](https://scholar.google.com/citations?user=Q4DnRVgAAAAJ)** / University of Alabama at Birmingham
 <br>2024&ndash;Present
-<br>Co-authored five collaborative papers spanning parameter-efficient adaptation and multimodal alignment, including *Not All Directions Matter* (ACL 2026), *HyperAdaLoRA* (ACL Findings 2026), *Staying VIGILant* (ECCV 2026), *Rethinking Layer-Wise Information Allocation* (ACM MM 2026), and *Describe Anything in Medical Images* (ICML 2025 Workshop).
+<br>Co-authored five collaborative papers spanning parameter-efficient adaptation and multimodal alignment, including first-author work in *Not All Directions Matter* (ACL 2026), *Staying VIGILant* (ECCV 2026).
 
 **[Zhaohan Meng](https://scholar.google.com/citations?user=gM9yaCkAAAAJ)** / University of Glasgow
 <br>2024&ndash;Present
-<br>Co-authored 1 paper (first-author manuscript submitted); developed a foundational model for protein&ndash;ligand binding prediction.
+<br>Co-authored 2 paper (first-author manuscript submitted); developed a foundational model for protein&ndash;ligand binding prediction.
 
 **[Zhengyang Zhou, Ph.D.](https://www.linkedin.com/in/zzy1)** / PathAI
 <br>2023&ndash;2025
