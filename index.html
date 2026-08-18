@@ -4,7 +4,164 @@
   }
 </style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%A7%AC&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://gaingod-xu.github.io/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
     initTheme();
-  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item active"> <a class="nav-link" href="/">PI <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/research/">Research </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">Publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/people/">People </a> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">Teaching </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link"><i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&amp;display=swap" rel="stylesheet"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sakura-js@1.1.1/dist/sakura.min.css"> <script src="https://cdn.jsdelivr.net/npm/sakura-js@1.1.1/dist/sakura.min.js"></script> <style>
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item active"> <a class="nav-link" href="/">PI <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/research/">Research </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">Publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/people/">People </a> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">Teaching </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link"><i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <canvas id="fx-canvas" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 9999;"></canvas> <script>
+  (function () {
+    var canvas = document.getElementById('fx-canvas');
+    var ctx = canvas.getContext('2d');
+    var particles = [];
+    var running = false;
+
+    function resize() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    resize();
+    window.addEventListener('resize', resize);
+
+    function randRange(a, b) {
+      return a + Math.random() * (b - a);
+    }
+
+    function spawnSwordQi(x, y) {
+      var count = 6;
+      var baseAngle = randRange(0, Math.PI * 2);
+      for (var i = 0; i < count; i++) {
+        var angle = baseAngle + (Math.PI * 2 * i) / count + randRange(-0.15, 0.15);
+        var speed = randRange(14, 24);
+        particles.push({
+          type: 'qi',
+          x: x,
+          y: y,
+          vx: Math.cos(angle) * speed,
+          vy: Math.sin(angle) * speed,
+          alpha: 1,
+          length: randRange(55, 95),
+          width: randRange(2, 3.5),
+          decay: randRange(0.02, 0.032),
+        });
+      }
+    }
+
+    function quadPoint(p0, p1, p2, t) {
+      var mt = 1 - t;
+      return {
+        x: mt * mt * p0.x + 2 * mt * t * p1.x + t * t * p2.x,
+        y: mt * mt * p0.y + 2 * mt * t * p1.y + t * t * p2.y,
+      };
+    }
+
+    function spawnQiRainbow(x, y) {
+      var dir = Math.random() < 0.5 ? -1 : 1;
+      var endX = x + dir * randRange(340, 520);
+      var endY = y + randRange(-140, 140);
+      var ctrlX = x + dir * randRange(140, 240);
+      var ctrlY = y - randRange(100, 180);
+      particles.push({
+        type: 'beam',
+        x: 0,
+        y: 0,
+        vx: 0,
+        vy: 0,
+        p0: { x: x, y: y },
+        p1: { x: ctrlX, y: ctrlY },
+        p2: { x: endX, y: endY },
+        t: 0,
+        growSpeed: randRange(0.05, 0.07),
+        alpha: 1,
+        decay: 0,
+        width: randRange(4, 6),
+        hueBase: randRange(185, 265),
+      });
+    }
+
+    function step() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      for (var i = particles.length - 1; i >= 0; i--) {
+        var p = particles[i];
+        p.x += p.vx;
+        p.y += p.vy;
+        p.alpha -= p.decay;
+
+        if (p.type === 'qi') {
+          var speedMag = Math.sqrt(p.vx * p.vx + p.vy * p.vy) || 1;
+          var dx = (p.vx / speedMag) * p.length;
+          var dy = (p.vy / speedMag) * p.length;
+          ctx.globalAlpha = Math.max(p.alpha, 0);
+          ctx.save();
+          ctx.shadowColor = '#8fe9ff';
+          ctx.shadowBlur = 14;
+          var grad = ctx.createLinearGradient(p.x - dx, p.y - dy, p.x, p.y);
+          grad.addColorStop(0, 'rgba(180, 245, 255, 0)');
+          grad.addColorStop(1, '#eafcff');
+          ctx.strokeStyle = grad;
+          ctx.lineWidth = p.width;
+          ctx.lineCap = 'round';
+          ctx.beginPath();
+          ctx.moveTo(p.x - dx, p.y - dy);
+          ctx.lineTo(p.x, p.y);
+          ctx.stroke();
+          ctx.restore();
+          p.vx *= 0.96;
+          p.vy *= 0.96;
+        } else if (p.type === 'beam') {
+          if (p.t < 1) {
+            p.t = Math.min(1, p.t + p.growSpeed);
+          } else {
+            p.alpha -= 0.02;
+          }
+          var steps = 30;
+          var upTo = Math.max(1, Math.floor(steps * p.t));
+          ctx.save();
+          ctx.shadowColor = '#a6efff';
+          ctx.shadowBlur = 18;
+          ctx.lineWidth = p.width;
+          ctx.lineCap = 'round';
+          var prev = quadPoint(p.p0, p.p1, p.p2, 0);
+          for (var s = 1; s <= upTo; s++) {
+            var tt = s / steps;
+            var pt = quadPoint(p.p0, p.p1, p.p2, tt);
+            ctx.globalAlpha = Math.max(p.alpha, 0) * (0.4 + 0.6 * (s / upTo));
+            ctx.strokeStyle = 'hsl(' + (p.hueBase + tt * 70) + ', 90%, 75%)';
+            ctx.beginPath();
+            ctx.moveTo(prev.x, prev.y);
+            ctx.lineTo(pt.x, pt.y);
+            ctx.stroke();
+            prev = pt;
+          }
+          ctx.restore();
+        }
+
+        if (p.alpha <= 0) {
+          particles.splice(i, 1);
+        }
+      }
+      ctx.globalAlpha = 1;
+
+      if (particles.length > 0) {
+        requestAnimationFrame(step);
+      } else {
+        running = false;
+      }
+    }
+
+    function ensureRunning() {
+      if (!running) {
+        running = true;
+        requestAnimationFrame(step);
+      }
+    }
+
+    document.addEventListener('click', function (e) {
+      spawnSwordQi(e.clientX, e.clientY);
+      ensureRunning();
+    });
+
+    window.xfx = {
+      spawnQiRainbow: spawnQiRainbow,
+      ensureRunning: ensureRunning,
+    };
+  })();
+</script> <div class="container mt-5" role="main"> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&amp;display=swap" rel="stylesheet"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sakura-js@1.1.1/dist/sakura.min.css"> <script src="https://cdn.jsdelivr.net/npm/sakura-js@1.1.1/dist/sakura.min.js"></script> <style>
   .artistic-name {
     display: inline-block;
     font-family: "Playfair Display", "Roboto Slab", serif;
