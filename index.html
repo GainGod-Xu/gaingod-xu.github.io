@@ -102,25 +102,23 @@
       return a + Math.random() * (b - a);
     }
 
-    function spawnFirework(x, y) {
-      var count = 40;
-      var hue = Math.floor(randRange(0, 360));
-      for (var i = 0; i < count; i++) {
-        var angle = (Math.PI * 2 * i) / count + randRange(-0.05, 0.05);
-        var speed = randRange(2, 6);
-        particles.push({
-          type: 'spark',
-          x: x,
-          y: y,
-          vx: Math.cos(angle) * speed,
-          vy: Math.sin(angle) * speed,
-          alpha: 1,
-          color: 'hsl(' + (hue + randRange(-20, 20)) + ', 90%, ' + randRange(55, 70) + '%)',
-          size: randRange(1.5, 3),
-          gravity: 0.045,
-          decay: randRange(0.012, 0.02),
-        });
-      }
+    function spawnPetal(x) {
+      particles.push({
+        type: 'petal',
+        x: x,
+        y: -20,
+        vx: randRange(-0.3, 0.3),
+        vy: randRange(0.8, 1.6),
+        alpha: 1,
+        size: randRange(8, 14),
+        rotation: randRange(0, Math.PI * 2),
+        rotationSpeed: randRange(-0.04, 0.04),
+        sway: randRange(0.6, 1.6),
+        swaySpeed: randRange(0.015, 0.03),
+        swayPhase: randRange(0, Math.PI * 2),
+        hue: randRange(330, 350),
+        decay: randRange(0.0015, 0.003),
+      });
     }
 
     function spawnSwordQi(x, y) {
@@ -151,13 +149,27 @@
         p.y += p.vy;
         p.alpha -= p.decay;
 
-        if (p.type === 'spark') {
-          p.vy += p.gravity;
+        if (p.type === 'petal') {
+          p.rotation += p.rotationSpeed;
+          p.swayPhase += p.swaySpeed;
+          var drawX = p.x + Math.sin(p.swayPhase) * p.sway * 20;
           ctx.globalAlpha = Math.max(p.alpha, 0);
-          ctx.fillStyle = p.color;
+          ctx.save();
+          ctx.translate(drawX, p.y);
+          ctx.rotate(p.rotation);
+          ctx.fillStyle = 'hsl(' + p.hue + ', 85%, 82%)';
           ctx.beginPath();
-          ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+          ctx.ellipse(0, 0, p.size, p.size * 0.6, 0, 0, Math.PI * 2);
           ctx.fill();
+          ctx.fillStyle = 'hsl(' + p.hue + ', 70%, 70%)';
+          ctx.beginPath();
+          ctx.ellipse(0, 0, p.size * 0.35, p.size * 0.2, 0, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.restore();
+
+          if (p.y > canvas.height + 20) {
+            p.alpha = 0;
+          }
         } else if (p.type === 'qi') {
           var speedMag = Math.sqrt(p.vx * p.vx + p.vy * p.vy) || 1;
           var dx = (p.vx / speedMag) * p.length;
@@ -208,12 +220,11 @@
 
     window.addEventListener('load', function () {
       var duration = 3000;
-      var interval = 450;
+      var interval = 120;
       var elapsed = 0;
       var timer = setInterval(function () {
         var w = window.innerWidth;
-        var h = window.innerHeight;
-        spawnFirework(randRange(w * 0.15, w * 0.85), randRange(h * 0.15, h * 0.45));
+        spawnPetal(randRange(0, w));
         ensureRunning();
         elapsed += interval;
         if (elapsed >= duration) {
