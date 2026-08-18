@@ -80,18 +80,6 @@ cv:
         start_date: 2023-04
         end_date: 2024-05
 
-    Awards:
-      - title: M&SOM 2025 Data-Driven Research Competition Finalist
-        authors:
-          - Wenting Li
-          - Yu Jiang
-          - Yige Wang
-          - Hao Xu
-        date: 2025
-        awarder: Manufacturing & Service Operations Management (MSOM) Society
-        url: https://assets.london.edu/hxo16fanegqh/6Gl6wbsZy6NnP7TWDcUB4F/b59bc7df615b33dc60d159d347b3fdd9/2025_Main_MSOM_Conference_Program_May30.pdf
-        summary: "For “From Data to Decision: AI-Powered Adaptive Optimization in Continuous Pharmaceutical Manufacturing.”"
-
     Patents:
       - bullet: "**Machine Learning Framework for Prediction and Assignment of 2D NMR Spectra.** Pengyu Hong, Yunrui Li, Hao Xu. US Patent App. 63/708,341."
 
