@@ -18,7 +18,7 @@ Embedding atomic-level physical and chemical mechanisms&mdash;spectral propertie
 
 ### AI4Health
 
-Developing predictive models for medical imaging and electronic health records (EHR), individually and in multimodal combination, to advance clinical prediction and diagnosis.
+Developing foundational models and explainable frameworks for multi-omics, medical imaging, and electronic health records (EHR)&mdash;individually and in multimodal combination&mdash;to advance clinical prediction and diagnosis.
 
 - **Deep Learning-Based MRI Model for Predicting P53-Mutated Hepatocellular Carcinoma.** Jia, L., Yang, Q., Jiang, H., Huang, G., Wang, Z., Guo, X., Li, J., *Xu, H.*\*, Lei, J.\* *BMC Medical Imaging*, 2025.
 
