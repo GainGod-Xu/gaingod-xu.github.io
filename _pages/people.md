@@ -17,7 +17,7 @@ nav_order: 5
 <br>2024&ndash;2026
 <br>Co-authored 1 paper (first-author manuscript submitted); developed a foundational model for protein&ndash;ligand binding prediction.
 
-**[Zhengyang Zhou, Ph.D.](https://scholar.google.com/citations?user=dPElQLUAAAAJ)** / PathAI
+**[Zhengyang Zhou, Ph.D.](https://www.linkedin.com/in/zzy1)** / PathAI
 <br>2023&ndash;2025
 <br>Co-authored 3 papers, including first-author work in *Communications Chemistry*.
 

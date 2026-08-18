@@ -70,8 +70,8 @@ cv:
         start_date: 2024-06
         end_date: 2026-04
 
-      - company: Brandeis University
-        position: Postdoctoral Associate in ML, Department of Computer Science
+      - company: Department of Computer Science, Brandeis University
+        position: Postdoctoral Associate in ML
         location: Waltham, MA
         start_date: 2023-04
         end_date: 2024-05
