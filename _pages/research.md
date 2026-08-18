@@ -13,6 +13,7 @@ Embedding atomic-level physical and chemical mechanisms&mdash;spectral propertie
 
 - Li, Y.<sup>&dagger;</sup>, **Xu, H.**<sup>&dagger;</sup>, Kumar, A., Wang, D., Heiss, C., Azadi, P., Hong, P.\* "TransPeakNet for Solvent-Aware 2D NMR Prediction via Multi-Task Pre-Training and Unsupervised Learning." *Communications Chemistry*, 2025.
 - Wang, Y.<sup>&dagger;</sup>, Li, Y.<sup>&dagger;</sup>, Liu, L., Hong, P., **Xu, H.**\* "Advancing Drug Discovery with Enhanced Chemical Understanding via Asymmetric Contrastive Multimodal Learning." *J. Chem. Inf. Model.*, 2025.
+- Wang, Y., Lu, W., Liu, L., **Xu, H.**\*, Ling, H.\* "How Well Can Off-the-Shelf LLMs Elucidate Molecular Structures from Mass Spectra Using Chain-of-Thought Reasoning?" *J. Cheminform.*, 2026.
 
 ### AI for Medicine/Health
 
