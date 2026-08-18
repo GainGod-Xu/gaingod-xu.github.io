@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://gaingod-xu.github.io/sitemap.xml
