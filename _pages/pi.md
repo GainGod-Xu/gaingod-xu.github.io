@@ -36,6 +36,11 @@ profile:
         display: inline-block;
         animation: glow-pulse 2s ease-in-out infinite;
       }
+      @media (min-width: 576px) {
+        .profile {
+          width: 22%;
+        }
+      }
     </style>
 
 announcements:
