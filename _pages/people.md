@@ -7,6 +7,17 @@ nav: true
 nav_order: 5
 ---
 
+<style>
+  .people-card {
+    border-left: 4px solid var(--global-theme-color);
+  }
+  .people-card > h3 {
+    margin-top: 0;
+  }
+</style>
+
+<div class="card people-card p-4" markdown="1">
+
 ### Junior Collaborators
 
 **[Xi Xiao](https://scholar.google.com/citations?user=Q4DnRVgAAAAJ)** / University of Alabama at Birmingham
@@ -33,6 +44,10 @@ nav_order: 5
 <br>2023&ndash;2024 (Brandeis University)
 <br>Co-authored 1 paper, her first-author in *Journal of Chemical Information and Modeling*.
 
+</div>
+
+<div class="card people-card mt-3 p-4" markdown="1">
+
 ### Senior Collaborators
 
 **[Joseph Loscalzo](https://scholar.google.com/citations?user=ZfAwwkUAAAAJ)** &mdash; Brigham and Women's Hospital & Harvard Medical School
@@ -46,3 +61,5 @@ nav_order: 5
 **[Zaiqiao Meng](https://scholar.google.com/citations?user=5jJKFVcAAAAJ)** &mdash; School of Computing Science, University of Glasgow
 
 **[Pengyu Hong](https://scholar.google.com/citations?user=pvDa8pcAAAAJ)** &mdash; Department of Computer Science, Brandeis University
+
+</div>
