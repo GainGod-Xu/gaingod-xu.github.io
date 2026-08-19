@@ -60,7 +60,7 @@ Research interests include:
 - Vision Understanding and Generation
 
 <div class="card mt-3 p-3">
-  <h3 class="card-title font-weight-medium" style="color: var(--global-theme-color);">Work Experience</h3>
+  <h3 class="card-title font-weight-medium" style="color: #1b4d3e;">Work Experience</h3>
   <ul class="mb-0">
     <li><strong>Apr 2026&ndash;Present:</strong> Investigator & Instructor, Department of Medicine, Brigham and Women's Hospital, Harvard Medical School</li>
     <li><strong>Jun 2024&ndash;Apr 2026:</strong> Research Fellow, Department of Medicine, Brigham and Women's Hospital, Harvard Medical School</li>
@@ -71,7 +71,7 @@ Research interests include:
 </div>
 
 <div class="card mt-3 p-3">
-  <h3 class="card-title font-weight-medium" style="color: var(--global-theme-color);">Education</h3>
+  <h3 class="card-title font-weight-medium" style="color: #1b4d3e;">Education</h3>
   <ul class="mb-0">
     <li><strong>Aug 2017&ndash;Dec 2022:</strong> Ph.D. in Chemistry, Boston College</li>
     <li><strong>Aug 2020&ndash;Aug 2022:</strong> M.S. in Computer Science, Georgia Institute of Technology</li>
@@ -81,7 +81,7 @@ Research interests include:
 </div>
 
 <div class="card mt-3 p-3">
-  <h3 class="card-title font-weight-medium" style="color: var(--global-theme-color);">Academic Service</h3>
+  <h3 class="card-title font-weight-medium" style="color: #1b4d3e;">Academic Service</h3>
   <p><strong>Reviewer for Journals (JCR Q1):</strong> Scientific Reports, JCIM, ACM TIST, JMIR, Sustainable Food Technology, IEEE TMI, IEEE TPAMI, J. Cheminform., KBS, Nature Comms, Patterns, Quantum Science and Technology</p>
   <p class="mb-0"><strong>Reviewer for Conferences:</strong> ACM MM, COLM, NeurIPS, CVPR, COLING, ECCV</p>
 </div>
