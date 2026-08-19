@@ -17,7 +17,7 @@ nav_order: 4
 <br>2024&ndash;Present
 <br>Co-authored 2 paper (his first-author manuscript submitted); developed a foundational model for protein&ndash;ligand binding prediction.
 
-**Yufeng Wang** / Stony Brook University
+**[Yufeng Wang](https://scholar.google.com/citations?user=0ZahlvEAAAAJ&hl=en)** / Stony Brook University
 <br>2025&ndash;2026
 <br>Co-authored 1 paper, his first-author in *Journal of Cheminformatics*.
 
