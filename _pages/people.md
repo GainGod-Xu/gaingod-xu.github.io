@@ -18,7 +18,7 @@ nav_order: 4
 <br>Co-authored 2 paper (his first-author manuscript submitted); developed a foundational model for protein&ndash;ligand binding prediction.
 
 **[Zhengyang Zhou, Ph.D.](https://www.linkedin.com/in/zzy1)** / PathAI
-<br>2023&ndash;2025
+<br>2023&ndash;2025 (Brandeis University)
 <br>Co-authored 3 papers, including his first-author work in *Communications Chemistry*.
 
 **[Yunrui Li](https://scholar.google.com/citations?user=KETyudsAAAAJ)** / Brandeis University
