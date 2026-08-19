@@ -1,0 +1,276 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> PI | Hao Xu </title> <meta name="author" content="Hao Xu"> <meta name="description" content="Investigator, Brigham and Women's Hospital; Instructor in Medicine, Harvard Medical School. AI for Science, AI for Medicine/Health, and AI Fundamentals. "> <meta name="keywords" content="Hao Xu, AI for Science, AI for Medicine, machine learning, drug discovery, Brigham and Women's Hospital, Harvard Medical School"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%A7%AC&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://gaingod-xu.github.io/pi/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <style>
+  body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  }
+</style> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">X</span>Lab </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">XLab </a> </li> <li class="nav-item active"> <a class="nav-link" href="/pi/">PI <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/research/">Research </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">Publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/people/">People </a> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">Teaching </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link"><i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <canvas id="fx-canvas" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 9999;"></canvas> <script>
+  (function () {
+    var canvas = document.getElementById('fx-canvas');
+    var ctx = canvas.getContext('2d');
+    var particles = [];
+    var running = false;
+
+    function resize() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    resize();
+    window.addEventListener('resize', resize);
+
+    function randRange(a, b) {
+      return a + Math.random() * (b - a);
+    }
+
+    function spawnSwordQi(x, y) {
+      var count = 6;
+      var baseAngle = randRange(0, Math.PI * 2);
+      for (var i = 0; i < count; i++) {
+        var angle = baseAngle + (Math.PI * 2 * i) / count + randRange(-0.15, 0.15);
+        var speed = randRange(14, 24);
+        particles.push({
+          type: 'qi',
+          x: x,
+          y: y,
+          vx: Math.cos(angle) * speed,
+          vy: Math.sin(angle) * speed,
+          alpha: 1,
+          length: randRange(55, 95),
+          width: randRange(2, 3.5),
+          decay: randRange(0.02, 0.032),
+        });
+      }
+    }
+
+    function step() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      for (var i = particles.length - 1; i >= 0; i--) {
+        var p = particles[i];
+        p.x += p.vx;
+        p.y += p.vy;
+        p.alpha -= p.decay;
+
+        if (p.type === 'qi') {
+          var speedMag = Math.sqrt(p.vx * p.vx + p.vy * p.vy) || 1;
+          var dx = (p.vx / speedMag) * p.length;
+          var dy = (p.vy / speedMag) * p.length;
+          ctx.globalAlpha = Math.max(p.alpha, 0);
+          ctx.save();
+          ctx.shadowColor = '#8fe9ff';
+          ctx.shadowBlur = 14;
+          var grad = ctx.createLinearGradient(p.x - dx, p.y - dy, p.x, p.y);
+          grad.addColorStop(0, 'rgba(180, 245, 255, 0)');
+          grad.addColorStop(1, '#eafcff');
+          ctx.strokeStyle = grad;
+          ctx.lineWidth = p.width;
+          ctx.lineCap = 'round';
+          ctx.beginPath();
+          ctx.moveTo(p.x - dx, p.y - dy);
+          ctx.lineTo(p.x, p.y);
+          ctx.stroke();
+          ctx.restore();
+          p.vx *= 0.96;
+          p.vy *= 0.96;
+        }
+
+        if (p.alpha <= 0) {
+          particles.splice(i, 1);
+        }
+      }
+      ctx.globalAlpha = 1;
+
+      if (particles.length > 0) {
+        requestAnimationFrame(step);
+      } else {
+        running = false;
+      }
+    }
+
+    function ensureRunning() {
+      if (!running) {
+        running = true;
+        requestAnimationFrame(step);
+      }
+    }
+
+    document.addEventListener('click', function (e) {
+      spawnSwordQi(e.clientX, e.clientY);
+      ensureRunning();
+    });
+
+  })();
+</script> <div class="container mt-5" role="main"> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&amp;display=swap" rel="stylesheet"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sakura-js@1.1.1/dist/sakura.min.css"> <script src="https://cdn.jsdelivr.net/npm/sakura-js@1.1.1/dist/sakura.min.js"></script> <style>
+  .artistic-name {
+    display: inline-block;
+    font-family: "Playfair Display", "Roboto Slab", serif;
+    font-style: italic;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: var(--global-text-color);
+  }
+</style> <div class="post"> <header class="post-header"> <h1 class="post-title"> <span class="artistic-name">Hao Xu</span> </h1> <p class="desc">Investigator, Brigham and Women's Hospital • Instructor in Medicine, Harvard Medical School</p> </header> <article> <div class="profile float-right"> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/prof_pic-480.webp 480w,/assets/img/prof_pic-800.webp 800w,/assets/img/prof_pic-1400.webp 1400w," type="image/webp" sizes="(min-width: 930px) 270.0px, (min-width: 576px) 30vw, 95vw"> <img src="/assets/img/prof_pic.png?v=e5f93616e8407cfaa52fc5dae293ad45" class="img-fluid z-depth-1 rounded" width="100%" height="auto" alt="prof_pic.png" loading="eager" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </source></picture> </figure> <div class="more-info"> <p style="font-size: 1.5rem;"> <a href="mailto:haoxu0303@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a> <a href="https://github.com/GainGod-Xu" target="_blank" title="GitHub" rel="external nofollow noopener"><i class="fa-brands fa-github"></i></a> <a href="https://www.linkedin.com/in/hao-xu-62bb11169/" target="_blank" title="LinkedIn" rel="external nofollow noopener"><i class="fa-brands fa-linkedin"></i></a> <a href="https://scholar.google.com/citations?user=tcYaFAcAAAAJ&amp;hl=en" target="_blank" title="Google Scholar" rel="external nofollow noopener"><i class="ai ai-google-scholar"></i></a> <a href="https://orcid.org/0000-0002-9795-5633" target="_blank" title="ORCID" rel="external nofollow noopener"><i class="ai ai-orcid"></i></a> </p> <p> <em class="glow-text">Courage is the grace under pressure.</em> </p> <style>
+  @keyframes glow-pulse {
+    0%, 100% {
+      text-shadow: 0 0 4px currentColor, 0 0 8px rgba(255, 215, 0, 0.4);
+      opacity: 0.85;
+    }
+    50% {
+      text-shadow: 0 0 10px currentColor, 0 0 20px rgba(255, 215, 0, 0.8), 0 0 30px rgba(255, 215, 0, 0.5);
+      opacity: 1;
+    }
+  }
+  .glow-text {
+    display: inline-block;
+    animation: glow-pulse 2s ease-in-out infinite;
+  }
+</style> </div> </div> <div class="clearfix"> <p>Dr. Hao Xu is currently an Investigator at Brigham and Women’s Hospital and Instructor in Medicine at Harvard Medical School. His research pioneers <strong>Micro-to-Macro Mechanistic AI</strong>, a research paradigm that seeks to understand and control complex systems by linking microscopic mechanisms to macroscopic behaviors across both artificial intelligence and scientific discovery. In fundamental AI, he develops parameter-efficient fine-tuning (PEFT) and multimodal foundation models that connect micro-scale parameter dynamics with emergent model behaviors. In AI4Science, he combines physicochemical mechanisms with 3D geometric deep learning to reveal molecular-level principles governing biological function, enabling more interpretable molecular discovery and precision medicine.</p> <p>Research interests include:</p> <ul> <li>AI for Science</li> <li>AI for Healthcare</li> <li>Quantum Computing for Scientific Discovery</li> <li>Large Language Model Reasoning</li> <li>Vision Understanding and Generation</li> </ul> <h4 id="work-experience">Work Experience</h4> <ul> <li> <strong>Apr 2026–Present:</strong> Investigator &amp; Instructor, Department of Medicine, Brigham and Women’s Hospital, Harvard Medical School</li> <li> <strong>Jun 2024–Apr 2026:</strong> Research Fellow, Department of Medicine, Brigham and Women’s Hospital, Harvard Medical School</li> <li> <strong>Jun 2024–Apr 2026:</strong> Affiliated Research Fellow, Department of Physics, Network Science Institute, Northeastern University</li> <li> <strong>Apr 2023–May 2024:</strong> Postdoctoral Associate, Department of Computer Science, Brandeis University</li> <li> <strong>Apr 2023–May 2024:</strong> Affiliated Postdoctoral Associate, GlycoMIP (NSF-funded Materials Innovation Platform, Virginia Tech &amp; University of Georgia)</li> </ul> <h4 id="education">Education</h4> <ul> <li> <strong>Aug 2017–Dec 2022:</strong> Ph.D. in Chemistry, Boston College</li> <li> <strong>Aug 2020–Aug 2022:</strong> M.S. in Computer Science, Georgia Institute of Technology</li> <li> <strong>Aug 2015–May 2017:</strong> M.S. in Computational Chemistry, Southern Methodist University</li> <li> <strong>Sep 2011–Jul 2015:</strong> B.S. in Chemistry &amp; B.Econ. in Finance, China Agricultural University</li> </ul> <h4 id="academic-service">Academic Service</h4> <p><strong>Reviewer for Journals (JCR Q1):</strong> Scientific Reports, JCIM, ACM TIST, JMIR, Sustainable Food Technology, IEEE TMI, IEEE TPAMI, J. Cheminform., KBS, Nature Comms, Patterns, Quantum Science and Technology</p> <p><strong>Reviewer for Conferences:</strong> ACM MM, COLM, NeurIPS, CVPR, COLING, ECCV</p> </div> </article> </div> <script>
+  window.addEventListener('load', function () {
+    if (typeof Sakura !== 'undefined') {
+      var sakura = new Sakura('body', {
+        gradientColorStart: 'rgba(255, 223, 230, 0.9)',
+        gradientColorEnd: 'rgba(255, 179, 198, 0.9)',
+        gradientColorDegree: 120,
+        delay: 280,
+      });
+      setTimeout(function () {
+        sakura.stop();
+      }, 15000);
+    }
+  });
+</script> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Hao Xu. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-xlab",
+    title: "XLab",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-pi",
+          title: "PI",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/pi/";
+          },
+        },{id: "nav-research",
+          title: "Research",
+          description: "Core mission: Micro-to-Macro Mechanistic AI. A few directions define most of my current work; each is anchored by representative papers, with the full list on the publications page.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/research/";
+          },
+        },{id: "nav-publications",
+          title: "Publications",
+          description: "All publications, grouped by year (reverse chronological). Generated automatically from _bibliography/papers.bib by jekyll-scholar.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-people",
+          title: "People",
+          description: "Junior and Senior Collaborators.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/people/";
+          },
+        },{id: "nav-teaching",
+          title: "Teaching",
+          description: "Teaching experience in chemistry.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/teaching/";
+          },
+        },{id: "nav-cv",
+          title: "CV",
+          description: "Education, experience, awards, and patents.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
+        },{id: "news-new-paper-published-in-genome-biology-evormd-integrating-biological-context-and-evolutionary-rna-language-models-for-interpretable-prediction-of-rna-modifications",
+          title: 'New paper published in Genome Biology: EvoRMD: Integrating Biological Context and Evolutionary RNA...',
+          description: "",
+          section: "News",},{id: "news-new-paper-published-in-journal-of-cheminformatics-how-well-can-off-the-shelf-llms-elucidate-molecular-structures-from-mass-spectra-using-chain-of-thought-reasoning",
+          title: 'New paper published in Journal of Cheminformatics: How Well Can Off-the-Shelf LLMs Elucidate...',
+          description: "",
+          section: "News",},{id: "news-new-preprint-on-biorxiv-explainbind-explainable-physicochemical-determinants-of-protein-ligand-binding-via-non-covalent-interactions",
+          title: 'New preprint on bioRxiv: ExplainBind: Explainable Physicochemical Determinants of Protein-Ligand Binding via Non-Covalent...',
+          description: "",
+          section: "News",},{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%68%61%6F%78%75%30%33%30%33@%67%6D%61%69%6C.%63%6F%6D", "_blank");
+        },
+      },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/GainGod-Xu", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/hao-xu-62bb11169", "_blank");
+        },
+      },{
+        id: 'social-orcid',
+        title: 'ORCID',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://orcid.org/0000-0002-9795-5633", "_blank");
+        },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=tcYaFAcAAAAJ", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>
