@@ -22,7 +22,7 @@ nav_order: 4
 <br>Co-authored 3 papers, including his first-author work in *Communications Chemistry*.
 
 **[Yunrui Li](https://scholar.google.com/citations?user=KETyudsAAAAJ)** / Brandeis University
-<br>2023&ndash;2025
+<br>2023&ndash;2025 (Brandeis University)
 <br>Co-authored 4 papers, including her first-author work in *Communications Chemistry* and *Journal of Chemical Information and Modeling (JCIM)*.
 
 **[Yifei Wang, Ph.D.](https://scholar.google.com/citations?user=il36IMQAAAAJ)** / Biogen
