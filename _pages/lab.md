@@ -26,6 +26,7 @@ Building AI systems that connect micro-scale mechanisms to macro-scale behaviors
 </div>
 
 ## News
+{: .mt-4 }
 
 <div class="mt-2" markdown="1">
 
