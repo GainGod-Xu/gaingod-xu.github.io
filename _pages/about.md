@@ -62,10 +62,10 @@ Research interests include:
 
 #### Education
 
-- **2017&ndash;2022:** Ph.D. in Chemistry, Boston College
-- **2020&ndash;2022:** M.S. in Computer Science, Georgia Institute of Technology
-- **2015&ndash;2017:** M.S. in Computational Chemistry, Southern Methodist University
-- **2011&ndash;2015:** B.S. in Chemistry & B.Econ. in Finance, China Agricultural University
+- **Aug 2017&ndash;Dec 2022:** Ph.D. in Chemistry, Boston College
+- **Aug 2020&ndash;Aug 2022:** M.S. in Computer Science, Georgia Institute of Technology
+- **Aug 2015&ndash;May 2017:** M.S. in Computational Chemistry, Southern Methodist University
+- **Sep 2011&ndash;Jul 2015:** B.S. in Chemistry & B.Econ. in Finance, China Agricultural University
 
 #### Academic Service
 
