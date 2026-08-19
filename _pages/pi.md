@@ -1,7 +1,9 @@
 ---
 layout: about
 title: PI
-permalink: /
+permalink: /pi/
+nav: true
+nav_order: 2
 subtitle: Investigator, Brigham and Women's Hospital &bull; Instructor in Medicine, Harvard Medical School
 
 profile:
