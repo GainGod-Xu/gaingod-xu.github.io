@@ -9,10 +9,6 @@ nav_order: 4
 
 ### Junior Collaborators
 
-**Yufeng Wang** / Stony Brook University
-<br>2025&ndash;2026
-<br>Co-authored 1 paper, his first-author in *Journal of Cheminformatics*.
-
 **[Xi Xiao](https://scholar.google.com/citations?user=Q4DnRVgAAAAJ)** / University of Alabama at Birmingham
 <br>2024&ndash;Present
 <br>Co-authored five collaborative papers spanning parameter-efficient adaptation and multimodal alignment, including his first-author work in *Not All Directions Matter* (ACL 2026), *Staying VIGILant* (ECCV 2026).
@@ -20,6 +16,10 @@ nav_order: 4
 **[Zhaohan Meng](https://scholar.google.com/citations?user=gM9yaCkAAAAJ)** / University of Glasgow
 <br>2024&ndash;Present
 <br>Co-authored 2 paper (his first-author manuscript submitted); developed a foundational model for protein&ndash;ligand binding prediction.
+
+**Yufeng Wang** / Stony Brook University
+<br>2025&ndash;2026
+<br>Co-authored 1 paper, his first-author in *Journal of Cheminformatics*.
 
 **[Zhengyang Zhou, Ph.D.](https://www.linkedin.com/in/zzy1)** / PathAI
 <br>2023&ndash;2025 (Brandeis University)
