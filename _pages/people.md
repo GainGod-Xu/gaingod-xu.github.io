@@ -9,6 +9,10 @@ nav_order: 4
 
 ### Junior Collaborators
 
+**Yufeng Wang** / Stony Brook University
+<br>2025&ndash;2026
+<br>Co-authored 1 paper, his first-author in *Journal of Cheminformatics*.
+
 **[Xi Xiao](https://scholar.google.com/citations?user=Q4DnRVgAAAAJ)** / University of Alabama at Birmingham
 <br>2024&ndash;Present
 <br>Co-authored five collaborative papers spanning parameter-efficient adaptation and multimodal alignment, including his first-author work in *Not All Directions Matter* (ACL 2026), *Staying VIGILant* (ECCV 2026).
