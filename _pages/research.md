@@ -11,33 +11,29 @@ nav_order: 3
 
 Embedding atomic-level physical and chemical mechanisms&mdash;spectral properties, atom interactions, evolutionary sequence context&mdash;directly into deep networks, so models predict molecular properties and structures through physically grounded reasoning rather than superficial correlations.
 
-<div class="publications">
-{% bibliography --group_by none --query @*[research=ai4science]* %}
-</div>
+- **ExplainBind: Explainable Physicochemical Determinants of Protein-Ligand Binding via Non-Covalent Interactions.** Meng, Z.<sup>&dagger;</sup>, Bai, Z.<sup>&dagger;</sup>, et al., Oldham, W. M.\*, Meng, Z.\*, *Xu, H.*\*, Loscalzo, J. *bioRxiv*, 2026.
+- **EvoRMD: Integrating Biological Context and Evolutionary RNA Language Models for Interpretable Prediction of RNA Modifications.** Wang, B., Zhang, H., Cui, T., Wang, X., Song, J.\*, *Xu, H.*\* *Genome Biology*, 2026.
+- **How Well Can Off-the-Shelf LLMs Elucidate Molecular Structures from Mass Spectra Using Chain-of-Thought Reasoning?** Wang, Y., Lu, W., Liu, L., *Xu, H.*\*, Ling, H.\* *J. Cheminform.*, 2026.
+- **TransPeakNet for Solvent-Aware 2D NMR Prediction via Multi-Task Pre-Training and Unsupervised Learning.** Li, Y.<sup>&dagger;</sup>, *Xu, H.*<sup>&dagger;</sup>, Kumar, A., Wang, D., Heiss, C., Azadi, P., Hong, P.\* *Communications Chemistry*, 2025.
 
 ### AI4Health
 
 Developing foundational models and explainable frameworks for multi-omics, medical imaging, and electronic health records (EHR)&mdash;individually and in multimodal combination&mdash;to advance clinical prediction and diagnosis.
 
-<div class="publications">
-{% bibliography --group_by none --query @*[research=ai4health]* %}
-</div>
+- **Deep Learning-Based MRI Model for Predicting P53-Mutated Hepatocellular Carcinoma.** Jia, L., Yang, Q., Jiang, H., Huang, G., Wang, Z., Guo, X., Li, J., *Xu, H.*\*, Lei, J.\* *BMC Medical Imaging*, 2025.
 
 ### AI Fundamentals
 
 Parameter-efficient fine-tuning and multimodal alignment methods that preserve fine-grained gradient sensitivities, so adaptation stays reliable, interpretable, and cheap to train at scale.
 
-<div class="publications">
-{% bibliography --group_by none --query @*[research=aifundamentals]* %}
-</div>
+- **Not All Directions Matter: Toward Structured and Task-Aware Low-Rank Adaptation.** Xiao, X., et al., *Xu, H.* *ACL*, 2026.
+- **Staying VIGILant: Mitigating Visual Laziness via Counterfactual Visual Alignment in MLLMs.** Xiao, X., et al., *Xu, H.* *ECCV*, 2026.
 
 ### Chemistry
 
 Earlier work on cobalt-catalyzed asymmetric radical reactions and total synthesis&mdash;the physical-organic-chemistry foundation that now informs how I build mechanism-aware AI models.
 
-<div class="publications">
-{% bibliography --group_by none --query @*[research=chemistry]* %}
-</div>
+- **Enantioselective Radical *N*-Heterobicyclization by New Mode of Asymmetric Induction via Kinetically Stable Chiral Radical Center.** *Xu, H.*, Wang, D.-S., Zhu, Z.-Y., Deb, A., Zhang, X. P.\* *Chem*, 2024.
 
 ### Emerging Direction
 
