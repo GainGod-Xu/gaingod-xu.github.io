@@ -7,7 +7,7 @@ nav: true
 nav_order: 3
 ---
 
-<div class="card mt-3 p-4" style="background-color: #eaf3fc; border-left: 4px solid #3a7bd5;">
+<div class="card mt-3 p-4" markdown="1" style="background-color: #eaf3fc; border-left: 4px solid #3a7bd5; color: #1c1c1d;">
 
 ### AI for Science
 
@@ -20,7 +20,7 @@ Embedding atomic-level physical and chemical mechanisms&mdash;spectral propertie
 
 </div>
 
-<div class="card mt-3 p-4" style="background-color: #fdeceb; border-left: 4px solid #d9534f;">
+<div class="card mt-3 p-4" markdown="1" style="background-color: #fdeceb; border-left: 4px solid #d9534f; color: #1c1c1d;">
 
 ### AI4Health
 
@@ -30,7 +30,7 @@ Developing foundational models and explainable frameworks for multi-omics, medic
 
 </div>
 
-<div class="card mt-3 p-4" style="background-color: #f2ecfa; border-left: 4px solid #7b52c7;">
+<div class="card mt-3 p-4" markdown="1" style="background-color: #f2ecfa; border-left: 4px solid #7b52c7; color: #1c1c1d;">
 
 ### AI Fundamentals
 
@@ -41,7 +41,7 @@ Parameter-efficient fine-tuning and multimodal alignment methods that preserve f
 
 </div>
 
-<div class="card mt-3 p-4" style="background-color: #eaf7ee; border-left: 4px solid #3fa65b;">
+<div class="card mt-3 p-4" markdown="1" style="background-color: #eaf7ee; border-left: 4px solid #3fa65b; color: #1c1c1d;">
 
 ### Chemistry
 
@@ -51,7 +51,7 @@ Earlier work on cobalt-catalyzed asymmetric radical reactions and total synthesi
 
 </div>
 
-<div class="card mt-3 p-4" style="background-color: #fdf6e3; border-left: 4px solid #d9a441;">
+<div class="card mt-3 p-4" markdown="1" style="background-color: #fdf6e3; border-left: 4px solid #d9a441; color: #1c1c1d;">
 
 ### Emerging Direction
 
