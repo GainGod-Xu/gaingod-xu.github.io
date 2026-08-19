@@ -4,7 +4,7 @@ permalink: /research/
 title: Research
 description: "Core mission: Micro-to-Macro Mechanistic AI. A few directions define most of my current work; each is anchored by representative papers, with the full list on the publications page."
 nav: true
-nav_order: 2
+nav_order: 3
 ---
 
 ### AI for Science

@@ -36,12 +36,11 @@ profile:
       }
     </style>
 
-news: false # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+announcements:
+  enabled: false
+selected_papers: false # moved to the XLab page
 social: false # includes social icons at the bottom of the page
 ---
-
-**XLab's core mission: Micro-to-Macro Mechanistic AI** &mdash; building AI systems that connect micro-scale mechanisms to macro-scale behaviors and outcomes, from parameter dynamics in foundation models to physicochemical mechanisms in molecular and biological systems.
 
 Dr. Hao Xu is currently an Investigator at Brigham and Women's Hospital and Instructor in Medicine at Harvard Medical School. His research pioneers **Micro-to-Macro Mechanistic AI**, a research paradigm that seeks to understand and control complex systems by linking microscopic mechanisms to macroscopic behaviors across both artificial intelligence and scientific discovery. In fundamental AI, he develops parameter-efficient fine-tuning (PEFT) and multimodal foundation models that connect micro-scale parameter dynamics with emergent model behaviors. In AI4Science, he combines physicochemical mechanisms with 3D geometric deep learning to reveal molecular-level principles governing biological function, enabling more interpretable molecular discovery and precision medicine.
 
