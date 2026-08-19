@@ -54,23 +54,29 @@ Research interests include:
 - Large Language Model Reasoning
 - Vision Understanding and Generation
 
-#### Work Experience
+<div class="card mt-3 p-3">
+  <h3 class="card-title font-weight-medium" style="color: var(--global-theme-color);">Work Experience</h3>
+  <ul class="mb-0">
+    <li><strong>Apr 2026&ndash;Present:</strong> Investigator & Instructor, Department of Medicine, Brigham and Women's Hospital, Harvard Medical School</li>
+    <li><strong>Jun 2024&ndash;Apr 2026:</strong> Research Fellow, Department of Medicine, Brigham and Women's Hospital, Harvard Medical School</li>
+    <li><strong>Jun 2024&ndash;Apr 2026:</strong> Affiliated Research Fellow, Department of Physics, Network Science Institute, Northeastern University</li>
+    <li><strong>Apr 2023&ndash;May 2024:</strong> Postdoctoral Associate, Department of Computer Science, Brandeis University</li>
+    <li><strong>Apr 2023&ndash;May 2024:</strong> Affiliated Postdoctoral Associate, GlycoMIP (NSF-funded Materials Innovation Platform, Virginia Tech & University of Georgia)</li>
+  </ul>
+</div>
 
-- **Apr 2026&ndash;Present:** Investigator & Instructor, Department of Medicine, Brigham and Women's Hospital, Harvard Medical School
-- **Jun 2024&ndash;Apr 2026:** Research Fellow, Department of Medicine, Brigham and Women's Hospital, Harvard Medical School
-- **Jun 2024&ndash;Apr 2026:** Affiliated Research Fellow, Department of Physics, Network Science Institute, Northeastern University
-- **Apr 2023&ndash;May 2024:** Postdoctoral Associate, Department of Computer Science, Brandeis University
-- **Apr 2023&ndash;May 2024:** Affiliated Postdoctoral Associate, GlycoMIP (NSF-funded Materials Innovation Platform, Virginia Tech & University of Georgia)
+<div class="card mt-3 p-3">
+  <h3 class="card-title font-weight-medium" style="color: var(--global-theme-color);">Education</h3>
+  <ul class="mb-0">
+    <li><strong>Aug 2017&ndash;Dec 2022:</strong> Ph.D. in Chemistry, Boston College</li>
+    <li><strong>Aug 2020&ndash;Aug 2022:</strong> M.S. in Computer Science, Georgia Institute of Technology</li>
+    <li><strong>Aug 2015&ndash;May 2017:</strong> M.S. in Computational Chemistry, Southern Methodist University</li>
+    <li><strong>Sep 2011&ndash;Jul 2015:</strong> B.S. in Chemistry & B.Econ. in Finance, China Agricultural University</li>
+  </ul>
+</div>
 
-#### Education
-
-- **Aug 2017&ndash;Dec 2022:** Ph.D. in Chemistry, Boston College
-- **Aug 2020&ndash;Aug 2022:** M.S. in Computer Science, Georgia Institute of Technology
-- **Aug 2015&ndash;May 2017:** M.S. in Computational Chemistry, Southern Methodist University
-- **Sep 2011&ndash;Jul 2015:** B.S. in Chemistry & B.Econ. in Finance, China Agricultural University
-
-#### Academic Service
-
-**Reviewer for Journals (JCR Q1):** Scientific Reports, JCIM, ACM TIST, JMIR, Sustainable Food Technology, IEEE TMI, IEEE TPAMI, J. Cheminform., KBS, Nature Comms, Patterns, Quantum Science and Technology
-
-**Reviewer for Conferences:** ACM MM, COLM, NeurIPS, CVPR, COLING, ECCV
+<div class="card mt-3 p-3">
+  <h3 class="card-title font-weight-medium" style="color: var(--global-theme-color);">Academic Service</h3>
+  <p><strong>Reviewer for Journals (JCR Q1):</strong> Scientific Reports, JCIM, ACM TIST, JMIR, Sustainable Food Technology, IEEE TMI, IEEE TPAMI, J. Cheminform., KBS, Nature Comms, Patterns, Quantum Science and Technology</p>
+  <p class="mb-0"><strong>Reviewer for Conferences:</strong> ACM MM, COLM, NeurIPS, CVPR, COLING, ECCV</p>
+</div>
