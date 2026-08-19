@@ -26,7 +26,7 @@ nav_order: 4
 <br>Co-authored 4 papers, including her first-author work in *Communications Chemistry* and *Journal of Chemical Information and Modeling (JCIM)*.
 
 **[Yifei Wang, Ph.D.](https://scholar.google.com/citations?user=il36IMQAAAAJ)** / Biogen
-<br>2023&ndash;2024
+<br>2023&ndash;2024 (Brandeis University)
 <br>Co-authored 1 paper, her first-author in *Journal of Chemical Information and Modeling*.
 
 ### Senior Collaborators
