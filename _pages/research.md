@@ -2,7 +2,7 @@
 layout: page
 permalink: /research/
 title: Research
-description: A few directions define most of my current work. Each is anchored by representative papers; the full list is on the publications page.
+description: "Core mission: Micro-to-Macro Mechanistic AI. A few directions define most of my current work; each is anchored by representative papers, with the full list on the publications page."
 nav: true
 nav_order: 2
 ---

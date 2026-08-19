@@ -41,6 +41,8 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
 
+**XLab's core mission: Micro-to-Macro Mechanistic AI** &mdash; building AI systems that trace micro-scale physical, chemical, and biological mechanisms up to macro-level outcomes, rather than treating prediction as a black box.
+
 Dr. Hao Xu is currently an Investigator at Brigham and Women's Hospital and Instructor in Medicine at Harvard Medical School. His research lies at the intersection of artificial intelligence and biomedical science, focusing on building data-efficient and interpretable AI systems to advance drug discovery and healthcare.
 
 Research interests include:
