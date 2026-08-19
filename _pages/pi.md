@@ -61,12 +61,15 @@ Research interests include:
 
 <style>
   .pi-card {
-    border-left: 4px solid var(--global-theme-color);
+    border-left: 4px solid var(--accent, var(--global-theme-color));
+  }
+  .pi-card > h3 {
+    color: var(--accent, var(--global-theme-color));
   }
 </style>
 
-<div class="card pi-card mt-3 p-3">
-  <h3 class="card-title font-weight-medium" style="color: var(--global-theme-color);">Work Experience</h3>
+<div class="card pi-card mt-3 p-3" style="--accent: #3a7bd5;">
+  <h3 class="card-title font-weight-medium">Work Experience</h3>
   <ul class="mb-0">
     <li><strong>Apr 2026&ndash;Present:</strong> Investigator & Instructor, Department of Medicine, Brigham and Women's Hospital, Harvard Medical School</li>
     <li><strong>Jun 2024&ndash;Apr 2026:</strong> Research Fellow, Department of Medicine, Brigham and Women's Hospital, Harvard Medical School</li>
@@ -76,8 +79,8 @@ Research interests include:
   </ul>
 </div>
 
-<div class="card pi-card mt-3 p-3">
-  <h3 class="card-title font-weight-medium" style="color: var(--global-theme-color);">Education</h3>
+<div class="card pi-card mt-3 p-3" style="--accent: #7b52c7;">
+  <h3 class="card-title font-weight-medium">Education</h3>
   <ul class="mb-0">
     <li><strong>Aug 2017&ndash;Dec 2022:</strong> Ph.D. in Chemistry, Boston College</li>
     <li><strong>Aug 2020&ndash;Aug 2022:</strong> M.S. in Computer Science, Georgia Institute of Technology</li>
@@ -86,8 +89,8 @@ Research interests include:
   </ul>
 </div>
 
-<div class="card pi-card mt-3 p-3">
-  <h3 class="card-title font-weight-medium" style="color: var(--global-theme-color);">Academic Service</h3>
+<div class="card pi-card mt-3 p-3" style="--accent: #3fa65b;">
+  <h3 class="card-title font-weight-medium">Academic Service</h3>
   <p><strong>Reviewer for Journals (JCR Q1):</strong> Scientific Reports, JCIM, ACM TIST, JMIR, Sustainable Food Technology, IEEE TMI, IEEE TPAMI, J. Cheminform., KBS, Nature Comms, Patterns, Quantum Science and Technology</p>
   <p class="mb-0"><strong>Reviewer for Conferences:</strong> ACM MM, COLM, NeurIPS, CVPR, COLING, ECCV</p>
 </div>
