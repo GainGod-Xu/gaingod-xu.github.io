@@ -7,6 +7,8 @@ nav: true
 nav_order: 3
 ---
 
+<div class="card mt-3 p-4" style="background-color: #eaf3fc; border-left: 4px solid #3a7bd5;">
+
 ### AI for Science
 
 Embedding atomic-level physical and chemical mechanisms&mdash;spectral properties, atom interactions, evolutionary sequence context&mdash;directly into deep networks, so models predict molecular properties and structures through physically grounded reasoning rather than superficial correlations.
@@ -16,11 +18,19 @@ Embedding atomic-level physical and chemical mechanisms&mdash;spectral propertie
 - **How Well Can Off-the-Shelf LLMs Elucidate Molecular Structures from Mass Spectra Using Chain-of-Thought Reasoning?** Wang, Y., Lu, W., Liu, L., *Xu, H.*\*, Ling, H.\* *J. Cheminform.*, 2026.
 - **TransPeakNet for Solvent-Aware 2D NMR Prediction via Multi-Task Pre-Training and Unsupervised Learning.** Li, Y.<sup>&dagger;</sup>, *Xu, H.*<sup>&dagger;</sup>, Kumar, A., Wang, D., Heiss, C., Azadi, P., Hong, P.\* *Communications Chemistry*, 2025.
 
+</div>
+
+<div class="card mt-3 p-4" style="background-color: #fdeceb; border-left: 4px solid #d9534f;">
+
 ### AI4Health
 
 Developing foundational models and explainable frameworks for multi-omics, medical imaging, and electronic health records (EHR)&mdash;individually and in multimodal combination&mdash;to advance clinical prediction and diagnosis.
 
 - **Deep Learning-Based MRI Model for Predicting P53-Mutated Hepatocellular Carcinoma.** Jia, L., Yang, Q., Jiang, H., Huang, G., Wang, Z., Guo, X., Li, J., *Xu, H.*\*, Lei, J.\* *BMC Medical Imaging*, 2025.
+
+</div>
+
+<div class="card mt-3 p-4" style="background-color: #f2ecfa; border-left: 4px solid #7b52c7;">
 
 ### AI Fundamentals
 
@@ -29,12 +39,22 @@ Parameter-efficient fine-tuning and multimodal alignment methods that preserve f
 - **Not All Directions Matter: Toward Structured and Task-Aware Low-Rank Adaptation.** Xiao, X., et al., *Xu, H.* *ACL*, 2026.
 - **Staying VIGILant: Mitigating Visual Laziness via Counterfactual Visual Alignment in MLLMs.** Xiao, X., et al., *Xu, H.* *ECCV*, 2026.
 
+</div>
+
+<div class="card mt-3 p-4" style="background-color: #eaf7ee; border-left: 4px solid #3fa65b;">
+
 ### Chemistry
 
 Earlier work on cobalt-catalyzed asymmetric radical reactions and total synthesis&mdash;the physical-organic-chemistry foundation that now informs how I build mechanism-aware AI models.
 
 - **Enantioselective Radical *N*-Heterobicyclization by New Mode of Asymmetric Induction via Kinetically Stable Chiral Radical Center.** *Xu, H.*, Wang, D.-S., Zhu, Z.-Y., Deb, A., Zhang, X. P.\* *Chem*, 2024.
 
+</div>
+
+<div class="card mt-3 p-4" style="background-color: #fdf6e3; border-left: 4px solid #d9a441;">
+
 ### Emerging Direction
 
 **Quantum Computing for Scientific Discovery** &mdash; exploring where quantum algorithms can accelerate simulation and search in molecular and biological discovery pipelines. Publications forthcoming.
+
+</div>
