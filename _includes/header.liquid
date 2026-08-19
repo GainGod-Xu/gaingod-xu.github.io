@@ -2,11 +2,10 @@
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
-      {% if page.permalink != '/' %}
-        <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
-          <span class="font-weight-bold">X</span>Lab
-        </a>
-      {% elsif site.enable_navbar_social %}
+      <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
+        <span class="font-weight-bold">X</span>Lab
+      </a>
+      {% if page.permalink == '/' and site.enable_navbar_social %}
         <!-- Social Icons -->
         <div class="navbar-brand social">{% social_links %}</div>
       {% endif %}
