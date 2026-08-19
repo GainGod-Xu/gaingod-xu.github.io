@@ -33,7 +33,9 @@ Parameter-efficient fine-tuning and multimodal alignment methods that preserve f
 
 Earlier work on cobalt-catalyzed asymmetric radical reactions and total synthesis&mdash;the physical-organic-chemistry foundation that now informs how I build mechanism-aware AI models.
 
-- **Enantioselective Radical *N*-Heterobicyclization by New Mode of Asymmetric Induction via Kinetically Stable Chiral Radical Center.** *Xu, H.*, Wang, D.-S., Zhu, Z.-Y., Deb, A., Zhang, X. P.\* *Chem*, 2024.
+<div class="publications">
+{% bibliography --group_by none --query @*[research=chemistry]* %}
+</div>
 
 ### Emerging Direction
 
