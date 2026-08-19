@@ -52,6 +52,21 @@ Research interests include:
 - Large Language Model Reasoning
 - Vision Understanding and Generation
 
+#### Work Experience
+
+- **Apr 2026&ndash;Present:** Investigator & Instructor, Department of Medicine, Brigham and Women's Hospital, Harvard Medical School
+- **Jun 2024&ndash;Apr 2026:** Research Fellow, Department of Medicine, Brigham and Women's Hospital, Harvard Medical School
+- **Jun 2024&ndash;Apr 2026:** Affiliated Research Fellow, Department of Physics, Network Science Institute, Northeastern University
+- **Apr 2023&ndash;May 2024:** Postdoctoral Associate, Department of Computer Science, Brandeis University
+- **Apr 2023&ndash;May 2024:** Affiliated Postdoctoral Associate, GlycoMIP (NSF-funded Materials Innovation Platform, Virginia Tech & University of Georgia)
+
+#### Education
+
+- **2017&ndash;2022:** Ph.D. in Chemistry, Boston College
+- **2020&ndash;2022:** M.S. in Computer Science, Georgia Institute of Technology
+- **2015&ndash;2017:** M.S. in Computational Chemistry, Southern Methodist University
+- **2011&ndash;2015:** B.S. in Chemistry & B.Econ. in Finance, China Agricultural University
+
 #### Academic Service
 
 **Reviewer for Journals (JCR Q1):** Scientific Reports, JCIM, ACM TIST, JMIR, Sustainable Food Technology, IEEE TMI, IEEE TPAMI, J. Cheminform., KBS, Nature Comms, Patterns, Quantum Science and Technology
