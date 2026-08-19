@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /people/
-title: People
+title: Team
 description: Junior and Senior Collaborators.
 nav: true
 nav_order: 5
