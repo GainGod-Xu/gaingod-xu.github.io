@@ -8,6 +8,11 @@
   body {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   }
+  strong,
+  b,
+  .publications ol.bibliography li .title {
+    font-weight: 700;
+  }
 </style> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">X</span>Lab </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">XLab </a> </li> <li class="nav-item "> <a class="nav-link" href="/pi/">PI </a> </li> <li class="nav-item "> <a class="nav-link" href="/research/">Research </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">Publications </a> </li> <li class="nav-item active"> <a class="nav-link" href="/people/">Team <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">Teaching </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link"><i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <canvas id="fx-canvas" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 9999;"></canvas> <script>
   (function () {
     var canvas = document.getElementById('fx-canvas');
@@ -104,13 +109,60 @@
 
   })();
 </script> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Team</h1> <p class="post-description">Junior and Senior Collaborators.</p> </header> <article> <style>
-  .people-card {
+  .pgroup-title {
+    margin: 1.2rem 0 0.8rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 2px solid var(--global-theme-color);
+  }
+  .pgrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.9rem;
+  }
+  .pcard,
+  .scard {
+    padding: 0.9rem 1.1rem;
+    border: 1px solid var(--global-divider-color);
     border-left: 4px solid var(--global-theme-color);
+    border-radius: 8px;
+    background: var(--global-card-bg-color);
   }
-  .people-card > h3 {
-    margin-top: 0;
+  .pname {
+    font-size: 1.05rem;
+    font-weight: 700;
   }
-</style> <div class="card people-card p-4"> <h3 id="junior-collaborators">Junior Collaborators</h3> <p><strong><a href="https://scholar.google.com/citations?user=Q4DnRVgAAAAJ" rel="external nofollow noopener" target="_blank">Xi Xiao</a></strong> / University of Alabama at Birmingham <br>2024–Present <br>Co-authored five collaborative papers spanning parameter-efficient adaptation and multimodal alignment, including his first-author work in <em>Not All Directions Matter</em> (ACL 2026), <em>Staying VIGILant</em> (ECCV 2026).</p> <p><strong><a href="https://scholar.google.com/citations?user=gM9yaCkAAAAJ" rel="external nofollow noopener" target="_blank">Zhaohan Meng</a></strong> / University of Glasgow <br>2024–Present <br>Co-authored 2 papers (his first-author manuscript submitted); developed a foundational model for protein–ligand binding prediction.</p> <p><strong><a href="https://scholar.google.com/citations?user=0ZahlvEAAAAJ&amp;hl=en" rel="external nofollow noopener" target="_blank">Yufeng Wang</a></strong> / Stony Brook University <br>2025–2026 <br>Co-authored 1 paper, his first-author in <em>Journal of Cheminformatics</em>.</p> <p><strong>Bo Wang</strong> / Shenzhen University <br>2024–2026 <br>Co-authored 1 paper, first-author work in <em>Genome Biology</em> (<em>EvoRMD</em>), integrating biological context and evolutionary RNA language models for interpretable RNA modification prediction.</p> <p><strong><a href="https://www.linkedin.com/in/zzy1" rel="external nofollow noopener" target="_blank">Zhengyang Zhou, Ph.D.</a></strong> / PathAI <br>2023–2025 (Brandeis University) <br>Co-authored 3 papers, including his first-author work in <em>Communications Chemistry</em>.</p> <p><strong><a href="https://scholar.google.com/citations?user=KETyudsAAAAJ" rel="external nofollow noopener" target="_blank">Yunrui Li</a></strong> / Brandeis University <br>2023–2025 (Brandeis University) <br>Co-authored 4 papers, including her first-author work in <em>Communications Chemistry</em> and <em>Journal of Chemical Information and Modeling</em>.</p> <p><strong><a href="https://scholar.google.com/citations?user=il36IMQAAAAJ" rel="external nofollow noopener" target="_blank">Yifei Wang, Ph.D.</a></strong> / Biogen <br>2023–2024 (Brandeis University) <br>Co-authored 1 paper, her first-author in <em>Journal of Chemical Information and Modeling</em>.</p> </div> <div class="card people-card mt-3 p-4"> <h3 id="senior-collaborators">Senior Collaborators</h3> <p><strong><a href="https://scholar.google.com/citations?user=ZfAwwkUAAAAJ" rel="external nofollow noopener" target="_blank">Joseph Loscalzo</a></strong> — Brigham and Women’s Hospital &amp; Harvard Medical School</p> <p><strong><a href="https://scholar.google.com/citations?user=5ojAGvwAAAAJ" rel="external nofollow noopener" target="_blank">Ruisheng Wang</a></strong> — Channing Division of Network Medicine, Brigham and Women’s Hospital &amp; Harvard Medical School</p> <p><strong><a href="https://scholar.google.com/citations?user=v3w4IYUAAAAJ" rel="external nofollow noopener" target="_blank">Haibin Ling</a></strong> — Department of Computer Science, Stony Brook University</p> <p><strong><a href="https://scholar.google.com/citations?user=in9oae8AAAAJ" rel="external nofollow noopener" target="_blank">Jiangning Song</a></strong> — Monash Biomedicine Discovery Institute, Monash University</p> <p><strong><a href="https://scholar.google.com/citations?user=5jJKFVcAAAAJ" rel="external nofollow noopener" target="_blank">Zaiqiao Meng</a></strong> — School of Computing Science, University of Glasgow</p> <p><strong><a href="https://scholar.google.com/citations?user=pvDa8pcAAAAJ" rel="external nofollow noopener" target="_blank">Pengyu Hong</a></strong> — Department of Computer Science, Brandeis University</p> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Hao Xu. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
+  .paff {
+    color: var(--global-text-color-light);
+    font-size: 0.9rem;
+  }
+  .pyears {
+    display: inline-block;
+    margin: 0.45rem 0 0.4rem;
+    padding: 0.05rem 0.55rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    border: 1px solid var(--global-divider-color);
+    color: var(--global-text-color-light);
+  }
+  .pcard.current .pyears {
+    border-color: var(--global-theme-color);
+    color: var(--global-theme-color);
+  }
+  .pcard p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  .scard {
+    border-left-color: var(--global-divider-color);
+  }
+  @media (max-width: 640px) {
+    .pgrid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style> <h3 class="pgroup-title">Junior Collaborators</h3> <div class="pgrid"> <div class="pcard current"> <div class="pname"><strong><a href="https://scholar.google.com/citations?user=Q4DnRVgAAAAJ" rel="external nofollow noopener" target="_blank">Xi Xiao</a></strong></div> <div class="paff">University of Alabama at Birmingham</div> <div class="pyears">2024–Present</div> <p>Co-authored five collaborative papers spanning parameter-efficient adaptation and multimodal alignment, including his first-author work in <em>Not All Directions Matter</em> (ACL 2026), <em>Staying VIGILant</em> (ECCV 2026).</p> </div> <div class="pcard current"> <div class="pname"><strong><a href="https://scholar.google.com/citations?user=gM9yaCkAAAAJ" rel="external nofollow noopener" target="_blank">Zhaohan Meng</a></strong></div> <div class="paff">University of Glasgow</div> <div class="pyears">2024–Present</div> <p>Co-authored 2 papers (his first-author manuscript submitted); developed a foundational model for protein–ligand binding prediction.</p> </div> <div class="pcard"> <div class="pname"><strong><a href="https://scholar.google.com/citations?user=0ZahlvEAAAAJ&amp;hl=en" rel="external nofollow noopener" target="_blank">Yufeng Wang</a></strong></div> <div class="paff">Stony Brook University</div> <div class="pyears">2025–2026</div> <p>Co-authored 1 paper, his first-author in <em>Journal of Cheminformatics</em>.</p> </div> <div class="pcard"> <div class="pname"><strong>Bo Wang</strong></div> <div class="paff">Shenzhen University</div> <div class="pyears">2024–2026</div> <p>Co-authored 1 paper, first-author work in <em>Genome Biology</em> (<em>EvoRMD</em>), integrating biological context and evolutionary RNA language models for interpretable RNA modification prediction.</p> </div> <div class="pcard"> <div class="pname"><strong><a href="https://www.linkedin.com/in/zzy1" rel="external nofollow noopener" target="_blank">Zhengyang Zhou, Ph.D.</a></strong></div> <div class="paff">PathAI</div> <div class="pyears">2023–2025 · Brandeis University</div> <p>Co-authored 3 papers, including his first-author work in <em>Communications Chemistry</em>.</p> </div> <div class="pcard"> <div class="pname"><strong><a href="https://scholar.google.com/citations?user=KETyudsAAAAJ" rel="external nofollow noopener" target="_blank">Yunrui Li</a></strong></div> <div class="paff">Brandeis University</div> <div class="pyears">2023–2025</div> <p>Co-authored 4 papers, including her first-author work in <em>Communications Chemistry</em> and <em>Journal of Chemical Information and Modeling</em>.</p> </div> <div class="pcard"> <div class="pname"><strong><a href="https://scholar.google.com/citations?user=il36IMQAAAAJ" rel="external nofollow noopener" target="_blank">Yifei Wang, Ph.D.</a></strong></div> <div class="paff">Biogen</div> <div class="pyears">2023–2024 · Brandeis University</div> <p>Co-authored 1 paper, her first-author in <em>Journal of Chemical Information and Modeling</em>.</p> </div> </div> <h3 class="pgroup-title mt-5">Senior Collaborators</h3> <div class="pgrid"> <div class="scard"> <div class="pname"><strong><a href="https://scholar.google.com/citations?user=ZfAwwkUAAAAJ" rel="external nofollow noopener" target="_blank">Joseph Loscalzo</a></strong></div> <div class="paff">Brigham and Women's Hospital &amp; Harvard Medical School</div> </div> <div class="scard"> <div class="pname"><strong><a href="https://scholar.google.com/citations?user=5ojAGvwAAAAJ" rel="external nofollow noopener" target="_blank">Ruisheng Wang</a></strong></div> <div class="paff">Channing Division of Network Medicine, Brigham and Women's Hospital &amp; Harvard Medical School</div> </div> <div class="scard"> <div class="pname"><strong><a href="https://scholar.google.com/citations?user=v3w4IYUAAAAJ" rel="external nofollow noopener" target="_blank">Haibin Ling</a></strong></div> <div class="paff">Department of Computer Science, Stony Brook University</div> </div> <div class="scard"> <div class="pname"><strong><a href="https://scholar.google.com/citations?user=in9oae8AAAAJ" rel="external nofollow noopener" target="_blank">Jiangning Song</a></strong></div> <div class="paff">Monash Biomedicine Discovery Institute, Monash University</div> </div> <div class="scard"> <div class="pname"><strong><a href="https://scholar.google.com/citations?user=5jJKFVcAAAAJ" rel="external nofollow noopener" target="_blank">Zaiqiao Meng</a></strong></div> <div class="paff">School of Computing Science, University of Glasgow</div> </div> <div class="scard"> <div class="pname"><strong><a href="https://scholar.google.com/citations?user=pvDa8pcAAAAJ" rel="external nofollow noopener" target="_blank">Pengyu Hong</a></strong></div> <div class="paff">Department of Computer Science, Brandeis University</div> </div> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Hao Xu. XLab · Brigham and Women's Hospital · Harvard Medical School. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };

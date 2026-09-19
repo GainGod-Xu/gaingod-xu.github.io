@@ -1,4 +1,4 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Hao Xu </title> <meta name="author" content="Hao Xu"> <meta name="description" content="News from XLab."> <meta name="keywords" content="Hao Xu, AI for Science, AI for Medicine, machine learning, drug discovery, Brigham and Women's Hospital, Harvard Medical School"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Hao Xu </title> <meta name="author" content="Hao Xu"> <meta name="description" content="XLab at Brigham and Women's Hospital and Harvard Medical School — Micro-to-Macro Mechanistic AI across fundamental AI, life science, and materials science."> <meta name="keywords" content="Hao Xu, AI for Science, AI for Medicine, machine learning, drug discovery, Brigham and Women's Hospital, Harvard Medical School"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
   :root {
     --max-content-width: 930px;
   }
@@ -7,6 +7,11 @@
   </script> </head> <body class="fixed-top-nav "> <style>
   body {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  }
+  strong,
+  b,
+  .publications ol.bibliography li .title {
+    font-weight: 700;
   }
 </style> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">X</span>Lab </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item active"> <a class="nav-link" href="/">XLab <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/pi/">PI </a> </li> <li class="nav-item "> <a class="nav-link" href="/research/">Research </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">Publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/people/">Team </a> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">Teaching </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link"><i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <canvas id="fx-canvas" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 9999;"></canvas> <script>
   (function () {
@@ -103,7 +108,7 @@
     });
 
   })();
-</script> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">XLab</h1> <p class="post-description">News from XLab.</p> </header> <article> <h2 id="news">News</h2> <div class="mt-2"> <div class="news"> <div class="table-responsive"> <table class="table table-sm table-borderless"> <tr> <th scope="row" style="width: 20%">Jul 31, 2026</th> <td> New paper published in <em>Journal of Cheminformatics</em>: <a href="https://link.springer.com/article/10.1186/s13321-026-01234-1" rel="external nofollow noopener" target="_blank">How Well Can Off-the-Shelf LLMs Elucidate Molecular Structures from Mass Spectra Using Chain-of-Thought Reasoning?</a> </td> </tr> <tr> <th scope="row" style="width: 20%">Jun 24, 2026</th> <td> New preprint: <a href="https://arxiv.org/abs/2606.26387" rel="external nofollow noopener" target="_blank">Staying VIGILant: Mitigating Visual Laziness via Counterfactual Visual Alignment in MLLMs</a>. Accepted to <em>ECCV 2026</em>. </td> </tr> <tr> <th scope="row" style="width: 20%">Jun 09, 2026</th> <td> New preprint on <em>bioRxiv</em>: <a href="https://pubmed.ncbi.nlm.nih.gov/41867731/" rel="external nofollow noopener" target="_blank">ExplainBind: Explainable Physicochemical Determinants of Protein-Ligand Binding via Non-Covalent Interactions</a> </td> </tr> <tr> <th scope="row" style="width: 20%">May 02, 2026</th> <td> New paper published in <em>Genome Biology</em>: <a href="https://link.springer.com/article/10.1186/s13059-026-04097-9" rel="external nofollow noopener" target="_blank">EvoRMD: Integrating Biological Context and Evolutionary RNA Language Models for Interpretable Prediction of RNA Modifications</a>. </td> </tr> <tr> <th scope="row" style="width: 20%">Apr 04, 2026</th> <td> New preprint: <a href="https://arxiv.org/abs/2603.14228" rel="external nofollow noopener" target="_blank">Not All Directions Matter: Toward Structured and Task-Aware Low-Rank Adaptation</a>, accepted to <em>ACL 2026</em>. </td> </tr> <tr> <th scope="row" style="width: 20%">Oct 03, 2025</th> <td> New preprint: <a href="https://arxiv.org/abs/2510.02630" rel="external nofollow noopener" target="_blank">HyperAdaLoRA: Accelerating LoRA Rank Allocation During Training via Hypernetworks without Sacrificing Performance</a>, accepted to <em>ACL Findings 2026</em>. </td> </tr> </table> </div> </div> </div> <h2 class="mt-4" id="mission">Mission</h2> <style>
+</script> <div class="container mt-5" role="main"> <div class="post home"> <article> <style>
   /* Micro-to-Macro mission diagram */
   .mission {
     margin: 0.75rem 0 0;
@@ -321,7 +326,122 @@
       padding-right: 0;
     }
   }
-</style> <figure class="mission" aria-label="XLab mission: Micro-to-Macro Mechanistic AI, one principle applied across three research tracks"> <div class="mission-lead"> <strong>Micro-to-Macro Mechanistic AI</strong> <span>Building AI that links micro-scale dynamics to macro-scale behavior — one principle, three research tracks.</span> </div> <div class="mission-body"> <div class="mission-axis" aria-hidden="true"> <b>MICRO</b><i></i><b>MACRO</b> </div> <div class="track" style="--accent: #7b52c7;"> <div class="track-head"> <span class="track-no">TRACK I</span><span class="track-name"><i class="fa-solid fa-microchip"></i>Fundamental AI</span> </div> <div class="track-sub">From parameter dynamics to reliable model behavior</div> <ol> <li> <span class="lvl">1</span><strong>Parameter Dynamics</strong>Parameter sensitivity and structure; efficient, task-aware adaptation</li> <li> <span class="lvl">2</span><strong>Multimodal Understanding</strong>Visual grounding and cross-modal reasoning</li> <li> <span class="lvl">3</span><strong>Visual Alignment</strong>Counterfactual alignment; mitigating visual laziness and modality bias</li> <li> <span class="lvl">4</span><strong>Reliable AI Systems</strong>Robust, efficient multimodal intelligence across tasks and domains</li> </ol> </div> <div class="track" style="--accent: #3a7bd5;"> <div class="track-head"> <span class="track-no">TRACK II</span><span class="track-name"><i class="fa-solid fa-dna"></i>Life Science</span> </div> <div class="track-sub">From molecular mechanisms to health outcomes</div> <ol> <li> <span class="lvl">1</span><strong>Molecular Mechanisms</strong>Physicochemical drivers of binding, catalysis, and conformational change</li> <li> <span class="lvl">2</span><strong>Cellular Systems</strong>Molecular networks, pathways, regulation, and cell states</li> <li> <span class="lvl">3</span><strong>Organismal Mechanisms</strong>Integrated physiology, disease, and treatment response</li> <li> <span class="lvl">4</span><strong>Health Outcomes</strong>Clinical and population-level diagnosis, prognosis, and intervention</li> </ol> </div> <div class="track" style="--accent: #3fa65b;"> <div class="track-head"> <span class="track-no">TRACK III</span><span class="track-name"><i class="fa-solid fa-atom"></i>Materials Science</span> </div> <div class="track-sub">From atomic interactions to materials discovery and impact</div> <ol> <li> <span class="lvl">1</span><strong>Atomic Interactions</strong>Atomic structure, bonding, electrons, and defects</li> <li> <span class="lvl">2</span><strong>Structure–Property Mechanisms</strong>Surfaces, phases, transport, and stability</li> <li> <span class="lvl">3</span><strong>Materials Discovery &amp; Catalysis</strong>ML-potential–guided search and generative design</li> <li> <span class="lvl">4</span><strong>Applications &amp; Impact</strong>Materials for energy, environment, electronics, and beyond</li> </ol> </div> </div> <div class="mission-bar"> <span class="tag">OUR MISSION</span> <span class="goal"><i class="fa-solid fa-brain" aria-hidden="true"></i>Understand mechanisms</span> <span class="sep" aria-hidden="true">→</span> <span class="goal"><i class="fa-solid fa-sliders" aria-hidden="true"></i>Shape behaviors</span> <span class="sep" aria-hidden="true">→</span> <span class="goal"><i class="fa-solid fa-earth-americas" aria-hidden="true"></i>Enable discovery</span> </div> </figure> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Hao Xu. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
+
+  /* ---------- Home: hero ---------- */
+  .home .hero {
+    padding: 2.5rem 0 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+  .hero-kicker {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--global-text-color-light);
+    margin-bottom: 0.4rem;
+  }
+  .hero-title {
+    font-size: clamp(2.6rem, 7vw, 3.6rem);
+    font-weight: 800;
+    line-height: 1;
+    margin: 0 0 0.35rem;
+  }
+  .hero-title b {
+    color: var(--global-theme-color);
+  }
+  .hero-tag {
+    font-size: clamp(1.2rem, 3.2vw, 1.55rem);
+    font-weight: 600;
+    margin-bottom: 0.9rem;
+  }
+  .hero-lede {
+    max-width: 44rem;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--global-text-color);
+  }
+  .hero-pi {
+    color: var(--global-text-color-light);
+  }
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin: 1.2rem 0 1.4rem;
+  }
+  .hero-actions a {
+    padding: 0.45rem 1rem;
+    border-radius: 999px;
+    border: 1.5px solid var(--global-theme-color);
+    font-weight: 600;
+    font-size: 0.92rem;
+    text-decoration: none !important;
+  }
+  .hero-actions a.primary {
+    background: var(--global-theme-color);
+    color: var(--global-bg-color) !important;
+  }
+  .hero-venues {
+    font-size: 0.82rem;
+    color: var(--global-text-color-light);
+  }
+  .hero-venues span {
+    display: inline-block;
+    margin: 0.2rem 0.3rem 0 0;
+    padding: 0.1rem 0.55rem;
+    border-radius: 4px;
+    border: 1px solid var(--global-divider-color);
+    color: var(--global-text-color);
+  }
+
+  /* ---------- Home: sections ---------- */
+  .home-section {
+    margin-top: 2.6rem;
+  }
+  .section-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.8rem;
+    border-bottom: 2px solid var(--global-theme-color);
+    padding-bottom: 0.3rem;
+  }
+  .section-head h2 {
+    margin: 0;
+    font-size: 1.6rem;
+  }
+  .section-head a {
+    font-size: 0.88rem;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .home .news table {
+    margin-bottom: 0;
+  }
+  .home .news th {
+    font-weight: 600;
+    color: var(--global-text-color-light);
+    white-space: nowrap;
+  }
+
+  /* ---------- Home: contact band ---------- */
+  .contact-band {
+    margin: 2.8rem 0 1rem;
+    padding: 1.4rem 1.6rem;
+    border-radius: 10px;
+    background: color-mix(in srgb, var(--global-theme-color) 8%, var(--global-card-bg-color));
+    border: 1px solid var(--global-divider-color);
+  }
+  .contact-band h2 {
+    font-size: 1.3rem;
+    margin: 0 0 0.4rem;
+  }
+  .contact-band p {
+    margin: 0;
+  }
+</style> <section class="hero"> <p class="hero-kicker">Brigham and Women's Hospital · Harvard Medical School</p> <h1 class="hero-title"> <b>X</b>Lab</h1> <p class="hero-tag">Micro-to-Macro Mechanistic AI</p> <p class="hero-lede">We build AI that links micro-scale mechanisms—model parameters, atomic interactions, molecular signals—to macro-scale behavior, across fundamental AI, life science, and materials science.</p> <p class="hero-pi">Led by <a href="/pi/">Hao Xu</a>, Investigator at Brigham and Women's Hospital and Instructor in Medicine at Harvard Medical School.</p> <div class="hero-actions"> <a class="primary" href="/research/">Research</a> <a href="/publications/">Publications</a> <a href="/people/">Team</a> </div> <div class="hero-venues">Recent work in <span>ACL 2026</span><span>ECCV 2026</span><span>Genome Biology</span><span>J. Cheminform.</span><span>Communications Chemistry</span> </div> </section> <section class="home-section"> <div class="section-head"><h2>News</h2></div> <div class="news"> <div class="table-responsive"> <table class="table table-sm table-borderless"> <tr> <th scope="row" style="width: 20%">Jul 31, 2026</th> <td> New paper published in <em>Journal of Cheminformatics</em>: <a href="https://link.springer.com/article/10.1186/s13321-026-01234-1" rel="external nofollow noopener" target="_blank">How Well Can Off-the-Shelf LLMs Elucidate Molecular Structures from Mass Spectra Using Chain-of-Thought Reasoning?</a> </td> </tr> <tr> <th scope="row" style="width: 20%">Jun 24, 2026</th> <td> New preprint: <a href="https://arxiv.org/abs/2606.26387" rel="external nofollow noopener" target="_blank">Staying VIGILant: Mitigating Visual Laziness via Counterfactual Visual Alignment in MLLMs</a>. Accepted to <em>ECCV 2026</em>. </td> </tr> <tr> <th scope="row" style="width: 20%">Jun 09, 2026</th> <td> New preprint on <em>bioRxiv</em>: <a href="https://pubmed.ncbi.nlm.nih.gov/41867731/" rel="external nofollow noopener" target="_blank">ExplainBind: Explainable Physicochemical Determinants of Protein-Ligand Binding via Non-Covalent Interactions</a> </td> </tr> <tr> <th scope="row" style="width: 20%">May 02, 2026</th> <td> New paper published in <em>Genome Biology</em>: <a href="https://link.springer.com/article/10.1186/s13059-026-04097-9" rel="external nofollow noopener" target="_blank">EvoRMD: Integrating Biological Context and Evolutionary RNA Language Models for Interpretable Prediction of RNA Modifications</a>. </td> </tr> <tr> <th scope="row" style="width: 20%">Apr 04, 2026</th> <td> New preprint: <a href="https://arxiv.org/abs/2603.14228" rel="external nofollow noopener" target="_blank">Not All Directions Matter: Toward Structured and Task-Aware Low-Rank Adaptation</a>, accepted to <em>ACL 2026</em>. </td> </tr> <tr> <th scope="row" style="width: 20%">Oct 03, 2025</th> <td> New preprint: <a href="https://arxiv.org/abs/2510.02630" rel="external nofollow noopener" target="_blank">HyperAdaLoRA: Accelerating LoRA Rank Allocation During Training via Hypernetworks without Sacrificing Performance</a>, accepted to <em>ACL Findings 2026</em>. </td> </tr> </table> </div> </div> </section> <section class="home-section"> <div class="section-head"> <h2>Research Tracks</h2> <a href="/research/">Research →</a> </div> <figure class="mission" aria-label="XLab mission: Micro-to-Macro Mechanistic AI, one principle applied across three research tracks"> <div class="mission-body"> <div class="mission-axis" aria-hidden="true"> <b>MICRO</b><i></i><b>MACRO</b> </div> <div class="track" style="--accent: #7b52c7;"> <div class="track-head"> <span class="track-no">TRACK I</span><span class="track-name"><i class="fa-solid fa-microchip"></i>Fundamental AI</span> </div> <div class="track-sub">From parameter dynamics to reliable model behavior</div> <ol> <li> <span class="lvl">1</span><strong>Parameter Dynamics</strong>Parameter sensitivity and structure; efficient, task-aware adaptation</li> <li> <span class="lvl">2</span><strong>Multimodal Understanding</strong>Visual grounding and cross-modal reasoning</li> <li> <span class="lvl">3</span><strong>Visual Alignment</strong>Counterfactual alignment; mitigating visual laziness and modality bias</li> <li> <span class="lvl">4</span><strong>Reliable AI Systems</strong>Robust, efficient multimodal intelligence across tasks and domains</li> </ol> </div> <div class="track" style="--accent: #3a7bd5;"> <div class="track-head"> <span class="track-no">TRACK II</span><span class="track-name"><i class="fa-solid fa-dna"></i>Life Science</span> </div> <div class="track-sub">From molecular mechanisms to health outcomes</div> <ol> <li> <span class="lvl">1</span><strong>Molecular Mechanisms</strong>Physicochemical drivers of binding, catalysis, and conformational change</li> <li> <span class="lvl">2</span><strong>Cellular Systems</strong>Molecular networks, pathways, regulation, and cell states</li> <li> <span class="lvl">3</span><strong>Organismal Mechanisms</strong>Integrated physiology, disease, and treatment response</li> <li> <span class="lvl">4</span><strong>Health Outcomes</strong>Clinical and population-level diagnosis, prognosis, and intervention</li> </ol> </div> <div class="track" style="--accent: #3fa65b;"> <div class="track-head"> <span class="track-no">TRACK III</span><span class="track-name"><i class="fa-solid fa-atom"></i>Materials Science</span> </div> <div class="track-sub">From atomic interactions to materials discovery and impact</div> <ol> <li> <span class="lvl">1</span><strong>Atomic Interactions</strong>Atomic structure, bonding, electrons, and defects</li> <li> <span class="lvl">2</span><strong>Structure–Property Mechanisms</strong>Surfaces, phases, transport, and stability</li> <li> <span class="lvl">3</span><strong>Materials Discovery &amp; Catalysis</strong>ML-potential–guided search and generative design</li> <li> <span class="lvl">4</span><strong>Applications &amp; Impact</strong>Materials for energy, environment, electronics, and beyond</li> </ol> </div> </div> <div class="mission-bar"> <span class="tag">OUR MISSION</span> <span class="goal"><i class="fa-solid fa-brain" aria-hidden="true"></i>Understand mechanisms</span> <span class="sep" aria-hidden="true">→</span> <span class="goal"><i class="fa-solid fa-sliders" aria-hidden="true"></i>Shape behaviors</span> <span class="sep" aria-hidden="true">→</span> <span class="goal"><i class="fa-solid fa-earth-americas" aria-hidden="true"></i>Enable discovery</span> </div> </figure> </section> <section class="home-section"> <div class="section-head"> <h2>Selected Publications</h2> <a href="/publications/">All publications →</a> </div> <div class="publications"> <ol class="bibliography"> <li> <div class="row"> <div class="col col-sm-2 abbr"> <abbr class="badge rounded w-100">bioRxiv</abbr> </div> <div id="xu2026explainbind" class="col-sm-8"> <div class="title">ExplainBind: Explainable Physicochemical Determinants of Protein-Ligand Binding via Non-Covalent Interactions</div> <div class="author"> Z. Meng<sup>†</sup>, Z. Bai<sup>†</sup>, K. Yuan, J. Song, Y. Zhang, J. H. Cheah, W. Jiang, A. Skepner, K. J. Leahy, I. Ounis, W. M. Oldham<sup>*</sup>, Z. Meng<sup>*</sup>, <em>Hao Xu<sup>*</sup></em>, and J. Loscalzo </div> <div class="periodical"> <em>bioRxiv</em>, 2026 </div> <div class="periodical"> </div> <div class="links"> <a href="https://pubmed.ncbi.nlm.nih.gov/41867731/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a> </div> </div> </div> </li> <li> <div class="row"> <div class="col col-sm-2 abbr"> <abbr class="badge rounded w-100">Genome Biol.</abbr> </div> <div id="wang2026evormd" class="col-sm-8"> <div class="title">EvoRMD: Integrating Biological Context and Evolutionary RNA Language Models for Interpretable Prediction of RNA Modifications</div> <div class="author"> B. Wang, H. Zhang, T. Cui, X. Wang, J. Song<sup>*</sup>, and <em>Hao Xu<sup>*</sup></em> </div> <div class="periodical"> <em>Genome Biology</em>, 2026 </div> <div class="periodical"> </div> <div class="links"> <a href="https://link.springer.com/article/10.1186/s13059-026-04097-9" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a> </div> </div> </div> </li> <li> <div class="row"> <div class="col col-sm-2 abbr"> <abbr class="badge rounded w-100">ACL</abbr> </div> <div id="xiao2026notall" class="col-sm-8"> <div class="title">Not All Directions Matter: Toward Structured and Task-Aware Low-Rank Adaptation</div> <div class="author"> X. Xiao, C. Ma, Y. Zhang, C. Liu, Z. Wang, Y. Li, L. Zhao, G. Hu, T. Wang, and <em>Hao Xu</em> </div> <div class="periodical"> <em>In Association for Computational Linguistics (ACL)</em>, 2026 </div> <div class="periodical"> </div> <div class="links"> <a href="https://arxiv.org/abs/2603.14228" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a> </div> </div> </div> </li> <li> <div class="row"> <div class="col col-sm-2 abbr"> <abbr class="badge rounded w-100">JCIM</abbr> </div> <div id="wang2025advancing" class="col-sm-8"> <div class="title">Advancing Drug Discovery with Enhanced Chemical Understanding via Asymmetric Contrastive Multimodal Learning</div> <div class="author"> Yifei Wang<sup>†</sup>, Yunrui Li<sup>†</sup>, Lin Liu, Pengyu Hong, and <em>Hao Xu<sup>*</sup></em> </div> <div class="periodical"> <em>Journal of Chemical Information and Modeling</em>, 2025 </div> <div class="periodical"> </div> <div class="links"> <a href="https://pubs.acs.org/doi/10.1021/acs.jcim.5c00430" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a> </div> </div> </div> </li> <li> <div class="row"> <div class="col col-sm-2 abbr"> <abbr class="badge rounded w-100">Chem</abbr> </div> <div id="xu2024enantioselective" class="col-sm-8"> <div class="title">Enantioselective Radical N-Heterobicyclization by New Mode of Asymmetric Induction via Kinetically Stable Chiral Radical Center</div> <div class="author"> <em>Hao Xu</em>, Duo-Sheng Wang, Zhen-Yu Zhu, Arghya Deb, and X. Peter Zhang<sup>*</sup> </div> <div class="periodical"> <em>Chem</em>, 2024 </div> <div class="periodical"> </div> <div class="links"> <a href="https://www.cell.com/chem/abstract/S2451-9294(23)00465-5" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a> </div> </div> </div> </li> </ol> </div> </section> <section class="contact-band"> <h2>Work with XLab</h2> <p>We welcome collaborations with students and researchers across AI, chemistry, and medicine. Reach out at <a href="mailto:haoxu0303@gmail.com">haoxu0303@gmail.com</a>.</p> </section> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Hao Xu. XLab · Brigham and Women's Hospital · Harvard Medical School. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
