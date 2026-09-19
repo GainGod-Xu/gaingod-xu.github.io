@@ -345,7 +345,7 @@ description: XLab at Brigham and Women's Hospital and Harvard Medical School —
   <h1 class="hero-title"><b>X</b>Lab</h1>
   <p class="hero-tag">Micro-to-Macro Mechanistic AI</p>
   <p class="hero-lede">We build AI that links micro-scale mechanisms&mdash;model parameters, atomic interactions, molecular signals&mdash;to macro-scale behavior, across fundamental AI, life science, and materials science.</p>
-  <p class="hero-pi">Led by <a href="{{ '/pi/' | relative_url }}">Hao Xu</a>, Investigator at Brigham and Women's Hospital and Instructor in Medicine at Harvard Medical School.</p>
+  <p class="hero-pi">Led by <a href="{{ '/pi/' | relative_url }}">Dr. Hao Xu</a>, Investigator at Brigham and Women's Hospital and Instructor in Medicine at Harvard Medical School.</p>
   <div class="hero-actions">
     <a class="primary" href="{{ '/research/' | relative_url }}">Research</a>
     <a href="{{ '/publications/' | relative_url }}">Publications</a>
