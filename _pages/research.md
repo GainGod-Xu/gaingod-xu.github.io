@@ -139,7 +139,7 @@ nav_order: 3
     <div class="m2m-step" data-stage="Macro-scale behavior">Reliable, efficient, visually grounded model behavior</div>
   </div>
   <div class="m2m-base">
-    <span>Foundation: <a href="#chemistry">physical-organic chemistry</a></span>
+    <span>Foundation: <a href="#ai-fundamentals">AI</a> + <a href="#chemistry">Chemistry</a> + <a href="#ai4health">Medicine</a></span>
     <span>Next: <a href="#emerging-direction">quantum computing for discovery</a></span>
   </div>
 </figure>

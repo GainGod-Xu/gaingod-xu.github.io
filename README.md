@@ -4,7 +4,7 @@ Hao Xu's personal academic site, built on [al-folio](https://github.com/alshediv
 
 ## Content
 
-- `_pages/lab.md` — homepage (news + XLab mission graphic)
+- `_pages/lab.md` — homepage (news + Micro-to-Macro mission diagram)
 - `_pages/pi.md` — PI bio, profile, and career path
 - `_pages/research.md` — Micro-to-Macro flow diagram and research directions with representative papers
 - `_pages/publications.md` + `_bibliography/papers.bib` — full publication list, auto-grouped by year
