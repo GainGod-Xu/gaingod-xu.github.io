@@ -32,6 +32,10 @@ nav_order: 5
 <br>2025&ndash;2026
 <br>Co-authored 1 paper, his first-author in *Journal of Cheminformatics*.
 
+**Bo Wang** / Shenzhen University
+<br>2024&ndash;2026
+<br>Co-authored 1 paper, first-author work in *Genome Biology* (*EvoRMD*), integrating biological context and evolutionary RNA language models for interpretable RNA modification prediction.
+
 **[Zhengyang Zhou, Ph.D.](https://www.linkedin.com/in/zzy1)** / PathAI
 <br>2023&ndash;2025 (Brandeis University)
 <br>Co-authored 3 papers, including his first-author work in *Communications Chemistry*.
