@@ -11,6 +11,7 @@ contact_note: >
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Investigator, Brigham and Women's Hospital; Instructor in Medicine, Harvard Medical School. AI for Science, AI for Medicine/Health, and AI Fundamentals.
 footer_text: >
+  XLab &middot; Brigham and Women's Hospital &middot; Harvard Medical School.
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 keywords: Hao Xu, AI for Science, AI for Medicine, machine learning, drug discovery, Brigham and Women's Hospital, Harvard Medical School

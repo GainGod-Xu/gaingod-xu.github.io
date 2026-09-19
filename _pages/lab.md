@@ -1,20 +1,9 @@
 ---
-layout: page
+layout: home
 permalink: /
 title: XLab
-description: News from XLab.
+description: XLab at Brigham and Women's Hospital and Harvard Medical School — Micro-to-Macro Mechanistic AI across fundamental AI, life science, and materials science.
 ---
-
-## News
-
-<div class="mt-2" markdown="1">
-
-{% include news.liquid limit=true %}
-
-</div>
-
-## Mission
-{: .mt-4 }
 
 <style>
   /* Micro-to-Macro mission diagram */
@@ -234,13 +223,147 @@ description: News from XLab.
       padding-right: 0;
     }
   }
+
+  /* ---------- Home: hero ---------- */
+  .home .hero {
+    padding: 2.5rem 0 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+  .hero-kicker {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--global-text-color-light);
+    margin-bottom: 0.4rem;
+  }
+  .hero-title {
+    font-size: clamp(2.6rem, 7vw, 3.6rem);
+    font-weight: 800;
+    line-height: 1;
+    margin: 0 0 0.35rem;
+  }
+  .hero-title b {
+    color: var(--global-theme-color);
+  }
+  .hero-tag {
+    font-size: clamp(1.2rem, 3.2vw, 1.55rem);
+    font-weight: 600;
+    margin-bottom: 0.9rem;
+  }
+  .hero-lede {
+    max-width: 44rem;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--global-text-color);
+  }
+  .hero-pi {
+    color: var(--global-text-color-light);
+  }
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin: 1.2rem 0 1.4rem;
+  }
+  .hero-actions a {
+    padding: 0.45rem 1rem;
+    border-radius: 999px;
+    border: 1.5px solid var(--global-theme-color);
+    font-weight: 600;
+    font-size: 0.92rem;
+    text-decoration: none !important;
+  }
+  .hero-actions a.primary {
+    background: var(--global-theme-color);
+    color: var(--global-bg-color) !important;
+  }
+  .hero-venues {
+    font-size: 0.82rem;
+    color: var(--global-text-color-light);
+  }
+  .hero-venues span {
+    display: inline-block;
+    margin: 0.2rem 0.3rem 0 0;
+    padding: 0.1rem 0.55rem;
+    border-radius: 4px;
+    border: 1px solid var(--global-divider-color);
+    color: var(--global-text-color);
+  }
+
+  /* ---------- Home: sections ---------- */
+  .home-section {
+    margin-top: 2.6rem;
+  }
+  .section-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.8rem;
+    border-bottom: 2px solid var(--global-theme-color);
+    padding-bottom: 0.3rem;
+  }
+  .section-head h2 {
+    margin: 0;
+    font-size: 1.6rem;
+  }
+  .section-head a {
+    font-size: 0.88rem;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .home .news table {
+    margin-bottom: 0;
+  }
+  .home .news th {
+    font-weight: 600;
+    color: var(--global-text-color-light);
+    white-space: nowrap;
+  }
+
+  /* ---------- Home: contact band ---------- */
+  .contact-band {
+    margin: 2.8rem 0 1rem;
+    padding: 1.4rem 1.6rem;
+    border-radius: 10px;
+    background: color-mix(in srgb, var(--global-theme-color) 8%, var(--global-card-bg-color));
+    border: 1px solid var(--global-divider-color);
+  }
+  .contact-band h2 {
+    font-size: 1.3rem;
+    margin: 0 0 0.4rem;
+  }
+  .contact-band p {
+    margin: 0;
+  }
 </style>
 
-<figure class="mission" aria-label="XLab mission: Micro-to-Macro Mechanistic AI, one principle applied across three research tracks">
-  <div class="mission-lead">
-    <strong>Micro-to-Macro Mechanistic AI</strong>
-    <span>Building AI that links micro-scale dynamics to macro-scale behavior &mdash; one principle, three research tracks.</span>
+<section class="hero">
+  <p class="hero-kicker">Brigham and Women's Hospital &middot; Harvard Medical School</p>
+  <h1 class="hero-title"><b>X</b>Lab</h1>
+  <p class="hero-tag">Micro-to-Macro Mechanistic AI</p>
+  <p class="hero-lede">We build AI that links micro-scale mechanisms&mdash;model parameters, atomic interactions, molecular signals&mdash;to macro-scale behavior, across fundamental AI, life science, and materials science.</p>
+  <p class="hero-pi">Led by <a href="{{ '/pi/' | relative_url }}">Hao Xu</a>, Investigator at Brigham and Women's Hospital and Instructor in Medicine at Harvard Medical School.</p>
+  <div class="hero-actions">
+    <a class="primary" href="{{ '/research/' | relative_url }}">Research</a>
+    <a href="{{ '/publications/' | relative_url }}">Publications</a>
+    <a href="{{ '/people/' | relative_url }}">Team</a>
   </div>
+  <div class="hero-venues">Recent work in
+    <span>ACL 2026</span><span>ECCV 2026</span><span>Genome Biology</span><span>J. Cheminform.</span><span>Communications Chemistry</span>
+  </div>
+</section>
+
+<section class="home-section">
+  <div class="section-head"><h2>News</h2></div>
+  {% include news.liquid limit=true %}
+</section>
+
+<section class="home-section">
+  <div class="section-head"><h2>Research Tracks</h2><a href="{{ '/research/' | relative_url }}">Research &rarr;</a></div>
+<figure class="mission" aria-label="XLab mission: Micro-to-Macro Mechanistic AI, one principle applied across three research tracks">
   <div class="mission-body">
     <div class="mission-axis" aria-hidden="true"><b>MICRO</b><i></i><b>MACRO</b></div>
     <div class="track" style="--accent: #7b52c7;">
@@ -283,3 +406,14 @@ description: News from XLab.
     <span class="goal"><i class="fa-solid fa-earth-americas" aria-hidden="true"></i>Enable discovery</span>
   </div>
 </figure>
+</section>
+
+<section class="home-section">
+  <div class="section-head"><h2>Selected Publications</h2><a href="{{ '/publications/' | relative_url }}">All publications &rarr;</a></div>
+  {% include selected_papers.liquid %}
+</section>
+
+<section class="contact-band">
+  <h2>Work with XLab</h2>
+  <p>We welcome collaborations with students and researchers across AI, chemistry, and medicine. Reach out at <a href="mailto:haoxu0303@gmail.com">haoxu0303@gmail.com</a>.</p>
+</section>
