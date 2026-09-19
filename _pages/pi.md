@@ -192,6 +192,6 @@ Research interests include:
 
 <div class="card pi-card mt-3 p-3" style="--accent: #3fa65b;">
   <h3 class="card-title font-weight-medium">Academic Service</h3>
-  <p><strong>Reviewer for Journals (JCR Q1):</strong> Scientific Reports, JCIM, ACM TIST, JMIR, Sustainable Food Technology, IEEE TMI, IEEE TPAMI, J. Cheminform., KBS, Nature Comms, Patterns, Quantum Science and Technology</p>
+  <p><strong>Reviewer for Journals (JCR Q1):</strong> Nature Communications, Communications Chemistry, Journal of Cheminformatics, Journal of Chemical Information and Modeling, Quantum Science and Technology, Journal of Medical Internet Research, ACM Transactions on Intelligent Systems and Technology, IEEE Transactions on Medical Imaging, IEEE Transactions on Pattern Analysis and Machine Intelligence, Knowledge-Based Systems, Scientific Reports, Patterns, Sustainable Food Technology</p>
   <p class="mb-0"><strong>Reviewer for Conferences:</strong> ACM MM, COLM, NeurIPS, CVPR, COLING, ECCV</p>
 </div>
