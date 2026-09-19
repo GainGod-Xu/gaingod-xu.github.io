@@ -55,15 +55,21 @@ nav_order: 5
 ### Senior Collaborators
 
 **[Joseph Loscalzo](https://scholar.google.com/citations?user=ZfAwwkUAAAAJ)** &mdash; Brigham and Women's Hospital & Harvard Medical School
+<br>Explainable protein&ndash;ligand binding (*ExplainBind*), systems chemical biology, and computational drug repurposing.
 
 **[Ruisheng Wang](https://scholar.google.com/citations?user=5ojAGvwAAAAJ)** &mdash; Channing Division of Network Medicine, Brigham and Women's Hospital & Harvard Medical School
+<br>Systems chemical biology&mdash;integrating medicinal chemistry and systems biology for drug discovery.
 
 **[Haibin Ling](https://scholar.google.com/citations?user=v3w4IYUAAAAJ)** &mdash; Department of Computer Science, Stony Brook University
+<br>LLM chain-of-thought reasoning for molecular structure elucidation from mass spectra (*J. Cheminform.*, 2026); co-mentored Yufeng Wang.
 
 **[Jiangning Song](https://scholar.google.com/citations?user=in9oae8AAAAJ)** &mdash; Monash Biomedicine Discovery Institute, Monash University
+<br>Interpretable RNA modification prediction with evolutionary RNA language models (*EvoRMD*, *Genome Biology*, 2026); co-mentored Bo Wang.
 
 **[Zaiqiao Meng](https://scholar.google.com/citations?user=5jJKFVcAAAAJ)** &mdash; School of Computing Science, University of Glasgow
+<br>Explainable protein&ndash;ligand binding via non-covalent interactions (*ExplainBind*); co-mentoring Zhaohan Meng.
 
 **[Pengyu Hong](https://scholar.google.com/citations?user=pvDa8pcAAAAJ)** &mdash; Department of Computer Science, Brandeis University
+<br>Six joint papers from my Brandeis postdoc: 2D/<sup>13</sup>C NMR prediction and peak assignment, and multimodal molecular representation learning for property prediction and drug discovery.
 
 </div>
