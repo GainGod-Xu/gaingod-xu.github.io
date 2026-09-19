@@ -66,7 +66,108 @@ Research interests include:
   .pi-card > h3 {
     color: var(--accent, var(--global-theme-color));
   }
+
+  /* Career path: chemistry -> computation -> AI for science -> medicine */
+  .path {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .path li {
+    position: relative;
+    padding: 1.1rem 0.6rem 0 0;
+  }
+  .path li::before {
+    content: "";
+    position: absolute;
+    top: 0.35rem;
+    left: 0;
+    right: -0.5rem;
+    height: 3px;
+    background: var(--accent);
+  }
+  .path li:last-child::before {
+    right: 0;
+    background: linear-gradient(to right, var(--accent) 60%, transparent);
+  }
+  .path li::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0.85rem;
+    height: 0.85rem;
+    border-radius: 50%;
+    background: var(--global-card-bg-color);
+    border: 3px solid var(--accent);
+  }
+  .path-years {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--global-text-color-light);
+  }
+  .path-stage {
+    display: block;
+    font-weight: 700;
+    color: var(--accent);
+    margin: 0.1rem 0 0.2rem;
+  }
+  .path-where {
+    display: block;
+    font-size: 0.82rem;
+    line-height: 1.35;
+  }
+  @media (max-width: 640px) {
+    .path {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+    .path li {
+      padding: 0 0 0.9rem 1.5rem;
+    }
+    .path li::before {
+      top: 0.4rem;
+      bottom: -0.4rem;
+      left: 0.35rem;
+      right: auto;
+      width: 3px;
+      height: auto;
+    }
+    .path li:last-child::before {
+      background: linear-gradient(to bottom, var(--accent) 40%, transparent);
+    }
+  }
 </style>
+
+<div class="card pi-card mt-3 p-3">
+  <h3 class="card-title font-weight-medium">Path</h3>
+  <ol class="path">
+    <li style="--accent: #3fa65b;">
+      <span class="path-years">2011&ndash;2017</span>
+      <span class="path-stage">Chemistry</span>
+      <span class="path-where">B.S., China Agricultural University &middot; M.S. Computational Chemistry, SMU</span>
+    </li>
+    <li style="--accent: #7b52c7;">
+      <span class="path-years">2017&ndash;2022</span>
+      <span class="path-stage">Chemistry + Computing</span>
+      <span class="path-where">Ph.D. Chemistry, Boston College &middot; M.S. Computer Science, Georgia Tech</span>
+    </li>
+    <li style="--accent: #3a7bd5;">
+      <span class="path-years">2023&ndash;2024</span>
+      <span class="path-stage">AI for Science</span>
+      <span class="path-where">Postdoc, Computer Science, Brandeis University &middot; GlycoMIP</span>
+    </li>
+    <li style="--accent: #d9534f;">
+      <span class="path-years">2024&ndash;now</span>
+      <span class="path-stage">AI for Medicine</span>
+      <span class="path-where">Brigham and Women's Hospital &amp; Harvard Medical School</span>
+    </li>
+  </ol>
+</div>
 
 <div class="card pi-card mt-3 p-3" style="--accent: #3a7bd5;">
   <h3 class="card-title font-weight-medium">Work Experience</h3>

@@ -26,7 +26,7 @@ nav_order: 5
 
 **[Zhaohan Meng](https://scholar.google.com/citations?user=gM9yaCkAAAAJ)** / University of Glasgow
 <br>2024&ndash;Present
-<br>Co-authored 2 paper (his first-author manuscript submitted); developed a foundational model for protein&ndash;ligand binding prediction.
+<br>Co-authored 2 papers (his first-author manuscript submitted); developed a foundational model for protein&ndash;ligand binding prediction.
 
 **[Yufeng Wang](https://scholar.google.com/citations?user=0ZahlvEAAAAJ&hl=en)** / Stony Brook University
 <br>2025&ndash;2026

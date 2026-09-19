@@ -13,8 +13,136 @@ nav_order: 3
   }
   .research-card > h3 {
     color: var(--accent, var(--global-theme-color));
+    scroll-margin-top: 5rem;
+  }
+
+  /* Micro-to-Macro flow diagram */
+  .m2m {
+    margin: 1.5rem 0 0.5rem;
+  }
+  .m2m-head,
+  .m2m-row {
+    display: grid;
+    grid-template-columns: 8.5rem 1fr 1.5rem 1fr 1.5rem 1fr;
+    align-items: stretch;
+    gap: 0.4rem;
+  }
+  .m2m-head {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--global-text-color-light);
+    margin-bottom: 0.35rem;
+  }
+  .m2m-row {
+    margin-bottom: 0.6rem;
+  }
+  .m2m-label {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0.7rem;
+    border-radius: 6px;
+    background: var(--accent);
+    color: #fff !important;
+    font-weight: 700;
+    font-size: 0.92rem;
+    line-height: 1.2;
+    text-decoration: none !important;
+  }
+  .m2m-label:hover {
+    filter: brightness(1.1);
+  }
+  .m2m-step {
+    padding: 0.5rem 0.7rem;
+    border: 1px solid var(--global-divider-color);
+    border-left: 3px solid var(--accent);
+    border-radius: 6px;
+    background: var(--global-card-bg-color);
+    font-size: 0.85rem;
+    line-height: 1.35;
+  }
+  .m2m-step:last-child {
+    background: color-mix(in srgb, var(--accent) 10%, var(--global-card-bg-color));
+  }
+  .m2m-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent);
+    font-weight: 700;
+  }
+  .m2m-base {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+    justify-content: center;
+    margin-top: 0.3rem;
+    padding: 0.5rem 0.7rem;
+    border-top: 1px dashed var(--global-divider-color);
+    font-size: 0.85rem;
+    color: var(--global-text-color-light);
+  }
+  .m2m-base a {
+    font-weight: 600;
+  }
+  @media (max-width: 640px) {
+    .m2m-head {
+      display: none;
+    }
+    .m2m-row {
+      grid-template-columns: 1fr;
+      margin-bottom: 1.2rem;
+    }
+    .m2m-step::before {
+      content: attr(data-stage);
+      display: block;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--global-text-color-light);
+    }
+    .m2m-arrow {
+      transform: rotate(90deg);
+      line-height: 1;
+    }
   }
 </style>
+
+<figure class="m2m" aria-label="Micro-to-Macro Mechanistic AI: how each research direction links micro-scale mechanisms to macro-scale behavior">
+  <div class="m2m-head" aria-hidden="true">
+    <span></span><span>Micro-scale mechanism</span><span></span><span>Mechanistic model</span><span></span><span>Macro-scale behavior</span>
+  </div>
+  <div class="m2m-row" style="--accent: #3a7bd5;">
+    <a class="m2m-label" href="#ai-for-science">AI for Science</a>
+    <div class="m2m-step" data-stage="Micro-scale mechanism">Atoms, non-covalent interactions, spectra, evolutionary sequence context</div>
+    <div class="m2m-arrow" aria-hidden="true">&rarr;</div>
+    <div class="m2m-step" data-stage="Mechanistic model">Physics-grounded geometric deep learning and biological language models</div>
+    <div class="m2m-arrow" aria-hidden="true">&rarr;</div>
+    <div class="m2m-step" data-stage="Macro-scale behavior">Binding, RNA modification, and molecular structure&mdash;explained, not just predicted</div>
+  </div>
+  <div class="m2m-row" style="--accent: #d9534f;">
+    <a class="m2m-label" href="#ai4health">AI4Health</a>
+    <div class="m2m-step" data-stage="Micro-scale mechanism">Multi-omics, medical imaging, and EHR signals</div>
+    <div class="m2m-arrow" aria-hidden="true">&rarr;</div>
+    <div class="m2m-step" data-stage="Mechanistic model">Explainable, multimodal foundation models</div>
+    <div class="m2m-arrow" aria-hidden="true">&rarr;</div>
+    <div class="m2m-step" data-stage="Macro-scale behavior">Clinical prediction and diagnosis</div>
+  </div>
+  <div class="m2m-row" style="--accent: #7b52c7;">
+    <a class="m2m-label" href="#ai-fundamentals">AI Fundamentals</a>
+    <div class="m2m-step" data-stage="Micro-scale mechanism">Parameter directions and gradient sensitivities</div>
+    <div class="m2m-arrow" aria-hidden="true">&rarr;</div>
+    <div class="m2m-step" data-stage="Mechanistic model">Structured, task-aware low-rank adaptation and counterfactual alignment</div>
+    <div class="m2m-arrow" aria-hidden="true">&rarr;</div>
+    <div class="m2m-step" data-stage="Macro-scale behavior">Reliable, efficient, visually grounded model behavior</div>
+  </div>
+  <div class="m2m-base">
+    <span>Foundation: <a href="#chemistry">physical-organic chemistry</a></span>
+    <span>Next: <a href="#emerging-direction">quantum computing for discovery</a></span>
+  </div>
+</figure>
 
 <div class="card research-card mt-3 p-4" markdown="1" style="--accent: #3a7bd5;">
 
