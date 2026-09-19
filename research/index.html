@@ -109,8 +109,102 @@
   }
   .research-card > h3 {
     color: var(--accent, var(--global-theme-color));
+    scroll-margin-top: 5rem;
   }
-</style> <div class="card research-card mt-3 p-4" style="--accent: #3a7bd5;"> <h3 id="ai-for-science">AI for Science</h3> <p>Embedding atomic-level physical and chemical mechanisms—spectral properties, atom interactions, evolutionary sequence context—directly into deep networks, so models predict molecular properties and structures through physically grounded reasoning rather than superficial correlations.</p> <ul> <li> <strong>ExplainBind: Explainable Physicochemical Determinants of Protein-Ligand Binding via Non-Covalent Interactions.</strong> Meng, Z.<sup>†</sup>, Bai, Z.<sup>†</sup>, et al., Oldham, W. M.*, Meng, Z.*, <em>Xu, H.</em>*, Loscalzo, J. <em>bioRxiv</em>, 2026.</li> <li> <strong>EvoRMD: Integrating Biological Context and Evolutionary RNA Language Models for Interpretable Prediction of RNA Modifications.</strong> Wang, B., Zhang, H., Cui, T., Wang, X., Song, J.*, <em>Xu, H.</em>* <em>Genome Biology</em>, 2026.</li> <li> <strong>How Well Can Off-the-Shelf LLMs Elucidate Molecular Structures from Mass Spectra Using Chain-of-Thought Reasoning?</strong> Wang, Y., Lu, W., Liu, L., <em>Xu, H.</em>*, Ling, H.* <em>J. Cheminform.</em>, 2026.</li> <li> <strong>TransPeakNet for Solvent-Aware 2D NMR Prediction via Multi-Task Pre-Training and Unsupervised Learning.</strong> Li, Y.<sup>†</sup>, <em>Xu, H.</em><sup>†</sup>, Kumar, A., Wang, D., Heiss, C., Azadi, P., Hong, P.* <em>Communications Chemistry</em>, 2025.</li> </ul> </div> <div class="card research-card mt-3 p-4" style="--accent: #d9534f;"> <h3 id="ai4health">AI4Health</h3> <p>Developing foundational models and explainable frameworks for multi-omics, medical imaging, and electronic health records (EHR)—individually and in multimodal combination—to advance clinical prediction and diagnosis.</p> <ul> <li> <strong>Deep Learning-Based MRI Model for Predicting P53-Mutated Hepatocellular Carcinoma.</strong> Jia, L., Yang, Q., Jiang, H., Huang, G., Wang, Z., Guo, X., Li, J., <em>Xu, H.</em>*, Lei, J.* <em>BMC Medical Imaging</em>, 2025.</li> </ul> </div> <div class="card research-card mt-3 p-4" style="--accent: #7b52c7;"> <h3 id="ai-fundamentals">AI Fundamentals</h3> <p>Parameter-efficient fine-tuning and multimodal alignment methods that preserve fine-grained gradient sensitivities, so adaptation stays reliable, interpretable, and cheap to train at scale.</p> <ul> <li> <strong>Not All Directions Matter: Toward Structured and Task-Aware Low-Rank Adaptation.</strong> Xiao, X., et al., <em>Xu, H.</em> <em>ACL</em>, 2026.</li> <li> <strong>Staying VIGILant: Mitigating Visual Laziness via Counterfactual Visual Alignment in MLLMs.</strong> Xiao, X., et al., <em>Xu, H.</em> <em>ECCV</em>, 2026.</li> </ul> </div> <div class="card research-card mt-3 p-4" style="--accent: #3fa65b;"> <h3 id="chemistry">Chemistry</h3> <p>Earlier work on cobalt-catalyzed asymmetric radical reactions and total synthesis—the physical-organic-chemistry foundation that now informs how I build mechanism-aware AI models.</p> <ul> <li> <strong>Enantioselective Radical <em>N</em>-Heterobicyclization by New Mode of Asymmetric Induction via Kinetically Stable Chiral Radical Center.</strong> <em>Xu, H.</em>, Wang, D.-S., Zhu, Z.-Y., Deb, A., Zhang, X. P.* <em>Chem</em>, 2024.</li> </ul> </div> <div class="card research-card mt-3 p-4" style="--accent: #d9a441;"> <h3 id="emerging-direction">Emerging Direction</h3> <p><strong>Quantum Computing for Scientific Discovery</strong> — exploring where quantum algorithms can accelerate simulation and search in molecular and biological discovery pipelines. Publications forthcoming.</p> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Hao Xu. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
+
+  /* Micro-to-Macro flow diagram */
+  .m2m {
+    margin: 1.5rem 0 0.5rem;
+  }
+  .m2m-head,
+  .m2m-row {
+    display: grid;
+    grid-template-columns: 8.5rem 1fr 1.5rem 1fr 1.5rem 1fr;
+    align-items: stretch;
+    gap: 0.4rem;
+  }
+  .m2m-head {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--global-text-color-light);
+    margin-bottom: 0.35rem;
+  }
+  .m2m-row {
+    margin-bottom: 0.6rem;
+  }
+  .m2m-label {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0.7rem;
+    border-radius: 6px;
+    background: var(--accent);
+    color: #fff !important;
+    font-weight: 700;
+    font-size: 0.92rem;
+    line-height: 1.2;
+    text-decoration: none !important;
+  }
+  .m2m-label:hover {
+    filter: brightness(1.1);
+  }
+  .m2m-step {
+    padding: 0.5rem 0.7rem;
+    border: 1px solid var(--global-divider-color);
+    border-left: 3px solid var(--accent);
+    border-radius: 6px;
+    background: var(--global-card-bg-color);
+    font-size: 0.85rem;
+    line-height: 1.35;
+  }
+  .m2m-step:last-child {
+    background: color-mix(in srgb, var(--accent) 10%, var(--global-card-bg-color));
+  }
+  .m2m-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent);
+    font-weight: 700;
+  }
+  .m2m-base {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+    justify-content: center;
+    margin-top: 0.3rem;
+    padding: 0.5rem 0.7rem;
+    border-top: 1px dashed var(--global-divider-color);
+    font-size: 0.85rem;
+    color: var(--global-text-color-light);
+  }
+  .m2m-base a {
+    font-weight: 600;
+  }
+  @media (max-width: 640px) {
+    .m2m-head {
+      display: none;
+    }
+    .m2m-row {
+      grid-template-columns: 1fr;
+      margin-bottom: 1.2rem;
+    }
+    .m2m-step::before {
+      content: attr(data-stage);
+      display: block;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--global-text-color-light);
+    }
+    .m2m-arrow {
+      transform: rotate(90deg);
+      line-height: 1;
+    }
+  }
+</style> <figure class="m2m" aria-label="Micro-to-Macro Mechanistic AI: how each research direction links micro-scale mechanisms to macro-scale behavior"> <div class="m2m-head" aria-hidden="true"> <span></span><span>Micro-scale mechanism</span><span></span><span>Mechanistic model</span><span></span><span>Macro-scale behavior</span> </div> <div class="m2m-row" style="--accent: #3a7bd5;"> <a class="m2m-label" href="#ai-for-science">AI for Science</a> <div class="m2m-step" data-stage="Micro-scale mechanism">Atoms, non-covalent interactions, spectra, evolutionary sequence context</div> <div class="m2m-arrow" aria-hidden="true">→</div> <div class="m2m-step" data-stage="Mechanistic model">Physics-grounded geometric deep learning and biological language models</div> <div class="m2m-arrow" aria-hidden="true">→</div> <div class="m2m-step" data-stage="Macro-scale behavior">Binding, RNA modification, and molecular structure—explained, not just predicted</div> </div> <div class="m2m-row" style="--accent: #d9534f;"> <a class="m2m-label" href="#ai4health">AI4Health</a> <div class="m2m-step" data-stage="Micro-scale mechanism">Multi-omics, medical imaging, and EHR signals</div> <div class="m2m-arrow" aria-hidden="true">→</div> <div class="m2m-step" data-stage="Mechanistic model">Explainable, multimodal foundation models</div> <div class="m2m-arrow" aria-hidden="true">→</div> <div class="m2m-step" data-stage="Macro-scale behavior">Clinical prediction and diagnosis</div> </div> <div class="m2m-row" style="--accent: #7b52c7;"> <a class="m2m-label" href="#ai-fundamentals">AI Fundamentals</a> <div class="m2m-step" data-stage="Micro-scale mechanism">Parameter directions and gradient sensitivities</div> <div class="m2m-arrow" aria-hidden="true">→</div> <div class="m2m-step" data-stage="Mechanistic model">Structured, task-aware low-rank adaptation and counterfactual alignment</div> <div class="m2m-arrow" aria-hidden="true">→</div> <div class="m2m-step" data-stage="Macro-scale behavior">Reliable, efficient, visually grounded model behavior</div> </div> <div class="m2m-base"> <span>Foundation: <a href="#chemistry">physical-organic chemistry</a></span> <span>Next: <a href="#emerging-direction">quantum computing for discovery</a></span> </div> </figure> <div class="card research-card mt-3 p-4" style="--accent: #3a7bd5;"> <h3 id="ai-for-science">AI for Science</h3> <p>Embedding atomic-level physical and chemical mechanisms—spectral properties, atom interactions, evolutionary sequence context—directly into deep networks, so models predict molecular properties and structures through physically grounded reasoning rather than superficial correlations.</p> <ul> <li> <strong>ExplainBind: Explainable Physicochemical Determinants of Protein-Ligand Binding via Non-Covalent Interactions.</strong> Meng, Z.<sup>†</sup>, Bai, Z.<sup>†</sup>, et al., Oldham, W. M.*, Meng, Z.*, <em>Xu, H.</em>*, Loscalzo, J. <em>bioRxiv</em>, 2026.</li> <li> <strong>EvoRMD: Integrating Biological Context and Evolutionary RNA Language Models for Interpretable Prediction of RNA Modifications.</strong> Wang, B., Zhang, H., Cui, T., Wang, X., Song, J.*, <em>Xu, H.</em>* <em>Genome Biology</em>, 2026.</li> <li> <strong>How Well Can Off-the-Shelf LLMs Elucidate Molecular Structures from Mass Spectra Using Chain-of-Thought Reasoning?</strong> Wang, Y., Lu, W., Liu, L., <em>Xu, H.</em>*, Ling, H.* <em>J. Cheminform.</em>, 2026.</li> <li> <strong>TransPeakNet for Solvent-Aware 2D NMR Prediction via Multi-Task Pre-Training and Unsupervised Learning.</strong> Li, Y.<sup>†</sup>, <em>Xu, H.</em><sup>†</sup>, Kumar, A., Wang, D., Heiss, C., Azadi, P., Hong, P.* <em>Communications Chemistry</em>, 2025.</li> </ul> </div> <div class="card research-card mt-3 p-4" style="--accent: #d9534f;"> <h3 id="ai4health">AI4Health</h3> <p>Developing foundational models and explainable frameworks for multi-omics, medical imaging, and electronic health records (EHR)—individually and in multimodal combination—to advance clinical prediction and diagnosis.</p> <ul> <li> <strong>Deep Learning-Based MRI Model for Predicting P53-Mutated Hepatocellular Carcinoma.</strong> Jia, L., Yang, Q., Jiang, H., Huang, G., Wang, Z., Guo, X., Li, J., <em>Xu, H.</em>*, Lei, J.* <em>BMC Medical Imaging</em>, 2025.</li> </ul> </div> <div class="card research-card mt-3 p-4" style="--accent: #7b52c7;"> <h3 id="ai-fundamentals">AI Fundamentals</h3> <p>Parameter-efficient fine-tuning and multimodal alignment methods that preserve fine-grained gradient sensitivities, so adaptation stays reliable, interpretable, and cheap to train at scale.</p> <ul> <li> <strong>Not All Directions Matter: Toward Structured and Task-Aware Low-Rank Adaptation.</strong> Xiao, X., et al., <em>Xu, H.</em> <em>ACL</em>, 2026.</li> <li> <strong>Staying VIGILant: Mitigating Visual Laziness via Counterfactual Visual Alignment in MLLMs.</strong> Xiao, X., et al., <em>Xu, H.</em> <em>ECCV</em>, 2026.</li> </ul> </div> <div class="card research-card mt-3 p-4" style="--accent: #3fa65b;"> <h3 id="chemistry">Chemistry</h3> <p>Earlier work on cobalt-catalyzed asymmetric radical reactions and total synthesis—the physical-organic-chemistry foundation that now informs how I build mechanism-aware AI models.</p> <ul> <li> <strong>Enantioselective Radical <em>N</em>-Heterobicyclization by New Mode of Asymmetric Induction via Kinetically Stable Chiral Radical Center.</strong> <em>Xu, H.</em>, Wang, D.-S., Zhu, Z.-Y., Deb, A., Zhang, X. P.* <em>Chem</em>, 2024.</li> </ul> </div> <div class="card research-card mt-3 p-4" style="--accent: #d9a441;"> <h3 id="emerging-direction">Emerging Direction</h3> <p><strong>Quantum Computing for Scientific Discovery</strong> — exploring where quantum algorithms can accelerate simulation and search in molecular and biological discovery pipelines. Publications forthcoming.</p> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Hao Xu. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
