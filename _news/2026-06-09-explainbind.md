@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-New preprint on *bioRxiv*: [ExplainBind: Explainable Physicochemical Determinants of Protein-Ligand Binding via Non-Covalent Interactions](https://pubmed.ncbi.nlm.nih.gov/41867731/)
+[ExplainBind: Explainable Physicochemical Determinants of Protein-Ligand Binding via Non-Covalent Interactions](https://pubmed.ncbi.nlm.nih.gov/41867731/) posted as a preprint on *bioRxiv*.

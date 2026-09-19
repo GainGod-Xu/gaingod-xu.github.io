@@ -2,7 +2,7 @@
 layout: page
 permalink: /research/
 title: Research
-description: "Core mission: Micro-to-Macro Mechanistic AI. A few directions define most of my current work; each is anchored by representative papers, with the full list on the publications page."
+description: "Core mission: Micro-to-Macro Mechanistic AI. A few directions define most of our current work; each is anchored by representative papers, with the full list on the publications page."
 nav: true
 nav_order: 3
 ---
@@ -91,7 +91,7 @@ nav_order: 3
   </div>
   <div class="m2m-dirs">
     <a href="#ai-for-science" style="--accent: #3a7bd5;">AI for Science</a>
-    <a href="#ai4health" style="--accent: #d9534f;">AI4Health</a>
+    <a href="#ai-for-health" style="--accent: #d9534f;">AI for Health</a>
     <a href="#ai-fundamentals" style="--accent: #7b52c7;">AI Fundamentals</a>
     <a href="#chemistry" style="--accent: #3fa65b;">Chemistry</a>
     <a href="#emerging-direction" style="--accent: #d9a441;">Quantum (emerging)</a>
@@ -114,7 +114,7 @@ Embedding atomic-level physical and chemical mechanisms&mdash;spectral propertie
 
 <div class="card research-card mt-3 p-4" markdown="1" style="--accent: #d9534f;">
 
-### AI4Health
+### AI for Health
 
 Developing foundational models and explainable frameworks for multi-omics, medical imaging, and electronic health records (EHR)&mdash;individually and in multimodal combination&mdash;to advance clinical prediction and diagnosis.
 

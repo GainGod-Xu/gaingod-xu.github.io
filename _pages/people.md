@@ -1,8 +1,8 @@
 ---
 layout: page
 permalink: /people/
-title: Team
-description: Junior and Senior Collaborators.
+title: People
+description: Principal investigator, student collaborators, and faculty collaborators.
 nav: true
 nav_order: 5
 ---
@@ -63,7 +63,16 @@ nav_order: 5
   }
 </style>
 
-<h3 class="pgroup-title">Junior Collaborators</h3>
+<h3 class="pgroup-title">Principal Investigator</h3>
+
+<div class="pgrid">
+<div class="pcard current">
+<div class="pname"><a href="{{ '/pi/' | relative_url }}">Hao Xu, Ph.D.</a></div>
+<div class="paff">Investigator, Brigham and Women's Hospital &middot; Instructor in Medicine, Harvard Medical School</div>
+</div>
+</div>
+
+<h3 class="pgroup-title mt-5">Current Student Collaborators</h3>
 
 <div class="pgrid">
 <div class="pcard current">
@@ -78,6 +87,11 @@ nav_order: 5
 <div class="pyears">2024&ndash;Present</div>
 <p markdown="span">Co-authored 2 papers (his first-author manuscript submitted); developed a foundational model for protein&ndash;ligand binding prediction.</p>
 </div>
+</div>
+
+<h3 class="pgroup-title mt-5">Former Student Collaborators</h3>
+
+<div class="pgrid">
 <div class="pcard">
 <div class="pname" markdown="span">**[Yufeng Wang](https://scholar.google.com/citations?user=0ZahlvEAAAAJ&hl=en)**</div>
 <div class="paff">Stony Brook University</div>
@@ -110,7 +124,7 @@ nav_order: 5
 </div>
 </div>
 
-<h3 class="pgroup-title mt-5">Senior Collaborators</h3>
+<h3 class="pgroup-title mt-5">Faculty Collaborators</h3>
 
 <div class="pgrid">
 <div class="scard">

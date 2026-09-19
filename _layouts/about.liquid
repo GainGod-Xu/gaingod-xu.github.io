@@ -4,8 +4,6 @@ layout: default
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sakura-js@1.1.1/dist/sakura.min.css" />
-<script src="https://cdn.jsdelivr.net/npm/sakura-js@1.1.1/dist/sakura.min.js"></script>
 <style>
   .artistic-name {
     display: inline-block;
@@ -96,19 +94,3 @@ layout: default
     {% endif %}
   </article>
 </div>
-
-<script>
-  window.addEventListener('load', function () {
-    if (typeof Sakura !== 'undefined') {
-      var sakura = new Sakura('body', {
-        gradientColorStart: 'rgba(255, 223, 230, 0.9)',
-        gradientColorEnd: 'rgba(255, 179, 198, 0.9)',
-        gradientColorDegree: 120,
-        delay: 280,
-      });
-      setTimeout(function () {
-        sakura.stop();
-      }, 15000);
-    }
-  });
-</script>

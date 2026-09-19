@@ -13,7 +13,7 @@ nav_order: 4
 
 {% include bib_search.liquid %}
 
-<p><sup>&dagger;</sup> denotes equal contribution; * denotes the corresponding author.</p>
+<p><sup>&dagger;</sup> denotes equal contribution; * denotes the corresponding author. For the complete and up-to-date list, see <a href="https://scholar.google.com/citations?user=tcYaFAcAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>.</p>
 
 <div class="publications">
 

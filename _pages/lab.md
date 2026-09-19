@@ -338,6 +338,9 @@ description: XLab at Brigham and Women's Hospital and Harvard Medical School —
   .contact-band p {
     margin: 0;
   }
+  .contact-band p + p {
+    margin-top: 0.4rem;
+  }
 </style>
 
 <section class="hero">
@@ -349,7 +352,7 @@ description: XLab at Brigham and Women's Hospital and Harvard Medical School —
   <div class="hero-actions">
     <a class="primary" href="{{ '/research/' | relative_url }}">Research</a>
     <a href="{{ '/publications/' | relative_url }}">Publications</a>
-    <a href="{{ '/people/' | relative_url }}">Team</a>
+    <a href="{{ '/people/' | relative_url }}">People</a>
   </div>
   <div class="hero-venues">Recent work in
     <span>ACL 2026</span><span>ECCV 2026</span><span>Genome Biology</span><span>J. Cheminform.</span><span>Communications Chemistry</span>
@@ -414,6 +417,7 @@ description: XLab at Brigham and Women's Hospital and Harvard Medical School —
 </section>
 
 <section class="contact-band">
-  <h2>Work with XLab</h2>
-  <p>We welcome collaborations with students and researchers across AI, chemistry, and medicine. Reach out at <a href="mailto:haoxu0303@gmail.com">haoxu0303@gmail.com</a>.</p>
+  <h2>Contact</h2>
+  <p>XLab &middot; Department of Medicine, Brigham and Women's Hospital &middot; Harvard Medical School &middot; Boston, MA</p>
+  <p>Email: <a href="mailto:haoxu0303@gmail.com">haoxu0303@gmail.com</a>. We welcome inquiries from prospective students and collaborators.</p>
 </section>

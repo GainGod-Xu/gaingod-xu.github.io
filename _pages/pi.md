@@ -19,23 +19,9 @@ profile:
       <a href="https://orcid.org/0000-0002-9795-5633" target="_blank" title="ORCID"><i class="ai ai-orcid"></i></a>
     </p>
     <p>
-      <em class="glow-text">Courage is the grace under pressure.</em>
+      <em>Courage is the grace under pressure.</em>
     </p>
     <style>
-      @keyframes glow-pulse {
-        0%, 100% {
-          text-shadow: 0 0 4px currentColor, 0 0 8px rgba(255, 215, 0, 0.4);
-          opacity: 0.85;
-        }
-        50% {
-          text-shadow: 0 0 10px currentColor, 0 0 20px rgba(255, 215, 0, 0.8), 0 0 30px rgba(255, 215, 0, 0.5);
-          opacity: 1;
-        }
-      }
-      .glow-text {
-        display: inline-block;
-        animation: glow-pulse 2s ease-in-out infinite;
-      }
       @media (min-width: 576px) {
         .profile {
           width: 22%;
@@ -49,7 +35,7 @@ selected_papers: false # moved to the XLab page
 social: false # includes social icons at the bottom of the page
 ---
 
-Dr. Hao Xu is currently an Investigator at Brigham and Women's Hospital and Instructor in Medicine at Harvard Medical School. His research pioneers **Micro-to-Macro Mechanistic AI**, a research paradigm that seeks to understand and control complex systems by linking microscopic mechanisms to macroscopic behaviors across both artificial intelligence and scientific discovery. In fundamental AI, he develops parameter-efficient fine-tuning (PEFT) and multimodal foundation models that connect micro-scale parameter dynamics with emergent model behaviors. In AI4Science, he combines physicochemical mechanisms with 3D geometric deep learning to reveal molecular-level principles governing biological function, enabling more interpretable molecular discovery and precision medicine.
+Dr. Hao Xu is currently an Investigator at Brigham and Women's Hospital and Instructor in Medicine at Harvard Medical School. His research pioneers **Micro-to-Macro Mechanistic AI**, a research paradigm that seeks to understand and control complex systems by linking microscopic mechanisms to macroscopic behaviors across both artificial intelligence and scientific discovery. In fundamental AI, he develops parameter-efficient fine-tuning (PEFT) and multimodal foundation models that connect micro-scale parameter dynamics with emergent model behaviors. In AI for Science, he combines physicochemical mechanisms with 3D geometric deep learning to reveal molecular-level principles governing biological function, enabling more interpretable molecular discovery and precision medicine.
 
 Research interests include:
 

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-New preprint: [HyperAdaLoRA: Accelerating LoRA Rank Allocation During Training via Hypernetworks without Sacrificing Performance](https://arxiv.org/abs/2510.02630), accepted to *ACL Findings 2026*.
+[HyperAdaLoRA: Accelerating LoRA Rank Allocation During Training via Hypernetworks without Sacrificing Performance](https://arxiv.org/abs/2510.02630) accepted to *Findings of ACL 2026*.
