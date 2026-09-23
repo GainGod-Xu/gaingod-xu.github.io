@@ -1,4 +1,4 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Research | Hao Xu </title> <meta name="author" content="Hao Xu"> <meta name="description" content="Core mission: Micro-to-Macro Mechanistic AI. A few directions define most of my current work; each is anchored by representative papers, with the full list on the publications page."> <meta name="keywords" content="Hao Xu, AI for Science, AI for Medicine, machine learning, drug discovery, Brigham and Women's Hospital, Harvard Medical School"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Research | Hao Xu </title> <meta name="author" content="Hao Xu"> <meta name="description" content="Core mission: Micro-to-Macro Mechanistic AI. A few directions define most of our current work; each is anchored by representative papers, with the full list on the publications page."> <meta name="keywords" content="Hao Xu, AI for Science, AI for Medicine, machine learning, drug discovery, Brigham and Women's Hospital, Harvard Medical School"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
   :root {
     --max-content-width: 930px;
   }
@@ -13,102 +13,7 @@
   .publications ol.bibliography li .title {
     font-weight: 700;
   }
-</style> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">X</span>Lab </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">XLab </a> </li> <li class="nav-item "> <a class="nav-link" href="/pi/">PI </a> </li> <li class="nav-item active"> <a class="nav-link" href="/research/">Research <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">Publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/people/">Team </a> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">Teaching </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link"><i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <canvas id="fx-canvas" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 9999;"></canvas> <script>
-  (function () {
-    var canvas = document.getElementById('fx-canvas');
-    var ctx = canvas.getContext('2d');
-    var particles = [];
-    var running = false;
-
-    function resize() {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    }
-    resize();
-    window.addEventListener('resize', resize);
-
-    function randRange(a, b) {
-      return a + Math.random() * (b - a);
-    }
-
-    function spawnSwordQi(x, y) {
-      var count = 6;
-      var baseAngle = randRange(0, Math.PI * 2);
-      for (var i = 0; i < count; i++) {
-        var angle = baseAngle + (Math.PI * 2 * i) / count + randRange(-0.15, 0.15);
-        var speed = randRange(14, 24);
-        particles.push({
-          type: 'qi',
-          x: x,
-          y: y,
-          vx: Math.cos(angle) * speed,
-          vy: Math.sin(angle) * speed,
-          alpha: 1,
-          length: randRange(55, 95),
-          width: randRange(2, 3.5),
-          decay: randRange(0.02, 0.032),
-        });
-      }
-    }
-
-    function step() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      for (var i = particles.length - 1; i >= 0; i--) {
-        var p = particles[i];
-        p.x += p.vx;
-        p.y += p.vy;
-        p.alpha -= p.decay;
-
-        if (p.type === 'qi') {
-          var speedMag = Math.sqrt(p.vx * p.vx + p.vy * p.vy) || 1;
-          var dx = (p.vx / speedMag) * p.length;
-          var dy = (p.vy / speedMag) * p.length;
-          ctx.globalAlpha = Math.max(p.alpha, 0);
-          ctx.save();
-          ctx.shadowColor = '#8fe9ff';
-          ctx.shadowBlur = 14;
-          var grad = ctx.createLinearGradient(p.x - dx, p.y - dy, p.x, p.y);
-          grad.addColorStop(0, 'rgba(180, 245, 255, 0)');
-          grad.addColorStop(1, '#eafcff');
-          ctx.strokeStyle = grad;
-          ctx.lineWidth = p.width;
-          ctx.lineCap = 'round';
-          ctx.beginPath();
-          ctx.moveTo(p.x - dx, p.y - dy);
-          ctx.lineTo(p.x, p.y);
-          ctx.stroke();
-          ctx.restore();
-          p.vx *= 0.96;
-          p.vy *= 0.96;
-        }
-
-        if (p.alpha <= 0) {
-          particles.splice(i, 1);
-        }
-      }
-      ctx.globalAlpha = 1;
-
-      if (particles.length > 0) {
-        requestAnimationFrame(step);
-      } else {
-        running = false;
-      }
-    }
-
-    function ensureRunning() {
-      if (!running) {
-        running = true;
-        requestAnimationFrame(step);
-      }
-    }
-
-    document.addEventListener('click', function (e) {
-      spawnSwordQi(e.clientX, e.clientY);
-      ensureRunning();
-    });
-
-  })();
-</script> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Research</h1> <p class="post-description">Core mission: Micro-to-Macro Mechanistic AI. A few directions define most of my current work; each is anchored by representative papers, with the full list on the publications page.</p> </header> <article> <style>
+</style> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">X</span>Lab </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">XLab </a> </li> <li class="nav-item "> <a class="nav-link" href="/pi/">PI </a> </li> <li class="nav-item active"> <a class="nav-link" href="/research/">Research <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">Publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/people/">People </a> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">Teaching </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link"><i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Research</h1> <p class="post-description">Core mission: Micro-to-Macro Mechanistic AI. A few directions define most of our current work; each is anchored by representative papers, with the full list on the publications page.</p> </header> <article> <style>
   .research-card {
     border-left: 4px solid var(--accent, var(--global-theme-color));
   }
@@ -180,7 +85,7 @@
       transform: rotate(90deg);
     }
   }
-</style> <figure class="m2m" aria-label="Micro-to-Macro Mechanistic AI: micro-scale mechanisms, mechanistic AI models, macro-scale behavior"> <div class="m2m-flow"> <div class="m2m-step"> <strong>Micro-scale mechanisms</strong><span>atoms · interactions · parameters</span> </div> <div class="m2m-arrow" aria-hidden="true">→</div> <div class="m2m-step"> <strong>Mechanistic AI models</strong><span>physically and structurally grounded</span> </div> <div class="m2m-arrow" aria-hidden="true">→</div> <div class="m2m-step"> <strong>Macro-scale behavior</strong><span>function · health · reliability</span> </div> </div> <div class="m2m-dirs"> <a href="#ai-for-science" style="--accent: #3a7bd5;">AI for Science</a> <a href="#ai4health" style="--accent: #d9534f;">AI4Health</a> <a href="#ai-fundamentals" style="--accent: #7b52c7;">AI Fundamentals</a> <a href="#chemistry" style="--accent: #3fa65b;">Chemistry</a> <a href="#emerging-direction" style="--accent: #d9a441;">Quantum (emerging)</a> </div> <div class="m2m-dirs">Foundation: AI + Chemistry + Medicine</div> </figure> <div class="card research-card mt-3 p-4" style="--accent: #3a7bd5;"> <h3 id="ai-for-science">AI for Science</h3> <p>Embedding atomic-level physical and chemical mechanisms—spectral properties, atom interactions, evolutionary sequence context—directly into deep networks, so models predict molecular properties and structures through physically grounded reasoning rather than superficial correlations.</p> <ul> <li> <strong>ExplainBind: Explainable Physicochemical Determinants of Protein-Ligand Binding via Non-Covalent Interactions.</strong> Meng, Z.<sup>†</sup>, Bai, Z.<sup>†</sup>, et al., Oldham, W. M.*, Meng, Z.*, <em>Xu, H.</em>*, Loscalzo, J. <em>bioRxiv</em>, 2026.</li> <li> <strong>EvoRMD: Integrating Biological Context and Evolutionary RNA Language Models for Interpretable Prediction of RNA Modifications.</strong> Wang, B., Zhang, H., Cui, T., Wang, X., Song, J.*, <em>Xu, H.</em>* <em>Genome Biology</em>, 2026.</li> <li> <strong>How Well Can Off-the-Shelf LLMs Elucidate Molecular Structures from Mass Spectra Using Chain-of-Thought Reasoning?</strong> Wang, Y., Lu, W., Liu, L., <em>Xu, H.</em>*, Ling, H.* <em>J. Cheminform.</em>, 2026.</li> <li> <strong>TransPeakNet for Solvent-Aware 2D NMR Prediction via Multi-Task Pre-Training and Unsupervised Learning.</strong> Li, Y.<sup>†</sup>, <em>Xu, H.</em><sup>†</sup>, Kumar, A., Wang, D., Heiss, C., Azadi, P., Hong, P.* <em>Communications Chemistry</em>, 2025.</li> </ul> </div> <div class="card research-card mt-3 p-4" style="--accent: #d9534f;"> <h3 id="ai4health">AI4Health</h3> <p>Developing foundational models and explainable frameworks for multi-omics, medical imaging, and electronic health records (EHR)—individually and in multimodal combination—to advance clinical prediction and diagnosis.</p> <ul> <li> <strong>Deep Learning-Based MRI Model for Predicting P53-Mutated Hepatocellular Carcinoma.</strong> Jia, L., Yang, Q., Jiang, H., Huang, G., Wang, Z., Guo, X., Li, J., <em>Xu, H.</em>*, Lei, J.* <em>BMC Medical Imaging</em>, 2025.</li> </ul> </div> <div class="card research-card mt-3 p-4" style="--accent: #7b52c7;"> <h3 id="ai-fundamentals">AI Fundamentals</h3> <p>Parameter-efficient fine-tuning and multimodal alignment methods that preserve fine-grained gradient sensitivities, so adaptation stays reliable, interpretable, and cheap to train at scale.</p> <ul> <li> <strong>Not All Directions Matter: Toward Structured and Task-Aware Low-Rank Adaptation.</strong> Xiao, X., et al., <em>Xu, H.</em> <em>ACL</em>, 2026.</li> <li> <strong>Staying VIGILant: Mitigating Visual Laziness via Counterfactual Visual Alignment in MLLMs.</strong> Xiao, X., et al., <em>Xu, H.</em> <em>ECCV</em>, 2026.</li> </ul> </div> <div class="card research-card mt-3 p-4" style="--accent: #3fa65b;"> <h3 id="chemistry">Chemistry</h3> <p>Earlier work on cobalt-catalyzed asymmetric radical reactions and total synthesis—the physical-organic-chemistry foundation that now informs how I build mechanism-aware AI models.</p> <ul> <li> <strong>Enantioselective Radical <em>N</em>-Heterobicyclization by New Mode of Asymmetric Induction via Kinetically Stable Chiral Radical Center.</strong> <em>Xu, H.</em>, Wang, D.-S., Zhu, Z.-Y., Deb, A., Zhang, X. P.* <em>Chem</em>, 2024.</li> </ul> </div> <div class="card research-card mt-3 p-4" style="--accent: #d9a441;"> <h3 id="emerging-direction">Emerging Direction</h3> <p><strong>Quantum Computing for Scientific Discovery</strong> — exploring where quantum algorithms can accelerate simulation and search in molecular and biological discovery pipelines. Publications forthcoming.</p> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Hao Xu. XLab · Brigham and Women's Hospital · Harvard Medical School. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
+</style> <figure class="m2m" aria-label="Micro-to-Macro Mechanistic AI: micro-scale mechanisms, mechanistic AI models, macro-scale behavior"> <div class="m2m-flow"> <div class="m2m-step"> <strong>Micro-scale mechanisms</strong><span>atoms · interactions · parameters</span> </div> <div class="m2m-arrow" aria-hidden="true">→</div> <div class="m2m-step"> <strong>Mechanistic AI models</strong><span>physically and structurally grounded</span> </div> <div class="m2m-arrow" aria-hidden="true">→</div> <div class="m2m-step"> <strong>Macro-scale behavior</strong><span>function · health · reliability</span> </div> </div> <div class="m2m-dirs"> <a href="#ai-for-science" style="--accent: #3a7bd5;">AI for Science</a> <a href="#ai-for-health" style="--accent: #d9534f;">AI for Health</a> <a href="#ai-fundamentals" style="--accent: #7b52c7;">AI Fundamentals</a> <a href="#chemistry" style="--accent: #3fa65b;">Chemistry</a> <a href="#emerging-direction" style="--accent: #d9a441;">Quantum (emerging)</a> </div> <div class="m2m-dirs">Foundation: AI + Chemistry + Medicine</div> </figure> <div class="card research-card mt-3 p-4" style="--accent: #3a7bd5;"> <h3 id="ai-for-science">AI for Science</h3> <p>Embedding atomic-level physical and chemical mechanisms—spectral properties, atom interactions, evolutionary sequence context—directly into deep networks, so models predict molecular properties and structures through physically grounded reasoning rather than superficial correlations.</p> <ul> <li> <strong>ExplainBind: Explainable Physicochemical Determinants of Protein-Ligand Binding via Non-Covalent Interactions.</strong> Meng, Z.<sup>†</sup>, Bai, Z.<sup>†</sup>, et al., Oldham, W. M.*, Meng, Z.*, <em>Xu, H.</em>*, Loscalzo, J. <em>bioRxiv</em>, 2026.</li> <li> <strong>EvoRMD: Integrating Biological Context and Evolutionary RNA Language Models for Interpretable Prediction of RNA Modifications.</strong> Wang, B., Zhang, H., Cui, T., Wang, X., Song, J.*, <em>Xu, H.</em>* <em>Genome Biology</em>, 2026.</li> <li> <strong>How Well Can Off-the-Shelf LLMs Elucidate Molecular Structures from Mass Spectra Using Chain-of-Thought Reasoning?</strong> Wang, Y., Lu, W., Liu, L., <em>Xu, H.</em>*, Ling, H.* <em>J. Cheminform.</em>, 2026.</li> <li> <strong>TransPeakNet for Solvent-Aware 2D NMR Prediction via Multi-Task Pre-Training and Unsupervised Learning.</strong> Li, Y.<sup>†</sup>, <em>Xu, H.</em><sup>†</sup>, Kumar, A., Wang, D., Heiss, C., Azadi, P., Hong, P.* <em>Communications Chemistry</em>, 2025.</li> </ul> </div> <div class="card research-card mt-3 p-4" style="--accent: #d9534f;"> <h3 id="ai-for-health">AI for Health</h3> <p>Developing foundational models and explainable frameworks for multi-omics, medical imaging, and electronic health records (EHR)—individually and in multimodal combination—to advance clinical prediction and diagnosis.</p> <ul> <li> <strong>Deep Learning-Based MRI Model for Predicting P53-Mutated Hepatocellular Carcinoma.</strong> Jia, L., Yang, Q., Jiang, H., Huang, G., Wang, Z., Guo, X., Li, J., <em>Xu, H.</em>*, Lei, J.* <em>BMC Medical Imaging</em>, 2025.</li> </ul> </div> <div class="card research-card mt-3 p-4" style="--accent: #7b52c7;"> <h3 id="ai-fundamentals">AI Fundamentals</h3> <p>Parameter-efficient fine-tuning and multimodal alignment methods that preserve fine-grained gradient sensitivities, so adaptation stays reliable, interpretable, and cheap to train at scale.</p> <ul> <li> <strong>Not All Directions Matter: Toward Structured and Task-Aware Low-Rank Adaptation.</strong> Xiao, X., et al., <em>Xu, H.</em> <em>ACL</em>, 2026.</li> <li> <strong>Staying VIGILant: Mitigating Visual Laziness via Counterfactual Visual Alignment in MLLMs.</strong> Xiao, X., et al., <em>Xu, H.</em> <em>ECCV</em>, 2026.</li> </ul> </div> <div class="card research-card mt-3 p-4" style="--accent: #3fa65b;"> <h3 id="chemistry">Chemistry</h3> <p>Earlier work on cobalt-catalyzed asymmetric radical reactions and total synthesis—the physical-organic-chemistry foundation that now informs how I build mechanism-aware AI models.</p> <ul> <li> <strong>Enantioselective Radical <em>N</em>-Heterobicyclization by New Mode of Asymmetric Induction via Kinetically Stable Chiral Radical Center.</strong> <em>Xu, H.</em>, Wang, D.-S., Zhu, Z.-Y., Deb, A., Zhang, X. P.* <em>Chem</em>, 2024.</li> </ul> </div> <div class="card research-card mt-3 p-4" style="--accent: #d9a441;"> <h3 id="emerging-direction">Emerging Direction</h3> <p><strong>Quantum Computing for Scientific Discovery</strong> — exploring where quantum algorithms can accelerate simulation and search in molecular and biological discovery pipelines. Publications forthcoming.</p> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Hao Xu. XLab · Brigham and Women's Hospital · Harvard Medical School. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
@@ -207,7 +112,7 @@ ninja.data = [{
           },
         },{id: "nav-research",
           title: "Research",
-          description: "Core mission: Micro-to-Macro Mechanistic AI. A few directions define most of my current work; each is anchored by representative papers, with the full list on the publications page.",
+          description: "Core mission: Micro-to-Macro Mechanistic AI. A few directions define most of our current work; each is anchored by representative papers, with the full list on the publications page.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/research/";
@@ -219,9 +124,9 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-team",
-          title: "Team",
-          description: "Junior and Senior Collaborators.",
+        },{id: "nav-people",
+          title: "People",
+          description: "Principal investigator, student collaborators, and faculty collaborators.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/people/";
@@ -240,23 +145,23 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "news-new-preprint-hyperadalora-accelerating-lora-rank-allocation-during-training-via-hypernetworks-without-sacrificing-performance-accepted-to-acl-findings-2026",
-          title: 'New preprint: HyperAdaLoRA: Accelerating LoRA Rank Allocation During Training via Hypernetworks without Sacrificing...',
+        },{id: "news-hyperadalora-accelerating-lora-rank-allocation-during-training-via-hypernetworks-without-sacrificing-performance-accepted-to-findings-of-acl-2026",
+          title: 'HyperAdaLoRA: Accelerating LoRA Rank Allocation During Training via Hypernetworks without Sacrificing Performance accepted...',
           description: "",
-          section: "News",},{id: "news-new-preprint-not-all-directions-matter-toward-structured-and-task-aware-low-rank-adaptation-accepted-to-acl-2026",
-          title: 'New preprint: Not All Directions Matter: Toward Structured and Task-Aware Low-Rank Adaptation, accepted...',
+          section: "News",},{id: "news-not-all-directions-matter-toward-structured-and-task-aware-low-rank-adaptation-accepted-to-acl-2026",
+          title: 'Not All Directions Matter: Toward Structured and Task-Aware Low-Rank Adaptation accepted to ACL...',
           description: "",
-          section: "News",},{id: "news-new-paper-published-in-genome-biology-evormd-integrating-biological-context-and-evolutionary-rna-language-models-for-interpretable-prediction-of-rna-modifications",
-          title: 'New paper published in Genome Biology: EvoRMD: Integrating Biological Context and Evolutionary RNA...',
+          section: "News",},{id: "news-evormd-integrating-biological-context-and-evolutionary-rna-language-models-for-interpretable-prediction-of-rna-modifications-published-in-genome-biology",
+          title: 'EvoRMD: Integrating Biological Context and Evolutionary RNA Language Models for Interpretable Prediction of...',
           description: "",
-          section: "News",},{id: "news-new-preprint-on-biorxiv-explainbind-explainable-physicochemical-determinants-of-protein-ligand-binding-via-non-covalent-interactions",
-          title: 'New preprint on bioRxiv: ExplainBind: Explainable Physicochemical Determinants of Protein-Ligand Binding via Non-Covalent...',
+          section: "News",},{id: "news-explainbind-explainable-physicochemical-determinants-of-protein-ligand-binding-via-non-covalent-interactions-posted-as-a-preprint-on-biorxiv",
+          title: 'ExplainBind: Explainable Physicochemical Determinants of Protein-Ligand Binding via Non-Covalent Interactions posted as a...',
           description: "",
-          section: "News",},{id: "news-new-preprint-staying-vigilant-mitigating-visual-laziness-via-counterfactual-visual-alignment-in-mllms-accepted-to-eccv-2026",
-          title: 'New preprint: Staying VIGILant: Mitigating Visual Laziness via Counterfactual Visual Alignment in MLLMs....',
+          section: "News",},{id: "news-staying-vigilant-mitigating-visual-laziness-via-counterfactual-visual-alignment-in-mllms-accepted-to-eccv-2026",
+          title: 'Staying VIGILant: Mitigating Visual Laziness via Counterfactual Visual Alignment in MLLMs accepted to...',
           description: "",
-          section: "News",},{id: "news-new-paper-published-in-journal-of-cheminformatics-how-well-can-off-the-shelf-llms-elucidate-molecular-structures-from-mass-spectra-using-chain-of-thought-reasoning",
-          title: 'New paper published in Journal of Cheminformatics: How Well Can Off-the-Shelf LLMs Elucidate...',
+          section: "News",},{id: "news-how-well-can-off-the-shelf-llms-elucidate-molecular-structures-from-mass-spectra-using-chain-of-thought-reasoning-published-in-journal-of-cheminformatics",
+          title: 'How Well Can Off-the-Shelf LLMs Elucidate Molecular Structures from Mass Spectra Using Chain-of-Thought...',
           description: "",
           section: "News",},{
         id: 'social-email',
