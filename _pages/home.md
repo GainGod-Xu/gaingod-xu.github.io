@@ -8,19 +8,20 @@ description: Hao Xu builds trustworthy AI systems that learn how biological inte
 <style>
   /* ---------- shared ---------- */
   .home h1, .home h2, .home h3 { letter-spacing: -0.01em; }
-  .home .sec { margin-top: 4rem; scroll-margin-top: 4.5rem; }
-  .home .sec-head { margin-bottom: 1.1rem; padding-bottom: 0.45rem; border-bottom: 1px solid var(--global-divider-color);
-    display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; }
-  .home .sec-head h2 { margin: 0; font-size: 1.5rem; font-weight: 700; }
-  .home .sec-head a { font-size: 0.88rem; font-weight: 600; white-space: nowrap; }
+  .home .sec { margin-top: 0; padding: 3.6rem 0; border-top: 1px solid var(--global-divider-color); scroll-margin-top: 4.5rem; }
+  .home .sec-head { margin-bottom: 1.4rem; display: flex; align-items: flex-end; justify-content: space-between; gap: 1rem; }
+  .home .sec-head h2 { margin: 0; font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 800; line-height: 1.15; max-width: 30ch; }
+  .home .sec-head a { font-size: 0.88rem; font-weight: 700; white-space: nowrap; padding-bottom: 0.3rem; }
   @media (max-width: 560px) { .home .sec-head { flex-wrap: wrap; } .home .sec-head a { width: 100%; } }
   .home .muted { color: var(--global-text-color-light); }
+  .home .sec.tinted { position: relative; }
+  .home .sec.tinted::before { content: ""; position: absolute; inset: 0 -100vw; left: 50%; transform: translateX(-50%); width: 100vw; background: color-mix(in srgb, var(--global-theme-color) 4%, var(--global-bg-color)); border-block: 1px solid var(--global-divider-color); z-index: -1; }
   .home .lede { max-width: 46rem; font-size: 1.05rem; line-height: 1.65; }
   .home .qkeys { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.7rem; }
   .home .qkeys span { font-size: 0.76rem; padding: 0.1rem 0.55rem; border-radius: 4px; border: 1px solid var(--global-divider-color); color: var(--global-text-color-light); }
 
   /* ---------- hero: text left, schematic right ---------- */
-  .hero { display: grid; grid-template-columns: 1fr 1.05fr; gap: 2.2rem; align-items: center; padding: 2.2rem 0 1rem; }
+  .hero { display: grid; grid-template-columns: 1fr 1.05fr; gap: 2.2rem; align-items: center; padding: 2.4rem 0 3.4rem; }
   .hero-title { font-size: clamp(2rem, 4.6vw, 2.9rem); font-weight: 800; line-height: 1.08; margin: 0 0 0.9rem; }
   .hero-title b { color: var(--global-theme-color); font-weight: 800; white-space: nowrap; }
   .hero-title::after { content: ""; display: block; width: 3.2rem; height: 3px; background: var(--global-theme-color); margin-top: 0.9rem; }
@@ -133,6 +134,7 @@ description: Hao Xu builds trustworthy AI systems that learn how biological inte
 
 <section class="hero" id="top">
   <div>
+    <p class="kicker">Trustworthy AI for molecular and systems biology &middot; Boston</p>
     <h1 class="hero-title">Trustworthy<br>World Models<br>for <b>Life Science</b></h1>
     <p class="hero-tag">Understand biological systems well enough to predict and act reliably.</p>
     <p class="hero-lede">We develop AI systems that learn representations of biological states, predict their responses to perturbations, and guide interventions across scales, from molecules to patients.</p>
@@ -206,7 +208,7 @@ description: Hao Xu builds trustworthy AI systems that learn how biological inte
 </section>
 
 <section class="sec" id="vision">
-  <div class="sec-head"><h2>Why World Models for Life Science?</h2></div>
+  <div class="sec-head"><div><p class="kicker"><span class="no">01</span>Why</p><h2>Why World Models for Life Science?</h2></div></div>
   <div class="why">
     <p>Biological AI is increasingly powerful, but most models remain isolated within a single scale: molecules, proteins, cells, or patients. Living systems, however, are connected across scales. A molecular intervention can alter binding, reshape interaction networks, change cellular states, and ultimately affect phenotype.</p>
     <p class="big">The challenge is not only to predict biology, but to understand how interventions propagate through it.</p>
@@ -214,7 +216,7 @@ description: Hao Xu builds trustworthy AI systems that learn how biological inte
 </section>
 
 <section class="sec" id="questions">
-  <div class="sec-head"><h2>Three Fundamental Questions</h2></div>
+  <div class="sec-head"><div><p class="kicker"><span class="no">02</span>Questions</p><h2>Three Fundamental Questions</h2></div></div>
   <div class="qs">
     <div>
       <h3>Understand</h3>
@@ -235,7 +237,7 @@ description: Hao Xu builds trustworthy AI systems that learn how biological inte
 </section>
 
 <section class="sec" id="trust">
-  <div class="sec-head"><h2>What Makes a Biological World Model Trustworthy?</h2></div>
+  <div class="sec-head"><div><p class="kicker"><span class="no">03</span>Trustworthiness</p><h2>What Makes a Biological World Model Trustworthy?</h2></div></div>
   <div class="trust">
     <div><h3>Interpretability</h3><p>What mechanism drives the prediction?</p></div>
     <div><h3>Uncertainty</h3><p>Does the model know when it may be wrong?</p></div>
@@ -247,7 +249,7 @@ description: Hao Xu builds trustworthy AI systems that learn how biological inte
 </section>
 
 <section class="sec" id="building">
-  <div class="sec-head"><h2>Building the World Model, One Scale at a Time</h2><a href="{{ '/research/' | relative_url }}">Research directions &rarr;</a></div>
+  <div class="sec-head"><div><p class="kicker"><span class="no">04</span>Research program</p><h2>Building the World Model, One Scale at a Time</h2></div><a href="{{ '/research/' | relative_url }}">Research directions &rarr;</a></div>
   <p class="muted" style="margin: 0 0 1.1rem; font-size: 0.92rem; max-width: 46rem;">Each scale is a level where a biological state can be measured and a model can be trained. For every scale: what the state is, how it is measured, what an intervention looks like there, and the work that anchors it. Phenotype is the readout at every level.</p>
   <div class="build">
     <div class="stage">
@@ -312,8 +314,8 @@ description: Hao Xu builds trustworthy AI systems that learn how biological inte
   <p class="muted" style="margin: 1rem 0 0; font-size: 0.9rem; max-width: 46rem;">The ladder runs both ways. Interventions propagate upward from molecule to patient; observations at higher scales constrain which molecular mechanisms matter. A world model has to be consistent in both directions.</p>
 </section>
 
-<section class="sec" id="selected">
-  <div class="sec-head"><h2>Selected Research</h2><a href="{{ '/publications/' | relative_url }}">All publications &rarr;</a></div>
+<section class="sec tinted" id="selected">
+  <div class="sec-head"><div><p class="kicker"><span class="no">05</span>Selected research</p><h2>Selected Research</h2></div><a href="{{ '/publications/' | relative_url }}">All publications &rarr;</a></div>
   <div class="cards">
     <div class="card-r">
       <h3>ExplainBind</h3>
@@ -349,7 +351,7 @@ description: Hao Xu builds trustworthy AI systems that learn how biological inte
 </section>
 
 <section class="sec" id="domains">
-  <div class="sec-head"><h2>Where I Work</h2></div>
+  <div class="sec-head"><div><p class="kicker"><span class="no">06</span>Domains</p><h2>Where I Work</h2></div></div>
   <div class="dom">
     <div><h3>Molecular Regulation &amp; Modification</h3><p>RNA modification &middot; protein modification &middot; molecular function</p></div>
     <div><h3>Biomolecular Interactions &amp; Networks</h3><p>PPI &middot; RRI &middot; protein&ndash;ligand &middot; RNA&ndash;ligand &middot; network medicine</p></div>
@@ -358,7 +360,7 @@ description: Hao Xu builds trustworthy AI systems that learn how biological inte
 </section>
 
 <section class="sec" id="about">
-  <div class="sec-head"><h2>About Hao</h2><a href="{{ '/about/' | relative_url }}">Appointments and education &rarr;</a></div>
+  <div class="sec-head"><div><p class="kicker"><span class="no">07</span>About</p><h2>About Hao</h2></div><a href="{{ '/about/' | relative_url }}">Appointments and education &rarr;</a></div>
   <div class="about-h">
     <img src="{{ '/assets/img/prof_pic.png' | relative_url }}" alt="Hao Xu">
     <div>
@@ -375,6 +377,6 @@ description: Hao Xu builds trustworthy AI systems that learn how biological inte
 </section>
 
 <section class="sec" id="news">
-  <div class="sec-head"><h2>News</h2></div>
+  <div class="sec-head"><div><p class="kicker"><span class="no">08</span>News</p><h2>News</h2></div></div>
   {% include news.liquid limit=true %}
 </section>
