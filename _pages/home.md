@@ -42,8 +42,8 @@ description: Hao Xu builds trustworthy AI systems that learn how biological inte
   .sv .pr { font-size: 10.5px; font-weight: 600; fill: var(--global-text-color); }
   .sv .arc { fill: none; stroke: var(--global-theme-color); stroke-width: 2; stroke-dasharray: 6 4; }
   .sv .core { fill: color-mix(in srgb, var(--global-theme-color) 10%, var(--global-bg-color)); stroke: var(--global-theme-color); stroke-width: 1.2; }
-  .sv .corelbl { font-size: 13.5px; font-weight: 800; letter-spacing: 0.04em; fill: var(--global-theme-color); }
-  .sv .coresub { font-size: 8.6px; fill: var(--global-text-color-light); }
+  .sv .corelbl { font-size: 12.5px; font-weight: 800; letter-spacing: 0.02em; fill: var(--global-theme-color); }
+  .sv .coresub { font-size: 8px; fill: var(--global-text-color-light); }
   .sv .node rect { fill: var(--global-card-bg-color); stroke: var(--global-divider-color); stroke-width: 1; }
   .sv .nlbl { font-size: 10.5px; font-weight: 800; letter-spacing: 0.04em; fill: var(--global-text-color); }
   .sv .nsub { font-size: 7.4px; fill: var(--global-text-color-light); }
@@ -123,8 +123,8 @@ description: Hao Xu builds trustworthy AI systems that learn how biological inte
       <!-- principles -->
       <text class="pr" x="109" y="86" text-anchor="middle">Interpretability</text>
       <text class="pr" x="371" y="80" text-anchor="middle">Mechanistic<tspan x="371" dy="12">Consistency</tspan></text>
-      <text class="pr" x="46" y="214" text-anchor="middle">Uncertainty</text>
-      <text class="pr" x="434" y="214" text-anchor="middle">Robustness</text>
+      <text class="pr" x="38" y="214" text-anchor="middle">Uncertainty</text>
+      <text class="pr" x="442" y="214" text-anchor="middle">Robustness</text>
       <text class="pr" x="109" y="346" text-anchor="middle">Validation</text>
       <text class="pr" x="371" y="346" text-anchor="middle">Generalization</text>
       <!-- cycle arcs (clockwise) -->
@@ -144,9 +144,9 @@ description: Hao Xu builds trustworthy AI systems that learn how biological inte
         <text class="nsub" x="240" y="121" text-anchor="middle">Measure biological systems</text>
       </g>
       <g class="node">
-        <rect x="284" y="188" width="112" height="44" rx="10"/>
-        <text class="nlbl" x="340" y="207" text-anchor="middle">REPRESENT</text>
-        <text class="nsub" x="340" y="221" text-anchor="middle">Learn biological states</text>
+        <rect x="296" y="188" width="112" height="44" rx="10"/>
+        <text class="nlbl" x="352" y="207" text-anchor="middle">REPRESENT</text>
+        <text class="nsub" x="352" y="221" text-anchor="middle">Learn biological states</text>
       </g>
       <g class="node">
         <rect x="184" y="288" width="112" height="44" rx="10"/>
@@ -154,9 +154,9 @@ description: Hao Xu builds trustworthy AI systems that learn how biological inte
         <text class="nsub" x="240" y="321" text-anchor="middle">Model responses to perturbation</text>
       </g>
       <g class="node">
-        <rect x="84" y="188" width="112" height="44" rx="10"/>
-        <text class="nlbl" x="140" y="207" text-anchor="middle">ACT</text>
-        <text class="nsub" x="140" y="221" text-anchor="middle">Design interventions</text>
+        <rect x="72" y="188" width="112" height="44" rx="10"/>
+        <text class="nlbl" x="128" y="207" text-anchor="middle">ACT</text>
+        <text class="nsub" x="128" y="221" text-anchor="middle">Design interventions</text>
       </g>
     </svg>
     <div class="sv-base">
