@@ -90,7 +90,10 @@ description: Hao Xu builds trustworthy AI systems that learn how biological inte
   .build .stage.future::after { background: var(--global-bg-color); border: 2px solid var(--global-text-color-light); width: 9px; height: 9px; top: -3px; }
   .build .stage.future h3 { color: var(--global-text-color-light); }
   .build h3 { margin: 0 0 0.45rem; font-size: 0.95rem; font-weight: 700; line-height: 1.25; }
-  .build ul { list-style: none; margin: 0; padding: 0; font-size: 0.84rem; line-height: 1.45; }
+  .build dl { margin: 0 0 0.55rem; font-size: 0.78rem; line-height: 1.4; }
+  .build dt { font-weight: 700; color: var(--global-text-color-light); font-size: 0.68rem; letter-spacing: 0.06em; text-transform: uppercase; margin-top: 0.3rem; }
+  .build dd { margin: 0; }
+  .build ul { list-style: none; margin: 0; padding: 0.5rem 0 0; border-top: 1px solid var(--global-divider-color); font-size: 0.84rem; line-height: 1.45; }
   .build li { margin-bottom: 0.2rem; }
   .build li.f { color: var(--global-text-color-light); font-style: italic; }
   @media (max-width: 820px) { .build { grid-template-columns: 1fr; } .build .stage { padding: 0.5rem 0 0.9rem 1.2rem; }
@@ -130,7 +133,7 @@ description: Hao Xu builds trustworthy AI systems that learn how biological inte
   <div>
     <h1 class="hero-title">Trustworthy World Models for <b>Life Science</b></h1>
     <p class="hero-tag">Understand biological systems well enough to predict and act reliably.</p>
-    <p class="hero-lede">We develop AI systems that learn representations of biological states, predict their responses to perturbations, and guide interventions across molecular and cellular scales.</p>
+    <p class="hero-lede">We develop AI systems that learn representations of biological states, predict their responses to perturbations, and guide interventions across scales, from molecules to patients.</p>
     <p class="hero-who"><b>Hao Xu, Ph.D.</b><br>Investigator, Brigham and Women's Hospital<br>Instructor in Medicine, Harvard Medical School</p>
     <div class="hero-actions">
       <a class="primary" href="#vision">Research Vision</a>
@@ -195,7 +198,7 @@ description: Hao Xu builds trustworthy AI systems that learn how biological inte
       <span><svg viewBox="0 0 20 20"><circle cx="5" cy="14" r="2.6"/><circle cx="15" cy="6" r="2.6"/><line x1="7" y1="12.4" x2="13" y2="7.6"/><circle cx="15" cy="15" r="1.4"/></svg>Interaction</span><i>&rarr;</i>
       <span><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="2.2"/><circle cx="3.5" cy="5" r="1.6"/><circle cx="16.5" cy="5" r="1.6"/><circle cx="4" cy="16" r="1.6"/><circle cx="16" cy="16" r="1.6"/><line x1="10" y1="10" x2="3.5" y2="5"/><line x1="10" y1="10" x2="16.5" y2="5"/><line x1="10" y1="10" x2="4" y2="16"/><line x1="10" y1="10" x2="16" y2="16"/></svg>Network</span><i>&rarr;</i>
       <span><svg viewBox="0 0 20 20"><ellipse cx="10" cy="10" rx="8" ry="6.5"/><circle cx="8.5" cy="9.5" r="2.4"/></svg>Cell</span><i>&rarr;</i>
-      <span><svg viewBox="0 0 20 20"><circle cx="7" cy="7" r="4"/><circle cx="13.5" cy="8" r="4"/><circle cx="10" cy="13.5" r="4"/></svg>Phenotype</span>
+      <span><svg viewBox="0 0 20 20"><circle cx="10" cy="5" r="3"/><path d="M4,18 C4,12.5 6.5,10 10,10 C13.5,10 16,12.5 16,18"/></svg>Organism</span>
     </div>
   </figure>
 </section>
@@ -235,7 +238,7 @@ description: Hao Xu builds trustworthy AI systems that learn how biological inte
     <div><h3>Interpretability</h3><p>What mechanism drives the prediction?</p></div>
     <div><h3>Uncertainty</h3><p>Does the model know when it may be wrong?</p></div>
     <div><h3>Robustness</h3><p>Does the prediction survive perturbation and measurement noise?</p></div>
-    <div><h3>Generalization</h3><p>Does it transfer to unseen molecules, targets, and biological contexts?</p></div>
+    <div><h3>Generalization</h3><p>Does it transfer to unseen molecules, targets, cell types, and patients?</p></div>
     <div><h3>Mechanistic Consistency</h3><p>Does it obey known physical, chemical, and biological constraints?</p></div>
     <div><h3>Validation</h3><p>Is it tested against experiments, not only benchmarks?</p></div>
   </div>
@@ -243,38 +246,68 @@ description: Hao Xu builds trustworthy AI systems that learn how biological inte
 
 <section class="sec" id="building">
   <div class="sec-head"><h2>Building the World Model, One Scale at a Time</h2><a href="{{ '/research/' | relative_url }}">Research directions &rarr;</a></div>
+  <p class="muted" style="margin: 0 0 1.1rem; font-size: 0.92rem; max-width: 46rem;">Each scale is a level where a biological state can be measured and a model can be trained. For every scale: what the state is, how it is measured, what an intervention looks like there, and the work that anchors it. Phenotype is the readout at every level.</p>
   <div class="build">
     <div class="stage">
-      <h3>Molecular Representation</h3>
+      <h3>Molecule</h3>
+      <dl>
+        <dt>State</dt><dd>structure, sequence, conformation</dd>
+        <dt>Measured by</dt><dd>NMR, mass spectrometry, sequence</dd>
+        <dt>Intervention</dt><dd>changing the molecule itself</dd>
+      </dl>
       <ul>
-        <li><a href="{{ '/publications/#wang2026evormd' | relative_url }}">EvoRMD</a></li>
         <li><a href="{{ '/publications/#wang2025advancing' | relative_url }}">Multimodal molecular learning</a></li>
-        <li><a href="{{ '/publications/#li2025transpeaknet' | relative_url }}">NMR structure elucidation</a></li>
+        <li><a href="{{ '/publications/#li2025transpeaknet' | relative_url }}">TransPeakNet</a> &middot; <a href="{{ '/publications/#li2025dnmrgym' | relative_url }}">2DNMRGym</a></li>
       </ul>
     </div>
     <div class="stage">
-      <h3>Molecular Interaction</h3>
+      <h3>Interaction</h3>
+      <dl>
+        <dt>State</dt><dd>binding, recognition, modification</dd>
+        <dt>Measured by</dt><dd>affinity, complex structure, modification sites</dd>
+        <dt>Intervention</dt><dd>a small molecule binds a protein or RNA</dd>
+      </dl>
       <ul>
         <li><a href="{{ '/publications/#xu2026explainbind' | relative_url }}">ExplainBind</a></li>
+        <li><a href="{{ '/publications/#wang2026evormd' | relative_url }}">EvoRMD</a></li>
         <li>RNA&ndash;ligand recognition</li>
       </ul>
     </div>
     <div class="stage">
-      <h3>Interaction Networks</h3>
+      <h3>Network</h3>
+      <dl>
+        <dt>State</dt><dd>pathway activity, interactome topology</dd>
+        <dt>Measured by</dt><dd>PPI / RRI maps, omics</dd>
+        <dt>Intervention</dt><dd>node perturbation, drug repurposing</dd>
+      </dl>
       <ul>
+        <li><a href="{{ '/publications/#wang2025systems' | relative_url }}">Network medicine</a> &middot; <a href="{{ '/publications/#xu2026drugrepurposing' | relative_url }}">Drug repurposing</a></li>
         <li>Affinity-weighted PPI</li>
-        <li><a href="{{ '/publications/#wang2025systems' | relative_url }}">Systems pharmacology / network medicine</a></li>
       </ul>
     </div>
     <div class="stage future">
-      <h3>Cellular Perturbation</h3>
-      <ul><li class="f">Future: single-cell / Perturb-seq response</li></ul>
+      <h3>Cell</h3>
+      <dl>
+        <dt>State</dt><dd>cell state: transcriptome, proteome</dd>
+        <dt>Measured by</dt><dd>single-cell profiling, Perturb-seq</dd>
+        <dt>Intervention</dt><dd>genetic and chemical perturbation</dd>
+      </dl>
+      <ul><li class="f">Planned: single-cell perturbation response</li></ul>
     </div>
     <div class="stage future">
-      <h3>Phenotypic Response</h3>
-      <ul><li class="f">Future: precision intervention</li></ul>
+      <h3>Organism &amp; Patient</h3>
+      <dl>
+        <dt>State</dt><dd>physiology, disease, treatment response</dd>
+        <dt>Measured by</dt><dd>imaging, EHR, clinical outcomes</dd>
+        <dt>Intervention</dt><dd>precision intervention</dd>
+      </dl>
+      <ul>
+        <li class="f">Planned: precision intervention</li>
+        <li>Early: <a href="{{ '/publications/#jia2025p53' | relative_url }}">MRI prediction of P53-mutated HCC</a></li>
+      </ul>
     </div>
   </div>
+  <p class="muted" style="margin: 1rem 0 0; font-size: 0.9rem; max-width: 46rem;">The ladder runs both ways. Interventions propagate upward from molecule to patient; observations at higher scales constrain which molecular mechanisms matter. A world model has to be consistent in both directions.</p>
 </section>
 
 <section class="sec" id="selected">

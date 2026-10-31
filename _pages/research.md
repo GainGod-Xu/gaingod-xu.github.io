@@ -25,7 +25,7 @@ nav_order: 2
   .r-nav a { padding: 0.15rem 0.7rem; border-radius: 999px; border: 1px solid var(--global-divider-color); text-decoration: none !important; }
 </style>
 
-<p class="r-intro">I build trustworthy AI systems to understand how biological interventions propagate across scales. The directions below move from molecules to interactions, networks, and cells; each asks a version of the same three questions&mdash;<strong>understand</strong>, <strong>predict</strong>, <strong>intervene</strong>&mdash;and each is held to the same standard of interpretability, uncertainty, robustness, generalization, and mechanistic consistency. The home page shows how they <a href="{{ '/#building' | relative_url }}">build toward a world model</a>, one scale at a time.</p>
+<p class="r-intro">I build trustworthy AI systems to understand how biological interventions propagate across scales. The directions below move from molecules to interactions, networks, cells, and patients; each asks a version of the same three questions&mdash;<strong>understand</strong>, <strong>predict</strong>, <strong>intervene</strong>&mdash;and each is held to the same standard of interpretability, uncertainty, robustness, generalization, and mechanistic consistency. The home page shows how they <a href="{{ '/#building' | relative_url }}">build toward a world model</a>, one scale at a time.</p>
 
 <div class="r-nav">
   <a href="#molecular-recognition">Molecular recognition</a>
@@ -112,7 +112,7 @@ Scientific data are scarce and shift across experiments, so the foundation model
 
 ### Toward world models of biological response {#toward-world-models}
 
-The next step is to close the loop from molecule to phenotype: perturbation biology and single-cell response modeling, cross-scale state transitions, and inverting these models to design precision interventions. Each stage will carry explicit uncertainty and be tested for consistency with known mechanisms.
+The next step is to close the loop from molecule to patient: perturbation biology and single-cell response modeling, cross-scale state transitions, and inverting these models to design precision interventions. Each stage will carry explicit uncertainty and be tested for consistency with known mechanisms.
 </div>
 
 <div class="rcard past" markdown="1">
