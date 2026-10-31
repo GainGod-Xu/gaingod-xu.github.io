@@ -1,3 +1,6 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
 <style>
   /* Single restrained accent: deep blue in light mode, lighter blue in dark mode */
   html:not([data-theme="dark"]) {
@@ -9,7 +12,10 @@
     --global-hover-color: #7ab8f5;
   }
   body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  h1, h2, h3, .hero-title, .navbar-brand {
+    font-family: "Manrope", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   }
   strong,
   b,
@@ -57,6 +63,11 @@
                 <span class="sr-only">(current)</span>
               {% endif %}
             </a>
+          </li>
+
+          <!-- Vision (homepage section) -->
+          <li class="nav-item">
+            <a class="nav-link" href="{{ '/' | relative_url }}#vision">Vision</a>
           </li>
 
           <!-- Other pages -->

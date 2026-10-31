@@ -25,7 +25,7 @@ nav_order: 2
   .r-nav a { padding: 0.15rem 0.7rem; border-radius: 999px; border: 1px solid var(--global-divider-color); text-decoration: none !important; }
 </style>
 
-<p class="r-intro">I build trustworthy AI systems to understand how biological interventions propagate across scales. The directions below move from molecules to interactions, networks, and cells; each asks a version of the same three questions&mdash;<strong>understand</strong>, <strong>predict</strong>, <strong>intervene</strong>&mdash;and each is held to the same standard of interpretability, uncertainty, robustness, generalization, and mechanistic consistency. The <a href="{{ '/#map' | relative_url }}">research map</a> on the home page shows how they fit together.</p>
+<p class="r-intro">I build trustworthy AI systems to understand how biological interventions propagate across scales. The directions below move from molecules to interactions, networks, and cells; each asks a version of the same three questions&mdash;<strong>understand</strong>, <strong>predict</strong>, <strong>intervene</strong>&mdash;and each is held to the same standard of interpretability, uncertainty, robustness, generalization, and mechanistic consistency. The home page shows how they <a href="{{ '/#building' | relative_url }}">build toward a world model</a>, one scale at a time.</p>
 
 <div class="r-nav">
   <a href="#molecular-recognition">Molecular recognition</a>
