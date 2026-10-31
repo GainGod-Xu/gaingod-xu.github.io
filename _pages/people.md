@@ -79,13 +79,13 @@ nav_order: 5
 <div class="pname" markdown="span">**[Xi Xiao](https://scholar.google.com/citations?user=Q4DnRVgAAAAJ)**</div>
 <div class="paff">University of Alabama at Birmingham</div>
 <div class="pyears">2024&ndash;Present</div>
-<p markdown="span">Co-authored five collaborative papers spanning parameter-efficient adaptation and multimodal alignment, including his first-author work in *Not All Directions Matter* (ACL 2026), *Staying VIGILant* (ECCV 2026).</p>
+<p markdown="span">Co-authored six papers spanning parameter-efficient adaptation and multimodal alignment, including his first-author work in *Not All Directions Matter* (ACL 2026) and *Staying VIGILant* (ECCV 2026).</p>
 </div>
 <div class="pcard current">
 <div class="pname" markdown="span">**[Zhaohan Meng](https://scholar.google.com/citations?user=gM9yaCkAAAAJ)**</div>
 <div class="paff">University of Glasgow</div>
 <div class="pyears">2024&ndash;Present</div>
-<p markdown="span">Co-authored 2 papers (his first-author manuscript submitted); developed a foundational model for protein&ndash;ligand binding prediction.</p>
+<p markdown="span">Co-authored 1 paper, his first-author work *ExplainBind* (bioRxiv, 2026), an explainable model of the physicochemical determinants of protein&ndash;ligand binding.</p>
 </div>
 </div>
 
