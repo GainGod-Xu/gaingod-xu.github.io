@@ -13,15 +13,16 @@ description: Hao Xu builds trustworthy AI systems that learn how biological inte
     display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; }
   .home .sec-head h2 { margin: 0; font-size: 1.5rem; font-weight: 700; }
   .home .sec-head a { font-size: 0.88rem; font-weight: 600; white-space: nowrap; }
+  @media (max-width: 560px) { .home .sec-head { flex-wrap: wrap; } .home .sec-head a { width: 100%; } }
   .home .muted { color: var(--global-text-color-light); }
   .home .lede { max-width: 46rem; font-size: 1.05rem; line-height: 1.65; }
-  .home .kw { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.6rem; }
-  .home .kw span { font-size: 0.76rem; padding: 0.1rem 0.55rem; border-radius: 4px; border: 1px solid var(--global-divider-color); color: var(--global-text-color-light); }
+  .home .qkeys { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.7rem; }
+  .home .qkeys span { font-size: 0.76rem; padding: 0.1rem 0.55rem; border-radius: 4px; border: 1px solid var(--global-divider-color); color: var(--global-text-color-light); }
 
   /* ---------- hero: text left, schematic right ---------- */
   .hero { display: grid; grid-template-columns: 1fr 1.05fr; gap: 2.2rem; align-items: center; padding: 2.2rem 0 1rem; }
   .hero-title { font-size: clamp(2rem, 4.6vw, 2.9rem); font-weight: 800; line-height: 1.08; margin: 0 0 0.9rem; }
-  .hero-title b { color: var(--global-theme-color); font-weight: 800; }
+  .hero-title b { color: var(--global-theme-color); font-weight: 800; white-space: nowrap; }
   .hero-title::after { content: ""; display: block; width: 3.2rem; height: 3px; background: var(--global-theme-color); margin-top: 0.9rem; }
   .hero-tag { font-size: clamp(1.05rem, 2.3vw, 1.28rem); font-weight: 600; line-height: 1.4; margin: 0 0 0.9rem; font-style: italic; }
   .hero-lede { font-size: 1rem; line-height: 1.6; margin: 0 0 1.3rem; max-width: 34rem; }
@@ -46,18 +47,17 @@ description: Hao Xu builds trustworthy AI systems that learn how biological inte
   .sv .coresub { font-size: 8.6px; fill: var(--global-text-color-light); }
   .sv .node rect { fill: var(--global-card-bg-color); stroke: var(--global-divider-color); stroke-width: 1; }
   .sv .nlbl { font-size: 10.5px; font-weight: 800; letter-spacing: 0.04em; fill: var(--global-text-color); }
-  .sv .nsub { font-size: 7.6px; fill: var(--global-text-color-light); }
+  .sv .nsub { font-size: 7.4px; fill: var(--global-text-color-light); }
   @media (prefers-reduced-motion: no-preference) {
     .sv .arc { animation: arcflow 1.6s linear infinite; }
     @keyframes arcflow { to { stroke-dashoffset: -10; } }
   }
-  .sv-base { margin-top: 0.6rem; padding: 0.55rem 0.9rem; border: 1px solid var(--global-divider-color); border-radius: 8px;
-    display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0.2rem 0.45rem; font-size: 0.8rem; }
-  .sv-base b { font-weight: 700; margin-right: 0.5rem; padding-right: 0.8rem; border-right: 1px solid var(--global-divider-color); font-size: 0.78rem; }
+  .sv-base { margin-top: 0.7rem; padding: 0.55rem 0.9rem 0.6rem; border: 1px solid var(--global-divider-color); border-radius: 8px;
+    display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0.15rem 0.4rem; font-size: 0.78rem; }
+  .sv-base b { width: 100%; text-align: center; font-weight: 700; font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--global-text-color-light); margin-bottom: 0.25rem; }
   .sv-base span { font-weight: 600; display: inline-flex; align-items: center; gap: 0.3rem; }
   .sv-base span svg { width: 1.05rem; height: 1.05rem; fill: none; stroke: var(--global-theme-color); stroke-width: 1.4; stroke-linejoin: round; stroke-linecap: round; }
   .sv-base i { color: var(--global-theme-color); font-style: normal; }
-  @media (max-width: 480px) { .sv-base b { width: 100%; border: 0; text-align: center; margin: 0 0 0.2rem; padding: 0; } }
 
   /* ---------- why ---------- */
   .why { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 2rem; align-items: center; }
@@ -107,7 +107,9 @@ description: Hao Xu builds trustworthy AI systems that learn how biological inte
   .card-r h3 { margin: 0 0 0.35rem; font-size: 1.05rem; font-weight: 700; }
   .card-r p { margin: 0 0 0.5rem; font-size: 0.93rem; line-height: 1.5; flex: 1; }
   .card-r .meta { font-size: 0.8rem; color: var(--global-text-color-light); }
-  .card-r .meta a { margin-left: 0.6rem; font-weight: 600; }
+  .card-r .meta a { margin-right: 0.9rem; font-weight: 600; }
+  .card-r { transition: border-color 0.15s; }
+  .card-r:hover { border-color: color-mix(in srgb, var(--global-theme-color) 55%, transparent); }
   @media (max-width: 640px) { .cards { grid-template-columns: 1fr; } }
 
   /* ---------- where I work ---------- */
@@ -131,7 +133,7 @@ description: Hao Xu builds trustworthy AI systems that learn how biological inte
 
 <section class="hero" id="top">
   <div>
-    <h1 class="hero-title">Trustworthy World Models for <b>Life Science</b></h1>
+    <h1 class="hero-title">Trustworthy<br>World Models<br>for <b>Life Science</b></h1>
     <p class="hero-tag">Understand biological systems well enough to predict and act reliably.</p>
     <p class="hero-lede">We develop AI systems that learn representations of biological states, predict their responses to perturbations, and guide interventions across scales, from molecules to patients.</p>
     <p class="hero-who"><b>Hao Xu, Ph.D.</b><br>Investigator, Brigham and Women's Hospital<br>Instructor in Medicine, Harvard Medical School</p>
@@ -156,8 +158,8 @@ description: Hao Xu builds trustworthy AI systems that learn how biological inte
       <!-- principles -->
       <text class="pr" x="109" y="86" text-anchor="middle">Interpretability</text>
       <text class="pr" x="371" y="80" text-anchor="middle">Mechanistic<tspan x="371" dy="12">Consistency</tspan></text>
-      <text class="pr" x="55" y="214" text-anchor="middle">Uncertainty</text>
-      <text class="pr" x="425" y="214" text-anchor="middle">Robustness</text>
+      <text class="pr" x="46" y="214" text-anchor="middle">Uncertainty</text>
+      <text class="pr" x="434" y="214" text-anchor="middle">Robustness</text>
       <text class="pr" x="109" y="346" text-anchor="middle">Validation</text>
       <text class="pr" x="371" y="346" text-anchor="middle">Generalization</text>
       <!-- cycle arcs (clockwise) -->
@@ -172,22 +174,22 @@ description: Hao Xu builds trustworthy AI systems that learn how biological inte
       <text class="coresub" x="240" y="234" text-anchor="middle">Biological organization</text>
       <!-- nodes -->
       <g class="node">
-        <rect x="193" y="88" width="94" height="44" rx="10"/>
+        <rect x="184" y="88" width="112" height="44" rx="10"/>
         <text class="nlbl" x="240" y="107" text-anchor="middle">OBSERVE</text>
         <text class="nsub" x="240" y="121" text-anchor="middle">Measure biological systems</text>
       </g>
       <g class="node">
-        <rect x="293" y="188" width="94" height="44" rx="10"/>
+        <rect x="284" y="188" width="112" height="44" rx="10"/>
         <text class="nlbl" x="340" y="207" text-anchor="middle">REPRESENT</text>
         <text class="nsub" x="340" y="221" text-anchor="middle">Learn biological states</text>
       </g>
       <g class="node">
-        <rect x="193" y="288" width="94" height="44" rx="10"/>
+        <rect x="184" y="288" width="112" height="44" rx="10"/>
         <text class="nlbl" x="240" y="307" text-anchor="middle">PREDICT</text>
         <text class="nsub" x="240" y="321" text-anchor="middle">Model responses to perturbation</text>
       </g>
       <g class="node">
-        <rect x="93" y="188" width="94" height="44" rx="10"/>
+        <rect x="84" y="188" width="112" height="44" rx="10"/>
         <text class="nlbl" x="140" y="207" text-anchor="middle">ACT</text>
         <text class="nsub" x="140" y="221" text-anchor="middle">Design interventions</text>
       </g>
@@ -217,17 +219,17 @@ description: Hao Xu builds trustworthy AI systems that learn how biological inte
     <div>
       <h3>Understand</h3>
       <p>What biological mechanisms govern response to intervention?</p>
-      <div class="kw"><span>Mechanistic representation</span><span>Molecular recognition</span><span>Cross-scale structure</span></div>
+      <div class="qkeys"><span>Mechanistic representation</span><span>Molecular recognition</span><span>Cross-scale structure</span></div>
     </div>
     <div>
       <h3>Predict</h3>
       <p>What will happen under an unseen intervention?</p>
-      <div class="kw"><span>State transition</span><span>Generalization</span><span>Uncertainty</span></div>
+      <div class="qkeys"><span>State transition</span><span>Generalization</span><span>Uncertainty</span></div>
     </div>
     <div>
       <h3>Intervene</h3>
       <p>What intervention will drive biology toward a desired state?</p>
-      <div class="kw"><span>Inverse design</span><span>Active learning</span><span>Experimental planning</span></div>
+      <div class="qkeys"><span>Inverse design</span><span>Active learning</span><span>Experimental planning</span></div>
     </div>
   </div>
 </section>
@@ -316,32 +318,32 @@ description: Hao Xu builds trustworthy AI systems that learn how biological inte
     <div class="card-r">
       <h3>ExplainBind</h3>
       <p>Learning interpretable physicochemical determinants of protein&ndash;ligand binding through explicit non-covalent interactions.</p>
-      <div class="meta">bioRxiv &middot; 2026<a href="{{ '/publications/#xu2026explainbind' | relative_url }}">Paper</a></div>
+      <div class="meta"><a href="{{ '/publications/#xu2026explainbind' | relative_url }}">bioRxiv 2026</a></div>
     </div>
     <div class="card-r">
       <h3>EvoRMD</h3>
       <p>Integrating biological context and evolutionary RNA language models for interpretable RNA modification prediction.</p>
-      <div class="meta">Genome Biology &middot; 2026<a href="{{ '/publications/#wang2026evormd' | relative_url }}">Paper</a></div>
+      <div class="meta"><a href="{{ '/publications/#wang2026evormd' | relative_url }}">Genome Biology 2026</a></div>
     </div>
     <div class="card-r">
       <h3>Asymmetric Multimodal Learning</h3>
       <p>Learning richer molecular representations across complementary chemical modalities for property prediction and drug discovery.</p>
-      <div class="meta">J. Chem. Inf. Model. &middot; 2025; Commun. Chem. &middot; 2025<a href="{{ '/publications/#wang2025advancing' | relative_url }}">Paper</a><a href="{{ '/publications/#zhou2025multimodal' | relative_url }}">Paper</a></div>
+      <div class="meta"><a href="{{ '/publications/#wang2025advancing' | relative_url }}">J. Chem. Inf. Model. 2025</a><a href="{{ '/publications/#zhou2025multimodal' | relative_url }}">Commun. Chem. 2025</a></div>
     </div>
     <div class="card-r">
       <h3>NMRScape</h3>
       <p>Self-verifying molecular structure elucidation from experimental spectra, built on solvent-aware 2D NMR prediction and an annotated experimental benchmark.</p>
-      <div class="meta">Commun. Chem. &middot; 2025; LoG &middot; 2025<a href="{{ '/publications/#li2025transpeaknet' | relative_url }}">Paper</a><a href="{{ '/publications/#li2025dnmrgym' | relative_url }}">Benchmark</a></div>
+      <div class="meta"><a href="{{ '/publications/#li2025transpeaknet' | relative_url }}">Commun. Chem. 2025</a><a href="{{ '/publications/#li2025dnmrgym' | relative_url }}">LoG 2025</a></div>
     </div>
     <div class="card-r">
       <h3>Network Medicine &amp; Systems Pharmacology</h3>
       <p>Connecting molecular interactions to system-level disease mechanisms and principled drug repurposing.</p>
-      <div class="meta">Comprehensive Medicinal Chemistry &middot; 2025; Drug Repurposing &middot; 2026<a href="{{ '/publications/#wang2025systems' | relative_url }}">Chapter</a><a href="{{ '/publications/#xu2026drugrepurposing' | relative_url }}">Review</a></div>
+      <div class="meta"><a href="{{ '/publications/#wang2025systems' | relative_url }}">Comprehensive Medicinal Chemistry 2025</a><a href="{{ '/publications/#xu2026drugrepurposing' | relative_url }}">Drug Repurposing 2026</a></div>
     </div>
     <div class="card-r">
       <h3>Trustworthy Foundation-Model Methods</h3>
       <p>Structured, task-aware low-rank adaptation and counterfactual visual alignment that keep large models reliable and cheap to adapt to scientific data.</p>
-      <div class="meta">ACL &middot; 2026; ECCV &middot; 2026<a href="{{ '/publications/#xiao2026notall' | relative_url }}">Paper</a><a href="{{ '/publications/#xiao2026vigilant' | relative_url }}">Paper</a></div>
+      <div class="meta"><a href="{{ '/publications/#xiao2026notall' | relative_url }}">ACL 2026</a><a href="{{ '/publications/#xiao2026vigilant' | relative_url }}">ECCV 2026</a></div>
     </div>
   </div>
 </section>

@@ -11,7 +11,7 @@ contact_note: >
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Hao Xu, Investigator at Brigham and Women's Hospital and Instructor in Medicine at Harvard Medical School. Trustworthy world models for life science: AI that learns how molecular interventions propagate across biological scales.
 footer_text: >
-  Hao Xu &middot; Brigham and Women's Hospital &middot; Harvard Medical School.
+  Brigham and Women's Hospital &middot; Harvard Medical School.
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 keywords: Hao Xu, trustworthy AI, world models, life science, molecular biology, systems biology, network medicine, machine learning, Brigham and Women's Hospital, Harvard Medical School
