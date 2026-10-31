@@ -9,12 +9,12 @@ last_name: Xu
 contact_note: >
   Email is the fastest way to reach me.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Investigator, Brigham and Women's Hospital; Instructor in Medicine, Harvard Medical School. AI for Science, AI for Medicine/Health, and AI Fundamentals.
+  Hao Xu, Investigator at Brigham and Women's Hospital and Instructor in Medicine at Harvard Medical School. Trustworthy world models for life science: AI that learns how molecular interventions propagate across biological scales.
 footer_text: >
-  XLab &middot; Brigham and Women's Hospital &middot; Harvard Medical School.
+  Hao Xu &middot; Brigham and Women's Hospital &middot; Harvard Medical School.
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: Hao Xu, AI for Science, AI for Medicine, machine learning, drug discovery, Brigham and Women's Hospital, Harvard Medical School
+keywords: Hao Xu, trustworthy AI, world models, life science, molecular biology, systems biology, network medicine, machine learning, Brigham and Women's Hospital, Harvard Medical School
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🧬 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 apple_touch_icon: # image name in /assets/img/ (or a rooted path / absolute URL) used for iOS home-screen bookmarks; needs a real 180x180 PNG, since Safari ignores the emoji favicon above. Left empty, iOS falls back to a screenshot of the page.

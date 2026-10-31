@@ -4,12 +4,12 @@ Hao Xu's personal academic site, built on [al-folio](https://github.com/alshediv
 
 ## Content
 
-- `_pages/lab.md` — homepage (news + Micro-to-Macro mission diagram)
-- `_pages/pi.md` — PI bio, profile, and career path
-- `_pages/research.md` — Micro-to-Macro flow diagram and research directions with representative papers
+- `_pages/home.md` — homepage: vision (Trustworthy World Models for Life Science), research map, trustworthy-AI principles, selected research, news
+- `_pages/about.md` — short bio, appointments, education (`/pi/` redirects here)
+- `_pages/research.md` — research directions with representative papers
 - `_pages/publications.md` + `_bibliography/papers.bib` — full publication list, auto-grouped by year
 - `_pages/cv.md` + `_data/cv.yml` — education, experience, awards, patents
-- `_pages/people.md` — mentees and collaborators
+- `_pages/people.md` — Team: student and faculty collaborators
 - `_pages/teaching.md` — teaching experience
 - `_data/socials.yml` — social/contact links
 

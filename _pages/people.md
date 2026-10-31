@@ -1,10 +1,10 @@
 ---
 layout: page
 permalink: /people/
-title: People
-description: Principal investigator, student collaborators, and faculty collaborators.
+title: Team
+description: Student and faculty collaborators. Inquiries from prospective students and collaborators are welcome.
 nav: true
-nav_order: 5
+nav_order: 4
 ---
 
 <style>
@@ -63,11 +63,11 @@ nav_order: 5
   }
 </style>
 
-<h3 class="pgroup-title">Principal Investigator</h3>
+<h3 class="pgroup-title">Investigator</h3>
 
 <div class="pgrid">
 <div class="pcard current">
-<div class="pname"><a href="{{ '/pi/' | relative_url }}">Hao Xu, Ph.D.</a></div>
+<div class="pname"><a href="{{ '/about/' | relative_url }}">Hao Xu, Ph.D.</a></div>
 <div class="paff">Investigator, Brigham and Women's Hospital &middot; Instructor in Medicine, Harvard Medical School</div>
 </div>
 </div>

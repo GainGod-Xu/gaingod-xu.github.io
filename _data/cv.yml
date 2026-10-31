@@ -5,9 +5,9 @@ cv:
   location: Boston, MA
   image: ""
   summary: >
-    Research in AI for Science focuses on leveraging micro-scale physical and chemical mechanisms to build
-    interpretable AI models for molecular and biological discovery, bridging micro-scale determinants and
-    macro-level outcomes across drug discovery, medicine, and chemistry.
+    Develops trustworthy AI for molecular and systems biology, with the long-term goal of building world
+    models that connect molecular interventions to system-level biological responses. Emphasis on
+    interpretability, uncertainty, robustness, generalization, and mechanistic consistency.
 
   social_networks:
     - network: GitHub
@@ -84,3 +84,7 @@ cv:
       - bullet: "**Machine Learning Framework for Prediction and Assignment of 2D NMR Spectra.** Pengyu Hong, Yunrui Li, Hao Xu. US Patent App. 63/708,341."
 
       - bullet: "**Cobalt(II)-Based Catalytic System for Asymmetric Intramolecular Aziridination.** X. Peter Zhang, Hao Xu. US Patent App. 63/589,044."
+
+    Academic Service:
+      - bullet: "**Reviewer for journals:** Nature Communications, Communications Chemistry, Journal of Cheminformatics, Journal of Chemical Information and Modeling, Quantum Science and Technology, Journal of Medical Internet Research, ACM Transactions on Intelligent Systems and Technology, IEEE Transactions on Medical Imaging, IEEE Transactions on Pattern Analysis and Machine Intelligence, Knowledge-Based Systems, Scientific Reports, Patterns, Sustainable Food Technology."
+      - bullet: "**Reviewer for conferences:** NeurIPS, CVPR, ECCV, ACM MM, COLM, COLING."

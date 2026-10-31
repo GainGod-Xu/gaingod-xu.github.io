@@ -2,151 +2,126 @@
 layout: page
 permalink: /research/
 title: Research
-description: "Core mission: Micro-to-Macro Mechanistic AI. A few directions define most of our current work; each is anchored by representative papers, with the full list on the publications page."
+description: "Trustworthy world models for life science: current directions, organized from molecular recognition to system-level biology, each anchored by representative papers."
 nav: true
-nav_order: 3
+nav_order: 2
 ---
 
 <style>
-  .research-card {
-    border-left: 4px solid var(--accent, var(--global-theme-color));
+  .rcard {
+    margin-top: 1.1rem; padding: 1.1rem 1.3rem;
+    border: 1px solid var(--global-divider-color); border-left: 4px solid var(--global-theme-color); border-radius: 8px;
   }
-  .research-card > h3 {
-    color: var(--accent, var(--global-theme-color));
-    scroll-margin-top: 5rem;
-  }
-
-  /* Micro-to-Macro flow (compact) */
-  .m2m {
-    margin: 1.5rem 0 0.5rem;
-  }
-  .m2m-flow {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr auto 1fr;
-    align-items: stretch;
-    gap: 0.5rem;
-  }
-  .m2m-step {
-    padding: 0.7rem 0.9rem;
-    border: 1px solid var(--global-divider-color);
-    border-top: 3px solid var(--global-theme-color);
-    border-radius: 8px;
-    background: var(--global-card-bg-color);
-    text-align: center;
-  }
-  .m2m-step strong {
-    display: block;
-    font-weight: 700;
-  }
-  .m2m-step span {
-    font-size: 0.82rem;
-    color: var(--global-text-color-light);
-  }
-  .m2m-arrow {
-    display: flex;
-    align-items: center;
-    color: var(--global-theme-color);
-    font-size: 1.3rem;
-    font-weight: 700;
-  }
-  .m2m-dirs {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 0.4rem;
-    margin-top: 0.9rem;
-    font-size: 0.85rem;
-    color: var(--global-text-color-light);
-  }
-  .m2m-dirs a {
-    padding: 0.15rem 0.7rem;
-    border-radius: 999px;
-    border: 1.5px solid var(--accent);
-    color: var(--accent) !important;
-    font-weight: 600;
-    text-decoration: none !important;
-  }
-  .m2m-dirs a:hover {
-    background: color-mix(in srgb, var(--accent) 12%, transparent);
-  }
-  @media (max-width: 640px) {
-    .m2m-flow {
-      grid-template-columns: 1fr;
-    }
-    .m2m-arrow {
-      justify-content: center;
-      transform: rotate(90deg);
-    }
-  }
+  .rcard h3 { margin: 0 0 0.2rem; font-size: 1.15rem; font-weight: 700; scroll-margin-top: 5rem; }
+  .rcard .scale { font-size: 0.74rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--global-theme-color); margin-bottom: 0.5rem; }
+  .rcard p { font-size: 0.95rem; line-height: 1.55; }
+  .rcard ul { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.88rem; }
+  .rcard li { margin-bottom: 0.3rem; }
+  .rcard.future { border-left-style: dashed; }
+  .rcard.past { border-left-color: var(--global-divider-color); }
+  .rcard.past .scale { color: var(--global-text-color-light); }
+  .r-intro { font-size: 1.02rem; line-height: 1.6; max-width: 46rem; }
+  .r-nav { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.8rem 0 0.4rem; font-size: 0.85rem; }
+  .r-nav a { padding: 0.15rem 0.7rem; border-radius: 999px; border: 1px solid var(--global-divider-color); text-decoration: none !important; }
 </style>
 
-<figure class="m2m" aria-label="Micro-to-Macro Mechanistic AI: micro-scale mechanisms, mechanistic AI models, macro-scale behavior">
-  <div class="m2m-flow">
-    <div class="m2m-step"><strong>Micro-scale mechanisms</strong><span>atoms &middot; interactions &middot; parameters</span></div>
-    <div class="m2m-arrow" aria-hidden="true">&rarr;</div>
-    <div class="m2m-step"><strong>Mechanistic AI models</strong><span>physically and structurally grounded</span></div>
-    <div class="m2m-arrow" aria-hidden="true">&rarr;</div>
-    <div class="m2m-step"><strong>Macro-scale behavior</strong><span>function &middot; health &middot; reliability</span></div>
-  </div>
-  <div class="m2m-dirs">
-    <a href="#ai-for-science" style="--accent: #3a7bd5;">AI for Science</a>
-    <a href="#ai-for-health" style="--accent: #d9534f;">AI for Health</a>
-    <a href="#ai-fundamentals" style="--accent: #7b52c7;">AI Fundamentals</a>
-    <a href="#chemistry" style="--accent: #3fa65b;">Chemistry</a>
-    <a href="#emerging-direction" style="--accent: #d9a441;">Quantum (emerging)</a>
-  </div>
-  <div class="m2m-dirs">Foundation: AI + Chemistry + Medicine</div>
-</figure>
+<p class="r-intro">I build trustworthy AI systems to understand how biological interventions propagate across scales. The directions below move from molecules to interactions, networks, and cells; each asks a version of the same three questions&mdash;<strong>understand</strong>, <strong>predict</strong>, <strong>intervene</strong>&mdash;and each is held to the same standard of interpretability, uncertainty, robustness, generalization, and mechanistic consistency. The <a href="{{ '/#map' | relative_url }}">research map</a> on the home page shows how they fit together.</p>
 
-<div class="card research-card mt-3 p-4" markdown="1" style="--accent: #3a7bd5;">
+<div class="r-nav">
+  <a href="#molecular-recognition">Molecular recognition</a>
+  <a href="#rna-biology">RNA biology</a>
+  <a href="#molecular-representation">Molecular representation</a>
+  <a href="#structure-elucidation">Structure elucidation</a>
+  <a href="#network-medicine">Network medicine</a>
+  <a href="#trustworthy-methods">Trustworthy methods</a>
+  <a href="#toward-world-models">Toward world models</a>
+  <a href="#foundations">Foundations</a>
+</div>
 
-### AI for Science
+<div class="rcard" markdown="1">
+<div class="scale">Interaction &middot; Understand</div>
 
-Embedding atomic-level physical and chemical mechanisms&mdash;spectral properties, atom interactions, evolutionary sequence context&mdash;directly into deep networks, so models predict molecular properties and structures through physically grounded reasoning rather than superficial correlations.
+### Molecular recognition and biomolecular interactions {#molecular-recognition}
+
+How do small molecules recognize proteins and RNA? ExplainBind predicts protein&ndash;ligand binding through explicit non-covalent interactions, so each prediction exposes its physicochemical determinants rather than a bare score. Ongoing work extends the same mechanistic framing to RNA&ndash;ligand recognition.
 
 - **ExplainBind: Explainable Physicochemical Determinants of Protein-Ligand Binding via Non-Covalent Interactions.** Meng, Z.<sup>&dagger;</sup>, Bai, Z.<sup>&dagger;</sup>, et al., Oldham, W. M.\*, Meng, Z.\*, *Xu, H.*\*, Loscalzo, J. *bioRxiv*, 2026.
+</div>
+
+<div class="rcard" markdown="1">
+<div class="scale">Interaction &middot; Predict</div>
+
+### RNA biology and modification {#rna-biology}
+
+RNA modifications sit between sequence and function. EvoRMD integrates biological context with evolutionary RNA language models to predict modification sites interpretably, a step toward modeling how interventions on RNA propagate to cellular state.
+
 - **EvoRMD: Integrating Biological Context and Evolutionary RNA Language Models for Interpretable Prediction of RNA Modifications.** Wang, B., Zhang, H., Cui, T., Wang, X., Song, J.\*, *Xu, H.*\* *Genome Biology*, 2026.
+</div>
+
+<div class="rcard" markdown="1">
+<div class="scale">Molecule &middot; Understand / Predict</div>
+
+### Multimodal molecular representation {#molecular-representation}
+
+Chemical structure is observed through complementary views: graphs, spectra, text, and 3D geometry. Aligning these modalities yields representations that transfer to property prediction and drug discovery while staying consistent with chemistry.
+
+- **Advancing Drug Discovery with Enhanced Chemical Understanding via Asymmetric Contrastive Multimodal Learning.** Wang, Y.<sup>&dagger;</sup>, Li, Y.<sup>&dagger;</sup>, Liu, L., Hong, P., *Xu, H.*\* *J. Chem. Inf. Model.*, 2025.
+- **Multimodal Fusion with Relational Learning for Molecular Property Prediction.** Zhou, Z.\*, Li, Y., Hong, P., *Xu, H.*\* *Communications Chemistry*, 2025.
+- **Mat-Instructions: A Large-Scale Inorganic Material Instruction Dataset for Large Language Models.** Liu, K., et al., *Xu, H.* *IJCAI*, 2025.
+</div>
+
+<div class="rcard" markdown="1">
+<div class="scale">Molecule &middot; Understand</div>
+
+### Structure elucidation from spectra (NMRScape) {#structure-elucidation}
+
+Determining a molecule's structure from its spectra is a problem where a model must be able to check its own answer. This line builds solvent-aware 2D NMR prediction, an annotated experimental benchmark, and reasoning-based elucidation toward self-verifying structure determination.
+
+- **TransPeakNet for Solvent-Aware 2D NMR Prediction via Multi-Task Pre-Training and Unsupervised Learning.** Li, Y.<sup>&dagger;</sup>, *Xu, H.*<sup>&dagger;</sup>, et al., Hong, P.\* *Communications Chemistry*, 2025.
+- **2DNMRGym: An Annotated Experimental Dataset for Atom-Level Molecular Representation Learning in 2D NMR via Surrogate Supervision.** Li, Y.<sup>&dagger;</sup>, *Xu, H.*<sup>&dagger;</sup>, Hong, P. *LoG*, 2025.
 - **How Well Can Off-the-Shelf LLMs Elucidate Molecular Structures from Mass Spectra Using Chain-of-Thought Reasoning?** Wang, Y., Lu, W., Liu, L., *Xu, H.*\*, Ling, H.\* *J. Cheminform.*, 2026.
-- **TransPeakNet for Solvent-Aware 2D NMR Prediction via Multi-Task Pre-Training and Unsupervised Learning.** Li, Y.<sup>&dagger;</sup>, *Xu, H.*<sup>&dagger;</sup>, Kumar, A., Wang, D., Heiss, C., Azadi, P., Hong, P.\* *Communications Chemistry*, 2025.
-
 </div>
 
-<div class="card research-card mt-3 p-4" markdown="1" style="--accent: #d9534f;">
+<div class="rcard" markdown="1">
+<div class="scale">Network &middot; Understand / Intervene</div>
 
-### AI for Health
+### Network medicine and systems pharmacology {#network-medicine}
 
-Developing foundational models and explainable frameworks for multi-omics, medical imaging, and electronic health records (EHR)&mdash;individually and in multimodal combination&mdash;to advance clinical prediction and diagnosis.
+Molecular interactions act through networks. Connecting binding and interactome structure to disease modules provides the route from a single intervention to a system-level response, and the basis for principled drug repurposing. Ongoing work builds affinity-weighted protein&ndash;protein interaction networks.
 
-- **Deep Learning-Based MRI Model for Predicting P53-Mutated Hepatocellular Carcinoma.** Jia, L., Yang, Q., Jiang, H., Huang, G., Wang, Z., Guo, X., Li, J., *Xu, H.*\*, Lei, J.\* *BMC Medical Imaging*, 2025.
-
+- **Systems Chemical Biology: Integrating Medicinal Chemistry and Systems Biology for Drug Discovery.** Wang, R., *Xu, H.*, Loscalzo, J. In *Comprehensive Medicinal Chemistry*, Elsevier, 2025.
+- **Modern Computational Methods for Drug Repurposing.** *Xu, H.*, Loscalzo, J.\* *Drug Repurposing*, 2026.
+- **Deep Learning-Based MRI Model for Predicting P53-Mutated Hepatocellular Carcinoma.** Jia, L., et al., *Xu, H.*\*, Lei, J.\* *BMC Medical Imaging*, 2025.
 </div>
 
-<div class="card research-card mt-3 p-4" markdown="1" style="--accent: #7b52c7;">
+<div class="rcard" markdown="1">
+<div class="scale">Methods &middot; Trustworthiness</div>
 
-### AI Fundamentals
+### Trustworthy foundation-model methods {#trustworthy-methods}
 
-Parameter-efficient fine-tuning and multimodal alignment methods that preserve fine-grained gradient sensitivities, so adaptation stays reliable, interpretable, and cheap to train at scale.
+Scientific data are scarce and shift across experiments, so the foundation models behind these systems must adapt cheaply and remain reliable. This work studies which parameter directions matter during adaptation and how to keep multimodal models grounded in their inputs.
 
 - **Not All Directions Matter: Toward Structured and Task-Aware Low-Rank Adaptation.** Xiao, X., et al., *Xu, H.* *ACL*, 2026.
 - **Staying VIGILant: Mitigating Visual Laziness via Counterfactual Visual Alignment in MLLMs.** Xiao, X., et al., *Xu, H.* *ECCV*, 2026.
-
+- **HyperAdaLoRA: Accelerating LoRA Rank Allocation During Training via Hypernetworks without Sacrificing Performance.** Zhang, H., et al., *Xu, H.* *Findings of ACL*, 2026.
+- **Sensitivity-LoRA: Low-Load Sensitivity-Based Fine-Tuning for Large Language Models.** Zhang, H., et al., *Xu, H.* *Findings of EMNLP*, 2025.
 </div>
 
-<div class="card research-card mt-3 p-4" markdown="1" style="--accent: #3fa65b;">
+<div class="rcard future" markdown="1">
+<div class="scale">Cell &middot; Phenotype &middot; Planned</div>
 
-### Chemistry
+### Toward world models of biological response {#toward-world-models}
 
-Earlier work on cobalt-catalyzed asymmetric radical reactions and total synthesis&mdash;the physical-organic-chemistry foundation that now informs how I build mechanism-aware AI models.
+The next step is to close the loop from molecule to phenotype: perturbation biology and single-cell response modeling, cross-scale state transitions, and inverting these models to design precision interventions. Each stage will carry explicit uncertainty and be tested for consistency with known mechanisms.
+</div>
+
+<div class="rcard past" markdown="1">
+<div class="scale">Foundations</div>
+
+### Chemistry {#foundations}
+
+Earlier work in cobalt-catalyzed asymmetric radical reactions and total synthesis is the physical-organic foundation for building mechanism-aware models.
 
 - **Enantioselective Radical *N*-Heterobicyclization by New Mode of Asymmetric Induction via Kinetically Stable Chiral Radical Center.** *Xu, H.*, Wang, D.-S., Zhu, Z.-Y., Deb, A., Zhang, X. P.\* *Chem*, 2024.
-
-</div>
-
-<div class="card research-card mt-3 p-4" markdown="1" style="--accent: #d9a441;">
-
-### Emerging Direction
-
-**Quantum Computing for Scientific Discovery** &mdash; exploring where quantum algorithms can accelerate simulation and search in molecular and biological discovery pipelines. Publications forthcoming.
-
+- **Metalloradical Activation of Carbonyl Azides for Enantioselective Radical Aziridination of Alkenes.** Riart-Ferrer, X., et al., *Xu, H.*, et al., Zhang, X. P.\* *Chem*, 2021.
 </div>

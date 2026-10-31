@@ -1,6 +1,15 @@
 <style>
+  /* Single restrained accent: deep blue in light mode, lighter blue in dark mode */
+  html:not([data-theme="dark"]) {
+    --global-theme-color: #1b5fa6;
+    --global-hover-color: #1b5fa6;
+  }
+  html[data-theme="dark"] {
+    --global-theme-color: #7ab8f5;
+    --global-hover-color: #7ab8f5;
+  }
   body {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   }
   strong,
   b,
@@ -13,7 +22,7 @@
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
       <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
-        <span class="font-weight-bold">X</span>Lab
+        <span class="font-weight-bold">Hao</span> Xu
       </a>
       {% if page.permalink == '/' and site.enable_navbar_social %}
         <!-- Social Icons -->
