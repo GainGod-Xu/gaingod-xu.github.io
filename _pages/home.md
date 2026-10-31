@@ -14,8 +14,6 @@ description: Hao Xu builds trustworthy AI systems that learn how biological inte
   .home .sec-head a { font-size: 0.88rem; font-weight: 700; white-space: nowrap; padding-bottom: 0.3rem; }
   @media (max-width: 560px) { .home .sec-head { flex-wrap: wrap; } .home .sec-head a { width: 100%; } }
   .home .muted { color: var(--global-text-color-light); }
-  .home .sec.tinted { position: relative; }
-  .home .sec.tinted::before { content: ""; position: absolute; inset: 0 -100vw; left: 50%; transform: translateX(-50%); width: 100vw; background: color-mix(in srgb, var(--global-theme-color) 4%, var(--global-bg-color)); border-block: 1px solid var(--global-divider-color); z-index: -1; }
   .home .lede { max-width: 46rem; font-size: 1.05rem; line-height: 1.65; }
 
   /* ---------- hero: text left, schematic right ---------- */
@@ -58,38 +56,6 @@ description: Hao Xu builds trustworthy AI systems that learn how biological inte
   .sv-base span svg { width: 0.95rem; height: 0.95rem; fill: none; stroke: var(--global-theme-color); stroke-width: 1.4; stroke-linejoin: round; stroke-linecap: round; }
   .sv-base i { color: var(--global-theme-color); font-style: normal; }
 
-  /* ---------- why ---------- */
-  .why { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 2rem; align-items: center; }
-  .why p { margin: 0; font-size: 1rem; line-height: 1.65; }
-  .why .big { font-size: clamp(1.25rem, 2.6vw, 1.6rem); font-weight: 700; line-height: 1.35; padding-left: 1rem; border-left: 3px solid var(--global-theme-color); }
-  @media (max-width: 720px) { .why { grid-template-columns: 1fr; } }
-
-  /* ---------- three questions ---------- */
-  .qs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; margin-top: 2rem; }
-  .qs div { padding: 0.9rem 0 0; border-top: 2px solid var(--global-theme-color); }
-  .trustline { margin: 1.6rem 0 0; font-size: 0.9rem; }
-  .qs h3 { margin: 0 0 0.3rem; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--global-theme-color); }
-  .qs p { margin: 0; font-size: 0.98rem; font-weight: 600; line-height: 1.4; }
-  @media (max-width: 720px) { .qs { grid-template-columns: 1fr; } }
-
-  /* ---------- selected research cards ---------- */
-  .cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
-  .card-r { padding: 1rem 1.1rem 0.9rem; border: 1px solid var(--global-divider-color); border-radius: 8px; display: flex; flex-direction: column; }
-  .card-r h3 { margin: 0 0 0.35rem; font-size: 1.05rem; font-weight: 700; }
-  .card-r p { margin: 0 0 0.5rem; font-size: 0.93rem; line-height: 1.5; flex: 1; }
-  .card-r .meta { font-size: 0.8rem; color: var(--global-text-color-light); }
-  .card-r .meta a { margin-right: 0.9rem; font-weight: 600; }
-  .card-r { transition: border-color 0.15s; }
-  .card-r:hover { border-color: color-mix(in srgb, var(--global-theme-color) 55%, transparent); }
-  @media (max-width: 640px) { .cards { grid-template-columns: 1fr; } }
-
-  /* ---------- about ---------- */
-  .about-h { display: grid; grid-template-columns: 11rem 1fr; gap: 1.6rem; align-items: start; }
-  .about-h img { width: 100%; border-radius: 8px; }
-  .about-h p { margin: 0 0 0.8rem; font-size: 0.98rem; line-height: 1.6; }
-  .about-h .links a { margin-right: 1rem; font-weight: 600; font-size: 0.9rem; }
-  @media (max-width: 560px) { .about-h { grid-template-columns: 1fr; } .about-h img { max-width: 11rem; } }
-
   /* ---------- news ---------- */
   .home .news table { margin-bottom: 0; font-size: 0.92rem; }
   .home .news th { font-weight: 600; color: var(--global-text-color-light); white-space: nowrap; }
@@ -103,8 +69,8 @@ description: Hao Xu builds trustworthy AI systems that learn how biological inte
     <p class="hero-lede">We develop AI systems that learn representations of biological states, predict their responses to perturbations, and guide interventions across scales, from molecules to patients.</p>
     <p class="hero-who"><b>Hao Xu, Ph.D.</b><br>Investigator, Brigham and Women's Hospital<br>Instructor in Medicine, Harvard Medical School</p>
     <div class="hero-actions">
-      <a class="primary" href="#vision">Research Vision</a>
-      <a href="#selected">Selected Work</a>
+      <a class="primary" href="{{ '/research/' | relative_url }}">Research</a>
+      <a href="{{ '/publications/' | relative_url }}">Publications</a>
     </div>
   </div>
 
@@ -170,64 +136,7 @@ description: Hao Xu builds trustworthy AI systems that learn how biological inte
   </figure>
 </section>
 
-<section class="sec" id="vision">
-  <div class="sec-head"><div><p class="kicker"><span class="no">01</span>Vision</p><h2>Why World Models for Life Science?</h2></div><a href="{{ '/research/' | relative_url }}">Research program &rarr;</a></div>
-  <div class="why">
-    <p>Biological AI is increasingly powerful, but most models remain isolated within a single scale: molecules, proteins, cells, or patients. Living systems are connected across scales. A molecular intervention can alter binding, reshape interaction networks, change cellular states, and ultimately affect phenotype.</p>
-    <p class="big">The challenge is not only to predict biology, but to understand how interventions propagate through it.</p>
-  </div>
-  <div class="qs">
-    <div><h3>Understand</h3><p>What biological mechanisms govern response to intervention?</p></div>
-    <div><h3>Predict</h3><p>What will happen under an unseen intervention, and how sure are we?</p></div>
-    <div><h3>Intervene</h3><p>What intervention will drive biology toward a desired state?</p></div>
-  </div>
-  <p class="muted trustline">Across all three, one standard: interpretability, uncertainty, robustness, generalization, mechanistic consistency, and experimental validation.</p>
-</section>
-
-<section class="sec tinted" id="selected">
-  <div class="sec-head"><div><p class="kicker"><span class="no">02</span>Selected research</p><h2>Selected Research</h2></div><a href="{{ '/publications/' | relative_url }}">All publications &rarr;</a></div>
-  <div class="cards">
-    <div class="card-r">
-      <h3>ExplainBind</h3>
-      <p>Learning interpretable physicochemical determinants of protein&ndash;ligand binding through explicit non-covalent interactions.</p>
-      <div class="meta"><a href="{{ '/publications/#xu2026explainbind' | relative_url }}">bioRxiv 2026</a></div>
-    </div>
-    <div class="card-r">
-      <h3>EvoRMD</h3>
-      <p>Integrating biological context and evolutionary RNA language models for interpretable RNA modification prediction.</p>
-      <div class="meta"><a href="{{ '/publications/#wang2026evormd' | relative_url }}">Genome Biology 2026</a></div>
-    </div>
-    <div class="card-r">
-      <h3>Asymmetric Multimodal Learning</h3>
-      <p>Learning richer molecular representations across complementary chemical modalities for property prediction and drug discovery.</p>
-      <div class="meta"><a href="{{ '/publications/#wang2025advancing' | relative_url }}">J. Chem. Inf. Model. 2025</a><a href="{{ '/publications/#zhou2025multimodal' | relative_url }}">Commun. Chem. 2025</a></div>
-    </div>
-    <div class="card-r">
-      <h3>NMRScape</h3>
-      <p>Self-verifying molecular structure elucidation from experimental spectra, built on solvent-aware 2D NMR prediction and an annotated experimental benchmark.</p>
-      <div class="meta"><a href="{{ '/publications/#li2025transpeaknet' | relative_url }}">Commun. Chem. 2025</a><a href="{{ '/publications/#li2025dnmrgym' | relative_url }}">LoG 2025</a></div>
-    </div>
-  </div>
-</section>
-
-<section class="sec" id="about">
-  <div class="sec-head"><div><p class="kicker"><span class="no">03</span>About</p><h2>About Hao</h2></div><a href="{{ '/about/' | relative_url }}">Appointments and education &rarr;</a></div>
-  <div class="about-h">
-    <img src="{{ '/assets/img/prof_pic.png' | relative_url }}" alt="Hao Xu">
-    <div>
-      <p>Hao Xu is an Investigator at Brigham and Women's Hospital and an Instructor in Medicine at Harvard Medical School. His research develops trustworthy AI for molecular and systems biology, with a long-term goal of building world models that connect molecular interventions to system-level biological responses.</p>
-      <p class="links">
-        <a href="{{ '/cv/' | relative_url }}">CV</a>
-        <a href="https://scholar.google.com/citations?user=tcYaFAcAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
-        <a href="https://github.com/GainGod-Xu" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://orcid.org/0000-0002-9795-5633" target="_blank" rel="noopener">ORCID</a>
-        <a href="mailto:haoxu0303@gmail.com">Email</a>
-      </p>
-    </div>
-  </div>
-</section>
-
 <section class="sec" id="news">
-  <div class="sec-head"><div><p class="kicker"><span class="no">04</span>News</p><h2>News</h2></div></div>
+  <div class="sec-head"><div><p class="kicker"><span class="no">01</span>News</p><h2>News</h2></div></div>
   {% include news.liquid limit=true %}
 </section>
