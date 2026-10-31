@@ -4,7 +4,7 @@ Hao Xu's personal academic site, built on [al-folio](https://github.com/alshediv
 
 ## Content
 
-- `_pages/home.md` — homepage: vision (Trustworthy World Models for Life Science) with animated molecule-to-phenotype schematic, three questions, trustworthiness framework, building-the-world-model progression, selected research, domains, about, news
+- `_pages/home.md` — homepage: hero (Trustworthy World Models for Life Science) with the understand-centered cycle schematic and biological-scales bar, plus recent news
 - `_pages/about.md` — short bio, appointments, education (`/pi/` redirects here)
 - `_pages/research.md` — research directions with representative papers
 - `_pages/publications.md` + `_bibliography/papers.bib` — full publication list, auto-grouped by year

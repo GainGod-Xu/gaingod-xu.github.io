@@ -31,7 +31,7 @@ selected_papers: false
 social: false
 ---
 
-Hao Xu is an Investigator at Brigham and Women's Hospital and an Instructor in Medicine at Harvard Medical School. His research develops trustworthy AI for molecular and systems biology, with a long-term goal of building world models that connect molecular interventions to system-level biological responses. See the [home page]({{ '/' | relative_url }}) for the research vision and [Research]({{ '/research/' | relative_url }}) for current directions.
+Hao Xu is an Investigator at Brigham and Women's Hospital and an Instructor in Medicine at Harvard Medical School. His research develops trustworthy AI for molecular and systems biology, with a long-term goal of building world models that connect molecular interventions to system-level biological responses. See [Research]({{ '/research/' | relative_url }}) for the research program and current directions.
 
 <style>
   .about-list { list-style: none; margin: 0; padding: 0; }
