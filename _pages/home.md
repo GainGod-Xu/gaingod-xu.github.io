@@ -17,8 +17,6 @@ description: Hao Xu builds trustworthy AI systems that learn how biological inte
   .home .sec.tinted { position: relative; }
   .home .sec.tinted::before { content: ""; position: absolute; inset: 0 -100vw; left: 50%; transform: translateX(-50%); width: 100vw; background: color-mix(in srgb, var(--global-theme-color) 4%, var(--global-bg-color)); border-block: 1px solid var(--global-divider-color); z-index: -1; }
   .home .lede { max-width: 46rem; font-size: 1.05rem; line-height: 1.65; }
-  .home .qkeys { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.7rem; }
-  .home .qkeys span { font-size: 0.76rem; padding: 0.1rem 0.55rem; border-radius: 4px; border: 1px solid var(--global-divider-color); color: var(--global-text-color-light); }
 
   /* ---------- hero: text left, schematic right ---------- */
   .hero { display: grid; grid-template-columns: 1fr 1.05fr; gap: 2.2rem; align-items: center; padding: 2.4rem 0 3.4rem; }
@@ -67,40 +65,12 @@ description: Hao Xu builds trustworthy AI systems that learn how biological inte
   @media (max-width: 720px) { .why { grid-template-columns: 1fr; } }
 
   /* ---------- three questions ---------- */
-  .qs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
-  .qs div { padding: 1rem 1.1rem 0.9rem; border: 1px solid var(--global-divider-color); border-radius: 8px; }
+  .qs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; margin-top: 2rem; }
+  .qs div { padding: 0.9rem 0 0; border-top: 2px solid var(--global-theme-color); }
+  .trustline { margin: 1.6rem 0 0; font-size: 0.9rem; }
   .qs h3 { margin: 0 0 0.3rem; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--global-theme-color); }
   .qs p { margin: 0; font-size: 0.98rem; font-weight: 600; line-height: 1.4; }
   @media (max-width: 720px) { .qs { grid-template-columns: 1fr; } }
-
-  /* ---------- trustworthiness framework ---------- */
-  .trust { display: grid; grid-template-columns: repeat(6, 1fr); border: 1px solid var(--global-divider-color); border-radius: 8px; overflow: hidden; }
-  .trust div { padding: 0.9rem 0.9rem 0.85rem; border-right: 1px solid var(--global-divider-color); border-top: 3px solid var(--global-theme-color); }
-  .trust div:last-child { border-right: 0; }
-  .trust h3 { margin: 0 0 0.35rem; font-size: 0.95rem; font-weight: 700; }
-  .trust p { margin: 0; font-size: 0.85rem; line-height: 1.45; color: var(--global-text-color-light); }
-  @media (max-width: 1000px) { .trust { grid-template-columns: repeat(3, 1fr); } .trust div { border-bottom: 1px solid var(--global-divider-color); } }
-  @media (max-width: 560px) { .trust { grid-template-columns: 1fr; } .trust div { border-right: 0; } }
-
-  /* ---------- building the world model ---------- */
-  .build { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0; position: relative; }
-  .build .stage { position: relative; padding: 0.9rem 0.8rem 0.4rem 0; }
-  .build .stage::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--global-theme-color); }
-  .build .stage::after { content: ""; position: absolute; top: -4px; left: 0; width: 11px; height: 11px; border-radius: 50%; background: var(--global-theme-color); }
-  .build .stage.future::before { background: repeating-linear-gradient(90deg, var(--global-divider-color) 0 6px, transparent 6px 10px); }
-  .build .stage.future::after { background: var(--global-bg-color); border: 2px solid var(--global-text-color-light); width: 9px; height: 9px; top: -3px; }
-  .build .stage.future h3 { color: var(--global-text-color-light); }
-  .build h3 { margin: 0 0 0.45rem; font-size: 0.95rem; font-weight: 700; line-height: 1.25; }
-  .build dl { margin: 0 0 0.55rem; font-size: 0.78rem; line-height: 1.4; }
-  .build dt { font-weight: 700; color: var(--global-text-color-light); font-size: 0.68rem; letter-spacing: 0.06em; text-transform: uppercase; margin-top: 0.3rem; }
-  .build dd { margin: 0; }
-  .build ul { list-style: none; margin: 0; padding: 0.5rem 0 0; border-top: 1px solid var(--global-divider-color); font-size: 0.84rem; line-height: 1.45; }
-  .build li { margin-bottom: 0.2rem; }
-  .build li.f { color: var(--global-text-color-light); font-style: italic; }
-  @media (max-width: 820px) { .build { grid-template-columns: 1fr; } .build .stage { padding: 0.5rem 0 0.9rem 1.2rem; }
-    .build .stage::before { top: 0; bottom: 0; left: 0; right: auto; width: 3px; height: auto; }
-    .build .stage.future::before { background: repeating-linear-gradient(180deg, var(--global-divider-color) 0 6px, transparent 6px 10px); }
-    .build .stage::after { left: -4px; top: 0.6rem; } .build .stage.future::after { left: -3px; } }
 
   /* ---------- selected research cards ---------- */
   .cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
@@ -112,13 +82,6 @@ description: Hao Xu builds trustworthy AI systems that learn how biological inte
   .card-r { transition: border-color 0.15s; }
   .card-r:hover { border-color: color-mix(in srgb, var(--global-theme-color) 55%, transparent); }
   @media (max-width: 640px) { .cards { grid-template-columns: 1fr; } }
-
-  /* ---------- where I work ---------- */
-  .dom { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
-  .dom div { padding: 0.2rem 0 0 0.9rem; border-left: 3px solid var(--global-theme-color); }
-  .dom h3 { margin: 0 0 0.3rem; font-size: 1rem; font-weight: 700; line-height: 1.3; }
-  .dom p { margin: 0; font-size: 0.88rem; color: var(--global-text-color-light); line-height: 1.5; }
-  @media (max-width: 720px) { .dom { grid-template-columns: 1fr; } }
 
   /* ---------- about ---------- */
   .about-h { display: grid; grid-template-columns: 11rem 1fr; gap: 1.6rem; align-items: start; }
@@ -208,114 +171,21 @@ description: Hao Xu builds trustworthy AI systems that learn how biological inte
 </section>
 
 <section class="sec" id="vision">
-  <div class="sec-head"><div><p class="kicker"><span class="no">01</span>Why</p><h2>Why World Models for Life Science?</h2></div></div>
+  <div class="sec-head"><div><p class="kicker"><span class="no">01</span>Vision</p><h2>Why World Models for Life Science?</h2></div><a href="{{ '/research/' | relative_url }}">Research program &rarr;</a></div>
   <div class="why">
-    <p>Biological AI is increasingly powerful, but most models remain isolated within a single scale: molecules, proteins, cells, or patients. Living systems, however, are connected across scales. A molecular intervention can alter binding, reshape interaction networks, change cellular states, and ultimately affect phenotype.</p>
+    <p>Biological AI is increasingly powerful, but most models remain isolated within a single scale: molecules, proteins, cells, or patients. Living systems are connected across scales. A molecular intervention can alter binding, reshape interaction networks, change cellular states, and ultimately affect phenotype.</p>
     <p class="big">The challenge is not only to predict biology, but to understand how interventions propagate through it.</p>
   </div>
-</section>
-
-<section class="sec" id="questions">
-  <div class="sec-head"><div><p class="kicker"><span class="no">02</span>Questions</p><h2>Three Fundamental Questions</h2></div></div>
   <div class="qs">
-    <div>
-      <h3>Understand</h3>
-      <p>What biological mechanisms govern response to intervention?</p>
-      <div class="qkeys"><span>Mechanistic representation</span><span>Molecular recognition</span><span>Cross-scale structure</span></div>
-    </div>
-    <div>
-      <h3>Predict</h3>
-      <p>What will happen under an unseen intervention?</p>
-      <div class="qkeys"><span>State transition</span><span>Generalization</span><span>Uncertainty</span></div>
-    </div>
-    <div>
-      <h3>Intervene</h3>
-      <p>What intervention will drive biology toward a desired state?</p>
-      <div class="qkeys"><span>Inverse design</span><span>Active learning</span><span>Experimental planning</span></div>
-    </div>
+    <div><h3>Understand</h3><p>What biological mechanisms govern response to intervention?</p></div>
+    <div><h3>Predict</h3><p>What will happen under an unseen intervention, and how sure are we?</p></div>
+    <div><h3>Intervene</h3><p>What intervention will drive biology toward a desired state?</p></div>
   </div>
-</section>
-
-<section class="sec" id="trust">
-  <div class="sec-head"><div><p class="kicker"><span class="no">03</span>Trustworthiness</p><h2>What Makes a Biological World Model Trustworthy?</h2></div></div>
-  <div class="trust">
-    <div><h3>Interpretability</h3><p>What mechanism drives the prediction?</p></div>
-    <div><h3>Uncertainty</h3><p>Does the model know when it may be wrong?</p></div>
-    <div><h3>Robustness</h3><p>Does the prediction survive perturbation and measurement noise?</p></div>
-    <div><h3>Generalization</h3><p>Does it transfer to unseen molecules, targets, cell types, and patients?</p></div>
-    <div><h3>Mechanistic Consistency</h3><p>Does it obey known physical, chemical, and biological constraints?</p></div>
-    <div><h3>Validation</h3><p>Is it tested against experiments, not only benchmarks?</p></div>
-  </div>
-</section>
-
-<section class="sec" id="building">
-  <div class="sec-head"><div><p class="kicker"><span class="no">04</span>Research program</p><h2>Building the World Model, One Scale at a Time</h2></div><a href="{{ '/research/' | relative_url }}">Research directions &rarr;</a></div>
-  <p class="muted" style="margin: 0 0 1.1rem; font-size: 0.92rem; max-width: 46rem;">Each scale is a level where a biological state can be measured and a model can be trained. For every scale: what the state is, how it is measured, what an intervention looks like there, and the work that anchors it. Phenotype is the readout at every level.</p>
-  <div class="build">
-    <div class="stage">
-      <h3>Molecule</h3>
-      <dl>
-        <dt>State</dt><dd>structure, sequence, conformation</dd>
-        <dt>Measured by</dt><dd>NMR, mass spectrometry, sequence</dd>
-        <dt>Intervention</dt><dd>changing the molecule itself</dd>
-      </dl>
-      <ul>
-        <li><a href="{{ '/publications/#wang2025advancing' | relative_url }}">Multimodal molecular learning</a></li>
-        <li><a href="{{ '/publications/#li2025transpeaknet' | relative_url }}">TransPeakNet</a> &middot; <a href="{{ '/publications/#li2025dnmrgym' | relative_url }}">2DNMRGym</a></li>
-      </ul>
-    </div>
-    <div class="stage">
-      <h3>Interaction</h3>
-      <dl>
-        <dt>State</dt><dd>binding, recognition, modification</dd>
-        <dt>Measured by</dt><dd>affinity, complex structure, modification sites</dd>
-        <dt>Intervention</dt><dd>a small molecule binds a protein or RNA</dd>
-      </dl>
-      <ul>
-        <li><a href="{{ '/publications/#xu2026explainbind' | relative_url }}">ExplainBind</a></li>
-        <li><a href="{{ '/publications/#wang2026evormd' | relative_url }}">EvoRMD</a></li>
-        <li>RNA&ndash;ligand recognition</li>
-      </ul>
-    </div>
-    <div class="stage">
-      <h3>Network</h3>
-      <dl>
-        <dt>State</dt><dd>pathway activity, interactome topology</dd>
-        <dt>Measured by</dt><dd>PPI / RRI maps, omics</dd>
-        <dt>Intervention</dt><dd>node perturbation, drug repurposing</dd>
-      </dl>
-      <ul>
-        <li><a href="{{ '/publications/#wang2025systems' | relative_url }}">Network medicine</a> &middot; <a href="{{ '/publications/#xu2026drugrepurposing' | relative_url }}">Drug repurposing</a></li>
-        <li>Affinity-weighted PPI</li>
-      </ul>
-    </div>
-    <div class="stage future">
-      <h3>Cell</h3>
-      <dl>
-        <dt>State</dt><dd>cell state: transcriptome, proteome</dd>
-        <dt>Measured by</dt><dd>single-cell profiling, Perturb-seq</dd>
-        <dt>Intervention</dt><dd>genetic and chemical perturbation</dd>
-      </dl>
-      <ul><li class="f">Planned: single-cell perturbation response</li></ul>
-    </div>
-    <div class="stage future">
-      <h3>Organism &amp; Patient</h3>
-      <dl>
-        <dt>State</dt><dd>physiology, disease, treatment response</dd>
-        <dt>Measured by</dt><dd>imaging, EHR, clinical outcomes</dd>
-        <dt>Intervention</dt><dd>precision intervention</dd>
-      </dl>
-      <ul>
-        <li class="f">Planned: precision intervention</li>
-        <li>Early: <a href="{{ '/publications/#jia2025p53' | relative_url }}">MRI prediction of P53-mutated HCC</a></li>
-      </ul>
-    </div>
-  </div>
-  <p class="muted" style="margin: 1rem 0 0; font-size: 0.9rem; max-width: 46rem;">The ladder runs both ways. Interventions propagate upward from molecule to patient; observations at higher scales constrain which molecular mechanisms matter. A world model has to be consistent in both directions.</p>
+  <p class="muted trustline">Across all three, one standard: interpretability, uncertainty, robustness, generalization, mechanistic consistency, and experimental validation.</p>
 </section>
 
 <section class="sec tinted" id="selected">
-  <div class="sec-head"><div><p class="kicker"><span class="no">05</span>Selected research</p><h2>Selected Research</h2></div><a href="{{ '/publications/' | relative_url }}">All publications &rarr;</a></div>
+  <div class="sec-head"><div><p class="kicker"><span class="no">02</span>Selected research</p><h2>Selected Research</h2></div><a href="{{ '/publications/' | relative_url }}">All publications &rarr;</a></div>
   <div class="cards">
     <div class="card-r">
       <h3>ExplainBind</h3>
@@ -337,30 +207,11 @@ description: Hao Xu builds trustworthy AI systems that learn how biological inte
       <p>Self-verifying molecular structure elucidation from experimental spectra, built on solvent-aware 2D NMR prediction and an annotated experimental benchmark.</p>
       <div class="meta"><a href="{{ '/publications/#li2025transpeaknet' | relative_url }}">Commun. Chem. 2025</a><a href="{{ '/publications/#li2025dnmrgym' | relative_url }}">LoG 2025</a></div>
     </div>
-    <div class="card-r">
-      <h3>Network Medicine &amp; Systems Pharmacology</h3>
-      <p>Connecting molecular interactions to system-level disease mechanisms and principled drug repurposing.</p>
-      <div class="meta"><a href="{{ '/publications/#wang2025systems' | relative_url }}">Comprehensive Medicinal Chemistry 2025</a><a href="{{ '/publications/#xu2026drugrepurposing' | relative_url }}">Drug Repurposing 2026</a></div>
-    </div>
-    <div class="card-r">
-      <h3>Trustworthy Foundation-Model Methods</h3>
-      <p>Structured, task-aware low-rank adaptation and counterfactual visual alignment that keep large models reliable and cheap to adapt to scientific data.</p>
-      <div class="meta"><a href="{{ '/publications/#xiao2026notall' | relative_url }}">ACL 2026</a><a href="{{ '/publications/#xiao2026vigilant' | relative_url }}">ECCV 2026</a></div>
-    </div>
-  </div>
-</section>
-
-<section class="sec" id="domains">
-  <div class="sec-head"><div><p class="kicker"><span class="no">06</span>Domains</p><h2>Where I Work</h2></div></div>
-  <div class="dom">
-    <div><h3>Molecular Regulation &amp; Modification</h3><p>RNA modification &middot; protein modification &middot; molecular function</p></div>
-    <div><h3>Biomolecular Interactions &amp; Networks</h3><p>PPI &middot; RRI &middot; protein&ndash;ligand &middot; RNA&ndash;ligand &middot; network medicine</p></div>
-    <div><h3>Precision Biology &amp; Therapeutic Intervention</h3><p>single-cell &middot; perturbation biology &middot; drug response &middot; precision medicine</p></div>
   </div>
 </section>
 
 <section class="sec" id="about">
-  <div class="sec-head"><div><p class="kicker"><span class="no">07</span>About</p><h2>About Hao</h2></div><a href="{{ '/about/' | relative_url }}">Appointments and education &rarr;</a></div>
+  <div class="sec-head"><div><p class="kicker"><span class="no">03</span>About</p><h2>About Hao</h2></div><a href="{{ '/about/' | relative_url }}">Appointments and education &rarr;</a></div>
   <div class="about-h">
     <img src="{{ '/assets/img/prof_pic.png' | relative_url }}" alt="Hao Xu">
     <div>
@@ -377,6 +228,6 @@ description: Hao Xu builds trustworthy AI systems that learn how biological inte
 </section>
 
 <section class="sec" id="news">
-  <div class="sec-head"><div><p class="kicker"><span class="no">08</span>News</p><h2>News</h2></div></div>
+  <div class="sec-head"><div><p class="kicker"><span class="no">04</span>News</p><h2>News</h2></div></div>
   {% include news.liquid limit=true %}
 </section>
