@@ -9,7 +9,26 @@
   html:not([data-theme="dark"]) {
     --global-theme-color: #1b5fa6;
     --global-hover-color: #1b5fa6;
+    --global-bg-color: #fbfaf7;
+    --global-card-bg-color: #ffffff;
+    --global-divider-color: #e3e1da;
+    --global-text-color: #17201d;
+    --global-text-color-light: #5c6963;
   }
+  html[data-theme="dark"] {
+    --global-divider-color: #3a3a3e;
+  }
+  /* Editorial helpers shared across pages */
+  .kicker {
+    margin: 0 0 0.5rem;
+    color: var(--global-theme-color);
+    font-size: 0.74rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  .kicker .no { color: var(--global-text-color-light); margin-right: 0.6rem; }
+  .fig-note { margin-top: 0.6rem; color: var(--global-text-color-light); font-size: 0.8rem; line-height: 1.5; }
   html[data-theme="dark"] {
     --global-theme-color: #7ab8f5;
     --global-hover-color: #7ab8f5;
@@ -45,7 +64,7 @@ ninja.data = [{
     },
   },{id: "nav-research",
           title: "Research",
-          description: "Trustworthy world models for life science: current directions, organized from molecular recognition to system-level biology, each anchored by representative papers.",
+          description: "Research program: trustworthy world models for life science, built one biological scale at a time.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/research/";
