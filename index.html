@@ -1,355 +1,179 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Hao Xu </title> <meta name="author" content="Hao Xu"> <meta name="description" content="XLab at Brigham and Women's Hospital and Harvard Medical School — Micro-to-Macro Mechanistic AI across fundamental AI, life science, and materials science."> <meta name="keywords" content="Hao Xu, AI for Science, AI for Medicine, machine learning, drug discovery, Brigham and Women's Hospital, Harvard Medical School"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Hao Xu </title> <meta name="author" content="Hao Xu"> <meta name="description" content="Hao Xu builds trustworthy AI systems that learn how molecular interventions propagate across biological scales, from molecular recognition to system-level biological responses."> <meta name="keywords" content="Hao Xu, trustworthy AI, world models, life science, molecular biology, systems biology, network medicine, machine learning, Brigham and Women's Hospital, Harvard Medical School"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
   :root {
     --max-content-width: 930px;
   }
 </style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%A7%AC&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://gaingod-xu.github.io/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
     initTheme();
   </script> </head> <body class="fixed-top-nav "> <style>
+  /* Single restrained accent: deep blue in light mode, lighter blue in dark mode */
+  html:not([data-theme="dark"]) {
+    --global-theme-color: #1b5fa6;
+    --global-hover-color: #1b5fa6;
+  }
+  html[data-theme="dark"] {
+    --global-theme-color: #7ab8f5;
+    --global-hover-color: #7ab8f5;
+  }
   body {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   }
   strong,
   b,
   .publications ol.bibliography li .title {
     font-weight: 700;
   }
-</style> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">X</span>Lab </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item active"> <a class="nav-link" href="/">XLab <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/pi/">PI </a> </li> <li class="nav-item "> <a class="nav-link" href="/research/">Research </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">Publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/people/">People </a> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">Teaching </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link"><i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post home"> <article> <style>
-  /* Micro-to-Macro mission diagram */
-  .mission {
-    margin: 0.75rem 0 0;
-  }
-  .mission-lead {
-    text-align: center;
-    margin-bottom: 1.25rem;
-  }
-  .mission-lead strong {
-    display: block;
-    font-weight: 700;
-    font-size: 1.35rem;
-    color: var(--global-theme-color);
-  }
-  .mission-lead span {
-    color: var(--global-text-color-light);
-    font-size: 0.95rem;
-  }
-  .mission-body {
-    display: grid;
-    grid-template-columns: 1.6rem repeat(3, 1fr);
-    gap: 0.9rem;
-  }
-  /* Shared micro -> macro scale axis */
-  .mission-axis {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 4.2rem;
-    font-size: 0.68rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    color: var(--global-text-color-light);
-  }
-  .mission-axis i {
-    flex: 1;
-    width: 3px;
-    margin: 0.4rem 0;
-    border-radius: 2px;
-    background: linear-gradient(to bottom, var(--global-divider-color), var(--global-theme-color));
-    position: relative;
-  }
-  .mission-axis i::after {
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    left: 50%;
-    transform: translateX(-50%);
-    border: 6px solid transparent;
-    border-top-color: var(--global-theme-color);
-    border-bottom: 0;
-  }
-  .mission-axis b {
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-  }
-  .track {
-    display: flex;
-    flex-direction: column;
-  }
-  .track-head {
-    padding: 0.55rem 0.75rem;
-    border-radius: 8px;
-    background: var(--accent);
-    color: #fff;
-    min-height: 3.6rem;
-    margin-bottom: 0.6rem;
-  }
-  .track-head span {
-    color: #fff !important;
-  }
-  .track-head .track-no {
-    font-size: 0.68rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    opacity: 0.85;
-  }
-  .track-head .track-name {
-    display: block;
-    font-weight: 700;
-    font-size: 1rem;
-  }
-  .track-head .track-name i {
-    margin-right: 0.35rem;
-  }
-  .track-sub {
-    font-size: 0.78rem;
-    color: var(--global-text-color-light);
-    margin: -0.2rem 0 0.6rem;
-    min-height: 2.7em;
-    line-height: 1.35;
-  }
-  .track ol {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-  }
-  .track li {
-    position: relative;
-    flex: 1;
-    padding: 0.5rem 0.7rem 0.5rem 2.3rem;
-    border: 1px solid var(--global-divider-color);
-    border-radius: 6px;
-    background: var(--global-card-bg-color);
-    font-size: 0.8rem;
-    line-height: 1.35;
-    color: var(--global-text-color-light);
-  }
-  .track li + li {
-    margin-top: 1.1rem;
-  }
-  /* connector arrow between levels */
-  .track li + li::after {
-    content: "";
-    position: absolute;
-    top: -1rem;
-    left: 50%;
-    transform: translateX(-50%);
-    border: 5px solid transparent;
-    border-top: 7px solid var(--accent);
-    border-bottom: 0;
-    margin-top: 0.15rem;
-  }
-  .track li + li::before {
-    content: "";
-    position: absolute;
-    top: -1.05rem;
-    left: 50%;
-    width: 2px;
-    height: 0.55rem;
-    transform: translateX(-50%);
-    background: var(--accent);
-  }
-  .track li:last-child {
-    background: color-mix(in srgb, var(--accent) 10%, var(--global-card-bg-color));
-    border-color: color-mix(in srgb, var(--accent) 45%, transparent);
-  }
-  .track li strong {
-    display: block;
-    font-weight: 700;
-    color: var(--global-text-color);
-    font-size: 0.88rem;
-  }
-  .track li .lvl {
-    position: absolute;
-    left: 0.6rem;
-    top: 0.55rem;
-    width: 1.25rem;
-    height: 1.25rem;
-    border-radius: 50%;
-    background: var(--accent);
-    color: #fff;
-    font-size: 0.7rem;
-    font-weight: 700;
-    line-height: 1.25rem;
-    text-align: center;
-  }
-  /* Mission bar */
-  .mission-bar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 0.6rem 1rem;
-    margin-top: 1.2rem;
-    padding: 0.8rem 1rem;
-    border-radius: 8px;
-    border: 1px solid var(--global-divider-color);
-    background: color-mix(in srgb, var(--global-theme-color) 8%, var(--global-card-bg-color));
-  }
-  .mission-bar .goal {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-weight: 700;
-    color: var(--global-text-color);
-  }
-  .mission-bar .goal i {
-    color: var(--global-theme-color);
-    font-size: 1.15rem;
-  }
-  .mission-bar .sep {
-    color: var(--global-theme-color);
-    font-weight: 700;
-  }
-  .mission-bar .tag {
-    font-size: 0.7rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    color: var(--global-text-color-light);
-    padding-right: 1rem;
-    border-right: 1px solid var(--global-divider-color);
-  }
-  @media (max-width: 768px) {
-    .mission-body {
-      grid-template-columns: 1fr;
-    }
-    .mission-axis {
-      display: none;
-    }
-    .track-head,
-    .track-sub {
-      min-height: 0;
-    }
-    .track + .track {
-      margin-top: 0.6rem;
-    }
-    .mission-bar .tag {
-      width: 100%;
-      text-align: center;
-      border-right: 0;
-      padding-right: 0;
-    }
-  }
-
-  /* ---------- Home: hero ---------- */
-  .home .hero {
-    padding: 2.5rem 0 2rem;
-    margin-bottom: 1rem;
+</style> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Hao</span> Xu </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item active"> <a class="nav-link" href="/">Home <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/research/">Research </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">Publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/people/">Team </a> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">Teaching </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link"><i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post home"> <article> <style>
+  /* ---------- shared ---------- */
+  .home h1, .home h2, .home h3 { letter-spacing: -0.01em; }
+  .home .sec { margin-top: 3.6rem; }
+  .home .sec-head {
+    display: flex; align-items: baseline; justify-content: space-between; gap: 1rem;
+    margin-bottom: 1rem; padding-bottom: 0.4rem;
     border-bottom: 1px solid var(--global-divider-color);
   }
+  .home .sec-head h2 { margin: 0; font-size: 1.45rem; font-weight: 700; }
+  .home .sec-head a { font-size: 0.88rem; font-weight: 600; white-space: nowrap; }
+  .home .muted { color: var(--global-text-color-light); }
+  .home .lede { max-width: 46rem; font-size: 1.05rem; line-height: 1.65; }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 2.6rem 0 1.2rem; }
   .hero-kicker {
-    font-size: 0.78rem;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--global-text-color-light);
-    margin-bottom: 0.4rem;
+    font-size: 0.78rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--global-text-color-light); margin-bottom: 0.9rem;
   }
   .hero-title {
-    font-size: clamp(2.6rem, 7vw, 3.6rem);
-    font-weight: 800;
-    line-height: 1;
-    margin: 0 0 0.35rem;
+    font-size: clamp(2rem, 5.6vw, 3.1rem); font-weight: 800; line-height: 1.08;
+    margin: 0 0 0.6rem; max-width: 18ch;
   }
-  .hero-title b {
-    color: var(--global-theme-color);
+  .hero-upi {
+    font-size: clamp(1.15rem, 2.8vw, 1.45rem); font-weight: 600; margin: 0 0 0.9rem;
+    color: var(--global-theme-color); letter-spacing: 0.01em;
   }
-  .hero-tag {
-    font-size: clamp(1.2rem, 3.2vw, 1.55rem);
-    font-weight: 600;
-    margin-bottom: 0.9rem;
-  }
-  .hero-lede {
-    max-width: 44rem;
-    font-size: 1.05rem;
-    line-height: 1.6;
-    color: var(--global-text-color);
-  }
-  .hero-pi {
-    color: var(--global-text-color-light);
-  }
-  .hero-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
-    margin: 1.2rem 0 1.4rem;
-  }
+  .hero-upi span + span::before { content: "\00a0\00a0"; }
+  .hero-lede { max-width: 44rem; font-size: 1.1rem; line-height: 1.6; margin: 0 0 1.3rem; }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: 0.55rem; margin: 0 0 2.2rem; }
   .hero-actions a {
-    padding: 0.45rem 1rem;
-    border-radius: 999px;
-    border: 1.5px solid var(--global-theme-color);
-    font-weight: 600;
-    font-size: 0.92rem;
-    text-decoration: none !important;
+    padding: 0.42rem 1rem; border-radius: 6px; border: 1.5px solid var(--global-theme-color);
+    font-weight: 600; font-size: 0.9rem; text-decoration: none !important; color: var(--global-theme-color);
   }
-  .hero-actions a.primary {
-    background: var(--global-theme-color);
-    color: var(--global-bg-color) !important;
+  .hero-actions a.primary { background: var(--global-theme-color); color: var(--global-bg-color) !important; }
+
+  /* ---------- schematic: molecule -> phenotype ---------- */
+  .scales { margin: 0; padding: 1.4rem 1.2rem 1rem; border: 1px solid var(--global-divider-color); border-radius: 10px; }
+  .scales-row { display: flex; align-items: center; justify-content: center; gap: 0.5rem; flex-wrap: nowrap; }
+  .scales-top { margin-bottom: 1.1rem; }
+  .scales-top .step {
+    font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--global-theme-color); padding: 0.2rem 0.75rem; border-radius: 999px;
+    border: 1px solid color-mix(in srgb, var(--global-theme-color) 45%, transparent);
   }
-  .hero-venues {
-    font-size: 0.82rem;
-    color: var(--global-text-color-light);
+  .scales-top .arr { color: var(--global-theme-color); font-weight: 700; }
+  .scales-chain { gap: 0; }
+  .scales-chain .node {
+    display: flex; flex-direction: column; align-items: center; gap: 0.45rem;
+    min-width: 6.2rem; text-align: center;
   }
-  .hero-venues span {
-    display: inline-block;
-    margin: 0.2rem 0.3rem 0 0;
-    padding: 0.1rem 0.55rem;
-    border-radius: 4px;
-    border: 1px solid var(--global-divider-color);
-    color: var(--global-text-color);
+  .scales-chain .node i {
+    display: block; border-radius: 50%; border: 2px solid var(--global-text-color);
+    background: var(--global-bg-color); width: var(--d); height: var(--d);
+  }
+  .scales-chain .node b { font-size: 0.92rem; font-weight: 700; line-height: 1.2; }
+  .scales-chain .node small { font-size: 0.74rem; color: var(--global-text-color-light); line-height: 1.25; max-width: 8.5rem; }
+  .scales-chain .link {
+    flex: 1 1 2.2rem; height: 2px; min-width: 1.4rem; margin-top: -2.6rem; position: relative;
+    background: linear-gradient(90deg, var(--global-text-color-light) 0 50%, transparent 50% 100%);
+    background-size: 8px 2px; opacity: 0.8;
+  }
+  .scales-chain .link::after {
+    content: ""; position: absolute; right: -1px; top: 50%; transform: translateY(-50%);
+    border: 4px solid transparent; border-left: 6px solid var(--global-text-color-light); border-right: 0;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .scales-chain .link { animation: flow 1.2s linear infinite; }
+    @keyframes flow { from { background-position: 0 0; } to { background-position: 8px 0; } }
+  }
+  .scales-base {
+    margin-top: 1.3rem; padding-top: 0.75rem; border-top: 2px solid var(--global-theme-color);
+    display: flex; flex-wrap: wrap; justify-content: center; align-items: baseline; gap: 0.3rem 0.9rem;
+    font-size: 0.8rem; color: var(--global-text-color-light);
+  }
+  .scales-base b { color: var(--global-text-color); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; font-size: 0.76rem; }
+  .scales-base span::before { content: "\00b7"; margin-right: 0.9rem; opacity: 0.6; }
+  .scales-base span:first-of-type::before { content: ""; margin: 0; }
+  @media (max-width: 640px) {
+    .scales { padding: 1rem 0.8rem; }
+    .scales-chain { flex-direction: column; gap: 0.5rem; }
+    .scales-chain .node { flex-direction: row; min-width: 0; text-align: left; gap: 0.7rem; width: 100%; max-width: 20rem; }
+    .scales-chain .node i { flex: none; }
+    .scales-chain .node small { max-width: none; }
+    .scales-chain .node b { min-width: 5.6rem; }
+    .scales-chain .link { width: 2px; height: 1.1rem; flex: none; margin: 0; min-width: 0;
+      background: linear-gradient(180deg, var(--global-text-color-light) 0 50%, transparent 50% 100%); background-size: 2px 8px; }
+    .scales-chain .link::after { right: auto; left: 50%; top: auto; bottom: -1px; transform: translateX(-50%);
+      border: 4px solid transparent; border-top: 6px solid var(--global-text-color-light); border-bottom: 0; }
+    .scales-top .step { font-size: 0.7rem; padding: 0.15rem 0.5rem; }
   }
 
-  /* ---------- Home: sections ---------- */
-  .home-section {
-    margin-top: 2.6rem;
+  /* ---------- research vision ---------- */
+  .vision-q { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1.2rem; }
+  .vision-q div { padding: 0.2rem 0 0 0.9rem; border-left: 3px solid var(--global-theme-color); }
+  .vision-q h3 { margin: 0 0 0.3rem; font-size: 1.05rem; font-weight: 700; }
+  .vision-q p { margin: 0; font-size: 0.95rem; line-height: 1.5; }
+  .vision-trust { margin: 1.3rem 0 0; font-size: 0.95rem; }
+  @media (max-width: 640px) { .vision-q { grid-template-columns: 1fr; } }
+
+  /* ---------- research map ---------- */
+  .rmap { width: 100%; border-collapse: separate; border-spacing: 0; table-layout: fixed; margin: 0; font-size: 0.84rem; }
+  .rmap th, .rmap td { padding: 0.55rem 0.5rem; vertical-align: top; border-bottom: 1px solid var(--global-divider-color); }
+  .rmap thead th { font-size: 0.76rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--global-theme-color); border-bottom: 2px solid var(--global-theme-color); text-align: left; }
+  .rmap thead th:first-child { color: var(--global-text-color-light); }
+  .rmap tbody th { font-weight: 700; text-align: left; white-space: nowrap; width: 7.2rem; font-size: 0.86rem; }
+  .rmap tbody th small { display: block; font-weight: 400; color: var(--global-text-color-light); font-size: 0.72rem; white-space: normal; }
+  .rmap tbody tr:last-child th, .rmap tbody tr:last-child td { border-bottom: 0; }
+  .rmap .chip {
+    display: inline-block; margin: 0 0.25rem 0.3rem 0; padding: 0.12rem 0.55rem; border-radius: 5px;
+    border: 1px solid var(--global-divider-color); background: var(--global-card-bg-color);
+    color: var(--global-text-color); text-decoration: none !important; line-height: 1.4;
   }
-  .section-head {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 1rem;
-    margin-bottom: 0.8rem;
-    border-bottom: 2px solid var(--global-theme-color);
-    padding-bottom: 0.3rem;
-  }
-  .section-head h2 {
-    margin: 0;
-    font-size: 1.6rem;
-  }
-  .section-head a {
-    font-size: 0.88rem;
-    font-weight: 600;
-    white-space: nowrap;
-  }
-  .home .news table {
-    margin-bottom: 0;
-  }
-  .home .news th {
-    font-weight: 600;
-    color: var(--global-text-color-light);
-    white-space: nowrap;
+  .rmap a.chip { border-color: color-mix(in srgb, var(--global-theme-color) 50%, transparent); }
+  .rmap a.chip:hover { background: color-mix(in srgb, var(--global-theme-color) 10%, transparent); }
+  .rmap .chip.future { border-style: dashed; color: var(--global-text-color-light); background: transparent; }
+  .rmap-legend { margin: 0.6rem 0 0; font-size: 0.78rem; color: var(--global-text-color-light); }
+  .rmap-legend .chip { display: inline-block; padding: 0 0.45rem; border-radius: 5px; border: 1px solid var(--global-divider-color); margin-right: 0.3rem; }
+  .rmap-legend .chip.future { border-style: dashed; }
+  .rmap-wrap { overflow-x: auto; }
+  @media (max-width: 640px) {
+    .rmap { min-width: 34rem; }
   }
 
-  /* ---------- Home: contact band ---------- */
-  .contact-band {
-    margin: 2.8rem 0 1rem;
-    padding: 1.4rem 1.6rem;
-    border-radius: 10px;
-    background: color-mix(in srgb, var(--global-theme-color) 8%, var(--global-card-bg-color));
-    border: 1px solid var(--global-divider-color);
-  }
-  .contact-band h2 {
-    font-size: 1.3rem;
-    margin: 0 0 0.4rem;
-  }
-  .contact-band p {
-    margin: 0;
-  }
-  .contact-band p + p {
-    margin-top: 0.4rem;
-  }
-</style> <section class="hero"> <p class="hero-kicker">Brigham and Women's Hospital · Harvard Medical School</p> <h1 class="hero-title"> <b>X</b>Lab</h1> <p class="hero-tag">Micro-to-Macro Mechanistic AI</p> <p class="hero-lede">We build AI that links micro-scale mechanisms—model parameters, atomic interactions, molecular signals—to macro-scale behavior, across fundamental AI, life science, and materials science.</p> <p class="hero-pi">Led by <a href="/pi/">Dr. Hao Xu</a>, Investigator at Brigham and Women's Hospital and Instructor in Medicine at Harvard Medical School.</p> <div class="hero-actions"> <a class="primary" href="/research/">Research</a> <a href="/publications/">Publications</a> <a href="/people/">People</a> </div> <div class="hero-venues">Recent work in <span>ACL 2026</span><span>ECCV 2026</span><span>Genome Biology</span><span>J. Cheminform.</span><span>Communications Chemistry</span> </div> </section> <section class="home-section"> <div class="section-head"><h2>News</h2></div> <div class="news"> <div class="table-responsive"> <table class="table table-sm table-borderless"> <tr> <th scope="row" style="width: 20%">Jul 31, 2026</th> <td> <a href="https://link.springer.com/article/10.1186/s13321-026-01234-1" rel="external nofollow noopener" target="_blank">How Well Can Off-the-Shelf LLMs Elucidate Molecular Structures from Mass Spectra Using Chain-of-Thought Reasoning?</a> published in <em>Journal of Cheminformatics</em>. </td> </tr> <tr> <th scope="row" style="width: 20%">Jun 24, 2026</th> <td> <a href="https://arxiv.org/abs/2606.26387" rel="external nofollow noopener" target="_blank">Staying VIGILant: Mitigating Visual Laziness via Counterfactual Visual Alignment in MLLMs</a> accepted to <em>ECCV 2026</em>. </td> </tr> <tr> <th scope="row" style="width: 20%">Jun 09, 2026</th> <td> <a href="https://pubmed.ncbi.nlm.nih.gov/41867731/" rel="external nofollow noopener" target="_blank">ExplainBind: Explainable Physicochemical Determinants of Protein-Ligand Binding via Non-Covalent Interactions</a> posted as a preprint on <em>bioRxiv</em>. </td> </tr> <tr> <th scope="row" style="width: 20%">May 02, 2026</th> <td> <a href="https://link.springer.com/article/10.1186/s13059-026-04097-9" rel="external nofollow noopener" target="_blank">EvoRMD: Integrating Biological Context and Evolutionary RNA Language Models for Interpretable Prediction of RNA Modifications</a> published in <em>Genome Biology</em>. </td> </tr> <tr> <th scope="row" style="width: 20%">Apr 04, 2026</th> <td> <a href="https://arxiv.org/abs/2603.14228" rel="external nofollow noopener" target="_blank">Not All Directions Matter: Toward Structured and Task-Aware Low-Rank Adaptation</a> accepted to <em>ACL 2026</em>. </td> </tr> <tr> <th scope="row" style="width: 20%">Oct 03, 2025</th> <td> <a href="https://arxiv.org/abs/2510.02630" rel="external nofollow noopener" target="_blank">HyperAdaLoRA: Accelerating LoRA Rank Allocation During Training via Hypernetworks without Sacrificing Performance</a> accepted to <em>Findings of ACL 2026</em>. </td> </tr> </table> </div> </div> </section> <section class="home-section"> <div class="section-head"> <h2>Research Tracks</h2> <a href="/research/">Research →</a> </div> <figure class="mission" aria-label="XLab mission: Micro-to-Macro Mechanistic AI, one principle applied across three research tracks"> <div class="mission-body"> <div class="mission-axis" aria-hidden="true"> <b>MICRO</b><i></i><b>MACRO</b> </div> <div class="track" style="--accent: #7b52c7;"> <div class="track-head"> <span class="track-no">TRACK I</span><span class="track-name"><i class="fa-solid fa-microchip"></i>Fundamental AI</span> </div> <div class="track-sub">From parameter dynamics to reliable model behavior</div> <ol> <li> <span class="lvl">1</span><strong>Parameter Dynamics</strong>Parameter sensitivity and structure; efficient, task-aware adaptation</li> <li> <span class="lvl">2</span><strong>Multimodal Understanding</strong>Visual grounding and cross-modal reasoning</li> <li> <span class="lvl">3</span><strong>Visual Alignment</strong>Counterfactual alignment; mitigating visual laziness and modality bias</li> <li> <span class="lvl">4</span><strong>Reliable AI Systems</strong>Robust, efficient multimodal intelligence across tasks and domains</li> </ol> </div> <div class="track" style="--accent: #3a7bd5;"> <div class="track-head"> <span class="track-no">TRACK II</span><span class="track-name"><i class="fa-solid fa-dna"></i>Life Science</span> </div> <div class="track-sub">From molecular mechanisms to health outcomes</div> <ol> <li> <span class="lvl">1</span><strong>Molecular Mechanisms</strong>Physicochemical drivers of binding, catalysis, and conformational change</li> <li> <span class="lvl">2</span><strong>Cellular Systems</strong>Molecular networks, pathways, regulation, and cell states</li> <li> <span class="lvl">3</span><strong>Organismal Mechanisms</strong>Integrated physiology, disease, and treatment response</li> <li> <span class="lvl">4</span><strong>Health Outcomes</strong>Clinical and population-level diagnosis, prognosis, and intervention</li> </ol> </div> <div class="track" style="--accent: #3fa65b;"> <div class="track-head"> <span class="track-no">TRACK III</span><span class="track-name"><i class="fa-solid fa-atom"></i>Materials Science</span> </div> <div class="track-sub">From atomic interactions to materials discovery and impact</div> <ol> <li> <span class="lvl">1</span><strong>Atomic Interactions</strong>Atomic structure, bonding, electrons, and defects</li> <li> <span class="lvl">2</span><strong>Structure–Property Mechanisms</strong>Surfaces, phases, transport, and stability</li> <li> <span class="lvl">3</span><strong>Materials Discovery &amp; Catalysis</strong>ML-potential–guided search and generative design</li> <li> <span class="lvl">4</span><strong>Applications &amp; Impact</strong>Materials for energy, environment, electronics, and beyond</li> </ol> </div> </div> <div class="mission-bar"> <span class="tag">OUR MISSION</span> <span class="goal"><i class="fa-solid fa-brain" aria-hidden="true"></i>Understand mechanisms</span> <span class="sep" aria-hidden="true">→</span> <span class="goal"><i class="fa-solid fa-sliders" aria-hidden="true"></i>Shape behaviors</span> <span class="sep" aria-hidden="true">→</span> <span class="goal"><i class="fa-solid fa-earth-americas" aria-hidden="true"></i>Enable discovery</span> </div> </figure> </section> <section class="home-section"> <div class="section-head"> <h2>Selected Publications</h2> <a href="/publications/">All publications →</a> </div> <div class="publications"> <ol class="bibliography"> <li> <div class="row"> <div class="col col-sm-2 abbr"> <abbr class="badge rounded w-100">bioRxiv</abbr> </div> <div id="xu2026explainbind" class="col-sm-8"> <div class="title">ExplainBind: Explainable Physicochemical Determinants of Protein-Ligand Binding via Non-Covalent Interactions</div> <div class="author"> Z. Meng<sup>†</sup>, Z. Bai<sup>†</sup>, K. Yuan, J. Song, Y. Zhang, J. H. Cheah, W. Jiang, A. Skepner, K. J. Leahy, I. Ounis, W. M. Oldham<sup>*</sup>, Z. Meng<sup>*</sup>, <em>Hao Xu<sup>*</sup></em>, and J. Loscalzo </div> <div class="periodical"> <em>bioRxiv</em>, 2026 </div> <div class="periodical"> </div> <div class="links"> <a href="https://pubmed.ncbi.nlm.nih.gov/41867731/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a> </div> </div> </div> </li> <li> <div class="row"> <div class="col col-sm-2 abbr"> <abbr class="badge rounded w-100">Genome Biol.</abbr> </div> <div id="wang2026evormd" class="col-sm-8"> <div class="title">EvoRMD: Integrating Biological Context and Evolutionary RNA Language Models for Interpretable Prediction of RNA Modifications</div> <div class="author"> B. Wang, H. Zhang, T. Cui, X. Wang, J. Song<sup>*</sup>, and <em>Hao Xu<sup>*</sup></em> </div> <div class="periodical"> <em>Genome Biology</em>, 2026 </div> <div class="periodical"> </div> <div class="links"> <a href="https://link.springer.com/article/10.1186/s13059-026-04097-9" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a> </div> </div> </div> </li> <li> <div class="row"> <div class="col col-sm-2 abbr"> <abbr class="badge rounded w-100">ACL</abbr> </div> <div id="xiao2026notall" class="col-sm-8"> <div class="title">Not All Directions Matter: Toward Structured and Task-Aware Low-Rank Adaptation</div> <div class="author"> X. Xiao, C. Ma, Y. Zhang, C. Liu, Z. Wang, Y. Li, L. Zhao, G. Hu, T. Wang, and <em>Hao Xu</em> </div> <div class="periodical"> <em>In Association for Computational Linguistics (ACL)</em>, 2026 </div> <div class="periodical"> </div> <div class="links"> <a href="https://arxiv.org/abs/2603.14228" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a> </div> </div> </div> </li> <li> <div class="row"> <div class="col col-sm-2 abbr"> <abbr class="badge rounded w-100">JCIM</abbr> </div> <div id="wang2025advancing" class="col-sm-8"> <div class="title">Advancing Drug Discovery with Enhanced Chemical Understanding via Asymmetric Contrastive Multimodal Learning</div> <div class="author"> Yifei Wang<sup>†</sup>, Yunrui Li<sup>†</sup>, Lin Liu, Pengyu Hong, and <em>Hao Xu<sup>*</sup></em> </div> <div class="periodical"> <em>Journal of Chemical Information and Modeling</em>, 2025 </div> <div class="periodical"> </div> <div class="links"> <a href="https://pubs.acs.org/doi/10.1021/acs.jcim.5c00430" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a> </div> </div> </div> </li> <li> <div class="row"> <div class="col col-sm-2 abbr"> <abbr class="badge rounded w-100">Chem</abbr> </div> <div id="xu2024enantioselective" class="col-sm-8"> <div class="title">Enantioselective Radical N-Heterobicyclization by New Mode of Asymmetric Induction via Kinetically Stable Chiral Radical Center</div> <div class="author"> <em>Hao Xu</em>, Duo-Sheng Wang, Zhen-Yu Zhu, Arghya Deb, and X. Peter Zhang<sup>*</sup> </div> <div class="periodical"> <em>Chem</em>, 2024 </div> <div class="periodical"> </div> <div class="links"> <a href="https://www.cell.com/chem/abstract/S2451-9294(23)00465-5" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a> </div> </div> </div> </li> </ol> </div> </section> <section class="contact-band"> <h2>Contact</h2> <p>XLab · Department of Medicine, Brigham and Women's Hospital · Harvard Medical School · Boston, MA</p> <p>Email: <a href="mailto:haoxu0303@gmail.com">haoxu0303@gmail.com</a>. We welcome inquiries from prospective students and collaborators.</p> </section> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Hao Xu. XLab · Brigham and Women's Hospital · Harvard Medical School. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
+  /* ---------- trustworthy AI ---------- */
+  .trust { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.8rem; margin-top: 1.2rem; }
+  .trust div { padding: 0.9rem 0.9rem 0.8rem; border: 1px solid var(--global-divider-color); border-top: 3px solid var(--global-theme-color); border-radius: 8px; }
+  .trust h3 { margin: 0 0 0.35rem; font-size: 0.98rem; font-weight: 700; }
+  .trust p { margin: 0; font-size: 0.86rem; line-height: 1.45; color: var(--global-text-color-light); }
+  .trust-note { margin: 1rem 0 0; font-size: 0.92rem; }
+  @media (max-width: 900px) { .trust { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 560px) { .trust { grid-template-columns: 1fr 1fr; } }
+
+  /* ---------- selected research ---------- */
+  .sel { list-style: none; margin: 0; padding: 0; }
+  .sel li { display: grid; grid-template-columns: 13rem 1fr; gap: 0.4rem 1.4rem; padding: 0.95rem 0; border-bottom: 1px solid var(--global-divider-color); }
+  .sel li:last-child { border-bottom: 0; }
+  .sel .name { font-weight: 700; font-size: 1.02rem; line-height: 1.3; }
+  .sel .name small { display: block; font-weight: 400; font-size: 0.76rem; color: var(--global-text-color-light); margin-top: 0.15rem; }
+  .sel .what { margin: 0; font-size: 0.95rem; line-height: 1.5; }
+  .sel .refs { margin: 0.3rem 0 0; font-size: 0.82rem; color: var(--global-text-color-light); }
+  .sel .refs a { margin-right: 0.7rem; }
+  @media (max-width: 640px) { .sel li { grid-template-columns: 1fr; gap: 0.2rem; } }
+
+  /* ---------- news + contact ---------- */
+  .home .news table { margin-bottom: 0; font-size: 0.92rem; }
+  .home .news th { font-weight: 600; color: var(--global-text-color-light); white-space: nowrap; }
+  .contact { margin: 3rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--global-divider-color); font-size: 0.92rem; color: var(--global-text-color-light); }
+  .contact p { margin: 0 0 0.3rem; }
+</style> <section class="hero"> <p class="hero-kicker">Hao Xu · Brigham and Women's Hospital · Harvard Medical School</p> <h1 class="hero-title">Trustworthy World Models for Life Science</h1> <p class="hero-upi"><span>Understand.</span><span>Predict.</span><span>Intervene.</span></p> <p class="hero-lede">Building AI systems that learn how molecular interventions propagate across biological scales—from molecular recognition to system-level biological responses.</p> <div class="hero-actions"> <a class="primary" href="#vision">Research vision</a> <a href="#selected">Selected research</a> <a href="/about/">About Hao Xu</a> </div> <figure class="scales" aria-label="Schematic: understand, predict, and intervene across biological scales, from molecule to interaction, network, cell, and phenotype, grounded in trustworthiness"> <div class="scales-row scales-top" aria-hidden="true"> <span class="step">Understand</span><span class="arr">→</span> <span class="step">Predict</span><span class="arr">→</span> <span class="step">Intervene</span> </div> <div class="scales-row scales-chain"> <div class="node" style="--d: 0.7rem;"> <i></i><b>Molecule</b><small>small molecules, proteins, RNA</small> </div> <div class="link" aria-hidden="true"></div> <div class="node" style="--d: 0.95rem;"> <i></i><b>Interaction</b><small>binding, recognition, modification</small> </div> <div class="link" aria-hidden="true"></div> <div class="node" style="--d: 1.2rem;"> <i></i><b>Network</b><small>pathways, PPI, regulation</small> </div> <div class="link" aria-hidden="true"></div> <div class="node" style="--d: 1.45rem;"> <i></i><b>Cell</b><small>cellular states and responses</small> </div> <div class="link" aria-hidden="true"></div> <div class="node" style="--d: 1.7rem;"> <i></i><b>Phenotype</b><small>disease and treatment outcomes</small> </div> </div> <div class="scales-base"> <b>Trustworthiness</b> <span>Interpretability</span><span>Uncertainty</span><span>Robustness</span><span>Generalization</span><span>Mechanistic consistency</span> </div> </figure> </section> <section class="sec" id="vision"> <div class="sec-head"><h2>Research Vision</h2></div> <p class="lede">Biology is a world of interventions. A small molecule binds a protein or RNA, reshapes molecular interactions, perturbs biological networks, alters cellular states, and ultimately changes phenotype. My research asks three fundamental questions:</p> <div class="vision-q"> <div> <h3>Understand</h3> <p>What mechanisms and representations govern biological responses to intervention?</p> </div> <div> <h3>Predict</h3> <p>Can AI predict how unseen interventions reshape biological states, while knowing when its predictions are uncertain?</p> </div> <div> <h3>Intervene</h3> <p>Can we invert these models to identify interventions that drive biological systems toward desired states?</p> </div> </div> <p class="vision-trust">Across all three questions, I focus on <strong>trustworthiness</strong>: interpretability, uncertainty, robustness, generalization, and mechanistic consistency. The long-term goal is a trustworthy world model of life—one that connects molecular interventions to system-level biological responses and is consistent with biological mechanisms.</p> </section> <section class="sec" id="map"> <div class="sec-head"> <h2>Research Map</h2> <a href="/research/">Research directions →</a> </div> <p class="muted" style="margin-bottom: 0.9rem;">Where current and planned work sits: scales of biology (rows) against the three questions (columns).</p> <div class="rmap-wrap"> <table class="rmap"> <thead> <tr> <th>Scale</th> <th>Understand</th> <th>Predict</th> <th>Intervene</th> </tr> </thead> <tbody> <tr> <th>Molecule<small>chemical structure and representation</small> </th> <td> <a class="chip" href="/publications/#wang2025advancing">Multimodal molecular learning</a><a class="chip" href="/publications/#li2025transpeaknet">NMR structure elucidation</a> </td> <td> <a class="chip" href="/publications/#zhou2025multimodal">Molecular property prediction</a><a class="chip" href="/publications/#wang2026howwell">Structure from mass spectra</a> </td> <td></td> </tr> <tr> <th>Interaction<small>recognition and modification</small> </th> <td><a class="chip" href="/publications/#xu2026explainbind">ExplainBind</a></td> <td> <a class="chip" href="/publications/#wang2026evormd">EvoRMD</a><span class="chip">RNA–ligand recognition</span> </td> <td></td> </tr> <tr> <th>Network<small>pathways and interactomes</small> </th> <td><a class="chip" href="/publications/#wang2025systems">Network medicine</a></td> <td> <span class="chip">Affinity-weighted PPI</span><span class="chip">Systems pharmacology</span> </td> <td><a class="chip" href="/publications/#xu2026drugrepurposing">Drug repurposing</a></td> </tr> <tr> <th>Cell<small>cellular states</small> </th> <td><span class="chip future">Perturbation biology</span></td> <td><span class="chip future">Single-cell response</span></td> <td></td> </tr> <tr> <th>Phenotype<small>organism and disease</small> </th> <td><span class="chip future">Cross-scale state transition</span></td> <td></td> <td><span class="chip future">Precision intervention</span></td> </tr> </tbody> </table> </div> <p class="rmap-legend"><span class="chip">solid</span> current work   <span class="chip future">dashed</span> planned directions</p> </section> <section class="sec" id="trust"> <div class="sec-head"><h2>Trustworthy AI</h2></div> <p class="lede">A prediction is only useful if we know why it was made, when it may be wrong, and whether it respects the biology.</p> <div class="trust"> <div> <h3>Interpretability</h3> <p>Why does the model make this prediction?</p> </div> <div> <h3>Uncertainty</h3> <p>When does the model know that it may be wrong?</p> </div> <div> <h3>Robustness</h3> <p>Does the prediction survive perturbations and measurement noise?</p> </div> <div> <h3>Generalization</h3> <p>Does the learned principle transfer beyond the training distribution?</p> </div> <div> <h3>Mechanistic Consistency</h3> <p>Does the prediction respect physical, chemical, and biological mechanisms?</p> </div> </div> <p class="trust-note muted">Methodological foundations include parameter-efficient adaptation and multimodal alignment of foundation models (<a href="/publications/#xiao2026notall">ACL 2026</a>, <a href="/publications/#xiao2026vigilant">ECCV 2026</a>), which make large models reliable and cheap to adapt to scientific data.</p> </section> <section class="sec" id="selected"> <div class="sec-head"> <h2>Selected Research</h2> <a href="/publications/">All publications →</a> </div> <ul class="sel"> <li> <div class="name">ExplainBind<small>Interaction · Understand</small> </div> <div> <p class="what">Mechanistically interpretable AI for protein–ligand recognition: predicting binding through explicit non-covalent interactions, so every prediction comes with its physicochemical determinants.</p> <p class="refs"><a href="/publications/#xu2026explainbind">bioRxiv 2026</a></p> </div> </li> <li> <div class="name">EvoRMD<small>Interaction · Predict</small> </div> <div> <p class="what">Context-aware and interpretable modeling of RNA modification, integrating biological context with evolutionary RNA language models.</p> <p class="refs"><a href="/publications/#wang2026evormd">Genome Biology 2026</a></p> </div> </li> <li> <div class="name">Multimodal Molecular Learning<small>Molecule · Understand / Predict</small> </div> <div> <p class="what">Learning chemical representations across complementary molecular modalities—graphs, spectra, text, and 3D structure—for property prediction and drug discovery.</p> <p class="refs"><a href="/publications/#wang2025advancing">JCIM 2025</a><a href="/publications/#zhou2025multimodal">Commun. Chem. 2025</a></p> </div> </li> <li> <div class="name">NMRScape<small>Molecule · Understand</small> </div> <div> <p class="what">Self-verifying AI for molecular structure elucidation from NMR and mass spectra, built on solvent-aware 2D NMR prediction and an annotated experimental benchmark.</p> <p class="refs"><a href="/publications/#li2025transpeaknet">Commun. Chem. 2025</a><a href="/publications/#li2025dnmrgym">LoG 2025</a><a href="/publications/#wang2026howwell">J. Cheminform. 2026</a></p> </div> </li> <li> <div class="name">Network Medicine &amp; Systems Pharmacology<small>Network · Understand / Intervene</small> </div> <div> <p class="what">Connecting molecular interactions to system-level disease mechanisms, and using those connections to reason about drug repurposing and intervention.</p> <p class="refs"><a href="/publications/#wang2025systems">Comprehensive Medicinal Chemistry 2025</a><a href="/publications/#xu2026drugrepurposing">Drug Repurposing 2026</a></p> </div> </li> </ul> </section> <section class="sec" id="news"> <div class="sec-head"><h2>News</h2></div> <div class="news"> <div class="table-responsive"> <table class="table table-sm table-borderless"> <tr> <th scope="row" style="width: 20%">Jul 31, 2026</th> <td> <a href="https://link.springer.com/article/10.1186/s13321-026-01234-1" rel="external nofollow noopener" target="_blank">How Well Can Off-the-Shelf LLMs Elucidate Molecular Structures from Mass Spectra Using Chain-of-Thought Reasoning?</a> published in <em>Journal of Cheminformatics</em>. </td> </tr> <tr> <th scope="row" style="width: 20%">Jun 24, 2026</th> <td> <a href="https://arxiv.org/abs/2606.26387" rel="external nofollow noopener" target="_blank">Staying VIGILant: Mitigating Visual Laziness via Counterfactual Visual Alignment in MLLMs</a> accepted to <em>ECCV 2026</em>. </td> </tr> <tr> <th scope="row" style="width: 20%">Jun 09, 2026</th> <td> <a href="https://pubmed.ncbi.nlm.nih.gov/41867731/" rel="external nofollow noopener" target="_blank">ExplainBind: Explainable Physicochemical Determinants of Protein-Ligand Binding via Non-Covalent Interactions</a> posted as a preprint on <em>bioRxiv</em>. </td> </tr> <tr> <th scope="row" style="width: 20%">May 02, 2026</th> <td> <a href="https://link.springer.com/article/10.1186/s13059-026-04097-9" rel="external nofollow noopener" target="_blank">EvoRMD: Integrating Biological Context and Evolutionary RNA Language Models for Interpretable Prediction of RNA Modifications</a> published in <em>Genome Biology</em>. </td> </tr> <tr> <th scope="row" style="width: 20%">Apr 04, 2026</th> <td> <a href="https://arxiv.org/abs/2603.14228" rel="external nofollow noopener" target="_blank">Not All Directions Matter: Toward Structured and Task-Aware Low-Rank Adaptation</a> accepted to <em>ACL 2026</em>. </td> </tr> <tr> <th scope="row" style="width: 20%">Oct 03, 2025</th> <td> <a href="https://arxiv.org/abs/2510.02630" rel="external nofollow noopener" target="_blank">HyperAdaLoRA: Accelerating LoRA Rank Allocation During Training via Hypernetworks without Sacrificing Performance</a> accepted to <em>Findings of ACL 2026</em>. </td> </tr> </table> </div> </div> </section> <section class="contact"> <p>Hao Xu · Department of Medicine, Brigham and Women's Hospital · Harvard Medical School · Boston, MA</p> <p><a href="mailto:haoxu0303@gmail.com">haoxu0303@gmail.com</a> · Inquiries from prospective students and collaborators are welcome.</p> </section> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Hao Xu. Hao Xu · Brigham and Women's Hospital · Harvard Medical School. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
@@ -361,36 +185,29 @@ const ninja = document.querySelector('ninja-keys');
 
 // add the home and posts menu items
 ninja.data = [{
-    id: "nav-xlab",
-    title: "XLab",
+    id: "nav-home",
+    title: "Home",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-pi",
-          title: "PI",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/pi/";
-          },
-        },{id: "nav-research",
+  },{id: "nav-research",
           title: "Research",
-          description: "Core mission: Micro-to-Macro Mechanistic AI. A few directions define most of our current work; each is anchored by representative papers, with the full list on the publications page.",
+          description: "Trustworthy world models for life science: current directions, organized from molecular recognition to system-level biology, each anchored by representative papers.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/research/";
           },
         },{id: "nav-publications",
           title: "Publications",
-          description: "All publications, grouped by year (reverse chronological). Generated automatically from _bibliography/papers.bib by jekyll-scholar.",
+          description: "All publications, grouped by year.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-people",
-          title: "People",
-          description: "Principal investigator, student collaborators, and faculty collaborators.",
+        },{id: "nav-team",
+          title: "Team",
+          description: "Student and faculty collaborators. Inquiries from prospective students and collaborators are welcome.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/people/";
