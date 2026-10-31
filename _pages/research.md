@@ -204,7 +204,7 @@ nav_order: 2
     <p class="kicker">Network &middot; Understand / Intervene</p>
     <h2>From molecular interactions to disease networks and drug repurposing</h2>
     <p>Molecular interactions act through networks. Connecting binding and interactome structure to disease modules provides the route from a single intervention to a system-level response, and the basis for principled drug repurposing. Ongoing work builds affinity-weighted protein&ndash;protein interaction networks.</p>
-    <div class="links"><a href="{{ '/publications/#wang2025systems' | relative_url }}">Systems chemical biology (2025)</a><a href="{{ '/publications/#xu2026drugrepurposing' | relative_url }}">Drug repurposing review (2026)</a><a href="{{ '/publications/#jia2025p53' | relative_url }}">MRI prediction of P53-mutated HCC (2025)</a></div>
+    <div class="links"><a href="{{ '/publications/#wang2025systems' | relative_url }}">Systems chemical biology (2025)</a><a href="{{ '/publications/#xu2026drugrepurposing' | relative_url }}">Drug repurposing review (2026)</a></div>
   </div>
   <figure class="story-visual">
     <svg class="fx" viewBox="0 0 420 300" role="img" aria-label="Schematic: a drug binds a target protein; the perturbation propagates through an affinity-weighted interaction network into a disease module">
@@ -326,7 +326,7 @@ nav_order: 2
   <h2 class="big">Closing the loop from molecule to patient</h2>
   <div class="outlook">
     <article><span>01</span><h3>Cellular perturbation response</h3><p>Extend mechanistic, uncertainty-aware prediction to single-cell and Perturb-seq data, so that interventions learned at the molecular and network scales can be tested against measured cell states.</p></article>
-    <article><span>02</span><h3>Precision intervention</h3><p>Invert the models: identify the molecular interventions that move a biological system toward a desired state, with explicit uncertainty and experimental validation in the loop.</p></article>
+    <article><span>02</span><h3>Precision intervention</h3><p>Invert the models: identify the molecular interventions that move a biological system toward a desired state, with explicit uncertainty and experimental validation in the loop. At the patient scale, phenotype is the readout: a first step is predicting <em>TP53</em> mutation status in hepatocellular carcinoma directly from MRI (<a href="{{ '/publications/#jia2025p53' | relative_url }}">BMC Med. Imaging 2025</a>).</p></article>
   </div>
 </section>
 

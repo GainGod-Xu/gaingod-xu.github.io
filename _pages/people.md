@@ -85,7 +85,7 @@ nav_order: 4
 <div class="pname" markdown="span">**[Zhaohan Meng](https://scholar.google.com/citations?user=gM9yaCkAAAAJ)**</div>
 <div class="paff">University of Glasgow</div>
 <div class="pyears">2024&ndash;Present</div>
-<p markdown="span">Co-authored 1 paper, his first-author work *ExplainBind* (bioRxiv, 2026), an explainable model of the physicochemical determinants of protein&ndash;ligand binding.</p>
+<p markdown="span">Co-authored 3 papers, including his first-author work *ExplainBind* (bioRxiv, 2026), an explainable model of the physicochemical determinants of protein&ndash;ligand binding, and two EMNLP Findings 2026 papers on agentic biomedical reasoning (*SSE-Bio*) and multi-turn medical conversations (*GraphMed-LT*).</p>
 </div>
 </div>
 
