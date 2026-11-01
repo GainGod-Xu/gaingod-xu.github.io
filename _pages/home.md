@@ -63,7 +63,6 @@ description: Hao Xu builds trustworthy AI systems that learn how biological inte
 
 <section class="hero" id="top">
   <div>
-    <p class="kicker">Trustworthy AI for molecular and systems biology &middot; Boston</p>
     <h1 class="hero-title">Trustworthy<br>World Models<br>for <b>Life Science</b></h1>
     <p class="hero-tag">Understand biological systems well enough to predict and act reliably.</p>
     <p class="hero-lede">We develop AI systems that learn representations of biological states, predict their responses to perturbations, and guide interventions across scales, from molecules to patients.</p>
