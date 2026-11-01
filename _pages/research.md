@@ -151,7 +151,7 @@ nav_order: 2
     <p class="kicker">Interaction &middot; Understand</p>
     <h2>Explaining how molecules recognize proteins and RNA</h2>
     <p>ExplainBind predicts protein&ndash;ligand binding through explicit non-covalent interactions, so every prediction exposes its physicochemical determinants instead of a bare score. Ongoing work extends the same mechanistic framing to RNA&ndash;ligand recognition.</p>
-    <div class="links"><a href="{{ '/publications/#xu2026explainbind' | relative_url }}">ExplainBind (bioRxiv 2026)</a></div>
+    <div class="links"><a href="{{ '/publications/#xu2026explainbind' | relative_url }}">ExplainBind (bioRxiv 2026)</a><a href="{{ '/publications/#meng2026interactbind' | relative_url }}">InteractBind benchmark (arXiv 2026)</a></div>
   </div>
   <div class="story-visual panel"><dl><div><dt>Scale</dt><dd>Biomolecular interaction</dd></div><div><dt>Question</dt><dd>Which non-covalent interactions determine binding, and why?</dd></div><div><dt>Trustworthiness</dt><dd>Interpretability, mechanistic consistency</dd></div><div><dt>Status</dt><dd>Preprint; RNA&ndash;ligand extension in progress</dd></div></dl></div>
 </article>
@@ -314,10 +314,8 @@ nav_order: 2
   <p class="kicker">Open resources</p>
   <h2 class="big">Benchmarks, datasets, and models built around these questions</h2>
   <div class="res-list">
+    <article><span class="role">Benchmark</span><span class="name">InteractBind</span><span class="desc">Roughly 100k protein&ndash;ligand pairs with residue&ndash;atom interaction maps across six non-covalent interaction types, binding-site annotations, affinities, and similarity-controlled splits.</span><span class="act"><a href="{{ '/publications/#meng2026interactbind' | relative_url }}">Paper</a><a href="https://huggingface.co/datasets/Zhaohan-Meng/InteractBind" target="_blank" rel="noopener">Dataset</a><a href="https://github.com/ZhaohanM/InteractBind" target="_blank" rel="noopener">Code</a></span></article>
     <article><span class="role">Benchmark</span><span class="name">2DNMRGym</span><span class="desc">Annotated experimental 2D NMR dataset for atom-level molecular representation learning.</span><span class="act"><a href="{{ '/publications/#li2025dnmrgym' | relative_url }}">Paper</a></span></article>
-    <article><span class="role">Dataset</span><span class="name">Mat-Instructions</span><span class="desc">Large-scale inorganic materials instruction dataset for large language models.</span><span class="act"><a href="{{ '/publications/#liu2025matinstructions' | relative_url }}">Paper</a></span></article>
-    <article><span class="role">Model</span><span class="name">TransPeakNet</span><span class="desc">Solvent-aware 2D NMR prediction; patent application filed with Brandeis University.</span><span class="act"><a href="{{ '/publications/#li2025transpeaknet' | relative_url }}">Paper</a><a href="{{ '/publications/#hong2024nmrpatent' | relative_url }}">Patent</a></span></article>
-    <article><span class="role">Model</span><span class="name">ExplainBind</span><span class="desc">Explainable protein&ndash;ligand binding prediction via non-covalent interactions.</span><span class="act"><a href="{{ '/publications/#xu2026explainbind' | relative_url }}">Preprint</a></span></article>
   </div>
 </section>
 
