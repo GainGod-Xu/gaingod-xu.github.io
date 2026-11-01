@@ -302,7 +302,7 @@ nav_order: 2
       <text class="sub" x="305" y="172" text-anchor="middle">&nbsp;</text>
       <text class="sub" x="308" y="100" text-anchor="middle">same question</text>
       <path class="ok" d="M236,214 l6,6 l12,-12"/><text class="sub" x="260" y="219">answer changes with the image: A &ne; B</text>
-      <path class="ok" d="M236,240 l6,6 l12,-12" opacity="0.45"/><text class="sub" x="260" y="245">the image, not text priors, drives the answer</text>
+      <path class="ok" d="M236,240 l6,6 l12,-12" opacity="0.45"/><text class="sub" x="260" y="245">the image drives the answer</text>
     </svg>
     <figcaption><b>a</b>, Structured, task-aware low-rank adaptation keeps only the parameter directions that matter. <b>b</b>, Counterfactual visual alignment trains multimodal models whose answers must change when the image changes. Schematic.</figcaption>
   </figure>
