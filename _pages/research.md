@@ -314,8 +314,8 @@ nav_order: 2
   <p class="kicker">Open resources</p>
   <h2 class="big">Benchmarks, datasets, and models built around these questions</h2>
   <div class="res-list">
-    <article><span class="role">Benchmark</span><span class="name">InteractBind</span><span class="desc">Roughly 100k protein&ndash;ligand pairs with residue&ndash;atom interaction maps across six non-covalent interaction types, binding-site annotations, affinities, and similarity-controlled splits.</span><span class="act"><a href="{{ '/publications/#meng2026interactbind' | relative_url }}">Paper</a><a href="https://huggingface.co/datasets/Zhaohan-Meng/InteractBind" target="_blank" rel="noopener">Dataset</a><a href="https://github.com/ZhaohanM/InteractBind" target="_blank" rel="noopener">Code</a></span></article>
-    <article><span class="role">Benchmark</span><span class="name">2DNMRGym</span><span class="desc">Annotated experimental 2D NMR dataset for atom-level molecular representation learning.</span><span class="act"><a href="{{ '/publications/#li2025dnmrgym' | relative_url }}">Paper</a></span></article>
+    <article><span class="role">Benchmark</span><span class="name">InteractBind</span><span class="desc">Roughly 100k protein&ndash;ligand pairs with residue&ndash;atom interaction maps across six non-covalent interaction types, binding-site annotations, affinities, and similarity-controlled splits.</span><span class="act"><a href="https://arxiv.org/abs/2605.24045" target="_blank" rel="noopener">Paper</a><a href="https://huggingface.co/datasets/Zhaohan-Meng/InteractBind" target="_blank" rel="noopener">Dataset</a><a href="https://github.com/ZhaohanM/InteractBind" target="_blank" rel="noopener">Code</a></span></article>
+    <article><span class="role">Benchmark</span><span class="name">2DNMRGym</span><span class="desc">Annotated experimental 2D NMR dataset for atom-level molecular representation learning.</span><span class="act"><a href="https://arxiv.org/abs/2505.18181" target="_blank" rel="noopener">Paper</a></span></article>
   </div>
 </section>
 
