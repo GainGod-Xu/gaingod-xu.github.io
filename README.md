@@ -1,6 +1,6 @@
 # gaingod-xu.github.io
 
-Hao Xu's personal academic site, built on [al-folio](https://github.com/alshedivat/al-folio) (Jekyll).
+Hao Xu's personal academic site
 
 ## Content
 
