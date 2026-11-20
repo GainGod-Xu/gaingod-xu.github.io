@@ -188,7 +188,13 @@ nav_order: 2
       <a href="{{ '/publications/#jia2025macrotrabecular' | relative_url }}">CT and tumor subtype (Insights into Imaging 2025)</a>
     </div>
   </div>
-  {% include research-plate.liquid image="/assets/img/research/editorial-clinical.webp" caption="Concept illustration for heart failure outcomes and cancer imaging." %}
+  <figure class="research-plate">
+    <img src="{{ '/assets/img/research/editorial-heart-liver.webp' | relative_url }}" width="960" height="640" alt="" loading="lazy" decoding="async">
+    <figcaption class="research-paired-labels">
+      <strong>Heart</strong>
+      <strong>Liver</strong>
+    </figcaption>
+  </figure>
 </article>
 
 <article class="story" id="trustworthy-methods">
@@ -208,7 +214,7 @@ nav_order: 2
   </div>
   <figure class="research-plate">
     <img src="{{ '/assets/img/research/editorial-reasoning.webp' | relative_url }}" width="960" height="640" alt="" loading="lazy" decoding="async">
-    <dl class="research-reasoning-labels">
+    <dl class="research-paired-labels">
       <div><dt>LLM reasoning</dt><dd>Link evidence across passages</dd></div>
       <div><dt>VLM reasoning</dt><dd>Ground a response in the image</dd></div>
     </dl>
