@@ -42,13 +42,15 @@ Hao Xu is an Investigator at Brigham and Women's Hospital and an Instructor in M
   .about-list .what strong { font-weight: 700; }
   .about-list .affiliated-role { display: block; margin-top: 0.45rem; }
   .about-list .what span { display: block; color: var(--global-text-color-light); font-size: 0.86rem; }
-  .about h3 { margin: 1.8rem 0 0.5rem; font-size: 1.15rem; font-weight: 700; padding-bottom: 0.3rem; border-bottom: 1px solid var(--global-divider-color); }
+  .about h2 { margin: 1.8rem 0 0.5rem; font-size: 1.15rem; font-weight: 700; padding-bottom: 0.3rem; border-bottom: 1px solid var(--global-divider-color); }
+  .about h2[id] { scroll-margin-top: 5rem; }
+  .about .service-list li + li { margin-top: 0.65rem; }
   @media (max-width: 560px) { .about-list li { grid-template-columns: 1fr; gap: 0; } }
 </style>
 
 <div class="about">
 
-<h3>Appointments</h3>
+<h2>Appointments</h2>
 <ul class="about-list">
   <li><span class="when">Apr 2026 &ndash; present</span><span class="what"><strong>Investigator &amp; Instructor in Medicine</strong><span>Department of Medicine, Brigham and Women's Hospital, Harvard Medical School</span></span></li>
   <li>
@@ -63,7 +65,7 @@ Hao Xu is an Investigator at Brigham and Women's Hospital and an Instructor in M
   <li><span class="when">Apr 2023 &ndash; May 2024</span><span class="what"><strong>Postdoctoral Associate</strong><span>Department of Computer Science, Brandeis University; affiliated with GlycoMIP (NSF Materials Innovation Platform)</span></span></li>
 </ul>
 
-<h3>Education</h3>
+<h2>Education</h2>
 <ul class="about-list">
   <li><span class="when">2017 &ndash; 2022</span><span class="what"><strong>Ph.D. in Chemistry</strong><span>Boston College</span></span></li>
   <li><span class="when">2020 &ndash; 2022</span><span class="what"><strong>M.S. in Computer Science</strong><span>Georgia Institute of Technology</span></span></li>
@@ -71,6 +73,19 @@ Hao Xu is an Investigator at Brigham and Women's Hospital and an Instructor in M
   <li><span class="when">2011 &ndash; 2015</span><span class="what"><strong>B.S. in Chemistry &amp; B.Econ. in Finance</strong><span>China Agricultural University</span></span></li>
 </ul>
 
-<p style="margin-top: 1.6rem;">Full <a href="{{ '/cv/' | relative_url }}">curriculum vitae</a>, including patents and academic service.</p>
+<h2 id="academic-service">Academic Service</h2>
+<ul class="service-list">
+  {% assign service = site.data.cv.cv.sections['Academic Service'] %}
+  {% for item in service %}
+    <li>{{ item.bullet | markdownify }}</li>
+  {% endfor %}
+</ul>
+
+<h2 id="teaching">Teaching</h2>
+<ul class="about-list">
+  <li><span class="when">2024 &ndash; 2026</span><span class="what"><strong>Brigham and Women’s Hospital</strong><span>Organized and taught two Python and machine learning workshops for research group members.</span></span></li>
+  <li><span class="when">2017 &ndash; 2022</span><span class="what"><strong>Boston College</strong><span>Teaching assistant for Organic Chemistry, General Chemistry, and Advanced Method I &amp; II laboratory courses.</span></span></li>
+  <li><span class="when">2015 &ndash; 2017</span><span class="what"><strong>Southern Methodist University</strong><span>Teaching assistant for the Inorganic Chemistry laboratory course.</span></span></li>
+</ul>
 
 </div>

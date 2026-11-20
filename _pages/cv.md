@@ -1,12 +1,10 @@
 ---
-layout: cv
+layout: page
 permalink: /cv/
-title: CV
-nav: true
-nav_order: 6
-cv_pdf: # no PDF yet; falls back to on-page rendering
-cv_format: rendercv # options: rendercv, jsonresume
-description: Education, experience, awards, and patents.
-toc:
-  sidebar: left
+title: Academic Service
+redirect: "/about/#academic-service"
+nav: false
+sitemap: false
 ---
+
+[Academic Service]({{ '/about/#academic-service' | relative_url }}) is now on the About page.
