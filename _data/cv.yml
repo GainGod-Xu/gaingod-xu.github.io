@@ -40,7 +40,7 @@ cv:
 
       - institution: Southern Methodist University
         location: Dallas, TX
-        studyType: M.S. in Computational Chemistry
+        studyType: M.S. in Chemistry
         start_date: 2015-08
         end_date: 2017-05
 
@@ -52,7 +52,7 @@ cv:
 
     Experience:
       - company: Department of Medicine, Brigham and Women's Hospital, Harvard Medical School
-        position: Investigator & Instructor
+        position: Investigator & Instructor in Medicine
         location: Boston, MA
         start_date: 2026-04
         end_date: present

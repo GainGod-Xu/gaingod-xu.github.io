@@ -1,0 +1,16 @@
+<ul class="editorial-news">
+  {% assign news = site.news | sort: 'date' | reverse %}
+  {% assign item_limit = include.limit | default: news.size %}
+  {% for item in news limit: item_limit %}
+    <li>
+      <time datetime="{{ item.date | date: '%Y-%m-%d' }}">{{ item.date | date: '%b %-d, %Y' }}</time>
+      <div>
+        {% if item.inline %}
+          {{ item.content }}
+        {% else %}
+          <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+        {% endif %}
+      </div>
+    </li>
+  {% endfor %}
+</ul>

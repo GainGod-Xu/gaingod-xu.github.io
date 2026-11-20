@@ -7,16 +7,13 @@ nav: true
 nav_order: 3
 ---
 
-<!-- _pages/publications.md -->
-
-<!-- Bibsearch Feature -->
-
+<nav class="publication-tools" aria-label="Publication links">
+  <a href="https://scholar.google.com/citations?user=tcYaFAcAAAAJ&amp;hl=en" class="editorial-button">Google Scholar</a>
+</nav>
 {% include bib_search.liquid %}
 
-<p><sup>&dagger;</sup> denotes equal contribution; * denotes the corresponding author. For the complete and up-to-date list, see <a href="https://scholar.google.com/citations?user=tcYaFAcAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>.</p>
+<p class="publication-legend"><sup>&dagger;</sup> denotes equal contribution. An asterisk (*) denotes corresponding authorship.</p>
 
 <div class="publications">
-
 {% bibliography %}
-
 </div>

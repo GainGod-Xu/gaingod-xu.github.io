@@ -7,63 +7,7 @@ nav: true
 nav_order: 4
 ---
 
-<style>
-  .pgroup-title {
-    margin: 1.2rem 0 0.8rem;
-    padding-bottom: 0.3rem;
-    border-bottom: 2px solid var(--global-theme-color);
-  }
-  .pgrid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.9rem;
-  }
-  .pcard,
-  .scard {
-    padding: 0.9rem 1.1rem;
-    border: 1px solid var(--global-divider-color);
-    border-left: 4px solid var(--global-theme-color);
-    border-radius: 8px;
-    background: var(--global-card-bg-color);
-  }
-  .pname {
-    font-size: 1.05rem;
-    font-weight: 700;
-  }
-  .paff {
-    color: var(--global-text-color-light);
-    font-size: 0.9rem;
-  }
-  .pyears {
-    display: inline-block;
-    margin: 0.45rem 0 0.4rem;
-    padding: 0.05rem 0.55rem;
-    border-radius: 999px;
-    font-size: 0.75rem;
-    font-weight: 700;
-    border: 1px solid var(--global-divider-color);
-    color: var(--global-text-color-light);
-  }
-  .pcard.current .pyears {
-    border-color: var(--global-theme-color);
-    color: var(--global-theme-color);
-  }
-  .pcard p {
-    margin: 0;
-    font-size: 0.9rem;
-    line-height: 1.5;
-  }
-  .scard {
-    border-left-color: var(--global-divider-color);
-  }
-  @media (max-width: 640px) {
-    .pgrid {
-      grid-template-columns: 1fr;
-    }
-  }
-</style>
-
-<h3 class="pgroup-title">Investigator</h3>
+<h2 class="pgroup-title">Investigator</h2>
 
 <div class="pgrid">
 <div class="pcard current">
@@ -72,7 +16,7 @@ nav_order: 4
 </div>
 </div>
 
-<h3 class="pgroup-title mt-5">Current Student Collaborators</h3>
+<h2 class="pgroup-title mt-5">Current Student Collaborators</h2>
 
 <div class="pgrid">
 <div class="pcard current">
@@ -89,7 +33,7 @@ nav_order: 4
 </div>
 </div>
 
-<h3 class="pgroup-title mt-5">Former Student Collaborators</h3>
+<h2 class="pgroup-title mt-5">Former Student Collaborators</h2>
 
 <div class="pgrid">
 <div class="pcard">
@@ -102,7 +46,7 @@ nav_order: 4
 <div class="pname" markdown="span">**Bo Wang**</div>
 <div class="paff">Shenzhen University</div>
 <div class="pyears">2024&ndash;2026</div>
-<p markdown="span">Co-authored 1 paper, first-author work in *Genome Biology* (*EvoRMD*), integrating biological context and evolutionary RNA language models for interpretable RNA modification prediction.</p>
+<p markdown="span">First author of *EvoRMD* (*Genome Biology*) and *MARRI* (bioRxiv preprint), on RNA modification prediction and RNA–RNA interactions.</p>
 </div>
 <div class="pcard">
 <div class="pname" markdown="span">**[Zhengyang Zhou, Ph.D.](https://www.linkedin.com/in/zzy1)**</div>
@@ -124,7 +68,7 @@ nav_order: 4
 </div>
 </div>
 
-<h3 class="pgroup-title mt-5">Faculty Collaborators</h3>
+<h2 class="pgroup-title mt-5">Faculty Collaborators</h2>
 
 <div class="pgrid">
 <div class="scard">

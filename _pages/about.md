@@ -2,7 +2,8 @@
 layout: about
 title: About
 permalink: /about/
-nav: false
+nav: true
+nav_order: 7
 subtitle: Investigator, Brigham and Women's Hospital &bull; Instructor in Medicine, Harvard Medical School
 
 profile:
@@ -58,7 +59,7 @@ Hao Xu is an Investigator at Brigham and Women's Hospital and an Instructor in M
 <ul class="about-list">
   <li><span class="when">2017 &ndash; 2022</span><span class="what"><strong>Ph.D. in Chemistry</strong><span>Boston College</span></span></li>
   <li><span class="when">2020 &ndash; 2022</span><span class="what"><strong>M.S. in Computer Science</strong><span>Georgia Institute of Technology</span></span></li>
-  <li><span class="when">2015 &ndash; 2017</span><span class="what"><strong>M.S. in Computational Chemistry</strong><span>Southern Methodist University</span></span></li>
+  <li><span class="when">2015 &ndash; 2017</span><span class="what"><strong>M.S. in Chemistry</strong><span>Southern Methodist University</span></span></li>
   <li><span class="when">2011 &ndash; 2015</span><span class="what"><strong>B.S. in Chemistry &amp; B.Econ. in Finance</strong><span>China Agricultural University</span></span></li>
 </ul>
 
