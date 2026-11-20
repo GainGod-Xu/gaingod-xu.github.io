@@ -125,6 +125,65 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
 
 .research-index { display: flex; flex-wrap: wrap; gap: 0.55rem 1.25rem; list-style: none; padding: 0; margin: 1.2rem 0 0; }
 .research-index a { font-weight: 600; font-size: 0.9rem; }
+.research-scale { margin: 0; min-width: 0; }
+.research-scale-plate {
+  overflow: hidden;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.25rem;
+  background: var(--global-card-bg-color);
+}
+.research-scale-plate img { display: block; width: 100%; height: auto; }
+.research-scale-actions,
+.research-scale-labels {
+  display: grid;
+  list-style: none;
+  margin: 0;
+  padding: 0.7rem 0;
+  text-align: center;
+}
+.research-scale-actions {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  color: var(--global-theme-color);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.research-scale-labels {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  font-size: 0.81rem;
+  font-weight: 600;
+}
+.research-scale-plate li + li { border-inline-start: 1px solid var(--global-divider-color); }
+@media (max-width: 375px) {
+  .research-scale-labels { grid-template-columns: 1fr 1.24fr 1.02fr 0.72fr 1.02fr; font-size: 0.75rem; }
+}
+
+.research-modalities { position: relative; }
+.research-modality-labels {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.research-modality-labels li {
+  display: grid;
+  place-items: end center;
+  padding-bottom: 0.46rem;
+}
+.research-modality-labels span {
+  background: var(--global-card-bg-color);
+  color: var(--global-text-color);
+  padding: 0.08rem 0.45rem;
+  border-radius: 0.18rem;
+  line-height: 1.3;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
 .research-plate {
   justify-self: center;
   width: 100%;
@@ -140,6 +199,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
   border-radius: 0.25rem;
 }
 .research-plate figcaption { margin-top: 0.65rem; }
+.research-reasoning-labels {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0.55rem 0 0;
+  font-size: 0.85rem;
+  text-align: center;
+}
+.research-reasoning-labels > div + div { border-inline-start: 1px solid var(--global-divider-color); }
+.research-reasoning-labels dt { color: var(--global-theme-color); }
+.research-reasoning-labels dd { margin: 0 0.3rem; color: var(--global-text-color-light); line-height: 1.4; }
 .research-cycle summary { color: var(--global-theme-color); font-weight: 650; cursor: pointer; }
 .research-cycle .sv { margin-top: 1.1rem; }
 
