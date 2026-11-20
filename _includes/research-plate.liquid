@@ -1,61 +1,16 @@
 <figure class="research-plate">
-  <svg viewBox="0 0 360 118" aria-hidden="true" focusable="false">
-    <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M102 58h34m-5-5 5 5-5 5m93-5h34m-5-5 5 5-5 5" opacity=".5"/>
-      {% case include.kind %}
-        {% when 'binding' %}
-          <path class="wash" d="M33 45c-14-24 11-37 27-22 13-11 34 5 23 19l-9 8 13 11c13 14-7 37-23 27-12 13-42 7-42-12 0-8 6-15 14-19z"/>
-          <path d="m54 51 13-7 12 7v14l-12 7-13-7z"/>
-          <circle class="wash" cx="180" cy="58" r="32"/>
-          <path d="m171 56 9-5 9 5v10l-9 5-9-5zM173 50l-9-12m26 13 9-10m-8 27 10 11m-31-10-9 12" stroke-dasharray="3 3"/>
-          <path class="wash" d="M287 25h47v65h-47z"/>
-          <path d="m296 45 3 3 5-6m5 4h15m-28 12 3 3 5-6m5 4h15m-28 12 3 3 5-6m5 4h15"/>
-        {% when 'rna' %}
-          <path d="M39 87V57c0-11-11-14-11-25a14 14 0 0 1 28 0c0 11-11 14-11 25v30m-6-25h6m-6 8h6m-6 8h6m20-30h22m-22 10h14m-14 10h22"/>
-          <rect class="wash" x="151" y="32" width="58" height="52" rx="8"/>
-          <path d="M153 58h54m-29-24v48m-12-34h5m-5 22h5m17-22h9m-9 22h9"/>
-          <path d="M279 70h62M283 66l12-10 11 5 12-22 17 13"/>
-          <circle class="wash" cx="318" cy="39" r="6"/>
-        {% when 'fusion' %}
-          <path class="wash" d="M23 32h36v28H23zM40 46h39v30H40zM59 61h32v27H59z"/>
-          <path d="m67 73 8-4 8 4v9m-54-39h22m-4 13h22"/>
-          <path class="wash" d="m180 26 32 19v29l-32 19-32-19V45z"/>
-          <path d="m148 45 32 19 32-19m-32 19v29"/>
-          <path d="M280 82h61m-54-2V65h10v15m10 0V54h10v26m10 0V39h10v41"/>
-        {% when 'spectra' %}
-          <path d="M20 85h73M28 83V69m8 14V62m9 21V44m6 39V73m7 10V54m10 29V30m5 53V61m10 22V71"/>
-          <path class="wash" d="m180 31 25 14v29l-25 14-25-14V45z"/>
-          <path d="m155 45-11-7m61 36 12 7m-36-42 16 9m-1 23-15 9m-19-11V50"/>
-          <circle class="wash" cx="310" cy="56" r="29"/>
-          <path d="m296 56 10 10 18-19"/>
-        {% when 'network' %}
-          <path class="wash" d="M25 59h28l8 8-8 8H25l-8-8z"/>
-          <path d="m66 66 12-12"/>
-          <circle class="wash" cx="82" cy="49" r="12"/>
-          <path d="m155 38 25 18 24-20m-24 20 23 24m-23-24-20 22m-5-40 5 40m44-42-1 44"/>
-          <circle class="wash" cx="155" cy="38" r="5"/><circle class="wash" cx="204" cy="36" r="5"/>
-          <circle class="wash" cx="180" cy="56" r="8"/><circle class="wash" cx="203" cy="80" r="5"/><circle class="wash" cx="160" cy="78" r="5"/>
-          <ellipse class="wash" cx="310" cy="57" rx="31" ry="30"/>
-          <path d="m296 44 14 14 17-14m-17 14 10 17m-10-17-15 13"/>
-          <circle class="wash" cx="310" cy="58" r="6"/>
-        {% when 'reliability' %}
-          <rect class="wash" x="31" y="32" width="51" height="54" rx="5"/>
-          <path d="M44 46h25M44 59h25M44 72h25m-15-29v6m9 7v6m-12 7v6"/>
-          <path class="wash" d="M149 39h26v34h-26zm36 0h26v34h-26z"/>
-          <path d="m153 67 7-10 4 4 7-6m18 12 7-7 5 3 7-12m-30 29h4"/>
-          <path class="wash" d="m310 26 27 11v15c0 17-10 27-27 36-17-9-27-19-27-36V37z"/>
-          <path d="m299 56 8 8 15-17"/>
-      {% endcase %}
-    </g>
-  </svg>
-  <ol class="plate-labels">
-    {% assign stages = include.stages | split: '|' %}
-    {% for stage in stages %}<li>{{ stage | escape }}</li>{% endfor %}
-  </ol>
+  <img
+    src="{{ include.image | relative_url }}"
+    width="960"
+    height="640"
+    alt=""
+    loading="lazy"
+    decoding="async"
+  >
   <figcaption class="fig-note">
     {{ include.caption | escape }}
     {% if include.source %}
-      <br><a href="{{ include.source | relative_url }}">{{ include.credit | escape }}</a>
+      <a class="research-plate-source" href="{{ include.source | relative_url }}">{{ include.credit | escape }}</a>
     {% endif %}
   </figcaption>
 </figure>

@@ -137,7 +137,7 @@ nav_order: 2
     <p>ExplainBind predicts protein&ndash;ligand binding through explicit non-covalent interactions, so every prediction exposes its physicochemical determinants instead of a bare score. Ongoing work extends the same mechanistic framing to RNA&ndash;ligand recognition.</p>
     <div class="links"><a href="{{ '/publications/#xu2026explainbind' | relative_url }}">ExplainBind (bioRxiv 2026)</a><a href="{{ '/publications/#meng2026interactbind' | relative_url }}">InteractBind benchmark (arXiv 2026)</a></div>
   </div>
-  {% include research-plate.liquid kind="binding" stages="Protein and ligand|Non-covalent contacts|Binding explanation" caption="Conceptual schematic of how ExplainBind connects predicted binding to physicochemical interactions." %}
+  {% include research-plate.liquid image="/assets/img/research/editorial-binding.webp" caption="Illustration of a ligand in a protein binding pocket." %}
 </article>
 
 <article class="story" id="rna-biology">
@@ -147,7 +147,7 @@ nav_order: 2
     <p>RNA modifications sit between sequence and function. EvoRMD integrates biological context with evolutionary RNA language models to predict modification sites interpretably, a step toward modeling how interventions on RNA propagate to cellular state.</p>
     <div class="links"><a href="{{ '/publications/#wang2026evormd' | relative_url }}">EvoRMD (Genome Biology 2026)</a><a href="{{ '/publications/#wang2026marri' | relative_url }}">MARRI (bioRxiv preprint)</a></div>
   </div>
-  {% include research-plate.liquid kind="rna" stages="RNA and context|Evolutionary signals|Modification sites" caption="Conceptual schematic of how EvoRMD combines RNA representations and biological context to identify modification sites." source="/assets/img/research/evormd-fig1.png" credit="Original Figure 1 · Wang et al., Genome Biology (CC BY-NC-ND)" %}
+  {% include research-plate.liquid image="/assets/img/research/editorial-rna.webp" caption="Illustration of a folded RNA strand with a highlighted modification site." source="/assets/img/research/evormd-fig1.png" credit="Original Figure 1 · Wang et al., Genome Biology (CC BY-NC-ND)" %}
 </article>
 
 <article class="story" id="molecular-representation">
@@ -157,7 +157,7 @@ nav_order: 2
     <p>Chemical structure is observed through complementary views: graphs, spectra, text, and 3D geometry. Aligning them, asymmetrically and with relational learning, yields representations that transfer to property prediction and drug discovery while staying consistent with chemistry.</p>
     <div class="links"><a href="{{ '/publications/#wang2025advancing' | relative_url }}">Asymmetric contrastive learning (JCIM 2025)</a><a href="{{ '/publications/#zhou2025multimodal' | relative_url }}">Multimodal fusion (Commun. Chem. 2025)</a><a href="{{ '/publications/#liu2025matinstructions' | relative_url }}">Mat-Instructions (IJCAI 2025)</a></div>
   </div>
-  {% include research-plate.liquid kind="fusion" stages="Molecular modalities|Joint representation|Property prediction" caption="Conceptual schematic of complementary molecular inputs feeding a shared representation for property prediction." source="/assets/img/research/mmfusion-fig1.png" credit="Original Figure 1 · Zhou et al., Communications Chemistry (CC BY-NC-ND)" %}
+  {% include research-plate.liquid image="/assets/img/research/editorial-fusion.webp" caption="Illustration of several complementary views of the same molecule." source="/assets/img/research/mmfusion-fig1.png" credit="Original Figure 1 · Zhou et al., Communications Chemistry (CC BY-NC-ND)" %}
 </article>
 
 <article class="story" id="structure-elucidation">
@@ -167,7 +167,7 @@ nav_order: 2
     <p>Determining a molecule's structure from its spectra is a problem where a model must be able to check its own answer. This line builds solvent-aware 2D NMR prediction, an annotated experimental benchmark, and reasoning-based elucidation from mass spectra, toward NMRScape: self-verifying structure determination.</p>
     <div class="links"><a href="{{ '/publications/#li2025transpeaknet' | relative_url }}">TransPeakNet (Commun. Chem. 2025)</a><a href="{{ '/publications/#li2025dnmrgym' | relative_url }}">2DNMRGym (LoG 2025)</a><a href="{{ '/publications/#wang2026howwell' | relative_url }}">LLMs on mass spectra (J. Cheminform. 2026)</a></div>
   </div>
-  {% include research-plate.liquid kind="spectra" stages="Experimental spectra|Candidate structure|Spectral consistency" caption="Conceptual schematic of using spectra to propose and cross-check candidate structures." source="/assets/img/research/transpeaknet-fig1.png" credit="Original Figure 1 · Li, Xu et al., Communications Chemistry (CC BY-NC-ND)" %}
+  {% include research-plate.liquid image="/assets/img/research/editorial-spectra.webp" caption="Illustration of a candidate molecular structure alongside a schematic spectrum." source="/assets/img/research/transpeaknet-fig1.png" credit="Original Figure 1 · Li, Xu et al., Communications Chemistry (CC BY-NC-ND)" %}
 </article>
 
 <article class="story" id="network-medicine">
@@ -177,7 +177,7 @@ nav_order: 2
     <p>Molecular interactions act through networks. Connecting binding and interactome structure to disease modules provides the route from a single intervention to a system-level response, and the basis for principled drug repurposing. Ongoing work builds affinity-weighted protein&ndash;protein interaction networks.</p>
     <div class="links"><a href="{{ '/publications/#wang2025systems' | relative_url }}">Systems chemical biology</a><a href="{{ '/publications/#xu2026drugrepurposing' | relative_url }}">Drug repurposing review (2026)</a></div>
   </div>
-  {% include research-plate.liquid kind="network" stages="Drug and target|Interaction network|Disease module" caption="Conceptual schematic of how a target perturbation may propagate through an interaction network. Work in progress." %}
+  {% include research-plate.liquid image="/assets/img/research/editorial-network.webp" caption="Illustration of a disease module within a larger interaction network." %}
 </article>
 
 <article class="story" id="trustworthy-methods">
@@ -187,7 +187,7 @@ nav_order: 2
     <p>Scientific data are scarce and shift between experiments, so the foundation models behind these systems must adapt cheaply and remain grounded. This work studies which parameter directions matter during adaptation and how to keep multimodal models faithful to their inputs.</p>
     <div class="links"><a href="{{ '/publications/#xiao2026notall' | relative_url }}">Not All Directions Matter (ACL 2026)</a><a href="{{ '/publications/#xiao2026vigilant' | relative_url }}">VIGIL (ECCV 2026)</a><a href="{{ '/publications/#zhang2026hyperadalora' | relative_url }}">HyperAdaLoRA (ACL Findings 2026)</a><a href="{{ '/publications/#zhang2025sensitivitylora' | relative_url }}">Sensitivity-LoRA (EMNLP Findings 2025)</a></div>
   </div>
-  {% include research-plate.liquid kind="reliability" stages="Model adaptation|Visual evidence|Reliability checks" caption="Conceptual overview of two complementary research directions: task-aware adaptation and counterfactual visual alignment." %}
+  {% include research-plate.liquid image="/assets/img/research/editorial-reliability.webp" caption="Illustration of comparing subtle changes in visual evidence." %}
 </article>
 
 </div>
