@@ -199,16 +199,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
   border-radius: 0.25rem;
 }
 .research-plate figcaption { margin-top: 0.65rem; }
-.research-paired-labels {
+.research-reasoning-labels {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   margin: 0.55rem 0 0;
   font-size: 0.85rem;
   text-align: center;
 }
-.research-paired-labels > * + * { border-inline-start: 1px solid var(--global-divider-color); }
-.research-paired-labels dt, .research-paired-labels > strong { color: var(--global-theme-color); }
-.research-paired-labels dd { margin: 0 0.3rem; color: var(--global-text-color-light); line-height: 1.4; }
+.research-reasoning-labels > div + div { border-inline-start: 1px solid var(--global-divider-color); }
+.research-reasoning-labels dt { color: var(--global-theme-color); }
+.research-reasoning-labels dd { margin: 0 0.3rem; color: var(--global-text-color-light); line-height: 1.4; }
 .research-cycle summary { color: var(--global-theme-color); font-weight: 650; cursor: pointer; }
 .research-cycle .sv { margin-top: 1.1rem; }
 
