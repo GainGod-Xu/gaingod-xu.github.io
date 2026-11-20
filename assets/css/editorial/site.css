@@ -125,7 +125,13 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
 
 .research-index { display: flex; flex-wrap: wrap; gap: 0.55rem 1.25rem; list-style: none; padding: 0; margin: 1.2rem 0 0; }
 .research-index a { font-weight: 600; font-size: 0.9rem; }
-.research-plate { margin: 0; min-width: 0; }
+.research-plate {
+  justify-self: center;
+  width: 100%;
+  max-width: 26.5rem;
+  min-width: 0;
+  margin: 0;
+}
 .research-plate img {
   display: block;
   width: 100%;

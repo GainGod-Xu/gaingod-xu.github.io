@@ -175,7 +175,7 @@ nav_order: 2
     <p class="kicker">Network &middot; Understand / Intervene</p>
     <h2>From molecular interactions to disease networks and drug repurposing</h2>
     <p>Molecular interactions act through networks. Connecting binding and interactome structure to disease modules provides the route from a single intervention to a system-level response, and the basis for principled drug repurposing. Ongoing work builds affinity-weighted protein&ndash;protein interaction networks.</p>
-    <div class="links"><a href="{{ '/publications/#wang2025systems' | relative_url }}">Systems chemical biology</a><a href="{{ '/publications/#xu2026drugrepurposing' | relative_url }}">Drug repurposing review (2026)</a></div>
+    <div class="links"><a href="{{ '/publications/#wang2025systems' | relative_url }}">Systems chemical biology (Book Chapter)</a><a href="{{ '/publications/#xu2026drugrepurposing' | relative_url }}">Drug repurposing review (2026)</a></div>
   </div>
   {% include research-plate.liquid image="/assets/img/research/editorial-network.webp" caption="Illustration of a disease module within a larger interaction network." %}
 </article>
