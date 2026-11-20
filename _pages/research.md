@@ -12,14 +12,6 @@ nav_order: 2
   .rs-hero { display: grid; grid-template-columns: minmax(0, 0.95fr) minmax(300px, 1.05fr); gap: 2.6rem; align-items: center; padding: 2.4rem 0 3.2rem; }
   .rs-hero h1 { font-size: clamp(2rem, 4.4vw, 2.8rem); font-weight: 650; line-height: 1.1; margin: 0 0 1rem; max-width: 18ch; }
   .rs-hero .lead { font-size: 1.05rem; line-height: 1.6; max-width: 34rem; margin: 0; }
-  .rs-hero figure { margin: 0; }
-  .rs-hero svg { display: block; width: 100%; height: auto; background: var(--global-card-bg-color); border: 1px solid var(--global-divider-color); border-radius: 8px; }
-  .rs-hero .lad-node { fill: var(--global-text-color); font-size: 11px; font-weight: 700; }
-  .rs-hero .lad-sub { fill: var(--global-text-color-light); font-size: 8px; }
-  .rs-hero .lad-ic { fill: none; stroke: var(--global-theme-color); stroke-width: 1.5; stroke-linejoin: round; stroke-linecap: round; }
-  .rs-hero .lad-arr { stroke: var(--global-text-color-light); stroke-width: 1.2; fill: none; }
-  .rs-hero .lad-q { fill: var(--global-theme-color); font-size: 8.5px; font-weight: 650; letter-spacing: 0.12em; }
-  .rs-hero .lad-band { fill: color-mix(in srgb, var(--global-theme-color) 6%, transparent); }
   @media (max-width: 820px) { .rs-hero { grid-template-columns: 1fr; gap: 1.6rem; } }
 
   .rs-sec { padding: 3.4rem 0; border-top: 1px solid var(--global-divider-color); }
@@ -78,33 +70,22 @@ nav_order: 2
       </ul>
     </nav>
   </div>
-  <figure>
-    <svg viewBox="0 0 520 170" role="img" aria-label="Five biological scales, molecule to organism, under the three questions understand, predict, intervene">
-      <rect class="lad-band" x="0" y="0" width="520" height="34"/>
-      <text class="lad-q" x="90" y="21" text-anchor="middle">UNDERSTAND</text>
-      <text class="lad-q" x="260" y="21" text-anchor="middle">PREDICT</text>
-      <text class="lad-q" x="430" y="21" text-anchor="middle">INTERVENE</text>
-      <g class="lad-ic">
-        <polygon points="56,70 70,78 70,94 56,102 42,94 42,78"/><line x1="70" y1="78" x2="78" y2="74"/>
-        <circle cx="148" cy="96" r="6"/><circle cx="172" cy="76" r="6"/><line x1="153" y1="92" x2="167" y2="80"/>
-        <circle cx="260" cy="86" r="5"/><circle cx="244" cy="72" r="3.5"/><circle cx="276" cy="72" r="3.5"/><circle cx="244" cy="100" r="3.5"/><circle cx="276" cy="100" r="3.5"/>
-        <line x1="260" y1="86" x2="244" y2="72"/><line x1="260" y1="86" x2="276" y2="72"/><line x1="260" y1="86" x2="244" y2="100"/><line x1="260" y1="86" x2="276" y2="100"/>
-        <ellipse cx="362" cy="86" rx="19" ry="14"/><circle cx="358" cy="84" r="5"/>
-        <circle cx="464" cy="72" r="7"/><path d="M450,104 C450,92 456,86 464,86 C472,86 478,92 478,104"/>
-      </g>
-      <g class="lad-arr"><path d="M96,86 h30 m-5,-4 l5,4 l-5,4"/><path d="M200,86 h26 m-5,-4 l5,4 l-5,4"/><path d="M300,86 h28 m-5,-4 l5,4 l-5,4"/><path d="M398,86 h30 m-5,-4 l5,4 l-5,4"/></g>
-      <text class="lad-node" x="56" y="126" text-anchor="middle">Molecule</text>
-      <text class="lad-node" x="160" y="126" text-anchor="middle">Interaction</text>
-      <text class="lad-node" x="260" y="126" text-anchor="middle">Network</text>
-      <text class="lad-node" x="362" y="126" text-anchor="middle">Cell</text>
-      <text class="lad-node" x="464" y="126" text-anchor="middle">Organism</text>
-      <text class="lad-sub" x="56" y="140" text-anchor="middle">structure, sequence</text>
-      <text class="lad-sub" x="160" y="140" text-anchor="middle">binding, modification</text>
-      <text class="lad-sub" x="260" y="140" text-anchor="middle">pathways, interactome</text>
-      <text class="lad-sub" x="362" y="140" text-anchor="middle">cell state</text>
-      <text class="lad-sub" x="464" y="140" text-anchor="middle">disease, outcome</text>
-      <text class="lad-sub" x="260" y="160" text-anchor="middle">Interventions propagate upward; observations at higher scales constrain mechanisms below.</text>
-    </svg>
+  <figure class="research-scale">
+    <div class="research-scale-plate">
+      <ul class="research-scale-actions" aria-label="Research goals">
+        <li>Understand</li>
+        <li>Predict</li>
+        <li>Intervene</li>
+      </ul>
+      <img src="{{ '/assets/img/research/editorial-scales.webp' | relative_url }}" width="1440" height="480" alt="" decoding="async" fetchpriority="high">
+      <ol class="research-scale-labels" aria-label="Biological scales">
+        <li>Molecule</li>
+        <li>Interaction</li>
+        <li>Network</li>
+        <li>Cell</li>
+        <li>Organism</li>
+      </ol>
+    </div>
     <figcaption class="fig-note">Five scales where biological states can be measured and modeled, from molecular structure to patient outcomes.</figcaption>
   </figure>
 </section>
@@ -159,7 +140,18 @@ nav_order: 2
     <p>Chemical structure is observed through complementary views: graphs, spectra, text, and 3D geometry. Aligning them, asymmetrically and with relational learning, yields representations that transfer to property prediction and drug discovery while staying consistent with chemistry.</p>
     <div class="links"><a href="{{ '/publications/#wang2025advancing' | relative_url }}">Asymmetric contrastive learning (JCIM 2025)</a><a href="{{ '/publications/#zhou2025multimodal' | relative_url }}">Multimodal fusion (Commun. Chem. 2025)</a><a href="{{ '/publications/#liu2025matinstructions' | relative_url }}">Mat-Instructions (IJCAI 2025)</a></div>
   </div>
-  {% include research-plate.liquid image="/assets/img/research/editorial-fusion.webp" caption="Illustration of several complementary views of the same molecule." %}
+  <figure class="research-plate">
+    <div class="research-modalities">
+      <img src="{{ '/assets/img/research/editorial-modalities.webp' | relative_url }}" width="960" height="640" alt="" loading="lazy" decoding="async">
+      <ul class="research-modality-labels" aria-label="Input modalities">
+        <li><span>Molecular graph</span></li>
+        <li><span>Spectrum</span></li>
+        <li><span>Text</span></li>
+        <li><span>3D geometry</span></li>
+      </ul>
+    </div>
+    <figcaption class="fig-note">Four kinds of input contribute to a shared molecular representation.</figcaption>
+  </figure>
 </article>
 
 <article class="story" id="structure-elucidation">
@@ -202,11 +194,25 @@ nav_order: 2
 <article class="story" id="trustworthy-methods">
   <div class="story-copy">
     <p class="kicker">Methods &middot; Trustworthiness</p>
-    <h2>Foundation-model methods that stay reliable on scientific data</h2>
-    <p>Scientific data are scarce and shift between experiments, so the foundation models behind these systems must adapt cheaply and remain grounded. This work studies which parameter directions matter during adaptation and how to keep multimodal models faithful to their inputs.</p>
-    <div class="links"><a href="{{ '/publications/#xiao2026notall' | relative_url }}">Not All Directions Matter (ACL 2026)</a><a href="{{ '/publications/#xiao2026vigilant' | relative_url }}">VIGIL (ECCV 2026)</a><a href="{{ '/publications/#zhang2026hyperadalora' | relative_url }}">HyperAdaLoRA (ACL Findings 2026)</a><a href="{{ '/publications/#zhang2025sensitivitylora' | relative_url }}">Sensitivity-LoRA (EMNLP Findings 2025)</a></div>
+    <h2>Language and vision&ndash;language reasoning</h2>
+    <p><strong>LLM reasoning.</strong> We study how language models retrieve and connect evidence across multiple reasoning steps.</p>
+    <p><strong>VLM reasoning.</strong> We study whether a model’s answer follows the visual evidence when the image changes.</p>
+    <p>We also develop parameter-efficient methods for adapting foundation models to new tasks.</p>
+    <div class="links">
+      <a href="{{ '/publications/#meng2026ssebio' | relative_url }}">SSE-Bio (EMNLP Findings 2026)</a>
+      <a href="{{ '/publications/#xiao2026vigilant' | relative_url }}">VIGIL (ECCV 2026)</a>
+      <a href="{{ '/publications/#xiao2026notall' | relative_url }}">Not All Directions Matter (ACL 2026)</a>
+      <a href="{{ '/publications/#zhang2026hyperadalora' | relative_url }}">HyperAdaLoRA (ACL Findings 2026)</a>
+      <a href="{{ '/publications/#zhang2025sensitivitylora' | relative_url }}">Sensitivity-LoRA (EMNLP Findings 2025)</a>
+    </div>
   </div>
-  {% include research-plate.liquid image="/assets/img/research/editorial-reliability.webp" caption="Illustration of comparing subtle changes in visual evidence." %}
+  <figure class="research-plate">
+    <img src="{{ '/assets/img/research/editorial-reasoning.webp' | relative_url }}" width="960" height="640" alt="" loading="lazy" decoding="async">
+    <dl class="research-reasoning-labels">
+      <div><dt>LLM reasoning</dt><dd>Link evidence across passages</dd></div>
+      <div><dt>VLM reasoning</dt><dd>Ground a response in the image</dd></div>
+    </dl>
+  </figure>
 </article>
 
 </div>
