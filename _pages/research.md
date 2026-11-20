@@ -130,7 +130,7 @@ nav_order: 2
     <p>RNA modifications sit between sequence and function. EvoRMD integrates biological context with evolutionary RNA language models to predict modification sites interpretably, a step toward modeling how interventions on RNA propagate to cellular state.</p>
     <div class="links"><a href="{{ '/publications/#wang2026evormd' | relative_url }}">EvoRMD (Genome Biology 2026)</a><a href="{{ '/publications/#wang2026marri' | relative_url }}">MARRI (bioRxiv preprint)</a></div>
   </div>
-  {% include research-plate.liquid image="/assets/img/research/editorial-rna-separated.webp" caption="Illustration of a folded RNA strand with a highlighted modification site." %}
+  {% include research-plate.liquid image="/assets/img/research/editorial-rna-tails.webp" caption="Illustration of a folded RNA strand with a highlighted modification site." %}
 </article>
 
 <article class="story" id="molecular-representation">
@@ -171,7 +171,7 @@ nav_order: 2
     <p>Molecular interactions act through networks. Connecting binding and interactome structure to disease modules provides the route from a single intervention to a system-level response, and the basis for principled drug repurposing. Ongoing work builds affinity-weighted protein&ndash;protein interaction networks.</p>
     <div class="links"><a href="{{ '/publications/#wang2025systems' | relative_url }}">Systems chemical biology (Book Chapter)</a><a href="{{ '/publications/#xu2026drugrepurposing' | relative_url }}">Drug repurposing review (2026)</a></div>
   </div>
-  {% include research-plate.liquid image="/assets/img/research/editorial-network-stars.webp" caption="A constellation represents a disease module within a larger interaction network." %}
+  {% include research-plate.liquid image="/assets/img/research/editorial-network-constellation.webp" caption="A constellation represents a disease module within a larger interaction network." %}
 </article>
 
 <article class="story" id="clinical-ai">
