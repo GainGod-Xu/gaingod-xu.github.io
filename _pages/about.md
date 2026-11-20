@@ -40,7 +40,7 @@ Hao Xu is an Investigator at Brigham and Women's Hospital and an Instructor in M
   .about-list li:last-child { border-bottom: 0; }
   .about-list .when { color: var(--global-text-color-light); font-size: 0.86rem; white-space: nowrap; }
   .about-list .what strong { font-weight: 700; }
-  .about-list .affiliated-role { display: block; margin-top: 0.45rem; }
+  .about-list .affiliated-role { margin-top: 0.45rem; }
   .about-list .what span { display: block; color: var(--global-text-color-light); font-size: 0.86rem; }
   .about h2 { margin: 1.8rem 0 0.5rem; font-size: 1.15rem; font-weight: 700; padding-bottom: 0.3rem; border-bottom: 1px solid var(--global-divider-color); }
   .about h2[id] { scroll-margin-top: 5rem; }
@@ -58,8 +58,7 @@ Hao Xu is an Investigator at Brigham and Women's Hospital and an Instructor in M
     <span class="what">
       <strong>Research Fellow</strong>
       <span>Department of Medicine, Brigham and Women's Hospital, Harvard Medical School</span>
-      <strong class="affiliated-role">Affiliated Research Fellow</strong>
-      <span>Network Science Institute, Northeastern University</span>
+      <span class="affiliated-role">Affiliated Research Fellow, Network Science Institute, Northeastern University</span>
     </span>
   </li>
   <li><span class="when">Apr 2023 &ndash; May 2024</span><span class="what"><strong>Postdoctoral Associate</strong><span>Department of Computer Science, Brandeis University; affiliated with GlycoMIP (NSF Materials Innovation Platform)</span></span></li>
