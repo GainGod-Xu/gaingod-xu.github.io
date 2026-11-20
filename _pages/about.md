@@ -1,6 +1,6 @@
 ---
 layout: about
-title: About
+title: PI
 permalink: /about/
 nav: true
 nav_order: 7
