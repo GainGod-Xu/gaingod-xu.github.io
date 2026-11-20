@@ -9,8 +9,5 @@
   >
   <figcaption class="fig-note">
     {{ include.caption | escape }}
-    {% if include.source %}
-      <a class="research-plate-source" href="{{ include.source | relative_url }}">{{ include.credit | escape }}</a>
-    {% endif %}
   </figcaption>
 </figure>

@@ -147,7 +147,7 @@ nav_order: 2
     <p>RNA modifications sit between sequence and function. EvoRMD integrates biological context with evolutionary RNA language models to predict modification sites interpretably, a step toward modeling how interventions on RNA propagate to cellular state.</p>
     <div class="links"><a href="{{ '/publications/#wang2026evormd' | relative_url }}">EvoRMD (Genome Biology 2026)</a><a href="{{ '/publications/#wang2026marri' | relative_url }}">MARRI (bioRxiv preprint)</a></div>
   </div>
-  {% include research-plate.liquid image="/assets/img/research/editorial-rna.webp" caption="Illustration of a folded RNA strand with a highlighted modification site." source="/assets/img/research/evormd-fig1.png" credit="Original Figure 1 · Wang et al., Genome Biology (CC BY-NC-ND)" %}
+  {% include research-plate.liquid image="/assets/img/research/editorial-rna.webp" caption="Illustration of a folded RNA strand with a highlighted modification site." %}
 </article>
 
 <article class="story" id="molecular-representation">
@@ -157,7 +157,7 @@ nav_order: 2
     <p>Chemical structure is observed through complementary views: graphs, spectra, text, and 3D geometry. Aligning them, asymmetrically and with relational learning, yields representations that transfer to property prediction and drug discovery while staying consistent with chemistry.</p>
     <div class="links"><a href="{{ '/publications/#wang2025advancing' | relative_url }}">Asymmetric contrastive learning (JCIM 2025)</a><a href="{{ '/publications/#zhou2025multimodal' | relative_url }}">Multimodal fusion (Commun. Chem. 2025)</a><a href="{{ '/publications/#liu2025matinstructions' | relative_url }}">Mat-Instructions (IJCAI 2025)</a></div>
   </div>
-  {% include research-plate.liquid image="/assets/img/research/editorial-fusion.webp" caption="Illustration of several complementary views of the same molecule." source="/assets/img/research/mmfusion-fig1.png" credit="Original Figure 1 · Zhou et al., Communications Chemistry (CC BY-NC-ND)" %}
+  {% include research-plate.liquid image="/assets/img/research/editorial-fusion.webp" caption="Illustration of several complementary views of the same molecule." %}
 </article>
 
 <article class="story" id="structure-elucidation">
@@ -167,7 +167,7 @@ nav_order: 2
     <p>Determining a molecule's structure from its spectra is a problem where a model must be able to check its own answer. This line builds solvent-aware 2D NMR prediction, an annotated experimental benchmark, and reasoning-based elucidation from mass spectra, toward NMRScape: self-verifying structure determination.</p>
     <div class="links"><a href="{{ '/publications/#li2025transpeaknet' | relative_url }}">TransPeakNet (Commun. Chem. 2025)</a><a href="{{ '/publications/#li2025dnmrgym' | relative_url }}">2DNMRGym (LoG 2025)</a><a href="{{ '/publications/#wang2026howwell' | relative_url }}">LLMs on mass spectra (J. Cheminform. 2026)</a></div>
   </div>
-  {% include research-plate.liquid image="/assets/img/research/editorial-spectra.webp" caption="Illustration of a candidate molecular structure alongside a schematic spectrum." source="/assets/img/research/transpeaknet-fig1.png" credit="Original Figure 1 · Li, Xu et al., Communications Chemistry (CC BY-NC-ND)" %}
+  {% include research-plate.liquid image="/assets/img/research/editorial-spectra.webp" caption="Illustration of a candidate molecular structure alongside a schematic spectrum." %}
 </article>
 
 <article class="story" id="network-medicine">

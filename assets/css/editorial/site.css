@@ -140,7 +140,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
   border-radius: 0.25rem;
 }
 .research-plate figcaption { margin-top: 0.65rem; }
-.research-plate-source { display: block; margin-top: 0.25rem; }
 .research-cycle summary { color: var(--global-theme-color); font-weight: 650; cursor: pointer; }
 .research-cycle .sv { margin-top: 1.1rem; }
 
