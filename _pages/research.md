@@ -130,7 +130,7 @@ nav_order: 2
     <p>RNA modifications sit between sequence and function. EvoRMD integrates biological context with evolutionary RNA language models to predict modification sites interpretably, a step toward modeling how interventions on RNA propagate to cellular state.</p>
     <div class="links"><a href="{{ '/publications/#wang2026evormd' | relative_url }}">EvoRMD (Genome Biology 2026)</a><a href="{{ '/publications/#wang2026marri' | relative_url }}">MARRI (bioRxiv preprint)</a></div>
   </div>
-  {% include research-plate.liquid image="/assets/img/research/editorial-rna.webp" caption="Illustration of a folded RNA strand with a highlighted modification site." %}
+  {% include research-plate.liquid image="/assets/img/research/editorial-rna-site.webp" caption="Illustration of a folded RNA strand with a highlighted modification site." %}
 </article>
 
 <article class="story" id="molecular-representation">
