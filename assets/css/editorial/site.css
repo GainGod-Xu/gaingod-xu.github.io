@@ -118,10 +118,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
 .pyears { margin-top: 0.34rem; font-variant-numeric: tabular-nums; }
 .pcard p { margin: 0.4rem 0 0; }
 
-.teaching-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
-.teaching-list section { border-top: 1px solid var(--global-divider-color); padding-top: 1rem; }
-.teaching-list h2 { font-size: 1.6rem; }
-
 .publications h2.bibliography { text-align: left; border-color: var(--global-divider-color); font-size: 2.25rem; }
 .publications ol.bibliography > li { border-bottom: 1px solid var(--global-divider-color); padding-bottom: 1rem; scroll-margin-top: 5rem; }
 .publications ol.bibliography .title { font-family: var(--editorial-serif); font-size: 1.21rem; line-height: 1.24; }
@@ -129,7 +125,13 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
 
 .research-index { display: flex; flex-wrap: wrap; gap: 0.55rem 1.25rem; list-style: none; padding: 0; margin: 1.2rem 0 0; }
 .research-index a { font-weight: 600; font-size: 0.9rem; }
-.research-plate { margin: 0; min-width: 0; }
+.research-plate {
+  justify-self: center;
+  width: 100%;
+  max-width: 26.5rem;
+  min-width: 0;
+  margin: 0;
+}
 .research-plate img {
   display: block;
   width: 100%;
@@ -147,7 +149,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
   .home-image { max-width: 36rem; }
 }
 @media (max-width: 640px) {
-  .home-projects, .pgrid, .teaching-list { grid-template-columns: 1fr; }
+  .home-projects, .pgrid { grid-template-columns: 1fr; }
   .home-projects article + article { border-inline-start: 0; padding-inline-start: 0; border-top: 1px solid var(--global-divider-color); padding-top: 1rem; }
   .editorial-news li { grid-template-columns: 1fr; }
 }
@@ -156,16 +158,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
 .publication-legend { color: var(--global-text-color-light); font-size: 0.9rem; }
 
 .post > .post-header .post-description { max-width: 65ch; color: var(--global-text-color-light); }
-.cv > .card {
-  background: transparent;
-  border: 0;
-  border-top: 1px solid var(--global-divider-color);
-  border-radius: 0;
-  box-shadow: none;
-  padding-inline: 0 !important;
-}
-.cv .card-title { font-size: 1.65rem; margin-bottom: 0.9rem; }
-
 .publications h2.bibliography { color: var(--global-theme-color); }
 footer.sticky-bottom {
   border-top: 1px solid var(--global-divider-color);
