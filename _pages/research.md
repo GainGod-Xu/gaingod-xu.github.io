@@ -36,6 +36,7 @@ nav_order: 2
   .story:nth-child(even) .research-plate { order: 1; }
   .story h2 { font-size: clamp(1.45rem, 3vw, 2rem); font-weight: 650; line-height: 1.15; margin: 0 0 0.9rem; }
   .story p { color: var(--global-text-color-light); line-height: 1.6; font-size: 0.97rem; margin: 0 0 0.8rem; }
+  .story .clinical-imaging { margin-top: 1.25rem; }
   .story .links { margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; font-size: 0.88rem; font-weight: 700; }
   @media (max-width: 820px) { .story { grid-template-columns: 1fr; gap: 1.4rem; padding: 2.2rem 0; }
     .story:nth-child(even) .story-copy, .story:nth-child(even) .research-plate { order: initial; } }
@@ -72,6 +73,7 @@ nav_order: 2
         <li><a href="#molecular-representation">Molecular representations</a></li>
         <li><a href="#structure-elucidation">Spectroscopy</a></li>
         <li><a href="#network-medicine">Network medicine</a></li>
+        <li><a href="#clinical-ai">Clinical AI</a></li>
         <li><a href="#trustworthy-methods">Trustworthy methods</a></li>
       </ul>
     </nav>
@@ -103,7 +105,7 @@ nav_order: 2
       <text class="lad-sub" x="464" y="140" text-anchor="middle">disease, outcome</text>
       <text class="lad-sub" x="260" y="160" text-anchor="middle">Interventions propagate upward; observations at higher scales constrain mechanisms below.</text>
     </svg>
-    <figcaption class="fig-note">Five scales where biological states can be measured and modeled. Solid work sits at the first three; the last two are the next steps.</figcaption>
+    <figcaption class="fig-note">Five scales where biological states can be measured and modeled, from molecular structure to patient outcomes.</figcaption>
   </figure>
 </section>
 
@@ -180,6 +182,23 @@ nav_order: 2
   {% include research-plate.liquid image="/assets/img/research/editorial-network.webp" caption="Illustration of a disease module within a larger interaction network." %}
 </article>
 
+<article class="story" id="clinical-ai">
+  <div class="story-copy">
+    <p class="kicker">Patient outcomes &middot; Clinical AI</p>
+    <h2>Heart failure outcomes and cancer imaging</h2>
+    <p><strong>Cardiovascular outcomes.</strong> We used network analysis and machine learning to study clinical factors associated with in-hospital mortality and survival in heart failure. The work appeared in <em>Circulation</em> as an American Heart Association Scientific Sessions abstract.</p>
+    <div class="links">
+      <a href="{{ '/publications/#xu2026heartfailure' | relative_url }}">Heart failure outcomes (Circulation, AHA abstract 2026)</a>
+    </div>
+    <p class="clinical-imaging"><strong>Radiology.</strong> We studied how MRI can predict <em>TP53</em> mutation status and how contrast-enhanced CT can identify the macrotrabecular-massive subtype of hepatocellular carcinoma.</p>
+    <div class="links">
+      <a href="{{ '/publications/#jia2025p53' | relative_url }}">MRI and <em>TP53</em> status (BMC Medical Imaging 2025)</a>
+      <a href="{{ '/publications/#jia2025macrotrabecular' | relative_url }}">CT and tumor subtype (Insights into Imaging 2025)</a>
+    </div>
+  </div>
+  {% include research-plate.liquid image="/assets/img/research/editorial-clinical.webp" caption="Concept illustration for heart failure outcomes and cancer imaging." %}
+</article>
+
 <article class="story" id="trustworthy-methods">
   <div class="story-copy">
     <p class="kicker">Methods &middot; Trustworthiness</p>
@@ -206,7 +225,7 @@ nav_order: 2
   <h2 class="big">Closing the loop from molecule to patient</h2>
   <div class="outlook">
     <article><span>01</span><h3>Cellular perturbation response</h3><p>Extend mechanistic, uncertainty-aware prediction to single-cell and Perturb-seq data, so that interventions learned at the molecular and network scales can be tested against measured cell states.</p></article>
-    <article><span>02</span><h3>Precision intervention</h3><p>Invert the models: identify the molecular interventions that move a biological system toward a desired state, with explicit uncertainty and experimental validation in the loop. At the patient scale, phenotype is the readout: a first step is predicting <em>TP53</em> mutation status in hepatocellular carcinoma directly from MRI (<a href="{{ '/publications/#jia2025p53' | relative_url }}">BMC Med. Imaging 2025</a>).</p></article>
+    <article><span>02</span><h3>Precision intervention</h3><p>Invert the models: identify the molecular interventions that move a biological system toward a desired state, with explicit uncertainty and experimental validation in the loop. At the patient scale, this builds on our <a href="#clinical-ai">work with clinical outcomes and imaging</a>.</p></article>
   </div>
 </section>
 
