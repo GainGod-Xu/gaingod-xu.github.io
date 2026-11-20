@@ -43,7 +43,7 @@ nav_order: 4
 <p markdown="span">Co-authored 1 paper, his first-author in *Journal of Cheminformatics*.</p>
 </div>
 <div class="pcard">
-<div class="pname" markdown="span">**Bo Wang**</div>
+<div class="pname" markdown="span">**[Bo Wang](https://scholar.google.com/citations?user=4OzuqIYAAAAJ&hl=en)**</div>
 <div class="paff">Shenzhen University</div>
 <div class="pyears">2024&ndash;2026</div>
 <p markdown="span">First author of *EvoRMD* (*Genome Biology*) and *MARRI* (bioRxiv preprint), on RNA modification prediction and RNA–RNA interactions.</p>
